@@ -1,0 +1,57 @@
+{
+  "WarlordEmblem:ElementInvoke": {
+    "NAME": "元素祈唤",
+    "DESCRIPTION": "融合左边三个元素，形成全新的技能。 NL  虚无  消耗 ",
+    "EXTENDED_DESCRIPTION": ["需要三个元素球","回合冷却"," NL (冰冰冰：急速冷却"," NL (冰冰雷：幽冥漫步"," NL (雷雷火：灵动迅捷"," NL (火火火：阳炎冲击"," NL (雷雷雷：电磁脉冲"," NL (火火雷：混沌陨石"," NL (冰冰火：寒冰之墙"," NL (冰雷火：超震声波"," NL (雷雷冰：强袭飓风"," NL (火火冰：熔炉精灵","）"]
+  },
+  "WarlordEmblem:ChaosMeteor": {
+  "NAME": "混沌陨石",
+  "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 易伤 。  NL warlord_emblem:冷却 4。 NL  虚无  消耗 ",
+  "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+},
+  "WarlordEmblem:KaelColdSnap": {
+    "NAME": "急速冷却",
+    "DESCRIPTION": "降低目标2点 力量 ，给予目标1层 虚弱 ，3层 warlord_emblem:急速冷冻 。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
+  "WarlordEmblem:EMP": {
+    "NAME": "电磁脉冲",
+    "DESCRIPTION":"吸收所有敌人的 格挡 ，获得等量的 格挡 。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
+  "WarlordEmblem:IceWall": {
+    "NAME": "寒冰之墙",
+    "DESCRIPTION":"获得1层 无实体 ，所有敌人降低1点 力量 。 NL warlord_emblem:冷却 4。 NL  虚无  消耗  ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
+  "WarlordEmblem:GhostWalk": {
+    "NAME": "幽灵漫步",
+    "DESCRIPTION": "获得2点 敏捷 ，给予所有敌人 2层 虚弱 。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
+  "WarlordEmblem:DeafeningBlast": {
+    "NAME": "超震声波",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 1 层 warlord_emblem:缴械 。  NL warlord_emblem:冷却 4。 NL  虚无  消耗  ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
+  "WarlordEmblem:Tornado": {
+    "NAME": "强袭飓风",
+    "DESCRIPTION": "使一个目标失去所有 中毒  虚弱  易伤 效果，对所有敌人造成失去层数总和的5倍伤害。  NL  虚无  消耗  ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
+  "WarlordEmblem:ForgeSpirit": {
+    "NAME": "熔炉精灵",
+    "DESCRIPTION": "召唤 1 个 warlord_emblem:熔炉精灵 。 NL  虚无  消耗 ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
+  "WarlordEmblem:SunStrike": {
+    "NAME": "阳炎冲击",
+    "DESCRIPTION": "对一个随机敌人造成 !D! 点伤害。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
+  "WarlordEmblem:Alacrity": {
+    "NAME": "灵动迅捷",
+    "DESCRIPTION":  "获得 1 点 力量 ，2点 集中 。 NL warlord_emblem:冷却 3。 NL  虚无  消耗 ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "modid": "WarlordEmblem",
+  "name": "Warlord Emblem",
+  "author_list": ["Rita"],
+  "credits": "",
+  "description": "重制战神徽章",
+  "version": "0.1.0",
+  "sts_version": "07-17-2019",
+  "mts_version": "3.8.3",
+  "dependencies": ["basemod", "stslib"]
+}

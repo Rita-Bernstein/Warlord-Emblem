@@ -1,0 +1,17 @@
+{
+  "WarlordEmblem:DK_Talent": {
+    "TEXT": [
+      "天赋：",
+      "鲜血",
+      "",
+      "冰霜",
+      "",
+      "邪恶"
+    ]
+  },
+  "WarlordEmblem:UtilizeAction": {
+    "TEXT": [
+      "选择丢弃一张手牌并获得其耗能等量的能量"
+    ]
+  }
+}

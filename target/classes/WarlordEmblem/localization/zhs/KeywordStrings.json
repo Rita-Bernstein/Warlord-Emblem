@@ -1,0 +1,22 @@
+[
+    {
+      "PROPER_NAME": "冷却",
+      "NAMES": ["冷却"],
+      "DESCRIPTION": "你在特定回合内不能再打出同名牌。"
+    },
+  {
+    "PROPER_NAME": "急速冷冻",
+    "NAMES": ["急速冷冻"],
+    "DESCRIPTION": "接下来受到多次攻击伤害会给予 #y易伤  #y虚弱 。"
+  },
+  {
+    "PROPER_NAME": "熔炉精灵",
+    "NAMES": ["熔炉精灵"],
+    "DESCRIPTION": "充能球：被动造成伤害，激发给予 #易伤 。"
+  },
+  {
+    "PROPER_NAME": "缴械",
+    "NAMES": ["缴械"],
+    "DESCRIPTION": "接下来受到的攻击伤害会给予 #y易伤  #y虚弱 。"
+  }
+]

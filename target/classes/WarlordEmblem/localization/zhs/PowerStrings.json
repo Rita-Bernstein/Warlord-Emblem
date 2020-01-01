@@ -1,0 +1,16 @@
+{
+  "WarlordEmblem:ColdSnapPower": {
+    "NAME": "急速冷冻",
+    "DESCRIPTIONS": [
+      "接下来受到的",
+      "次攻击伤害会给予 #y易伤  #y虚弱 。"
+    ]
+  },
+  "WarlordEmblem:DeafeningBlastPower": {
+  "NAME": "缴械",
+  "DESCRIPTIONS": [
+    "接下来受到的",
+    "次攻击伤害会给予 #y易伤  #y虚弱 。"
+  ]
+}
+}

@@ -1,0 +1,50 @@
+{
+  "WarlordEmblem:SpireHeart_DeathKnight": {
+  "NAME": "Spire Heart",
+  "DESCRIPTIONS": [
+    "NL 你汇集了你所有的药剂……"
+  ],
+  "OPTIONS": [
+  ]
+},
+  "WarlordEmblem:SpireHeart_Kael": {
+  "NAME": "Spire Heart",
+  "DESCRIPTIONS": [
+    "NL 你汇集了你所有的药剂……"
+  ],
+  "OPTIONS": [
+  ]
+},
+  "WarlordEmblem:SpireHeart_Crowbot": {
+  "NAME": "Spire Heart",
+  "DESCRIPTIONS": [
+    "NL 你汇集了你所有的药剂……"
+  ],
+  "OPTIONS": [
+  ]
+},
+  "WarlordEmblem:Vampires_Kael": {
+  "NAME": "吸血鬼（？）",
+  "DESCRIPTIONS": [
+    "在一条昏暗的街上，你遇见几个戴着兜帽的人在进行某种黑暗的仪式。当你靠近时，他们全都同时转身面对你，让你觉得十分诡异。 其中个子最高的一个微微一笑，露出了长长的尖牙，向你伸出了一只苍白而瘦长的手： NL ~“加入我们，流浪者。一起来感受高塔的温暖吧。”~"
+  ],
+  "OPTIONS": [
+  ]
+},
+  "WarlordEmblem:Vampires_DeathKnight": {
+  "NAME": "吸血鬼（？）",
+  "DESCRIPTIONS": [
+    "在一条昏暗的街上，你遇见几个戴着兜帽的人在进行某种黑暗的仪式。当你靠近时，他们全都同时转身面对你，让你觉得十分诡异。 其中个子最高的一个微微一笑，露出了长长的尖牙，向你伸出了一只苍白而瘦长的手： NL ~“加入我们，流浪者。一起来感受高塔的温暖吧。”~"
+  ],
+  "OPTIONS": [
+  ]
+},
+  "WarlordEmblem:Vampires_Crowbot": {
+  "NAME": "吸血鬼（？）",
+  "DESCRIPTIONS": [
+    "在一条昏暗的街上，你遇见几个戴着兜帽的人在进行某种黑暗的仪式。当你靠近时，他们全都同时转身面对你，让你觉得十分诡异。 其中个子最高的一个微微一笑，露出了长长的尖牙，向你伸出了一只苍白而瘦长的手： NL ~“加入我们，流浪者。一起来感受高塔的温暖吧。”~"
+  ],
+  "OPTIONS": [
+  ]
+}
+}

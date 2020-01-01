@@ -1,0 +1,29 @@
+{
+  "WarlordEmblem:Kael": {
+    "NAMES": [
+      "祈求者",
+      "祈求者"
+    ],
+    "TEXT": [
+      "掌控元素力量的召唤师， NL 善于使用各种元素魔法打击敌人。"
+    ]
+  },
+  "WarlordEmblem:DeathKnight": {
+    "NAMES": [
+      "死亡骑士",
+      "死亡骑士"
+    ],
+    "TEXT": [
+      "受诅咒的骑士,拥有无尽的能量。 NL 拥有鲜血，冰霜，邪恶三系天赋。"
+    ]
+  },
+  "WarlordEmblem:Crowbot": {
+    "NAMES": [
+      "乌鸦机器人",
+      "乌鸦机器人"
+    ],
+    "TEXT": [
+      "滴滴 嘟嘟"
+    ]
+  }
+}
