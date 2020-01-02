@@ -21,7 +21,7 @@ public class Tornado extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(WarlordEmblem.makeID("Tornado"));
   public static final String ID = WarlordEmblem.makeID("Tornado");
   public static final String NAME = cardStrings.NAME;
-  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/kral_strong_wind.png");
+  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/Kael_strong_wind.png");
   private static final int COST = 2;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = CardType.ATTACK;
@@ -74,7 +74,6 @@ public class Tornado extends CustomCard {
   public void triggerOnEndOfPlayerTurn() {
     if (Kael.Tornado_ColdDown >0)
       Kael.Tornado_ColdDown  -= 1;
-    super.triggerOnEndOfPlayerTurn();
   }
 
   @Override

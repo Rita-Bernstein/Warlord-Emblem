@@ -18,7 +18,7 @@ public class ElementInvoke extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(WarlordEmblem.makeID("ElementInvoke"));
   public static final String ID = WarlordEmblem.makeID("ElementInvoke");
   public static final String NAME = cardStrings.NAME;
-  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/kral_element_invoke.png");
+  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/Kael_element_invoke.png");
   private static final int COST = 0;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = AbstractCard.CardType.SKILL;
@@ -89,16 +89,16 @@ public class ElementInvoke extends CustomCard {
     byte FireOrb = 0;
     byte FrostOrb = 0;
     byte LightningOrb = 0;
-    int k;
-    for (k = i; k > i - 3; k--) {
-      AbstractOrb abstractOrb = (AbstractOrb)AbstractDungeon.player.orbs.get(k);
-      if (abstractOrb instanceof com.megacrit.cardcrawl.orbs.Dark || abstractOrb instanceof com.megacrit.cardcrawl.orbs.Plasma || abstractOrb instanceof ForgedSpiritOrb) {
-        FireOrb++;
-      } else if (abstractOrb instanceof com.megacrit.cardcrawl.orbs.Frost) {
+    for (int k = i; k > i - 3; k--) {
+      AbstractOrb abstractOrb = AbstractDungeon.player.orbs.get(k);
+
+      if (abstractOrb instanceof com.megacrit.cardcrawl.orbs.Frost) {
         FrostOrb++;
       } else if (abstractOrb instanceof com.megacrit.cardcrawl.orbs.Lightning) {
         LightningOrb++;
-      } 
+      } else  {
+        FireOrb++;
+      }
     }
     /*判断充能球类型*/
 
@@ -108,8 +108,8 @@ public class ElementInvoke extends CustomCard {
 
     if (FrostOrb == 3) {
 
-      if (Kael.KralColdSnap_ColdDown > 0)
-        str = "," + Kael.KralColdSnap_ColdDown + EXTENDED_DESCRIPTION[1];
+      if (Kael.KaelColdSnap_ColdDown > 0)
+        str = "," + Kael.KaelColdSnap_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[2] + str + EXTENDED_DESCRIPTION[12];
       initializeDescription();
     }//急速冷却
@@ -220,7 +220,7 @@ public class ElementInvoke extends CustomCard {
     byte FrostOrb = 0;
     byte LightningOrb = 0;
     for (int k = i; k > i - 3; k--) {
-      AbstractOrb abstractOrb = (AbstractOrb)paramAbstractPlayer.orbs.get(k);
+      AbstractOrb abstractOrb = AbstractDungeon.player.orbs.get(k);
 
       if (abstractOrb instanceof com.megacrit.cardcrawl.orbs.Frost) {
         FrostOrb++;
@@ -232,7 +232,7 @@ public class ElementInvoke extends CustomCard {
     }
 
     if (FrostOrb == 3) {
-      AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new KralColdSnap(), false));
+      AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new KaelColdSnap(), false));
     } else if (FrostOrb == 2 && LightningOrb == 1) {
       AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new GhostWalk(), false));
     } else if (LightningOrb == 2 && FireOrb == 1) {

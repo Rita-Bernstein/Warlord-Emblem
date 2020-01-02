@@ -19,7 +19,7 @@ public class EMP extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(WarlordEmblem.makeID("EMP"));
   public static final String ID = WarlordEmblem.makeID("EMP");
   public static final String NAME = cardStrings.NAME;
-  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/kral_elect_pulse.png");
+  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/Kael_elect_pulse.png");
   private static final int COST = 1;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = AbstractCard.CardType.SKILL;

@@ -20,7 +20,7 @@ public class SunStrike extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(WarlordEmblem.makeID("SunStrike"));
   public static final String ID = WarlordEmblem.makeID("SunStrike");
   public static final String NAME = cardStrings.NAME;
-  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/kral_sun_strike.png");
+  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/Kael_sun_strike.png");
   private static final int COST = 2;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = CardType.ATTACK;

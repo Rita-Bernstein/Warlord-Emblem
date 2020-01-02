@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 public class Kael extends CustomPlayer {
 	public static final CharacterStrings charStrings = CardCrawlGame.languagePack.getCharacterString(WarlordEmblem.makeID("Kael"));
-	public static int KralColdSnap_ColdDown = 0;
+	public static int KaelColdSnap_ColdDown = 0;
 	public static int GhostWalk_ColdDown = 0;
 	public static int Alacrity_ColdDown = 0;
 	public static int SunStrike_ColdDown = 0;
@@ -129,7 +129,7 @@ public class Kael extends CustomPlayer {
 	@Override
 	public void applyStartOfCombatLogic() {
 		//开局重置冷却
-		KralColdSnap_ColdDown = 0;
+		KaelColdSnap_ColdDown = 0;
 		GhostWalk_ColdDown = 0;
 		Alacrity_ColdDown = 0;
 		SunStrike_ColdDown = 0;

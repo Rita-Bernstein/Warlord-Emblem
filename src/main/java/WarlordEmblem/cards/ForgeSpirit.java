@@ -19,7 +19,7 @@ public class ForgeSpirit extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(WarlordEmblem.makeID("ForgeSpirit"));
   public static final String ID = WarlordEmblem.makeID("ForgeSpirit");
   public static final String NAME = cardStrings.NAME;
-  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/kral_fire_element.png");
+  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/Kael_fire_element.png");
   private static final int COST = 1;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = CardType.SKILL;

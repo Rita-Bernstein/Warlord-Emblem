@@ -1,8 +1,8 @@
 WarlordEmblem\patches\LibraryTypeEnum.class
-WarlordEmblem\cards\KralColdSnap.class
 WarlordEmblem\WarlordEmblem.class
 WarlordEmblem\relics\GoldMime.class
 WarlordEmblem\relics\SaveLoadDisk.class
+WarlordEmblem\cards\KaelColdSnap.class
 WarlordEmblem\character\Crowbot.class
 WarlordEmblem\relics\BrokenWatch.class
 WarlordEmblem\WarlordEmblem$1.class

@@ -20,7 +20,7 @@ public class Alacrity extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(WarlordEmblem.makeID("Alacrity"));
   public static final String ID = WarlordEmblem.makeID("Alacrity");
   public static final String NAME = cardStrings.NAME;
-  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/kral_swift.png");
+  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/Kael_swift.png");
   private static final int COST = 1;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = CardType.SKILL;

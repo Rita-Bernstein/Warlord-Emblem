@@ -24,7 +24,7 @@ public class ChaosMeteor extends CustomCard {
   private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(WarlordEmblem.makeID("ChaosMeteor"));
   public static final String ID = WarlordEmblem.makeID("ChaosMeteor");
   public static final String NAME = cardStrings.NAME;
-  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/kral_chaos_failing_stone.png");
+  public static final String IMG = WarlordEmblem.assetPath("/img/cards/Kael/Kael_chaos_failing_stone.png");
   private static final int COST = 3;
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = CardType.ATTACK;

@@ -118,7 +118,7 @@ public class WarlordEmblem implements
         List<CustomCard> cards = new ArrayList<>();
         cards.add(new Alacrity());
         cards.add(new ChaosMeteor());
-        cards.add(new KralColdSnap());
+        cards.add(new KaelColdSnap());
         cards.add(new DeafeningBlast());
         cards.add(new ElementInvoke());
         cards.add(new EMP());
