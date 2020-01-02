@@ -17,7 +17,7 @@ public class OldTorch extends CustomRelic {
    public static final String ID = WarlordEmblem.makeID("OldTorch");
 
    
-   public OldTorch() { super(WarlordEmblem.makeID("OldTorch"),new Texture(WarlordEmblem.assetPath("/img/relics/old_torch.png")) , RelicTier.COMMON, CustomRelic.LandingSound.FLAT); }
+   public OldTorch() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/old_torch.png")) , RelicTier.COMMON, CustomRelic.LandingSound.FLAT); }
  
  
  

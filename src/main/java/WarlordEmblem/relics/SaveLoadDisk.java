@@ -19,7 +19,7 @@ public class SaveLoadDisk extends CustomRelic {
 
  
    
-   public SaveLoadDisk() { super(WarlordEmblem.makeID("SaveLoadDisk"),new Texture(WarlordEmblem.assetPath("/img/relics/save_load_disk.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+   public SaveLoadDisk() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/save_load_disk.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  

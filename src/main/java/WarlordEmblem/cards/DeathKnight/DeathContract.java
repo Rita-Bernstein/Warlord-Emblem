@@ -1,0 +1,77 @@
+package WarlordEmblem.cards.DeathKnight;
+
+import WarlordEmblem.WarlordEmblem;
+import WarlordEmblem.patches.CardColorEnum;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
+
+public class DeathContract extends AbstractDKCard {
+    public static final String ID = WarlordEmblem.makeID("DeathContract");
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = cardStrings.NAME;
+    public static final String IMG = WarlordEmblem.assetPath("/img/cards/DeathKnight/death_contract.png");
+    private static final int COST = 1;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;
+    public static final CardType TYPE = CardType.ATTACK;
+    private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
+
+
+    public final static String ERROR = EXTENDED_DESCRIPTION[0];
+    private static final int UPGRADE_BONUS = 2;
+    private static final int UPGRADE_BONUS2 = 1;
+
+    public DeathContract() {
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseDamage = 8;
+        this.baseMagicNumber = 2;
+        this.magicNumber = 2;
+        this.exhaust = true;
+    }
+
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.effectList
+                .add(new FlashAtkImgEffect(m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
+                new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        super.useRune(4);
+        p.increaseMaxHp(magicNumber, true);
+
+    }
+
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+        if (!canUse) {
+            return false;
+        }
+        int amount = super.getRuneCount();
+        if (amount >= 4) {
+            return true;
+        } else {
+            this.cantUseMessage = ERROR;
+            return false;
+        }
+    }
+
+    public AbstractCard makeCopy() {
+        return new DeathContract();
+    }
+
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            upgradeDamage(UPGRADE_BONUS);
+            upgradeMagicNumber(UPGRADE_BONUS2);
+        }
+    }
+}

@@ -22,8 +22,8 @@ public class BadgeMouse extends CustomRelic {
     private float TurnTime = 0;
     private int EnergyAdd = 0;
 
-    public static final Logger logger = LogManager.getLogger(WarlordEmblem.class.getSimpleName());
-   public BadgeMouse() { super(WarlordEmblem.makeID("BadgeMouse"),new Texture(WarlordEmblem.assetPath("/img/relics/badge_mouse.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+
+   public BadgeMouse() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/badge_mouse.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  
@@ -33,7 +33,7 @@ public class BadgeMouse extends CustomRelic {
 
 
    public void atTurnStart() {
-       logger.info(CardCrawlGame.playtime);
+
        if(this.EnergyAdd != 0){
            flash();
            AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
@@ -45,7 +45,7 @@ public class BadgeMouse extends CustomRelic {
 
     @Override
     public void onPlayerEndTurn() {
-        logger.info(CardCrawlGame.playtime);
+
         this.EnergyAdd = 0;
         if(CardCrawlGame.playtime - this.TurnTime <= 8f){
             this.EnergyAdd = 1;

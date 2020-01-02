@@ -14,10 +14,11 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class BadgeBless extends CustomRelic {
    public static final String ID = WarlordEmblem.makeID("BadgeBless");
+    private static Texture texture = new Texture(WarlordEmblem.assetPath("/img/relics/badge_bless.png")) ;
 
 
    
-   public BadgeBless() { super(WarlordEmblem.makeID("BadgeBless"),new Texture(WarlordEmblem.assetPath("/img/relics/badge_bless.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+   public BadgeBless() { super(ID,texture, RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  

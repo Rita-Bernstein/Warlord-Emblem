@@ -20,7 +20,7 @@ public class HatTrick extends CustomRelic {
 
  
    
-   public HatTrick() { super(WarlordEmblem.makeID("HatTrick"),new Texture(WarlordEmblem.assetPath("/img/relics/hat_trick.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
+   public HatTrick() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/hat_trick.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
 
 
     public void atTurnStart() { this.counter = 0; }

@@ -15,7 +15,7 @@ public class BadgeWrath extends CustomRelic {
 
  
    
-   public BadgeWrath() { super(WarlordEmblem.makeID("BadgeWrath"),new Texture(WarlordEmblem.assetPath("/img/relics/badge_wrath.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
+   public BadgeWrath() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/badge_wrath.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
  
  
  

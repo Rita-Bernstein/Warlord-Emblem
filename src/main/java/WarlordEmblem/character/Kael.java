@@ -2,7 +2,7 @@ package WarlordEmblem.character;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.cards.*;
-import WarlordEmblem.cards.GhostWalk;
+import WarlordEmblem.cards.Kael.GhostWalk;
 import WarlordEmblem.modules.EnergyOrbCustomBlue;
 import WarlordEmblem.patches.AbstractPlayerEnum;
 import WarlordEmblem.relics.SoulOfKael;

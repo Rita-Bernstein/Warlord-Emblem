@@ -19,7 +19,7 @@ public class BreastProtector extends CustomRelic {
 
     private boolean used = false;
    
-   public BreastProtector() { super(WarlordEmblem.makeID("BreastProtector"),new Texture(WarlordEmblem.assetPath("/img/relics/breast_protector.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
+   public BreastProtector() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/breast_protector.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
  
  
  

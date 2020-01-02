@@ -1,7 +1,7 @@
 package WarlordEmblem;
 
-//import WarlordEmblem.cards.*;
-import WarlordEmblem.cards.*;
+
+import WarlordEmblem.cards.Kael.*;
 import WarlordEmblem.character.Crowbot;
 import WarlordEmblem.character.DeathKnight;
 import WarlordEmblem.character.Kael;
@@ -40,7 +40,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import WarlordEmblem.character.Kael.*;
-//import WarlordEmblem.cards.*;
+import WarlordEmblem.cards.DeathKnight.*;
 
 
 @SpireInitializer
@@ -128,6 +128,71 @@ public class WarlordEmblem implements
         cards.add(new SunStrike());
         cards.add(new Tornado());
 
+        cards.add(new Annihilation());
+        cards.add(new AntiMagicShield());
+        cards.add(new BlackCommand());
+        cards.add(new BloodBoiling());
+        cards.add(new BloodDiffer());
+        cards.add(new BloodMask());
+        cards.add(new BloodStrike());
+        cards.add(new BodyStrike());
+        cards.add(new BoneShield());
+        cards.add(new CondemnStrike());
+        cards.add(new CurseStrike());
+        cards.add(new DeathCoil());
+        cards.add(new DeathContract());
+        cards.add(new DeathGateway());
+        cards.add(new DeathShake());
+        cards.add(new DeathStrike());
+        cards.add(new DeathWither());
+        cards.add(new DiseaseCloud());
+        cards.add(new DiseaseStrike());
+        cards.add(new DKDefend());
+        cards.add(new EvilEager());
+        cards.add(new EvilPower());
+        cards.add(new EvilSee());
+        cards.add(new EvilStrike());
+        cards.add(new EvilWorm());
+        cards.add(new Execute());
+        cards.add(new ForceDeflexion());
+        cards.add(new FrozenChain());
+        cards.add(new FrozenDeath());
+        cards.add(new FrozenHeart());
+        cards.add(new FrozenStrike());
+        cards.add(new FrozenTouch());
+        cards.add(new FrozenWill());
+        cards.add(new GhostStrike());
+        cards.add(new Hanging());
+        cards.add(new HeartStrike());
+        cards.add(new Infect());
+        cards.add(new LichBody());
+        cards.add(new LichkingWraith());
+        cards.add(new NoLightShield());
+        cards.add(new RuneBlade());
+        cards.add(new RuneBurn());
+        cards.add(new RuneDefend());
+        cards.add(new RuneDiffer());
+        cards.add(new RuneExplode());
+        cards.add(new RuneFocus());
+        cards.add(new RuneHeavyBlow());
+        cards.add(new RuneInspire());
+        cards.add(new RunePerfusion());
+        cards.add(new RuneRecast());
+        cards.add(new RuneRecover());
+        cards.add(new RuneRegen());
+        cards.add(new RuneStorm());
+        cards.add(new RuneStrike());
+        cards.add(new SwordWave());
+        cards.add(new UltimateCold());
+        cards.add(new UndeadWill());
+        cards.add(new VoidDefend());
+        cards.add(new VoidStrike());
+        cards.add(new WindStrike());
+        cards.add(new WinterHorn());
+        cards.add(new Withstand());
+
+
+
 
 
         for (CustomCard card : cards) {
@@ -167,6 +232,12 @@ public class WarlordEmblem implements
         BaseMod.addRelic(new SoulOfKael(), RelicType.SHARED);
 
         BaseMod.addRelicToCustomPool(new SoulOfKael(), CardColorEnum.Kael_LIME);
+
+        BaseMod.addRelicToCustomPool(new RuneSword(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new DKHelm(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new BloodRealm(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new IceRealm(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new EvilRealm(), CardColorEnum.DeathKnight_LIME);
 
 
         logger.debug("receiveEditRelics finished.");

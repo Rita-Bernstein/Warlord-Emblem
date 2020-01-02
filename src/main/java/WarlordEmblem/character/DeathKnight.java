@@ -1,10 +1,14 @@
 package WarlordEmblem.character;
 
 import WarlordEmblem.WarlordEmblem;
-//import WarlordEmblem.cards.*;
+import WarlordEmblem.cards.DeathKnight.*;
 import WarlordEmblem.modules.EnergyOrbCustomBlue;
 import WarlordEmblem.patches.AbstractPlayerEnum;
 import WarlordEmblem.patches.CharacterSelectScreenPatches;
+import WarlordEmblem.relics.BloodRealm;
+import WarlordEmblem.relics.EvilRealm;
+import WarlordEmblem.relics.IceRealm;
+import WarlordEmblem.relics.RuneSword;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -77,24 +81,26 @@ public class DeathKnight extends CustomPlayer {
 
 	public ArrayList<String> getStartingRelics() {
 		ArrayList<String> retVal = new ArrayList<>();
-		retVal.add(BurningBlood.ID);
+		retVal.add(RuneSword.ID);
+		if(TalentCount == 1){retVal.add(BloodRealm.ID);}
+		if(TalentCount == 3){retVal.add(IceRealm.ID);}
+		if(TalentCount == 5){retVal.add(EvilRealm.ID);}
 		return retVal;
 	}
 
 	public ArrayList<String> getStartingDeck() {
 		ArrayList<String> retVal = new ArrayList<>();
-		retVal.add(Strike_Blue.ID);
-		retVal.add(Strike_Blue.ID);
-		retVal.add(Strike_Blue.ID);
-		retVal.add(Strike_Blue.ID);
-		retVal.add(Defend_Blue.ID);
-		retVal.add(Defend_Blue.ID);
-		retVal.add(Defend_Blue.ID);
-		retVal.add(Defend_Blue.ID);
-		retVal.add(Zap.ID);
-		retVal.add(ColdSnap.ID);
-		retVal.add(Darkness.ID);
-		retVal.add(Chaos.ID);
+		retVal.add(RuneStrike.ID);
+		retVal.add(RuneStrike.ID);
+		retVal.add(RuneStrike.ID);
+		retVal.add(RuneStrike.ID);
+		retVal.add(RuneHeavyBlow.ID);
+		retVal.add(DKDefend.ID);
+		retVal.add(DKDefend.ID);
+		retVal.add(DKDefend.ID);
+		retVal.add(DKDefend.ID);
+		retVal.add(RuneDefend.ID);
+
 
 		return retVal;
 	}
@@ -127,7 +133,7 @@ public class DeathKnight extends CustomPlayer {
 
 	@Override
 	public AbstractCard getStartCardForEvent() {
-		return new Zap();
+		return new RuneHeavyBlow();
 	}
 
 	@Override

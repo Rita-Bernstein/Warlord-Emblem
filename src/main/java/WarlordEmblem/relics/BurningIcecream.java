@@ -14,10 +14,10 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class BurningIcecream extends CustomRelic {
    public static final String ID = WarlordEmblem.makeID("BurningIcecream");
-
+   private static Texture texture = new Texture(WarlordEmblem.assetPath("/img/relics/badge_bless.png")) ;
  
    
-   public BurningIcecream() { super(WarlordEmblem.makeID("BurningIcecream"),new Texture(WarlordEmblem.assetPath("/img/relics/badge_bless.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+   public BurningIcecream() { super(ID,texture , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  

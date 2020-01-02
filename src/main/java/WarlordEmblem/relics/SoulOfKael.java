@@ -1,7 +1,7 @@
 package WarlordEmblem.relics;
  
 import WarlordEmblem.WarlordEmblem;
-import WarlordEmblem.cards.ElementInvoke;
+import WarlordEmblem.cards.Kael.ElementInvoke;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
