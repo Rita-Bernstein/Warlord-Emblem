@@ -12,6 +12,7 @@ import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CharacterSelectScreenPatches;
 import WarlordEmblem.relics.*;
 import basemod.ModPanel;
+import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -166,6 +167,7 @@ public class WarlordEmblem implements
         BaseMod.addRelic(new SoulOfKael(), RelicType.SHARED);
 
         BaseMod.addRelicToCustomPool(new SoulOfKael(), CardColorEnum.Kael_LIME);
+
 
         logger.debug("receiveEditRelics finished.");
     }

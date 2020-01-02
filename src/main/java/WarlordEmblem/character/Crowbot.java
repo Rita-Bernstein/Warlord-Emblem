@@ -61,7 +61,7 @@ public class Crowbot extends CustomPlayer {
 		initializeClass(WarlordEmblem.assetPath("/img/character/Crowbot/Crowbot.png"),
 				"images/characters/defect/shoulder2.png",
 				"images/characters/defect/shoulder.png",
-				null,
+				"images/characters/defect/corpse.png",
 				getLoadout(), 0.0F, -5.0F, 240.0F, 244.0F,  new EnergyManager(ENERGY_PER_TURN));
 
 	}
