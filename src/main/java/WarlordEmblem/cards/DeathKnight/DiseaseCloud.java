@@ -30,7 +30,7 @@ public class DiseaseCloud extends AbstractDKCard {
     public static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 
     private final static int MAX = 8;

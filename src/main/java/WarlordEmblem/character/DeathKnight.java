@@ -98,12 +98,24 @@ public class DeathKnight extends CustomPlayer {
 		retVal.add(RuneStrike.ID);
 		retVal.add(RuneStrike.ID);
 		retVal.add(RuneStrike.ID);
-		retVal.add(RuneHeavyBlow.ID);
 		retVal.add(DKDefend.ID);
 		retVal.add(DKDefend.ID);
 		retVal.add(DKDefend.ID);
 		retVal.add(DKDefend.ID);
-		retVal.add(RuneDefend.ID);
+
+		if(TalentCount == 1){
+            retVal.add(RuneHeavyBlow.ID);
+            retVal.add(RuneDefend.ID);
+        }
+		if(TalentCount == 3){
+            retVal.add(FrozenStrike.ID);
+            retVal.add(RuneDefend.ID);
+        }
+		if(TalentCount == 5){
+            retVal.add(DiseaseStrike.ID);
+            retVal.add(RuneDefend.ID);
+        }
+
 
 
 		return retVal;

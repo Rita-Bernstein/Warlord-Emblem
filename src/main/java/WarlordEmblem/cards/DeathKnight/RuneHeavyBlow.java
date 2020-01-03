@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 //符文重击
 public class RuneHeavyBlow extends AbstractDKCard {
-    public static final String ID = WarlordEmblem.makeID("RuneHeavyBlow");
+    public static final String ID = WarlordEmblem.makeID("RuneHeavyStrike");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/rune_heavy_blow.png");
@@ -32,6 +32,7 @@ public class RuneHeavyBlow extends AbstractDKCard {
         this.baseDamage = 8;
         this.baseMagicNumber = 2;
         this.magicNumber = 2;
+        this.tags.add(CardTags.STRIKE);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

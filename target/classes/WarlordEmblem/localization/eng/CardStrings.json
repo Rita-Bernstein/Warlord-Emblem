@@ -244,8 +244,8 @@
     "NAME":  "符文集中",
     "DESCRIPTION":  "消耗1张手牌，获得 !B! 点 格挡 ，符文能量恢复4点。"
   },
-  "WarlordEmblem:RuneHeavyBlow": {
-    "NAME":  "符文重击",
+  "WarlordEmblem:RuneHeavyStrike": {
+    "NAME":  "符文打击",
     "DESCRIPTION":  "造成 !D! 点伤害，获得 !M! 点符文能量。"
   },
   "WarlordEmblem:RuneInspire": {
@@ -275,7 +275,7 @@
     "DESCRIPTION": "消耗X点符文能量（最多消耗4点），每点符文能量造成 !D! 点伤害。"
   },
   "WarlordEmblem:RuneStrike": {
-    "NAME":  "符文打击",
+    "NAME":  "打击",
     "DESCRIPTION": "造成 !D! 点伤害，获得 !M! 点符文能量。"
   },
   "WarlordEmblem:SwordWave": {
