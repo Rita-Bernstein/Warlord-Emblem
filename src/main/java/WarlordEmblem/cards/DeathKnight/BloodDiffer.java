@@ -19,7 +19,7 @@ public class BloodDiffer extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("BloodDiffer");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
-    public static final String IMG = WarlordEmblem.assetPath("/img/cards/DeathKnight/blood_differ.png");
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/blood_differ.png");
     private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;

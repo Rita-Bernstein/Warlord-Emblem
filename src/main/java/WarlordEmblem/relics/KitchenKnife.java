@@ -18,7 +18,7 @@ public class KitchenKnife extends CustomRelic {
 
 
    
-   public KitchenKnife() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/kitchen_knife.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
+   public KitchenKnife() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/kitchen_knife.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
  
  
  

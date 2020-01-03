@@ -66,12 +66,25 @@ public class WarlordEmblem implements
     public static final String MODNAME = "Warlord Emblem";
     public static final String AUTHOR = "Rita";
     public static final String DESCRIPTION = "Porting Warlord Emblem to latest version.";
-    public static String  DK_bgImg = assetPath("/img/character/DeathKnight/dk_blood.png");
+    public static String  DK_bgImg = assetPath("img/character/DeathKnight/dk_blood.png");
 
  public WarlordEmblem(){
      logger.debug("Constructor started.");
      BaseMod.subscribe(this);
      //CaseMod.subscribe(this);
+
+     BaseMod.addColor(CardColorEnum.DeathKnight_LIME,
+             Color.SKY.cpy(),  Color.SKY.cpy(),  Color.SKY.cpy(),  Color.SKY.cpy(),  Color.SKY.cpy(),  Color.SKY.cpy(), Color.SKY.cpy(),
+             assetPath("img/cardui/512/bg_attack_lime.png"),
+             assetPath("img/cardui/512/bg_skill_lime.png"),
+             assetPath("img/cardui/512/bg_power_lime.png"),
+             assetPath("img/cardui/512/card_lime_orb.png"),
+             assetPath("img/cardui/1024/bg_attack_lime.png"),
+             assetPath("img/cardui/1024/bg_skill_lime.png"),
+             assetPath("img/cardui/1024/bg_power_lime.png"),
+             assetPath("img/cardui/1024/card_lime_orb.png"),
+             assetPath("img/cardui/512/card_lime_small_orb.png")
+     );
 
      logger.debug("Constructor finished.");
     }

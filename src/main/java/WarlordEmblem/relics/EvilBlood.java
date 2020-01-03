@@ -19,7 +19,7 @@ public class EvilBlood extends CustomRelic {
 
 
 
-   public EvilBlood() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/evil_blood.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
+   public EvilBlood() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/evil_blood.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
 
 
 

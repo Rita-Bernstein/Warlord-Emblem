@@ -4,6 +4,7 @@ import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.cards.DeathKnight.*;
 import WarlordEmblem.modules.EnergyOrbCustomBlue;
 import WarlordEmblem.patches.AbstractPlayerEnum;
+import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CharacterSelectScreenPatches;
 import WarlordEmblem.relics.BloodRealm;
 import WarlordEmblem.relics.EvilRealm;
@@ -82,9 +83,12 @@ public class DeathKnight extends CustomPlayer {
 	public ArrayList<String> getStartingRelics() {
 		ArrayList<String> retVal = new ArrayList<>();
 		retVal.add(RuneSword.ID);
+
 		if(TalentCount == 1){retVal.add(BloodRealm.ID);}
-		if(TalentCount == 3){retVal.add(IceRealm.ID);}
-		if(TalentCount == 5){retVal.add(EvilRealm.ID);}
+		else if(TalentCount == 3){retVal.add(IceRealm.ID);}
+		else if(TalentCount == 5){retVal.add(EvilRealm.ID);}
+		else {retVal.add(BloodRealm.ID);}
+
 		return retVal;
 	}
 
@@ -104,6 +108,7 @@ public class DeathKnight extends CustomPlayer {
 
 		return retVal;
 	}
+
 
 	public CharSelectInfo getLoadout() {
 		return new CharSelectInfo(
@@ -128,7 +133,7 @@ public class DeathKnight extends CustomPlayer {
 
 	@Override
 	public AbstractCard.CardColor getCardColor() {
-		return AbstractCard.CardColor.BLUE;
+		return CardColorEnum.DeathKnight_LIME;
 	}
 
 	@Override
@@ -195,6 +200,8 @@ public class DeathKnight extends CustomPlayer {
 	public Color getCardRenderColor() {
 		return Color.SKY;
 	}
+
+
 
 
 	@Override

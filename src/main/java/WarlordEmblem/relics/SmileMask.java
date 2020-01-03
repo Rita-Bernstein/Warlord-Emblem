@@ -18,7 +18,7 @@ public class SmileMask extends CustomRelic {
 
  
    
-   public SmileMask() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/smile_mask.png")) , RelicTier.COMMON, CustomRelic.LandingSound.FLAT); }
+   public SmileMask() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/smile_mask.png")) , RelicTier.COMMON, CustomRelic.LandingSound.FLAT); }
  
  
  

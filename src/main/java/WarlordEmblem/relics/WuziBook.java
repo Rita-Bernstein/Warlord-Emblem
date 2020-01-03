@@ -22,7 +22,7 @@ public class WuziBook extends CustomRelic {
     private boolean        firstTurn = false;
 
 
-   public WuziBook() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/wuzi_book.png")) , RelicTier.COMMON, CustomRelic.LandingSound.FLAT); }
+   public WuziBook() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/wuzi_book.png")) , RelicTier.COMMON, CustomRelic.LandingSound.FLAT); }
  
  
  

@@ -22,7 +22,7 @@ public class BrokenWatch extends CustomRelic {
 
  
    
-   public BrokenWatch() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/broken_watch.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
+   public BrokenWatch() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/broken_watch.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
 
 
     public void atTurnStart() { this.counter = 0; }

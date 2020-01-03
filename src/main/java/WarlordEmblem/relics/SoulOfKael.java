@@ -19,7 +19,7 @@ public class SoulOfKael extends CustomRelic {
 
 
    
-   public SoulOfKael() { super(WarlordEmblem.makeID("SoulOfKael"),new Texture(WarlordEmblem.assetPath("/img/relics/soul_of_kral.png")) , RelicTier.STARTER, CustomRelic.LandingSound.FLAT); }
+   public SoulOfKael() { super(WarlordEmblem.makeID("SoulOfKael"),new Texture(WarlordEmblem.assetPath("img/relics/soul_of_kral.png")) , RelicTier.STARTER, CustomRelic.LandingSound.FLAT); }
  
  
  

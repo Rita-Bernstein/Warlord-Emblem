@@ -19,7 +19,7 @@ public class BadgeProtect extends CustomRelic {
 
     public boolean trigger = false;
    
-   public BadgeProtect() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/badge_protect.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+   public BadgeProtect() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/badge_protect.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  

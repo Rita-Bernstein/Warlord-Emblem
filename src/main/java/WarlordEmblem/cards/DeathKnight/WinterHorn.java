@@ -20,7 +20,7 @@ public class WinterHorn extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("WinterHorn");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
-    public static final String IMG = WarlordEmblem.assetPath("/img/cards/DeathKnight/winter_horn.png");
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/winter_horn.png");
     private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.POWER;

@@ -2,11 +2,13 @@ package WarlordEmblem.relics;
 
 import WarlordEmblem.WarlordEmblem;
 import basemod.abstracts.CustomRelic;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class RuneSword extends CustomRelic {
 
     public static final String ID = WarlordEmblem.makeID("RuneSword");
+
     public final static int MAX = 100;
     private final int INITIAL_MAX = 6;
     private final int INITIAL_REGEN = 2;
@@ -14,7 +16,7 @@ public class RuneSword extends CustomRelic {
     private int regen = 0;
 
     public RuneSword() {
-        super(ID, WarlordEmblem.assetPath("/img/relics/rune_sword.png"), AbstractRelic.RelicTier.STARTER, AbstractRelic.LandingSound.HEAVY);
+        super(ID,new Texture( WarlordEmblem.assetPath("img/relics/rune_sword.png")), AbstractRelic.RelicTier.STARTER, AbstractRelic.LandingSound.HEAVY);
     }
 
     public String getUpdatedDescription() {

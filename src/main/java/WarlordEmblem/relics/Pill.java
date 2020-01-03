@@ -17,7 +17,7 @@ public class Pill extends CustomRelic {
 
  
    
-   public Pill() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/pill.png")) , RelicTier.COMMON, CustomRelic.LandingSound.FLAT); }
+   public Pill() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/pill.png")) , RelicTier.COMMON, CustomRelic.LandingSound.FLAT); }
  
  
  

@@ -17,7 +17,7 @@ public class RuneStrike extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("RuneStrike");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
-    public static final String IMG = WarlordEmblem.assetPath("/img/cards/DeathKnight/rune_strike.png");
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/rune_strike.png");
     private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;

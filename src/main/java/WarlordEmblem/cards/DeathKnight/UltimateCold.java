@@ -16,7 +16,7 @@ public class UltimateCold extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("UltimateCold");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
-    public static final String IMG = WarlordEmblem.assetPath("/img/cards/DeathKnight/ultimate_cold.png");
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/ultimate_cold.png");
     private static final int COST = 2;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;

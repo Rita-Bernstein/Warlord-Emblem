@@ -19,7 +19,7 @@ public class VoidPower extends CustomRelic {
 
  
    
-   public VoidPower() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/void_power.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+   public VoidPower() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/void_power.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  

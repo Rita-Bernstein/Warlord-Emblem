@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class BadgeBless extends CustomRelic {
    public static final String ID = WarlordEmblem.makeID("BadgeBless");
-    private static Texture texture = new Texture(WarlordEmblem.assetPath("/img/relics/badge_bless.png")) ;
+    private static Texture texture = new Texture(WarlordEmblem.assetPath("img/relics/badge_bless.png")) ;
 
 
    

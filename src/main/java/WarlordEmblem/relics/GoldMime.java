@@ -19,7 +19,7 @@ public class GoldMime extends CustomRelic {
 
 
    
-   public GoldMime() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/goldmime.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
+   public GoldMime() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/goldmime.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
  
  
  

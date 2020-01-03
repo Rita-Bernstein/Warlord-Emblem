@@ -23,7 +23,7 @@ public class BadgeMouse extends CustomRelic {
     private int EnergyAdd = 0;
 
 
-   public BadgeMouse() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/badge_mouse.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+   public BadgeMouse() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/badge_mouse.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  

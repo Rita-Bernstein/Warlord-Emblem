@@ -17,7 +17,7 @@ public class RuneHeavyBlow extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("RuneHeavyBlow");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
-    public static final String IMG = WarlordEmblem.assetPath("/img/cards/DeathKnight/rune_heavy_blow.png");
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/rune_heavy_blow.png");
     private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;

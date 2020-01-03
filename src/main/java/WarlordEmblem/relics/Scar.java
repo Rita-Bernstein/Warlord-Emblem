@@ -20,7 +20,7 @@ public class Scar extends CustomRelic {
 
  
    
-   public Scar() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/scar.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+   public Scar() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/scar.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  

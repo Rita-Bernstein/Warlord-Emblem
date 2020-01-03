@@ -2,6 +2,10 @@ package WarlordEmblem.patches;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.character.DeathKnight;
+import WarlordEmblem.relics.BloodRealm;
+import WarlordEmblem.relics.EvilRealm;
+import WarlordEmblem.relics.IceRealm;
+import WarlordEmblem.relics.RuneSword;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -15,12 +19,18 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.controller.CInputActionSet;
 import com.megacrit.cardcrawl.helpers.controller.CInputHelper;
 import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.screens.charSelect.CharacterOption;
 import com.megacrit.cardcrawl.screens.charSelect.CharacterSelectScreen;
+import java.lang.reflect.Field;
+
+
 
 public class CharacterSelectScreenPatches
 {
@@ -32,6 +42,11 @@ public class CharacterSelectScreenPatches
     public static Hitbox TalentLeft;
     private static float Talent_RIGHT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
     private static float Talent_LEFT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
+
+    public static AbstractRelic r;
+    public static Field charInfoField;
+
+
 
     @SpirePatch(clz = CharacterSelectScreen.class, method = "initialize")
     public static class CharacterSelectScreenPatch_Initialize
@@ -135,7 +150,59 @@ public class CharacterSelectScreenPatches
         }
     }
 
+    @SpirePatch(clz = CharacterOption.class, method = "renderRelics")
+    public static class CharacterSelectScreenCharacterOptionPatch_Render
+    {
+        @SpirePostfixPatch
+        public static void Postfix(CharacterOption obj, SpriteBatch sb)
+        {
+ /*         if (obj.name == DeathKnight.charStrings.NAMES[1] && obj.selected) {
+                if (charInfoField == null) {
+                    try {
+                        charInfoField = CharacterOption.class.getDeclaredField("charInfo");
+                        charInfoField.setAccessible(true);
+                        if(((CharSelectInfo)charInfoField.get(obj)).relics.size() != 1){
+                            if (TalentCount == 1){
+                                ((CharSelectInfo)charInfoField.get(obj)).relics.get(1).equals(BloodRealm.ID);
+                            }
+                            if (TalentCount == 3){
+                                ((CharSelectInfo)charInfoField.get(obj)).relics.get(1).equals(IceRealm.ID);
+                            }
+                            if (TalentCount == 5){
+                                ((CharSelectInfo)charInfoField.get(obj)).relics.get(1).equals(EvilRealm.ID);
+                            }
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+*/
+            // Render your buttons/images by passing SpriteBatch
+            if (obj.name == DeathKnight.charStrings.NAMES[1] && obj.selected) {
+                if (TalentCount == 1) {
+                    RelicLibrary.resetForReload();
 
+                    r = RelicLibrary.getRelic(RuneSword.ID);
+                    r = RelicLibrary.getRelic(BloodRealm.ID);
+                }else if (TalentCount == 3){
+                    RelicLibrary.resetForReload();
+                    r = RelicLibrary.getRelic(RuneSword.ID);
+                    r = RelicLibrary.getRelic(IceRealm.ID);
+                }else if(TalentCount == 5){
+                    RelicLibrary.resetForReload();
+                    r = RelicLibrary.getRelic(RuneSword.ID);
+                    r = RelicLibrary.getRelic(EvilRealm.ID);
+                }else {
+                    RelicLibrary.resetForReload();
+                    r = RelicLibrary.getRelic(RuneSword.ID);
+                }
+
+
+
+            }
+        }
+    }
 
     public static Texture updateBgImg(){
         switch (TalentCount ){

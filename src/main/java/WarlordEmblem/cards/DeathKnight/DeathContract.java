@@ -17,7 +17,7 @@ public class DeathContract extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("DeathContract");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
-    public static final String IMG = WarlordEmblem.assetPath("/img/cards/DeathKnight/death_contract.png");
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/death_contract.png");
     private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;

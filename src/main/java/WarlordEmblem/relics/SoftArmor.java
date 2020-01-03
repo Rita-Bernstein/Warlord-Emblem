@@ -15,7 +15,7 @@ public class SoftArmor extends CustomRelic {
 
  
    
-   public SoftArmor() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/soft_armor.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
+   public SoftArmor() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/soft_armor.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
  
  
  

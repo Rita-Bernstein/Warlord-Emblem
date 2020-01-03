@@ -18,7 +18,7 @@ public class HeavyShield extends CustomRelic {
 
  
    
-   public HeavyShield() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/heavy_shield.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
+   public HeavyShield() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/heavy_shield.png")) , RelicTier.BOSS, CustomRelic.LandingSound.FLAT); }
  
  
  

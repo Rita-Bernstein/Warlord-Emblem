@@ -28,7 +28,7 @@ public class BloodStrike extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("BloodStrike");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
-    public static final String IMG = WarlordEmblem.assetPath("/img/cards/DeathKnight/blood_strike.png");
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/blood_strike.png");
     private static final int COST = 2;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;

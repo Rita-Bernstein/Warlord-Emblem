@@ -17,7 +17,7 @@ public class BrokenMantle extends CustomRelic {
 
  
    
-   public BrokenMantle() { super(ID,new Texture(WarlordEmblem.assetPath("/img/relics/broken_mantle.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
+   public BrokenMantle() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/broken_mantle.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
  
  
  

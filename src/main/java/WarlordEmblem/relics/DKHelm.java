@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class DKHelm extends CustomRelic {
 
     public static final String ID = WarlordEmblem.makeID("DKHelm");
-    private static Texture texture = new Texture(WarlordEmblem.assetPath("/img/relics/dk_helm.png")) ;
+    private static Texture texture = new Texture(WarlordEmblem.assetPath("img/relics/dk_helm.png")) ;
 
     public DKHelm() {
         super(ID, texture, AbstractRelic.RelicTier.BOSS, AbstractRelic.LandingSound.HEAVY);
