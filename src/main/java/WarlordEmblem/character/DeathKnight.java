@@ -116,7 +116,7 @@ public class DeathKnight extends CustomPlayer {
 				charStrings.TEXT[0],
 				START_HP,
 				START_HP,
-				3,
+				0,
 				START_GOLD,
 				5,
 				this,

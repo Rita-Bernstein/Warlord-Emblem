@@ -9,9 +9,8 @@ import WarlordEmblem.relics.RuneSword;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.audio.TempMusic;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -24,10 +23,16 @@ import com.megacrit.cardcrawl.helpers.controller.CInputActionSet;
 import com.megacrit.cardcrawl.helpers.controller.CInputHelper;
 import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.screens.charSelect.CharacterOption;
 import com.megacrit.cardcrawl.screens.charSelect.CharacterSelectScreen;
+import com.megacrit.cardcrawl.vfx.FlashPotionEffect;
+import javassist.CtBehavior;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.lang.reflect.Field;
 
 
@@ -43,11 +48,11 @@ public class CharacterSelectScreenPatches
     private static float Talent_RIGHT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
     private static float Talent_LEFT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
 
-    public static AbstractRelic r;
+
     public static Field charInfoField;
 
 
-
+    public static final Logger logger = LogManager.getLogger(WarlordEmblem.class.getSimpleName());
     @SpirePatch(clz = CharacterSelectScreen.class, method = "initialize")
     public static class CharacterSelectScreenPatch_Initialize
     {
@@ -121,6 +126,8 @@ public class CharacterSelectScreenPatches
                         CardCrawlGame.sound.playV("UI_HOVER", 0.75f);
                     }
 //==================================
+                    if (!(TalentCount == 1 ||TalentCount == 3 ||TalentCount == 5 ))
+                    {TalentCount = 1;}
 
 
                     if (TalentRight.clicked || CInputActionSet.pageRightViewExhaust.isJustPressed()) {
@@ -150,13 +157,13 @@ public class CharacterSelectScreenPatches
         }
     }
 
-    @SpirePatch(clz = CharacterOption.class, method = "renderRelics")
+  /*   @SpirePatch(clz = CharacterOption.class, method = "renderRelics")
     public static class CharacterSelectScreenCharacterOptionPatch_Render
     {
         @SpirePostfixPatch
         public static void Postfix(CharacterOption obj, SpriteBatch sb)
         {
- /*         if (obj.name == DeathKnight.charStrings.NAMES[1] && obj.selected) {
+         if (obj.name == DeathKnight.charStrings.NAMES[1] && obj.selected) {
                 if (charInfoField == null) {
                     try {
                         charInfoField = CharacterOption.class.getDeclaredField("charInfo");
@@ -179,7 +186,7 @@ public class CharacterSelectScreenPatches
             }
 */
             // Render your buttons/images by passing SpriteBatch
-            if (obj.name == DeathKnight.charStrings.NAMES[1] && obj.selected) {
+ /*           if (obj.name == DeathKnight.charStrings.NAMES[1] && obj.selected) {
                 if (TalentCount == 1) {
                     RelicLibrary.resetForReload();
 
@@ -203,6 +210,49 @@ public class CharacterSelectScreenPatches
             }
         }
     }
+*/
+
+ /*   @SpirePatch(clz = CharacterOption.class, method = "renderRelics")
+    public static class CharacterSelectScreenCharacterOptionPatch_Relic
+    {
+        @SpireInsertPatch{locator = jdk.internal.org.xml.sax.Locator.class}
+        public static void Insert(FlashPotionEffect effect, AbstractPower power) throws NoSuchFieldException,illegalAccessException{
+
+}
+    }
+
+    private static class Locator extends SpireInsertPatch
+    {
+        public  int[] Locate(CtBehavior ctMethodToPatch) throws  Exception
+        {
+            Matcher finalMatcher = new Matcher.FieldAccessMatcher()
+            }
+        }
+    }*/
+
+
+
+ @SpirePatch(clz = CharacterOption.class, method = "renderRelics" )
+ public  static  class CharacterSelectScreenCharacterOptionPatch_Relic{
+     @SpireInsertPatch(rloc = 67,localvars = {"r","i"})
+     public  static SpireReturn Insert(CharacterOption obj, @ByRef (type = "relics.AbstractRelic")Object[] _r,int _i){
+
+         if (obj.name.equals(DeathKnight.charStrings.NAMES[1])  && obj.selected && _i == 1) {
+            if (TalentCount == 1){
+              _r[0] = new BloodRealm();
+          }
+         if (TalentCount == 3){
+             _r[0] = new IceRealm();
+         }
+         if (TalentCount == 5){
+             _r[0] = new EvilRealm();
+          }
+            }
+         return SpireReturn.Continue();
+     }
+ }
+
+
 
     public static Texture updateBgImg(){
         switch (TalentCount ){

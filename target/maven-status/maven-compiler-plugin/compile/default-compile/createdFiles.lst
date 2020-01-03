@@ -24,7 +24,6 @@ WarlordEmblem\cards\DeathKnight\HeartStrike.class
 WarlordEmblem\cards\DeathKnight\FrozenDeath.class
 WarlordEmblem\relics\BadgeWrath.class
 WarlordEmblem\cards\DeathKnight\Withstand.class
-WarlordEmblem\patches\CharacterSelectScreenPatches$CharacterSelectScreenCharacterOptionPatch_Render.class
 WarlordEmblem\relics\BurningIcecream.class
 WarlordEmblem\cards\DeathKnight\LichkingWraith.class
 WarlordEmblem\cards\DeathKnight\EvilSee.class
@@ -89,6 +88,7 @@ WarlordEmblem\cards\DeathKnight\DKDefend.class
 WarlordEmblem\cards\DeathKnight\LichBody.class
 WarlordEmblem\cards\DeathKnight\RuneRecast.class
 WarlordEmblem\relics\Pill.class
+WarlordEmblem\patches\CharacterSelectScreenPatches$CharacterSelectScreenCharacterOptionPatch_Relic.class
 WarlordEmblem\cards\DeathKnight\EvilWorm.class
 WarlordEmblem\cards\Kael\ChaosMeteor.class
 WarlordEmblem\modules\EnergyOrbCustomBlue.class
