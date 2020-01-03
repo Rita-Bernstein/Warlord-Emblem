@@ -1,0 +1,79 @@
+package WarlordEmblem.cards.mantle;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+
+import WarlordEmblem.WarlordEmblem;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
+public class MantleCardKazakus extends AbstractMantleCard {
+    public static final String ID = WarlordEmblem.makeID("MantleCardKazakus");
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = cardStrings.NAME;
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/Mantle/mantle_card_kazakus.png");
+    private static final int COST = 0;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final CardType TYPE = CardType.SKILL;
+    private static final CardColor COLOR = CardColor.COLORLESS;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;
+
+
+    public MantleCardKazakus() {
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
+    }
+
+    @Override
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            list.add(i);
+        }
+        Collections.shuffle(list);
+        int v1 = list.remove(0);
+        Collections.shuffle(list);
+        int v2 = list.remove(0);
+        Collections.shuffle(list);
+        int v3 = list.remove(0);
+        String s1 = MantleCardKazakusPotion.descList.get(v1);
+        String s2 = MantleCardKazakusPotion.descList.get(v2);
+        String s3 = MantleCardKazakusPotion.descList.get(v3);
+        String desc = s1 + EXTENDED_DESCRIPTION[1] + s2 + EXTENDED_DESCRIPTION[1]  + s3 + EXTENDED_DESCRIPTION[2] ;
+        AbstractDungeon.actionManager
+                .addToBottom(new MakeTempCardInHandAction(new MantleCardKazakusPotion(v1, v2, v3, desc), false));
+    }
+
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+        if (!canUse)
+            return false;
+        CardGroup group = p.drawPile;
+        HashSet<String> nameSet = new HashSet<String>();
+        ArrayList<AbstractCard> cardList = group.group;
+        for (AbstractCard card : cardList) {
+            String name = card.name;
+            if (nameSet.contains(name)) {
+                this.cantUseMessage = EXTENDED_DESCRIPTION[0];
+                return false;
+            }
+            nameSet.add(name);
+        }
+        return true;
+    }
+
+    public AbstractCard makeCopy() {
+        return new MantleCardKazakus();
+    }
+
+}

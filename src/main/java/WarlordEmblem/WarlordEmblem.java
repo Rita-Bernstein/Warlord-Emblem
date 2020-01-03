@@ -2,6 +2,8 @@ package WarlordEmblem;
 
 
 import WarlordEmblem.cards.Kael.*;
+import WarlordEmblem.cards.mantle.*;
+import WarlordEmblem.cards.quest.*;
 import WarlordEmblem.character.Crowbot;
 import WarlordEmblem.character.DeathKnight;
 import WarlordEmblem.character.Kael;
@@ -11,6 +13,8 @@ import WarlordEmblem.patches.AbstractPlayerEnum;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CharacterSelectScreenPatches;
 import WarlordEmblem.relics.*;
+import WarlordEmblem.relics.mantle.*;
+import WarlordEmblem.relics.quest.*;
 import basemod.ModPanel;
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
@@ -41,6 +45,7 @@ import java.util.List;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import WarlordEmblem.character.Kael.*;
 import WarlordEmblem.cards.DeathKnight.*;
+import org.dakiler.slayhelper.relics.mantle.MantleKazakus;
 
 
 @SpireInitializer
@@ -204,6 +209,38 @@ public class WarlordEmblem implements
         cards.add(new WinterHorn());
         cards.add(new Withstand());
 
+        cards.add(new MantleCardBaku());
+        cards.add(new MantleCardCaireseth());
+        cards.add(new MantleCardJean());
+        cards.add(new MantleCardKazakus());
+        cards.add(new MantleCardLazz());
+        cards.add(new MantleCardLiam());
+        cards.add(new MantleCardMarkzar());
+        cards.add(new MantleCardReynold());
+        cards.add(new MantleCardWalana());
+
+        cards.add(new QuestCardDK());
+        cards.add(new QuestCardDruid());
+        cards.add(new QuestCardHunter());
+        cards.add(new QuestCardMage());
+        cards.add(new QuestCardPaladin());
+        cards.add(new QuestCardPriest());
+        cards.add(new QuestCardRogue());
+        cards.add(new QuestCardShaman());
+        cards.add(new QuestCardWarlock());
+        cards.add(new QuestCardWarrior());
+
+        cards.add(new QuestCardDKReward());
+        cards.add(new QuestCardDruidReward());
+        cards.add(new QuestCardHunterReward());
+        cards.add(new QuestCardMageReward());
+        cards.add(new QuestCardPaladinReward());
+        cards.add(new QuestCardPriestReward());
+        cards.add(new QuestCardRogueReward());
+        cards.add(new QuestCardShamanReward());
+        cards.add(new QuestCardWarlockReward());
+        cards.add(new QuestCardWarriorReward());
+
 
 
 
@@ -252,6 +289,27 @@ public class WarlordEmblem implements
         BaseMod.addRelicToCustomPool(new IceRealm(), CardColorEnum.DeathKnight_LIME);
         BaseMod.addRelicToCustomPool(new EvilRealm(), CardColorEnum.DeathKnight_LIME);
 
+        BaseMod.addRelic(new MantleBaku(), RelicType.SHARED);
+        BaseMod.addRelic(new MantleCaireseth(), RelicType.SHARED);
+        BaseMod.addRelic(new MantleJean(), RelicType.SHARED);
+        BaseMod.addRelic(new MantleKazakus(), RelicType.SHARED);
+
+        BaseMod.addRelic(new MantleLazz(), RelicType.SHARED);
+        BaseMod.addRelic(new MantleLiam(), RelicType.SHARED);
+        BaseMod.addRelic(new MantleMarkzar(), RelicType.SHARED);
+        BaseMod.addRelic(new MantleReynold(), RelicType.SHARED);
+        BaseMod.addRelic(new MantleWalana(), RelicType.SHARED);
+
+        BaseMod.addRelic(new QuestDK(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestDruid(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestHunter(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestMage(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestPaladin(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestPriest(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestRogue(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestShaman(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestWarlock(), RelicType.SHARED);
+        BaseMod.addRelic(new QuestWarrior(), RelicType.SHARED);
 
         logger.debug("receiveEditRelics finished.");
     }

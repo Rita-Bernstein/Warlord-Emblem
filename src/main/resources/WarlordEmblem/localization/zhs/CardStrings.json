@@ -5,10 +5,10 @@
     "EXTENDED_DESCRIPTION": ["需要三个元素球","回合冷却"," NL (冰冰冰：急速冷却"," NL (冰冰雷：幽冥漫步"," NL (雷雷火：灵动迅捷"," NL (火火火：阳炎冲击"," NL (雷雷雷：电磁脉冲"," NL (火火雷：混沌陨石"," NL (冰冰火：寒冰之墙"," NL (冰雷火：超震声波"," NL (雷雷冰：强袭飓风"," NL (火火冰：熔炉精灵","）"]
   },
   "WarlordEmblem:ChaosMeteor": {
-  "NAME": "混沌陨石",
-  "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 易伤 。  NL warlord_emblem:冷却 4。 NL  虚无  消耗 ",
-  "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
-},
+    "NAME": "混沌陨石",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 易伤 。  NL warlord_emblem:冷却 4。 NL  虚无  消耗 ",
+    "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
+  },
   "WarlordEmblem:KaelColdSnap": {
     "NAME": "急速冷却",
     "DESCRIPTION": "降低目标2点 力量 ，给予目标1层 虚弱 ，3层 warlord_emblem:急速冷冻 。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
@@ -312,5 +312,135 @@
   "WarlordEmblem:Withstand": {
     "NAME":  "招架",
     "DESCRIPTION": "获得 !B! 点 格挡 ，获得1点 敏捷 。 消耗"
+  },
+
+
+  "WarlordEmblem:MantleCardBaku": {
+    "NAME":  "噬月者巴库",
+    "DESCRIPTION": "在这场战斗中，升级所有消耗奇数能量的卡牌。 NL 消耗"
+  },
+  "WarlordEmblem:MantleCardCaireseth": {
+    "NAME":  "凯雷塞斯王子",
+    "DESCRIPTION":  "如果你的抽牌堆没有消耗2点能量的牌， NL 永久升级1张随机卡牌。 NL 消耗",
+    "EXTENDED_DESCRIPTION":["抽牌堆有消耗为2的卡牌"]
+  },
+  "WarlordEmblem:MantleCardJean": {
+    "NAME":  "吉恩.格雷迈恩",
+    "DESCRIPTION":  "在这场战斗中，消耗2点能量的牌耗能降为1点。 NL 消耗"
+  },
+  "WarlordEmblem:MantleCardKazakus": {
+    "NAME":  "卡扎库斯",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的卡牌， NL 随机制造一张卡扎库斯的药水。 NL 消耗",
+    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的卡牌","。 NL ","。 NL 消耗"]
+  },
+  "WarlordEmblem:MantleCardKazakusPotion": {
+    "NAME":  "卡扎库斯药水",
+    "DESCRIPTION":  "",
+    "EXTENDED_DESCRIPTION": ["对所有敌人造成 !D! 点伤害","获得 !B! 点格挡","给予所有敌人6层 中毒 ","获得2点能量","获得3点力量","获得3点敏捷","恢复10点HP","抽4张牌","给予所有敌人2层 易伤 ","给予所有敌人2层 虚弱 "]
+  },
+  "WarlordEmblem:MantleCardLazz": {
+    "NAME":  "缚链者拉兹",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的卡牌， NL 这场战斗中，每回合额外获得2点能量。 NL 消耗",
+    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的卡牌"]
+  },
+  "WarlordEmblem:MantleCardLiam": {
+    "NAME":  "利亚姆王子",
+    "DESCRIPTION":  "将抽牌堆消耗1点能量的卡牌变为随机稀有卡。 NL 消耗"
+  },
+  "WarlordEmblem:MantleCardMarkzar": {
+    "NAME":  "利亚姆王子",
+    "DESCRIPTION":  "将5张随机稀有牌加入抽牌堆， NL 它们消耗的能量变为1。 NL 消耗"
+  },
+  "WarlordEmblem:MantleCardReynold": {
+    "NAME":  "雷诺.杰克逊",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的卡牌， NL 恢复到战斗开始时的HP， NL 最多恢复20点HP。 NL 消耗",
+    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的卡牌"]
+  },
+  "WarlordEmblem:MantleCardWalana": {
+    "NAME":  "瓦拉纳王子",
+    "DESCRIPTION":  "如果你的抽牌堆没有消耗0点能量的卡牌， NL 在这场战斗中，你获得30%的吸血。 NL 消耗",
+    "EXTENDED_DESCRIPTION":["抽牌堆有消耗为0的卡牌"]
+  },
+
+
+  "WarlordEmblem:QuestCardDK": {
+    "NAME":  "黑暗之力",
+    "DESCRIPTION":  "任务：抽到5张诅咒牌或状态牌， NL 奖励： NL 霜之哀伤。 虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardDKReward": {
+    "NAME":  "霜之哀伤",
+    "DESCRIPTION": "每抽到1张诅咒牌或状态牌，获得2点 力量 ，8点 格挡 ，抽1张牌。消耗"
+  },
+  "WarlordEmblem:QuestCardDruid": {
+    "NAME":  "丛林巨兽",
+    "DESCRIPTION": "任务：使用5张能量大于等于2的牌， NL 奖励： NL 班纳布斯。 虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardDruidReward": {
+    "NAME":  "班纳布斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 ，你的所有攻击牌消耗的能量变为0。 消耗"
+  },
+  "WarlordEmblem:QuestCardHunter": {
+    "NAME":  "湿地女王",
+    "DESCRIPTION": "任务：使用7张0点能量的牌， NL 奖励： NL 卡纳莎女王。 虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardHunterReward": {
+    "NAME":  "卡纳莎女王",
+    "DESCRIPTION": "造成 !D! 点伤害，将6张亮剑放入你的抽牌堆。 消耗 "
+  },
+  "WarlordEmblem:QuestCardMage": {
+    "NAME":  "打开时空之门",
+    "DESCRIPTION": "任务：使用6张无色牌， NL 奖励： NL 时空扭曲。 虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardMageReward": {
+    "NAME":  "时空扭曲",
+    "DESCRIPTION": "获得4点能量，抽5张牌。 NL 消耗 "
+  },
+  "WarlordEmblem:QuestCardPaladin": {
+    "NAME":  "终极进化",
+    "DESCRIPTION": "任务：获得6个状态， NL 奖励： NL 嘉沃顿。 虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardPaladinReward": {
+    "NAME":  "嘉沃顿",
+    "DESCRIPTION": "造成 !D! 点伤害， 获得 !B! 点 格挡 ，恢复2点HP， NL 给予目标 !M! 层 中毒  虚弱  易伤 。"
+  },
+  "WarlordEmblem:QuestCardPriest": {
+    "NAME":  "唤醒造物者",
+    "DESCRIPTION": "任务：消耗7张牌， NL 奖励： NL 希望守护者阿玛拉。 虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardPriestReward": {
+    "NAME":  "希望守护者阿玛拉",
+    "DESCRIPTION": "获得 !B! 点 格挡 ， NL 恢复到战斗开始时的HP， NL 最多恢复20点HP。 NL 消耗"
+  },
+  "WarlordEmblem:QuestCardRogue": {
+    "NAME":  "探索地下洞穴",
+    "DESCRIPTION":  "任务：使用5张相同的牌， NL 奖励： NL 水晶核心。 虚无  消耗  "
+  },
+  "WarlordEmblem:QuestCardRogueReward": {
+    "NAME":  "水晶核心",
+    "DESCRIPTION":  "你的卡牌造成的伤害锁定为12点。 NL 消耗"
+  },
+  "WarlordEmblem:QuestCardShaman": {
+    "NAME":  "鱼人总动员",
+    "DESCRIPTION":  "任务：使用10张技能牌， NL 奖励： NL 老鲨嘴。 虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardShamanReward": {
+    "NAME":  "老鲨嘴",
+    "DESCRIPTION":  "造成 !D! 点伤害，将4张匕首放入你的手牌。"
+  },
+  "WarlordEmblem:QuestCardWarlock": {
+    "NAME":  "拉卡利献祭",
+    "DESCRIPTION":  "任务：弃掉6张牌， NL 奖励： NL 虚空传送门。  虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardWarlockReward": {
+    "NAME":  "虚空传送门",
+    "DESCRIPTION":  "每回合开始时对所有敌人造成6点伤害，获得4点格挡。 NL 消耗"
+  },
+  "WarlordEmblem:QuestCardWarrior": {
+    "NAME":  "火羽之心",
+    "DESCRIPTION":  "任务：获得7次格挡， NL 奖励： NL 萨弗拉斯。  虚无  消耗 "
+  },
+  "WarlordEmblem:QuestCardWarriorReward": {
+    "NAME":  "萨弗拉斯",
+    "DESCRIPTION":  "回合结束时，对1个随机敌人造成16点伤害。 NL 消耗"
   }
 }

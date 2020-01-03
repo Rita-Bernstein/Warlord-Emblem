@@ -12,5 +12,11 @@
     "接下来受到的",
     "次攻击伤害会给予 #y易伤  #y虚弱 。"
   ]
+},
+  "WarlordEmblem:CrystalCenterPower": {
+  "NAME": "水晶核心",
+  "DESCRIPTIONS": [
+    "你的卡牌造成的伤害锁定为12点"
+  ]
 }
 }

@@ -32,7 +32,7 @@ public class RuneFocus extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
-        AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, 1, false));
+        AbstractDungeon.actionManager.addToBottom(new ExhaustAction(1, false, false, false));
         plusRune(4);
     }
 
