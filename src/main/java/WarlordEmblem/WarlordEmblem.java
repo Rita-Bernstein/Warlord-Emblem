@@ -109,7 +109,7 @@ public class WarlordEmblem implements
 
         logger.info(DeathKnight.charStrings.NAMES[1]);
         BaseMod.addCharacter(new Kael(Kael.charStrings.NAMES[1],AbstractPlayerEnum.Kael),"images/ui/charSelect/defectButton.png",assetPath("/img/character/Kael/portraitKral.jpg"),AbstractPlayerEnum.Kael);
-        BaseMod.addCharacter(new Crowbot(Crowbot.charStrings.NAMES[1],AbstractPlayerEnum.Crowbot),assetPath("/img/character/Crowbot/crowbotButton.png"),null,AbstractPlayerEnum.Crowbot);
+        //BaseMod.addCharacter(new Crowbot(Crowbot.charStrings.NAMES[1],AbstractPlayerEnum.Crowbot),assetPath("/img/character/Crowbot/crowbotButton.png"),null,AbstractPlayerEnum.Crowbot);
         BaseMod.addCharacter(new DeathKnight(DeathKnight.charStrings.NAMES[1],AbstractPlayerEnum.DeathKnight),assetPath("/img/character/DeathKnight/dkButton.png"),DK_bgImg,AbstractPlayerEnum.DeathKnight);
 
     }
