@@ -45,7 +45,6 @@ public class SmileMask extends CustomRelic {
                      AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player,1));
                  }
                  AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player,1));
-
                  }
            }
 

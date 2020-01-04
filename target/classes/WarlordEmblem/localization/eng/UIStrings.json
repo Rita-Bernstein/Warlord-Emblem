@@ -1,17 +1,24 @@
 {
   "WarlordEmblem:DK_Talent": {
     "TEXT": [
-      "天赋：",
-      "鲜血",
+      "Talent:",
+      "Blood Realm",
       "",
-      "冰霜",
+      "Ice Realm",
       "",
-      "邪恶"
+      "Evil Realm"
     ]
   },
   "WarlordEmblem:UtilizeAction": {
     "TEXT": [
-      "选择丢弃一张手牌并获得其耗能等量的能量"
+      "Discard a card and gain energy equals to its cost"
+    ]
+  },
+  "WarlordEmblem:RelicFilter": {
+    "TEXT": [
+      "Add addtional relics(restart game)",
+      "Add ring relic(restart game)",
+      "Add mantle relic(restart game)"
     ]
   }
 }

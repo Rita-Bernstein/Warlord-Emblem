@@ -1,446 +1,446 @@
 {
   "WarlordEmblem:ElementInvoke": {
-    "NAME": "元素祈唤",
-    "DESCRIPTION": "融合左边三个元素，形成全新的技能。 NL  虚无  消耗 ",
+    "NAME": "Element Invoke",
+    "DESCRIPTION": "根据最左边三个充能球，加入一张牌。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["需要三个元素球","回合冷却"," NL (冰冰冰：急速冷却"," NL (冰冰雷：幽冥漫步"," NL (雷雷火：灵动迅捷"," NL (火火火：阳炎冲击"," NL (雷雷雷：电磁脉冲"," NL (火火雷：混沌陨石"," NL (冰冰火：寒冰之墙"," NL (冰雷火：超震声波"," NL (雷雷冰：强袭飓风"," NL (火火冰：熔炉精灵","）"]
   },
   "WarlordEmblem:ChaosMeteor": {
-    "NAME": "混沌陨石",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 易伤 。  NL warlord_emblem:冷却 4。 NL  虚无  消耗 ",
+    "NAME": "Chaos Meteor",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 易伤 。  NL warlord_emblem:冷却 4。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:KaelColdSnap": {
-    "NAME": "急速冷却",
-    "DESCRIPTION": "降低目标2点 力量 ，给予目标1层 虚弱 ，3层 warlord_emblem:急速冷冻 。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
+    "NAME": "Cold Snap",
+    "DESCRIPTION": "降低目标2点 力量 ，给予目标1层 虚弱 ，3层 warlord_emblem:急速冷冻 。 NL warlord_emblem:冷却 2。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:EMP": {
-    "NAME": "电磁脉冲",
-    "DESCRIPTION":"吸收所有敌人的 格挡 ，获得等量的 格挡 。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
+    "NAME": "EMP",
+    "DESCRIPTION":"吸收所有敌人的 格挡 ，获得等量的 格挡 。 NL warlord_emblem:冷却 2。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:IceWall": {
-    "NAME": "寒冰之墙",
-    "DESCRIPTION":"获得1层 无实体 ，所有敌人降低1点 力量 。 NL warlord_emblem:冷却 4。 NL  虚无  消耗  ",
+    "NAME": "Ice Wall",
+    "DESCRIPTION":"获得1层 无实体 ，所有敌人降低1点 力量 。 NL warlord_emblem:冷却 4。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:GhostWalk": {
-    "NAME": "幽灵漫步",
-    "DESCRIPTION": "获得2点 敏捷 ，给予所有敌人 2层 虚弱 。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
+    "NAME": "Ghost Walk",
+    "DESCRIPTION": "获得2点 敏捷 ，给予所有敌人 2层 虚弱 。 NL warlord_emblem:冷却 2。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:DeafeningBlast": {
-    "NAME": "超震声波",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 1 层 warlord_emblem:缴械 。  NL warlord_emblem:冷却 4。 NL  虚无  消耗  ",
+    "NAME": "Deafening Blast",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 1 层 warlord_emblem:缴械 。  NL warlord_emblem:冷却 4。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:Tornado": {
-    "NAME": "强袭飓风",
-    "DESCRIPTION": "使一个目标失去所有 中毒  虚弱  易伤 效果，对所有敌人造成失去层数总和的5倍伤害。  NL  虚无  消耗  ",
+    "NAME": "Tornado",
+    "DESCRIPTION": "使一个目标失去所有 中毒 、 虚弱 、 易伤 。对所有敌人造成失去层数总和的5倍伤害。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:ForgeSpirit": {
-    "NAME": "熔炉精灵",
-    "DESCRIPTION": "召唤 1 个 warlord_emblem:熔炉精灵 。 NL  虚无  消耗 ",
+    "NAME": "Forge Spirit",
+    "DESCRIPTION": "召唤 1 个 warlord_emblem:熔炉精灵 。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:SunStrike": {
-    "NAME": "阳炎冲击",
-    "DESCRIPTION": "对一个随机敌人造成 !D! 点伤害。 NL warlord_emblem:冷却 2。 NL  虚无  消耗 ",
+    "NAME": "Sun Strike",
+    "DESCRIPTION": "对一个随机敌人造成 !D! 点伤害。 NL warlord_emblem:冷却 2。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:Alacrity": {
-    "NAME": "灵动迅捷",
-    "DESCRIPTION":  "获得 1 点 力量 ，2点 集中 。 NL warlord_emblem:冷却 3。 NL  虚无  消耗 ",
+    "NAME": "Alacrity",
+    "DESCRIPTION":  "获得 1 点 力量 ， NL 2点 集中 。 NL warlord_emblem:冷却 3。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
 
 
   "WarlordEmblem:Annihilation": {
-    "NAME": "湮灭",
-    "DESCRIPTION":  "消耗所有 格挡 ，造成失去 格挡 的 !M! 倍的真实伤害， NL 拥有鲜血领域只会消耗一半 格挡 。"
+    "NAME": "Annihilation",
+    "DESCRIPTION":  "失去所有 格挡 ，造成失去 格挡 的 !M! 倍的 warlord_emblem:真实伤害 。 NL warlord_emblem:鲜血领域 :只会失去一半 格挡 。"
   },
   "WarlordEmblem:AntiMagicShield": {
-    "NAME": "反魔法护盾",
-    "DESCRIPTION":  "获得 !M! 层人工制品。 "
+    "NAME": "Anti-Magic Shield",
+    "DESCRIPTION":  "获得 !M! 层 人工制品 。 "
   },
   "WarlordEmblem:BlackCommand": {
-    "NAME": "黑暗命令",
-    "DESCRIPTION":  "目标每有1层 中毒 效果，自身获得1点 力量 。 消耗 "
+    "NAME": "Black Command",
+    "DESCRIPTION":  "目标每有1层 中毒 效果，自身获得1点 力量 。 消耗 。"
   },
   "WarlordEmblem:BloodBoiling": {
-    "NAME": "血沸",
-    "DESCRIPTION":  "消耗X点符文能量（最多消耗 !M! 点），失去3点生命，获得X点 力量 。"
+    "NAME": "Blood Boiling",
+    "DESCRIPTION":  " warlord_emblem:符文能量 X （最多 !M! ）。失去3生命，获得X点 力量 。"
   },
   "WarlordEmblem:BloodDiffer": {
-    "NAME": "鲜血分流",
-    "DESCRIPTION":  "失去 !M! 点HP，获得 !M! 点能量，抽 !M! 张牌， NL 拥有鲜血领域不会失去HP。 NL  消耗 "
+    "NAME": "Blood Differ",
+    "DESCRIPTION":  "失去 !M! 生命。获得 !M! [E] 。抽 !M! 张牌。 NL warlord_emblem:鲜血领域 ：不会失去生命。 消耗 。"
   },
   "WarlordEmblem:BloodMask": {
-    "NAME": "鲜血印记",
+    "NAME": "Blood Mask",
     "DESCRIPTION":  "每当受到攻击伤害时，获得 !M! 点 力量 。",
     "UPGRADE_DESCRIPTION":"固有 。每当受到攻击伤害时，获得 !M! 点 力量 。"
   },
   "WarlordEmblem:BloodStrike": {
-    "NAME": "鲜血打击",
-    "DESCRIPTION":  "造成 !D! 点伤害，吸血， NL 拥有鲜血领域额外恢复2点HP。 NL  消耗 "
+    "NAME": "Blood Strike",
+    "DESCRIPTION":  "造成 !D! 点伤害。 warlord_emblem:吸血 。 NL warlord_emblem:鲜血领域 ：额外回复2生命。 消耗 。"
   },
   "WarlordEmblem:BodyStrike": {
-    "NAME": "跗骨之蛆",
-    "DESCRIPTION":  "造成 !D! 点伤害3次， NL 拥有鲜血领域额外多1次伤害。"
+    "NAME": "Body Strike",
+    "DESCRIPTION":  "造成 !D! 点伤害3次， NL warlord_emblem:鲜血领域 ：额外多1次伤害。"
   },
   "WarlordEmblem:BoneShield": {
-    "NAME": "白骨护甲",
-    "DESCRIPTION":  "获得 !M! 层荆棘， NL 拥有鲜血领域额外获得1层。"
+    "NAME": "Bone Shield",
+    "DESCRIPTION":  "获得 !M! 层 荆棘 。 NL warlord_emblem:鲜血领域 ：额外获得1层。"
   },
   "WarlordEmblem:CondemnStrike": {
-    "NAME": "天谴打击",
-    "DESCRIPTION":  "造成 !D! 点伤害， 手上每有一张 诅咒 或 状态 牌，伤害翻倍， NL 拥有邪恶领域，基础伤害加2。"
+    "NAME": "Condemn Strike",
+    "DESCRIPTION":  "造成 !D! 点伤害。手牌每有一张 诅咒 或 状态 牌，伤害翻倍。 NL warlord_emblem:邪恶领域 ：基础伤害加2。"
   },
   "WarlordEmblem:CurseStrike": {
-    "NAME": "诅咒打击",
-    "DESCRIPTION":  "手牌中有 诅咒  或 状态 牌才能打出， NL 造成 !D! 点伤害， NL 拥有邪恶领域，打出无限制。",
+    "NAME": "Curse Strike",
+    "DESCRIPTION":  "手牌中有诅咒或状态牌才能打出。 NL 造成 !D! 点伤害。 NL warlord_emblem:邪恶领域 ：打出无限制。",
     "EXTENDED_DESCRIPTION": ["手牌中没有诅咒牌"]
   },
   "WarlordEmblem:DeathCoil": {
-    "NAME": "死亡缠绕",
+    "NAME": "Death Coil",
     "DESCRIPTION":  "造成 !D! 点伤害， NL 如果杀死目标，获得1点能量，抽1张牌。"
   },
   "WarlordEmblem:DeathContract": {
-    "NAME": "死亡契约",
-    "DESCRIPTION":  "消耗4点符文能量， NL 造成 !D! 点伤害， NL 生命上限增加 !M! 点。 消耗 ",
+    "NAME": "Death Contract",
+    "DESCRIPTION":  " warlord_emblem:符文能量 4， NL 造成 !D! 点伤害。 NL 获得 !M! 最大生命。 消耗 。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:DeathGateway": {
-    "NAME": "死亡之门",
+    "NAME": "Death Gateway",
     "DESCRIPTION":  "手中每拥有一张攻击牌，抽一张牌。"
   },
   "WarlordEmblem:DeathShake": {
-    "NAME": "死亡之握",
-    "DESCRIPTION":  "造成 !D! 点伤害，如果目标是 爪牙 ，额外造成1000点伤害， NL 拥有鲜血领域额外抽1张牌。"
+    "NAME": "Death Shake",
+    "DESCRIPTION":  "造成 !D! 点伤害。如果目标是 爪牙 ，额外造成1000点伤害。 NL warlord_emblem:鲜血领域 ：额外抽1张牌。"
   },
   "WarlordEmblem:DeathStrike": {
-    "NAME": "死亡打击",
-    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 中毒 ，给予!M! 层 易伤 ， NL 拥有邪恶领域，额外给予 1层 易伤 。"
+    "NAME": "Death Strike",
+    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 中毒 ，给予!M! 层 易伤 。 NL warlord_emblem:邪恶领域 ：额外给予 1层 易伤 。"
   },
   "WarlordEmblem:DeathWither": {
-    "NAME": "死亡凋零",
-    "DESCRIPTION":  "对所有敌人造成当前生命 !M! %的真实伤害，至少造成10点伤害， NL 如果目标 中毒 ，造成2倍伤害。"
+    "NAME": "Death Wither",
+    "DESCRIPTION":  "对所有敌人造成当前生命 !M! %的 warlord_emblem:真实伤害 。至少造成10点伤害， NL 如果目标 中毒 ，造成2倍伤害。"
   },
   "WarlordEmblem:DiseaseCloud": {
-    "NAME": "疾病云雾",
-    "DESCRIPTION":  "消耗X点符文能量（最多消耗8点），给予所有敌人 中毒 X次， NL 拥有邪恶领域，额外给予1层 中毒 。"
+    "NAME": "Disease Cloud",
+    "DESCRIPTION":  "warlord_emblem:符文能量 X（最多8）。给予所有敌人 中毒 X次。 NL warlord_emblem:邪恶领域 ：额外给予1层 中毒 。"
   },
   "WarlordEmblem:DiseaseStrike": {
-    "NAME": "瘟疫打击",
-    "DESCRIPTION":  "对所有敌人造成 !D! 点伤害， NL 给予 !M! 层 中毒 ， NL 拥有邪恶领域，额外给予1层 中毒 。"
+    "NAME": "Disease Strike",
+    "DESCRIPTION":  "对所有敌人造成 !D! 点伤害。给予 !M! 层 中毒 。 NL warlord_emblem:邪恶领域 ：额外给予1层 中毒 。"
   },
   "WarlordEmblem:Defend_DK": {
     "NAME": "防御",
     "DESCRIPTION":  "获得 !B! 点 格挡 。"
   },
   "WarlordEmblem:EvilEager": {
-    "NAME":  "邪恶之心",
-    "DESCRIPTION":   "消耗X点符文能量（最多消耗6层），获得X层 残虐 ， NL 拥有邪恶领域额外获得1层 残虐。"
+    "NAME":  "Evil Eager",
+    "DESCRIPTION":   " warlord_emblem:符文能量 X（最多6），获得X层 warlord_emblem:残虐 。 NL warlord_emblem:邪恶领域 ：额外获得1层 残虐 。"
   },
   "WarlordEmblem:EvilPower": {
-    "NAME":  "邪恶之力",
-    "DESCRIPTION":   "获得 !M! 点 力量 ， NL 拥有邪恶领域额外获得1点 力量 。"
+    "NAME":  "Evil Power",
+    "DESCRIPTION":   "获得 !M! 点 力量 ， NL warlord_emblem:邪恶领域 ：额外获得1点 力量 。"
   },
   "WarlordEmblem:EvilSee": {
-    "NAME":  "邪恶凝视",
-    "DESCRIPTION":   "消耗2点符文能量，给予目标 !M! 层 易伤 ， !M! 层 中毒 。 NL 消耗",
+    "NAME":  "Evil See",
+    "DESCRIPTION":   " warlord_emblem:符文能量 2，给予目标 !M! 层 易伤 和 中毒 。 消耗 。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:EvilStrike": {
-    "NAME":  "邪恶打击",
-    "DESCRIPTION":   "造成 !D! 点伤害，如果目标 中毒 ，获得1点 能量 ，抽1张牌， NL 拥有邪恶领域额外获得1点 能量 。"
+    "NAME":  "Evil Strike",
+    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，获得 [E] ，抽1张牌。 NL warlord_emblem:邪恶领域 :额外获得1点 能量 。"
   },
   "WarlordEmblem:EvilWorm": {
-    "NAME":  "邪恶虫群",
-    "DESCRIPTION":   "造成 !D! 点伤害，如果目标 中毒 ，改为施加 !D! 层 中毒 ， NL 拥有邪恶领域无视条件施加 中毒 。"
+    "NAME":  "Evil Worm",
+    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，改为给予 !D! 层 中毒 。 NL warlord_emblem:邪恶领域 ：无视条件施加 中毒 。"
   },
   "WarlordEmblem:Execute": {
-    "NAME":  "斩杀",
-    "DESCRIPTION":   "造成 !D! 点伤害， NL 如果目标低于一半生命，造成2倍伤害。"
+    "NAME":  "Execute",
+    "DESCRIPTION":   "造成 !D! 点伤害。 NL 如果目标低于一半生命，造成2倍伤害。"
   },
   "WarlordEmblem:ForceDeflexion": {
-    "NAME":  "强制偏斜",
-    "DESCRIPTION":   "获得 !B! 点 格挡 ，抽2张牌， NL 拥有鲜血领域额外抽1张牌。"
+    "NAME":  "Force Deflexion",
+    "DESCRIPTION":   "获得 !B! 点 格挡 。 NL 抽2张牌。 NL warlord_emblem:鲜血领域 ：额外抽1张牌。"
   },
   "WarlordEmblem:FrozenChain": {
-    "NAME":  "寒冰锁链",
-    "DESCRIPTION":  "消耗X点符文能量（最多消耗3点），给予目标X层 虚弱 ， NL 拥有冰霜领域额外给予1层 虚弱 。"
+    "NAME":  "Frozen Chain",
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多3），给予目标X层 虚弱 。 NL warlord_emblem:冰霜领域 ：额外给予1层 虚弱 。"
   },
   "WarlordEmblem:FrozenDeath": {
-    "NAME":  "死亡冰寒",
-    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 虚弱 ，给予!M! 层 易伤 ， NL 拥有冰霜领域，额外给予 1层 易伤 。"
+    "NAME":  "Frozen Death",
+    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 虚弱 ，给予!M! 层 易伤 。 NL warlord_emblem:冰霜领域 ：额外给予 1层 易伤 。"
   },
   "WarlordEmblem:FrozenHeart": {
-    "NAME":  "心灵冰冻",
-    "DESCRIPTION":  "获得1回合 无实体 ，下回合少抽1张牌， NL 拥有冰霜领域不会少抽牌。 消耗 "
+    "NAME":  "Frozen Heart",
+    "DESCRIPTION":  "获得1层 无实体 ，下回合少抽1张牌。 NL warlord_emblem:冰霜领域 ：不会少抽牌。 消耗 。"
   },
   "WarlordEmblem:FrozenStrike": {
-    "NAME":  "冰霜打击",
-    "DESCRIPTION":  "造成 !D! 点伤害，  NL 降低 !M! 点 力量 ， NL 拥有冰霜领域，额外降低1点 力量 。 消耗 "
+    "NAME":  "Frozen Strike",
+    "DESCRIPTION":  "造成 !D! 点伤害，降低 !M! 点 力量 。 NL warlord_emblem:冰霜领域 ：额外降低1点 力量 。 消耗 。"
   },
   "WarlordEmblem:FrozenTouch": {
-    "NAME":  "冰冷触摸",
-    "DESCRIPTION":  "所有敌人 力量 降低 !M! 点， NL 拥有冰霜领域额外降低1点。 消耗 "
+    "NAME":  "Frozen Touch",
+    "DESCRIPTION":  "所有敌人 力量 降低 !M! 点。 warlord_emblem:冰霜领域 ：额外降低1点。 消耗 。"
   },
   "WarlordEmblem:FrozenWill": {
-    "NAME":  "冰霜意志",
-    "DESCRIPTION":  "获得 !M! 点 敏捷 ， NL 拥有冰霜领域额外加1点 敏捷 。"
+    "NAME":  "Frozen Will",
+    "DESCRIPTION":  "获得 !M! 点 敏捷 。 NL warlord_emblem:冰霜领域 ：额外加1点 敏捷 。"
   },
   "WarlordEmblem:GhostStrike": {
-    "NAME":  "灵界打击",
-    "DESCRIPTION":  "造成自身失去HP值的真实伤害。"
+    "NAME":  "Ghost Strike",
+    "DESCRIPTION":  "造成自身失去生命值的 warlord_emblem:真实伤害 。"
   },
   "WarlordEmblem:Hanging": {
-    "NAME":  "绞杀",
-    "DESCRIPTION":  "造成 !D! 点伤害，目标每有 中毒  虚弱  易伤 状态中的一种，伤害翻倍。"
+    "NAME":  "Hanging",
+    "DESCRIPTION":  "造成 !D! 点伤害，目标每有 中毒 、 虚弱 、 易伤 状态中的一种，伤害翻倍。"
   },
   "WarlordEmblem:HeartStrike": {
-    "NAME":  "心脏打击",
+    "NAME":  "Heart Strike",
     "DESCRIPTION":  "造成 !D! 点伤害，抽 !M! 张牌。"
   },
   "WarlordEmblem:Infect": {
-    "NAME":  "传染",
-    "DESCRIPTION":  "消耗X点符文能量（最多消耗 !M! 点），给予目标 中毒 X次， NL 拥有邪恶领域，额外给予1次 中毒 。 "
+    "NAME":  "Infect",
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多 !M! ），给予 中毒 X次。 NL warlord_emblem:邪恶领域 ：额外给予1次 中毒 。 "
   },
   "WarlordEmblem:LichBody": {
-    "NAME":  "巫妖之躯",
-    "DESCRIPTION":  "获得 !B! 点 格挡 ，给予目标 !M! 层 虚弱 ， NL 拥有冰霜天赋额外给予1层 虚弱 。"
+    "NAME":  "Lich Body",
+    "DESCRIPTION":  "获得 !B! 点 格挡 ，给予目标 !M! 层 虚弱 。 NL warlord_emblem:冰霜领域 ：额外给予1层 虚弱 。"
   },
   "WarlordEmblem:LichkingWraith": {
-    "NAME":  "巫妖王之怒",
-    "DESCRIPTION":  "自身获得 混乱 效果，给予所有敌人99层 易伤 ， NL 拥有冰霜领域额外给予99层 虚弱 。"
+    "NAME":  "Lichking Wraith",
+    "DESCRIPTION":  "获得 混乱 。 NL 给予所有敌人99层 易伤 ， NL warlord_emblem:冰霜领域 ：额外给予99层 虚弱 。"
   },
   "WarlordEmblem:RuneBlade": {
-    "NAME":  "符文刃舞",
-    "DESCRIPTION":  "造成 !D! 点伤害， NL 额外附加 !M! 倍于符文能量的真实伤害， NL 消耗一半的符文能量。"
+    "NAME":  "Rune Blade",
+    "DESCRIPTION":  "造成 !D! 点伤害， NL 额外附加 !M! 倍于 warlord_emblem:符文能量 的 warlord_emblem:真实伤害 。 NL 消耗一半的 warlord_emblem:符文能量 。"
   },
   "WarlordEmblem:NoLightShield": {
-    "NAME":  "无光之盾",
-    "DESCRIPTION":  "消耗X点符文能量（最多消耗8层），获得X层多层护甲， NL 拥有鲜血领域额外多1层多层护甲。"
+    "NAME":  "No Light Shield",
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多8），获得X层 warlord_emblem:多层护甲 。 NL warlord_emblem:鲜血领域 ：额外多1层 warlord_emblem:多层护甲 。"
   },
   "WarlordEmblem:RuneBurn": {
-    "NAME":  "符文燃烧",
-    "DESCRIPTION":  "消耗X点符文能量（最多消耗3点），转化为X点 能量 。"
+    "NAME":  "Rune Burn",
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多3），转化为X点 [E] 。"
   },
   "WarlordEmblem:RuneDefend": {
-    "NAME":  "符文防御",
-    "DESCRIPTION":  "消耗所有符文能量（最多消耗6点）， 每点符文能量增加3点 格挡 ， NL 不受  敏捷  影响。"
+    "NAME":  "Rune Defend",
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多6），每点 warlord_emblem:符文能量 获得3点 格挡 。 NL 不受 敏捷 影响。"
   },
   "WarlordEmblem:RuneDiffer": {
-    "NAME":  "符文分流",
-    "DESCRIPTION":  "消耗X点符文能量（最多消耗3点），抽X张牌。"
+    "NAME":  "Rune Differ",
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多3），抽X张牌。"
   },
   "WarlordEmblem:RuneExplode": {
-    "NAME":  "符文爆发",
-    "DESCRIPTION": "消耗X点符文能量（最多消耗 !M! 点）， NL 每点能量造成 !D! 点伤害。"
+    "NAME":  "Rune Explode",
+    "DESCRIPTION": " warlord_emblem:符文能量 X（最多 !M! ）。每点造成 !D! 点伤害。"
   },
   "WarlordEmblem:RuneFocus": {
-    "NAME":  "符文集中",
-    "DESCRIPTION":  "消耗1张手牌，获得 !B! 点 格挡 ，符文能量恢复4点。"
+    "NAME":  "Rune Focus",
+    "DESCRIPTION":  " 消耗 1张牌，获得 !B! 点 格挡 。 warlord_emblem:符文能量 恢复4点。"
   },
   "WarlordEmblem:RuneHeavyStrike": {
-    "NAME":  "符文打击",
-    "DESCRIPTION":  "造成 !D! 点伤害，获得 !M! 点符文能量。"
+    "NAME":  "Rune Heavy Strike",
+    "DESCRIPTION":  "造成 !D! 点伤害，获得 !M! 点 warlord_emblem:符文能量 。"
   },
   "WarlordEmblem:RuneInspire": {
-    "NAME":  "符文激发",
-    "DESCRIPTION":  "在这场战斗中， NL 符文上限增加 !M! 点。 消耗"
+    "NAME":  "Rune Inspire",
+    "DESCRIPTION":  "在这场战斗中， NL warlord_emblem:符文能量 上限增加 !M! 点。 消耗 。"
   },
   "WarlordEmblem:RunePerfusion": {
-    "NAME":  "符文灌注",
-    "DESCRIPTION":  "消耗6点符文能量，手牌中所有牌在本场战斗中耗能变为0。 NL 消耗 。",
+    "NAME":  "Rune Perfusion",
+    "DESCRIPTION":  " warlord_emblem:符文能量 6，手牌中所有牌在本场战斗中耗能变为0。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:RuneRecast": {
-    "NAME":  "符文重铸",
-    "DESCRIPTION":  "消耗2点符文能量，抽 !M! 张牌，然后弃掉 !M! 张牌。",
+    "NAME":  "Rune Recast",
+    "DESCRIPTION":  " warlord_emblem:符文能量 2，抽 !M! 张牌，然后丢弃 !M! 张牌。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:RuneRecover": {
-    "NAME":  "符文治疗",
-    "DESCRIPTION":  "消耗X点符文能量， NL 每点能量恢复1点HP。 消耗"
+    "NAME":  "Rune Recover",
+    "DESCRIPTION":  " warlord_emblem:符文能量 X， NL 每点能量回复1生命。 消耗 。"
   },
   "WarlordEmblem:RuneRegen": {
-    "NAME":  "符文再生",
-    "DESCRIPTION":  "符文能量恢复到最大值。 NL  消耗"
+    "NAME":  "Rune Regen",
+    "DESCRIPTION":  " warlord_emblem:符文能量 恢复到最大。 NL  消耗 。"
   },
   "WarlordEmblem:RuneStorm": {
-    "NAME":  "符文风暴",
-    "DESCRIPTION": "消耗X点符文能量（最多消耗4点），每点符文能量造成 !D! 点伤害。"
+    "NAME":  "Rune Storm",
+    "DESCRIPTION": " warlord_emblem:符文能量 X（最多4），每点 warlord_emblem:符文能量 造成 !D! 点伤害。"
   },
   "WarlordEmblem:RuneStrike": {
     "NAME":  "打击",
-    "DESCRIPTION": "造成 !D! 点伤害，获得 !M! 点符文能量。"
+    "DESCRIPTION": "造成 !D! 点伤害，获得 !M! 点 warlord_emblem:符文能量 。"
   },
   "WarlordEmblem:SwordWave": {
-    "NAME":  "巨剑挥舞",
+    "NAME":  "Sword Wave",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次。"
   },
   "WarlordEmblem:UltimateCold": {
-    "NAME":  "极度寒冷",
-    "DESCRIPTION": "战场上所有单位失去 力量 加成， NL 拥有冰霜领域，自身不会失去 力量 。 NL  消耗 "
+    "NAME":  "Ultimate Cold",
+    "DESCRIPTION": "所有单位失去 力量 。 NL warlord_emblem:冰霜领域 ：自身不会失去 力量 。 消耗 。"
   },
   "WarlordEmblem:UndeadWill": {
-    "NAME":  "亡灵意志",
-    "DESCRIPTION": "获得 !B! 点 格挡 ， 回合结束恢复3点HP，持续2回合。 消耗 "
+    "NAME":  "Undead Will",
+    "DESCRIPTION": "获得 !B! 点 格挡 ， 获得2层 再生 。 消耗 。"
   },
   "WarlordEmblem:VoidDefend": {
-    "NAME":  "虚无之盾",
-    "DESCRIPTION": "只有当符文能量为空或满的时候才能打出，获得 !B! 点 格挡 。",
+    "NAME":  "Void Defend",
+    "DESCRIPTION": "只有当 warlord_emblem:符文能量 为空或满的时候才能打出，获得 !B! 点 格挡 。",
     "EXTENDED_DESCRIPTION": ["只有当符文能量为空或满的时候才能打出"]
   },
   "WarlordEmblem:VoidStrike": {
-    "NAME":  "虚无打击",
-    "DESCRIPTION": "只有当符文能量为空或满的时候才能打出，造成 !D! 点伤害。",
+    "NAME":  "Void Strike",
+    "DESCRIPTION": "只有当 warlord_emblem:符文能量 为空或满的时候才能打出，造成 !D! 点伤害。",
     "EXTENDED_DESCRIPTION": ["只有当符文能量为空或满的时候才能打出"]
   },
   "WarlordEmblem:WindStrike": {
-    "NAME":  "凛风打击",
-    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得1点 能量 ，抽1张牌， NL 拥有冰霜领域额外获得1点 能量 。"
+    "NAME":  "Wind Strike",
+    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得1点 能量 ，抽1张牌。 NL warlord_emblem:冰霜领域 ：额外获得1点 能量 。"
   },
   "WarlordEmblem:WinterHorn": {
-    "NAME":  "寒冬号角",
-    "DESCRIPTION": "获得1点 力量 ，1点 敏捷 ， NL 拥有冰霜领域额外获得1层 人工制品 。",
-    "UPGRADE_DESCRIPTION": "固有 。获得1点 力量 ，1点 敏捷 ， NL 拥有冰霜领域额外获得1层 人工制品 。"
+    "NAME":  "Winter Horn",
+    "DESCRIPTION": "获得1点 力量 ，1点 敏捷 。 NL warlord_emblem:冰霜领域 ：额外获得1层 人工制品 。",
+    "UPGRADE_DESCRIPTION": "固有 。获得1点 力量 ，1点 敏捷 。 NL warlord_emblem:冰霜领域 ：额外获得1层 人工制品 。"
   },
   "WarlordEmblem:Withstand": {
-    "NAME":  "招架",
+    "NAME":  "With stand",
     "DESCRIPTION": "获得 !B! 点 格挡 ，获得1点 敏捷 。 消耗"
   },
 
 
   "WarlordEmblem:MantleCardBaku": {
-    "NAME":  "噬月者巴库",
-    "DESCRIPTION": "在这场战斗中，升级所有消耗奇数能量的卡牌。 NL 消耗"
+    "NAME":  "Baku",
+    "DESCRIPTION": "在这场战斗中， 升级 所有耗能为奇数的牌。 NL 消耗 。"
   },
   "WarlordEmblem:MantleCardCaireseth": {
-    "NAME":  "凯雷塞斯王子",
-    "DESCRIPTION":  "如果你的抽牌堆没有消耗2点能量的牌， NL 永久升级1张随机卡牌。 NL 消耗",
-    "EXTENDED_DESCRIPTION":["抽牌堆有消耗为2的卡牌"]
+    "NAME":  "Caireseth",
+    "DESCRIPTION":  "如果你的抽牌堆没有耗能为2的牌， NL 永久 升级 1张随机牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION":["抽牌堆有消耗为2的牌"]
   },
   "WarlordEmblem:MantleCardJean": {
-    "NAME":  "吉恩.格雷迈恩",
-    "DESCRIPTION":  "在这场战斗中，消耗2点能量的牌耗能降为1点。 NL 消耗"
+    "NAME":  "Jean",
+    "DESCRIPTION":  "在这场战斗中，耗能为偶数的牌耗能降为1点。 NL 消耗 。"
   },
   "WarlordEmblem:MantleCardKazakus": {
-    "NAME":  "卡扎库斯",
-    "DESCRIPTION":  "如果你的抽牌堆没有重复的卡牌， NL 随机制造一张卡扎库斯的药水。 NL 消耗",
-    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的卡牌","。 NL ","。 NL 消耗"]
+    "NAME":  "Kazakus",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌， NL 随机制造一张 *卡扎库斯的药水 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的牌","。 NL ","。 NL 消耗"]
   },
   "WarlordEmblem:MantleCardKazakusPotion": {
-    "NAME":  "卡扎库斯药水",
+    "NAME":  "Kazakus Potion",
     "DESCRIPTION":  "",
-    "EXTENDED_DESCRIPTION": ["对所有敌人造成 !D! 点伤害","获得 !B! 点格挡","给予所有敌人6层 中毒 ","获得2点能量","获得3点力量","获得3点敏捷","恢复10点HP","抽4张牌","给予所有敌人2层 易伤 ","给予所有敌人2层 虚弱 "]
+    "EXTENDED_DESCRIPTION": ["对所有敌人造成 !D! 点伤害","获得 !B! 点 格挡 ","给予所有敌人6层 中毒 ","获得 [E] [E] ","获得3点 力量 ","获得3点 敏捷 ","回复10生命","抽4张牌","给予所有敌人2层 易伤 ","给予所有敌人2层 虚弱 "]
   },
   "WarlordEmblem:MantleCardLazz": {
-    "NAME":  "缚链者拉兹",
-    "DESCRIPTION":  "如果你的抽牌堆没有重复的卡牌， NL 这场战斗中，每回合额外获得2点能量。 NL 消耗",
-    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的卡牌"]
+    "NAME":  "Lazz",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌， NL 这场战斗中，每回合额外获得2 [E] 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的牌"]
   },
   "WarlordEmblem:MantleCardLiam": {
-    "NAME":  "利亚姆王子",
-    "DESCRIPTION":  "将抽牌堆消耗1点能量的卡牌变为随机稀有卡。 NL 消耗"
+    "NAME":  "Liam",
+    "DESCRIPTION":  "将抽牌堆耗能为1的牌变为随机稀有牌。 NL 消耗 。"
   },
   "WarlordEmblem:MantleCardMarkzar": {
-    "NAME":  "利亚姆王子",
-    "DESCRIPTION":  "将5张随机稀有牌加入抽牌堆， NL 它们消耗的能量变为1。 NL 消耗"
+    "NAME":  "Markzar",
+    "DESCRIPTION":  "将5张随机稀有牌加入抽牌堆， NL 它们耗能变为1。 NL 消耗 。"
   },
   "WarlordEmblem:MantleCardReynold": {
-    "NAME":  "雷诺.杰克逊",
-    "DESCRIPTION":  "如果你的抽牌堆没有重复的卡牌， NL 恢复到战斗开始时的HP， NL 最多恢复20点HP。 NL 消耗",
-    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的卡牌"]
+    "NAME":  "Reynold",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌，回复到战斗开始时的生命。（最多20） NL 消耗 。",
+    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的牌"]
   },
   "WarlordEmblem:MantleCardWalana": {
-    "NAME":  "瓦拉纳王子",
-    "DESCRIPTION":  "如果你的抽牌堆没有消耗0点能量的卡牌， NL 在这场战斗中，你获得30%的吸血。 NL 消耗",
-    "EXTENDED_DESCRIPTION":["抽牌堆有消耗为0的卡牌"]
+    "NAME":  "Walana",
+    "DESCRIPTION":  "如果你的抽牌堆没有耗能为0的牌， NL 在这场战斗中，你获得30%的 warlord_emblem:吸血 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION":["抽牌堆有消耗为0的牌"]
   },
 
 
   "WarlordEmblem:QuestCardDK": {
     "NAME":  "黑暗之力",
-    "DESCRIPTION":  "任务：抽到5张诅咒牌或状态牌， NL 奖励： NL 霜之哀伤。 虚无  消耗 "
+    "DESCRIPTION":  " warlord_emblem:任务 ：抽到5张诅咒牌或状态牌。 NL 奖励： *霜之哀伤 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardDKReward": {
     "NAME":  "霜之哀伤",
-    "DESCRIPTION": "每抽到1张诅咒牌或状态牌，获得2点 力量 ，8点 格挡 ，抽1张牌。消耗"
+    "DESCRIPTION": "每抽到1张诅咒牌或状态牌，获得2点 力量 ，8点 格挡 ，抽1张牌。 消耗 。"
   },
   "WarlordEmblem:QuestCardDruid": {
     "NAME":  "丛林巨兽",
-    "DESCRIPTION": "任务：使用5张能量大于等于2的牌， NL 奖励： NL 班纳布斯。 虚无  消耗 "
+    "DESCRIPTION": " warlord_emblem:任务 ：使用5张能量大于等于2的牌。 NL 奖励： *班纳布斯 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardDruidReward": {
     "NAME":  "班纳布斯",
-    "DESCRIPTION": "获得 !B! 点 格挡 ，你的所有攻击牌消耗的能量变为0。 消耗"
+    "DESCRIPTION": "获得 !B! 点 格挡 ，你的所有攻击牌耗能变为0。 消耗 。"
   },
   "WarlordEmblem:QuestCardHunter": {
     "NAME":  "湿地女王",
-    "DESCRIPTION": "任务：使用7张0点能量的牌， NL 奖励： NL 卡纳莎女王。 虚无  消耗 "
+    "DESCRIPTION": " warlord_emblem:任务 ：使用7张0点能量的牌。 NL 奖励： *卡纳莎女王 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardHunterReward": {
     "NAME":  "卡纳莎女王",
-    "DESCRIPTION": "造成 !D! 点伤害，将6张亮剑放入你的抽牌堆。 消耗 "
+    "DESCRIPTION": "造成 !D! 点伤害，将6张 *亮剑 放入你的抽牌堆。 消耗 。"
   },
   "WarlordEmblem:QuestCardMage": {
     "NAME":  "打开时空之门",
-    "DESCRIPTION": "任务：使用6张无色牌， NL 奖励： NL 时空扭曲。 虚无  消耗 "
+    "DESCRIPTION": " warlord_emblem:任务 ：使用6张无色牌。 NL 奖励： *时空扭曲 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardMageReward": {
     "NAME":  "时空扭曲",
-    "DESCRIPTION": "获得4点能量，抽5张牌。 NL 消耗 "
+    "DESCRIPTION": "获得4 [E] ，抽5张牌。 NL 消耗 。"
   },
   "WarlordEmblem:QuestCardPaladin": {
     "NAME":  "终极进化",
-    "DESCRIPTION": "任务：获得6个状态， NL 奖励： NL 嘉沃顿。 虚无  消耗 "
+    "DESCRIPTION": " warlord_emblem:任务 ：获得6个增益或负面状态。 NL 奖励： *嘉沃顿 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardPaladinReward": {
     "NAME":  "嘉沃顿",
-    "DESCRIPTION": "造成 !D! 点伤害， 获得 !B! 点 格挡 ，恢复2点HP， NL 给予目标 !M! 层 中毒  虚弱  易伤 。"
+    "DESCRIPTION": "造成 !D! 点伤害，获得 !B! 点 格挡 ，回复2生命。给予 !M! 层 中毒 虚弱 易伤 。"
   },
   "WarlordEmblem:QuestCardPriest": {
     "NAME":  "唤醒造物者",
-    "DESCRIPTION": "任务：消耗7张牌， NL 奖励： NL 希望守护者阿玛拉。 虚无  消耗 "
+    "DESCRIPTION": " warlord_emblem:任务 ： 消耗 7张牌。 NL 奖励：  *希望守护者阿玛拉 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardPriestReward": {
     "NAME":  "希望守护者阿玛拉",
-    "DESCRIPTION": "获得 !B! 点 格挡 ， NL 恢复到战斗开始时的HP， NL 最多恢复20点HP。 NL 消耗"
+    "DESCRIPTION": "获得 !B! 点 格挡 ， NL 回复到战斗开始时的生命（最多20）。 NL 消耗 。"
   },
   "WarlordEmblem:QuestCardRogue": {
     "NAME":  "探索地下洞穴",
-    "DESCRIPTION":  "任务：使用5张相同的牌， NL 奖励： NL 水晶核心。 虚无  消耗  "
+    "DESCRIPTION":  " warlord_emblem:任务 ：使用5张相同的牌。 NL 奖励： *水晶核心 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardRogueReward": {
     "NAME":  "水晶核心",
-    "DESCRIPTION":  "你的卡牌造成的伤害锁定为12点。 NL 消耗"
+    "DESCRIPTION":  "你的牌造成的伤害锁定为12点。 NL 消耗 。"
   },
   "WarlordEmblem:QuestCardShaman": {
     "NAME":  "鱼人总动员",
-    "DESCRIPTION":  "任务：使用10张技能牌， NL 奖励： NL 老鲨嘴。 虚无  消耗 "
+    "DESCRIPTION":  " warlord_emblem:任务 ：使用10张技能牌。 NL 奖励： *老鲨嘴 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardShamanReward": {
     "NAME":  "老鲨嘴",
-    "DESCRIPTION":  "造成 !D! 点伤害，将4张匕首放入你的手牌。"
+    "DESCRIPTION":  "造成 !D! 点伤害，将4张 *小刀 放入你的手牌。"
   },
   "WarlordEmblem:QuestCardWarlock": {
     "NAME":  "拉卡利献祭",
-    "DESCRIPTION":  "任务：弃掉6张牌， NL 奖励： NL 虚空传送门。  虚无  消耗 "
+    "DESCRIPTION":  " warlord_emblem:任务 ：丢弃6张牌。 NL 奖励： *虚空传送门 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardWarlockReward": {
     "NAME":  "虚空传送门",
-    "DESCRIPTION":  "每回合开始时对所有敌人造成6点伤害，获得4点格挡。 NL 消耗"
+    "DESCRIPTION":  "每回合开始时对所有敌人造成6点伤害，获得4点 格挡 。 NL 消耗 。"
   },
   "WarlordEmblem:QuestCardWarrior": {
     "NAME":  "火羽之心",
-    "DESCRIPTION":  "任务：获得7次格挡， NL 奖励： NL 萨弗拉斯。  虚无  消耗 "
+    "DESCRIPTION":  " warlord_emblem:任务 ：获得7次 格挡 。 NL 奖励： *萨弗拉斯 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardWarriorReward": {
     "NAME":  "萨弗拉斯",
-    "DESCRIPTION":  "回合结束时，对1个随机敌人造成16点伤害。 NL 消耗"
+    "DESCRIPTION":  "回合结束时，对一名随机敌人造成16点伤害。 NL 消耗 。"
   }
 }

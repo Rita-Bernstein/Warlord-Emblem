@@ -22,7 +22,7 @@ public class QuestCardMageReward extends AbstractQuestCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColor.COLORLESS;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
 
 

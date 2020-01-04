@@ -1,349 +1,349 @@
 {
   "WarlordEmblem:BadgeBless": {
-    "NAME": "徽章的祝福",
+    "NAME": "Badge Bless",
     "FLAVOR": "来自东方国度的神秘祝福。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得 #b1 点 #y力量 、 #y敏捷 和 #y集中 。"
     ]
   },
   "WarlordEmblem:BadgeWrath": {
-    "NAME": "徽章的愤怒",
+    "NAME": "Badge Wrath",
     "FLAVOR": "徽章很少发怒，但是发怒了后果很严重。",
     "DESCRIPTIONS": [
       "每场战斗开始时，所有敌人失去 #b1 点 #y力量 。 NL #b协同-徽章的祝福: 给予所有敌人 #b1 层 #y虚弱 。"
     ]
   },
   "WarlordEmblem:EvilBlood": {
-    "NAME": "邪恶之血",
+    "NAME": "Evil Blood",
     "FLAVOR": "任何东西都有代价。",
     "DESCRIPTIONS": [
       "每场战斗开始时，失去 #r4 生命 。战斗结束时，回复 #b11 生命 。 NL #b协同-燃烧之血/黑暗之血: 战斗开始不会失去生命 。"
     ]
   },
   "WarlordEmblem:HatTrick": {
-    "NAME": "帽子戏法",
+    "NAME": "Hat Trick",
     "FLAVOR": "你出神入化的操作让发牌员也忍不住为你赞叹。",
     "DESCRIPTIONS": [
       "你在同一回合内每打出 #b3 张 #y技能牌 ，抽 #b1 张牌。"
     ]
   },
   "WarlordEmblem:HeavyShield": {
-    "NAME": "厚重的护盾",
+    "NAME": "Heavy Shield",
     "FLAVOR": "强大的力量会让你失去行动力。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得 #y壁垒 ，失去 #r1 点 #y敏捷 。"
     ]
   },
   "WarlordEmblem:OldTorch": {
-    "NAME": "老旧的火把",
+    "NAME": "Old Torch",
     "FLAVOR": "火把有点老了，烧起来有点慢。",
     "DESCRIPTIONS": [
       "每场战斗的第二回合获得 #b1 点 #y能量 。 NL #b协同-灯笼： 第一回合额外获得 #b1 点 #y能量 。"
     ]
   },
   "WarlordEmblem:Pill": {
-    "NAME": "DEPRECATED小药片",
+    "NAME": "DEPRECATED Pill",
     "FLAVOR": "它会让你更猛，也会让你更脆弱。(“茶雨微凉”)",
     "DESCRIPTIONS": [
       "在战斗开始时，获得 #b2 点 #y力量 ，失去 #r2 点 #y敏捷 ， NL #b协同-医药箱: 战斗开始则不会失去敏捷 。"
     ]
   },
   "WarlordEmblem:SaveLoadDisk": {
-    "NAME": "存储盘",
+    "NAME": "Save Load Disk",
     "FLAVOR": "没什么比它更适合Save/Load的了。",
     "DESCRIPTIONS": [
       "每场战斗开始时，生命变为最大生命的 #r40% 。"
     ]
   },
   "WarlordEmblem:SmileMask": {
-    "NAME": "微笑面罩",
+    "NAME": "Smile Mask",
     "FLAVOR": "它一边笑着，一边塞过来一张牌。",
     "DESCRIPTIONS": [
       "每3个回合，抽 #b1 张牌， NL #b协同-开心小花： 额外抽 #b1 张牌 。"
     ]
   },
   "WarlordEmblem:SoftArmor": {
-    "NAME": "软猬甲",
+    "NAME": "Soft Armor",
     "FLAVOR": "用这张图片是因为战神徽章找不到更好的图片了。",
     "DESCRIPTIONS": [
       "在战斗开始时，获得 #b2 层 #y多层护甲 和 #y荆棘 。"
     ]
   },
   "WarlordEmblem:VoidPower": {
-    "NAME": "虚空之力",
+    "NAME": "Void Power",
     "FLAVOR": "强大的力量让你头晕目眩。",
     "DESCRIPTIONS": [
       "每回合多获得 #b1 点能量， NL 每场战斗开始时，将 #r5张晕眩 加入你的抽牌堆。"
     ]
   },
   "WarlordEmblem:BrokenMantle": {
-    "NAME": "残破斗篷",
+    "NAME": "Broken Mantle",
     "FLAVOR": "穿上这件斗篷，整个人轻盈了许多。(“prttt”)",
     "DESCRIPTIONS": [
       "战斗开始时，如果当前生命小于等于最大生命的一半，获得 #b2 点 #y敏捷 。"
     ]
   },
   "WarlordEmblem:Scar": {
-    "NAME": "自残伤痕",
+    "NAME": "Scar",
     "FLAVOR": "这件遗物还没有描述。(“prttt”)",
     "DESCRIPTIONS": [
       "每回合开始时， #r失去1-2生命 ，获得 #b1 点 #y能量 。"
     ]
   },
   "WarlordEmblem:BrokenWatch": {
-    "NAME": "破损的怀表",
+    "NAME": "Broken Watch",
     "FLAVOR": "这件遗物还没有描述。(“Kane11”)",
     "DESCRIPTIONS": [
       "每打出12张牌，获得 #b1 点 #y力量 。将1张 #r伤口 加入你的弃牌堆。"
     ]
   },
   "WarlordEmblem:BurningIcecream": {
-    "NAME": "DEPRECATED燃烧的冰淇淋",
+    "NAME": "DEPRECATED Burning Ice cream",
     "FLAVOR": "这个冰淇淋，很多人根本就拿不住。(“夜影丿殇”)",
     "DESCRIPTIONS": [
       "每回合开始，增加 #b1 点 #y力量 。 NL 回合结束时， #r失去所有力量 ，对所有敌人造成等额的伤害。"
     ]
   },
   "WarlordEmblem:RuneSword": {
-    "NAME": "符文巨剑",
+    "NAME": "Rune Sword",
     "FLAVOR": "充满神秘力量的武器。",
     "DESCRIPTIONS": [
       "死亡骑士存储符文能量的武器，初始符文上限为6。每回合获得2点符文能量。"
     ]
   },
   "WarlordEmblem:BloodRealm": {
-    "NAME": "鲜血领域",
+    "NAME": "Blood Realm",
     "FLAVOR": "鲜血天赋。",
     "DESCRIPTIONS": [
       "强化鲜血系技能。"
     ]
   },
   "WarlordEmblem:IceRealm": {
-    "NAME": "冰霜领域",
+    "NAME": "Ice Realm",
     "FLAVOR": "冰霜天赋。",
     "DESCRIPTIONS": [
       "强化冰霜系技能。"
     ]
   },
   "WarlordEmblem:EvilRealm": {
-    "NAME": "邪恶领域",
+    "NAME": "Evil Realm",
     "FLAVOR": "邪恶天赋。",
     "DESCRIPTIONS": [
       "强化邪恶系技能。"
     ]
   },
   "WarlordEmblem:DKHelm": {
-    "NAME": "窥亡之盔",
+    "NAME": "Death Knight Helm",
     "FLAVOR": "无与伦比的死亡骑士头盔。",
     "DESCRIPTIONS": [
       "当你拥有6点或以上符文能量时，视为同时拥有鲜血，冰霜，邪恶领域。"
     ]
   },
   "WarlordEmblem:Clown": {
-    "NAME": "杂技小丑",
+    "NAME": "Clown",
     "FLAVOR": "杂技小丑，真的很苟。",
     "DESCRIPTIONS": [
       "每连续打出不同类型的卡牌一次，对所有敌人造成1点伤害。"
     ]
   },
   "WarlordEmblem:WuziBook": {
-    "NAME": "吴子兵法",
+    "NAME": "Wuzi Book",
     "FLAVOR": "这本古兵书记载着远古时代的智慧。",
     "DESCRIPTIONS": [
       "如果你在回合中不打出任何 #y技能牌 ， NL 回合结束时回复2生命。 NL 每场战斗最多回复8生命。， NL #b协同-孙子兵法： 战斗开始获得1层 #y人工制品 。"
     ]
   },
   "WarlordEmblem:BadgeProtect": {
-    "NAME": "徽章的庇护",
+    "NAME": "Badge Protect",
     "FLAVOR": "避免让你被敌人无情地蹂躏。",
     "DESCRIPTIONS": [
       "如果你在回合结束时没有任何 #y格挡 ， NL 给予所有敌人1层 #y虚弱 。"
     ]
   },
   "WarlordEmblem:KitchenKnife": {
-    "NAME": "菜刀",
+    "NAME": "Kitchen Knife",
     "FLAVOR": "武功再高，也怕菜刀。",
     "DESCRIPTIONS": [
       "每当你杀死非爪牙的敌人，回复2生命， NL 每场战斗最多回复8生命。"
     ]
   },
   "WarlordEmblem:BadgeMouse": {
-    "NAME": "徽章的鼠标",
+    "NAME": "Badge Mouse",
     "FLAVOR": "快手流的福音。",
     "DESCRIPTIONS": [
       "当前回合操作时间少于4秒，下回合多2点 #y能量 ， NL 当前回合操作时间少于8秒，下回合多1点 #y能量 。"
     ]
   },
   "WarlordEmblem:BreastProtector": {
-    "NAME": "护心镜",
+    "NAME": "Breast Protector",
     "FLAVOR": "使你免遭暗算。",
     "DESCRIPTIONS": [
       "每场战斗第一次受到超过 #b20 的伤害，视为受到 #b20 点伤害。"
     ]
   },
   "WarlordEmblem:GoldMime": {
-    "NAME": "聚宝盆",
+    "NAME": "Gold Mime",
     "FLAVOR": "招财进宝，大吉大利。",
     "DESCRIPTIONS": [
       "受到伤害时获得等量的 #y金钱 。"
     ]
   },
   "WarlordEmblem:BadgeIronclad": {
-    "NAME": "战士徽章",
+    "NAME": "Badge Ironclad",
     "FLAVOR": "拥有神秘力量的徽章。",
     "DESCRIPTIONS": [
       "你可以获得 #y战士牌 。"
     ]
   },  
   "WarlordEmblem:BadgeTheSilent": {
-    "NAME": "猎人徽章",
+    "NAME": "Badge The Silent",
     "FLAVOR": "拥有神秘力量的徽章。",
     "DESCRIPTIONS": [
       "你可以获得 #y猎人牌 。"
     ]
   },
   "WarlordEmblem:BadgeDefect": {
-    "NAME": "机器人徽章",
+    "NAME": "Badge Defect",
     "FLAVOR": "拥有神秘力量的徽章。",
     "DESCRIPTIONS": [
       "你可以获得 #y机器人牌 。"
     ]
   },
   "WarlordEmblem:QuestMage": {
-    "NAME": "法师戒指",
+    "NAME": "Quest Mage",
     "FLAVOR": "蕴含精英法师力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y打开时空之门 。 NL 任务： #y使用6张无色牌 ， NL 奖励：  #y时空扭曲 。"
     ]
   },
   "WarlordEmblem:QuestHunter": {
-    "NAME": "猎人戒指",
+    "NAME": "Quest Hunter",
     "FLAVOR": "蕴含精英猎人力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y湿地女王 。 NL 任务： #y使用7张0点能量的牌 ， NL 奖励： #y卡纳莎女王 。"
     ]
   },
   "WarlordEmblem:QuestWarrior": {
-    "NAME": "战士戒指",
+    "NAME": "Quest Warrior",
     "FLAVOR": "蕴含精英战士力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y火羽之心 。 NL 任务： #y获得7次格挡 ， NL 奖励： #y萨弗拉斯 。"
     ]
   },
   "WarlordEmblem:QuestDruid": {
-    "NAME": "德鲁伊戒指",
+    "NAME": "Quest Druid",
     "FLAVOR": "蕴含精英德鲁伊力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y丛林巨兽 。 NL 任务： #y使用5张能量大于等于2的牌 ， NL 奖励： #y班纳布斯 。"
     ]
   },
   "WarlordEmblem:QuestPaladin": {
-    "NAME": "圣骑士戒指",
+    "NAME": "Quest Paladin",
     "FLAVOR": "蕴含精英圣骑士力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y终极进化 。 NL 任务： #y获得6个状态 ， NL 奖励： #y嘉沃顿 。"
     ]
   },
   "WarlordEmblem:QuestPriest": {
-    "NAME": "牧师戒指",
+    "NAME": "Quest Priest",
     "FLAVOR": "蕴含精英牧师力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y唤醒造物者 。 NL 任务： #y消耗7张牌 ， NL 奖励： #y希望守护者阿玛拉 。"
     ]
   },
   "WarlordEmblem:QuestWarlock": {
-    "NAME": "术士戒指",
+    "NAME": "Quest Warlock",
     "FLAVOR": "蕴含精英术士力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y拉卡利献祭 。 NL 任务： #y弃掉6张牌 ， NL 奖励： #y虚空传送门 。"
     ]
   },
   "WarlordEmblem:QuestRogue": {
-    "NAME": "盗贼戒指",
+    "NAME": "Quest Rogue",
     "FLAVOR": "蕴含精英盗贼力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y探索地下洞穴 。 NL 任务： #y使用5张相同的牌 ， NL 奖励： #y水晶核心 。"
     ]
   },
   "WarlordEmblem:QuestShaman": {
-    "NAME": "萨满戒指",
+    "NAME": "Quest Shaman",
     "FLAVOR": "蕴含精英萨满力量的戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得一张 #y鱼人总动员 。 NL 任务： #y使用10张技能牌 ， NL 奖励： #y老鲨嘴 。"
     ]
   },
   "WarlordEmblem:QuestDK": {
-    "NAME": "死骑戒指",
+    "NAME": "Quest Death Knight",
     "FLAVOR": "蕴含精英死亡骑士力量的戒指。",
     "DESCRIPTIONS": [
       "任务：抽到5张 #r诅咒牌或状态牌 ， NL 奖励： NL #y霜之哀伤 。"
     ]
   },
   "WarlordEmblem:MantleReynold": {
-    "NAME": "雷诺.杰克逊的斗篷",
+    "NAME": "Mantle Reynold",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y雷诺.杰克逊 放入你的抽牌堆。 NL 如果你的抽牌堆没有重复的卡牌，恢复到战斗开始的HP，最多恢复20点HP。"
     ]
   },
   "WarlordEmblem:MantleLazz": {
-    "NAME": "缚链者拉兹的斗篷",
+    "NAME": "Mantle Lazz",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y缚链者拉兹 放入你的抽牌堆。 NL 如果你的抽牌堆没有重复的卡牌，这场战斗中，每回合额外获得2点能量。"
     ]
   },
   "WarlordEmblem:MantleKazakus": {
-    "NAME": "卡扎库斯的斗篷",
+    "NAME": "Mantle Kazakus",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y卡扎库斯 放入你的抽牌堆。 NL 如果你的抽牌堆没有重复的卡牌，随机制造一张卡扎库斯的药水。"
     ]
   },
   "WarlordEmblem:MantleBaku": {
-    "NAME": "噬月者巴库的斗篷",
+    "NAME": "Mantle Baku",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y噬月者巴库 放入你的抽牌堆。 NL 在这场战斗中，升级所有消耗奇数能量的卡牌。"
     ]
   },
   "WarlordEmblem:MantleJean": {
-    "NAME": "吉恩.格雷迈恩的斗篷",
+    "NAME": "Mantle Jean",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y吉恩.格雷迈恩 放入你的抽牌堆。 NL 在这场战斗中，消耗2点能量的牌耗能降为1点。"
     ]
   },
   "WarlordEmblem:MantleMarkzar": {
-    "NAME": "马克扎尔王子的斗篷",
+    "NAME": "Mantle Markzar",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y马克扎尔王子 放入你的抽牌堆。 NL 将5张随机稀有牌加入抽牌堆，它们消耗的能量变为1。"
     ]
   },
   "WarlordEmblem:MantleLiam": {
-    "NAME": "利亚姆王子的斗篷",
+    "NAME": "Mantle Liam",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y利亚姆王子 放入你的抽牌堆。 NL 将抽牌堆消耗1点能量的卡牌变为随机稀有卡。"
     ]
   },
   "WarlordEmblem:MantleWalana": {
-    "NAME": "瓦拉纳王子的斗篷",
+    "NAME": "Mantle Walana",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y瓦拉纳王子 放入你的抽牌堆。 NL 如果你的抽牌堆没有消耗0点能量的牌，这场战斗中，你获得30%吸血。"
     ]
   },
   "WarlordEmblem:MantleCaireseth": {
-    "NAME": "凯雷塞斯王子的斗篷",
+    "NAME": "Mantle Caireseth",
     "FLAVOR": "充满神秘力量的斗篷。",
     "DESCRIPTIONS": [
       "战斗开始时，将1张 #y凯雷塞斯王子 放入你的抽牌堆。 NL 如果你的抽牌堆没有消耗2点能量的牌，永久升级1张随机卡牌。"
     ]
   },
   "WarlordEmblem:SoulOfKael": {
-    "NAME": "祈求者卡尔的灵魂",
+    "NAME": "Soul Of Kael",
     "FLAVOR": "充满元素力量的灵魂。",
     "DESCRIPTIONS": [
       "回合开始时，将1张 #y元素祈唤 放入你的手牌。"

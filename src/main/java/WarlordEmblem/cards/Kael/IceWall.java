@@ -27,7 +27,7 @@ public class IceWall extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = AbstractCard.CardType.SKILL;
   private static final CardColor COLOR = AbstractCard.CardColor.COLORLESS;
-  private static final CardRarity RARITY = CardRarity.RARE;
+  private static final CardRarity RARITY = CardRarity.SPECIAL;
   private static final CardTarget TARGET = CardTarget.SELF;
   public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;
 

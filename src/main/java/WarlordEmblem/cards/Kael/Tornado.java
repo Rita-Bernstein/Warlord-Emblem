@@ -27,7 +27,7 @@ public class Tornado extends CustomCard {
   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
   public static final CardType TYPE = CardType.ATTACK;
   private static final CardColor COLOR = AbstractCard.CardColor.COLORLESS;
-  private static final CardRarity RARITY = CardRarity.RARE;
+  private static final CardRarity RARITY = CardRarity.SPECIAL;
   private static final CardTarget TARGET = CardTarget.ENEMY;
   public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;
 

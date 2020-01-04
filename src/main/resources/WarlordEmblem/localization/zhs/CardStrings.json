@@ -198,7 +198,7 @@
   },
   "WarlordEmblem:Hanging": {
     "NAME":  "绞杀",
-    "DESCRIPTION":  "造成 !D! 点伤害，目标每有 中毒 、 虚弱 、 易伤 状态中的一种，伤害翻倍。"
+    "DESCRIPTION":  "造成 !D! 点 warlord_emblem:真实伤害 ，目标每有 中毒 、 虚弱 、 易伤 状态中的一种，伤害翻倍。"
   },
   "WarlordEmblem:HeartStrike": {
     "NAME":  "心脏打击",
@@ -272,7 +272,7 @@
   },
   "WarlordEmblem:RuneStorm": {
     "NAME":  "符文风暴",
-    "DESCRIPTION": " warlord_emblem:符文能量 X（最多4），每点 warlord_emblem:符文能量 造成 !D! 点伤害。"
+    "DESCRIPTION": " warlord_emblem:符文能量 X（最多4），每点 warlord_emblem:符文能量 对所有敌人造成 !D! 点伤害。"
   },
   "WarlordEmblem:RuneStrike": {
     "NAME":  "打击",
@@ -348,7 +348,7 @@
     "DESCRIPTION":  "将抽牌堆耗能为1的牌变为随机稀有牌。 NL 消耗 。"
   },
   "WarlordEmblem:MantleCardMarkzar": {
-    "NAME":  "利亚姆王子",
+    "NAME":  "马克扎尔王子",
     "DESCRIPTION":  "将5张随机稀有牌加入抽牌堆， NL 它们耗能变为1。 NL 消耗 。"
   },
   "WarlordEmblem:MantleCardReynold": {
