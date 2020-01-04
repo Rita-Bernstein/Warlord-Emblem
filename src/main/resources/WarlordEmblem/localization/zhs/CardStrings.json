@@ -397,7 +397,7 @@
   },
   "WarlordEmblem:QuestCardPaladin": {
     "NAME":  "终极进化",
-    "DESCRIPTION": " warlord_emblem:任务 ：获得6个状态。 NL 奖励： *嘉沃顿 。 虚无 消耗 。"
+    "DESCRIPTION": " warlord_emblem:任务 ：获得6个增益或负面状态。 NL 奖励： *嘉沃顿 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardPaladinReward": {
     "NAME":  "嘉沃顿",

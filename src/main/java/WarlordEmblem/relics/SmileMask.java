@@ -42,9 +42,9 @@ public class SmileMask extends CustomRelic {
                    flash();
                  AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                  if(AbstractDungeon.player.hasRelic("Happy Flower")){
-                     AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player,1,true));
+                     AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player,1));
                  }
-                 AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player,1,true));
+                 AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player,1));
 
                  }
            }

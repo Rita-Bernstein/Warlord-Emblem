@@ -10,4 +10,6 @@ public class AbstractPlayerEnum {
 	public static AbstractPlayer.PlayerClass DeathKnight;
 	@SpireEnum
 	public static AbstractPlayer.PlayerClass Crowbot;
+	@SpireEnum
+	public static AbstractPlayer.PlayerClass CustomClass;
 }

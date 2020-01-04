@@ -10,4 +10,6 @@ public class CardColorEnum {
 	public static AbstractCard.CardColor DeathKnight_LIME;
 	@SpireEnum
 	public static AbstractCard.CardColor Crowbot_LIME;
+	@SpireEnum
+	public static AbstractCard.CardColor CustomClass_LIME;
 }

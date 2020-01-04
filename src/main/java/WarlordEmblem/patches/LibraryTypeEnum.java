@@ -10,4 +10,6 @@ public class LibraryTypeEnum {
 	public static CardLibrary.LibraryType DeathKnight_LIME;
 	@SpireEnum
 	public static CardLibrary.LibraryType Crowbot_LIME;
+	@SpireEnum
+	public static CardLibrary.LibraryType CustomClass_LIME;
 }

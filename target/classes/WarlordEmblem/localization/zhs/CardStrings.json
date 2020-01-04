@@ -353,7 +353,7 @@
   },
   "WarlordEmblem:MantleCardReynold": {
     "NAME":  "雷诺.杰克逊",
-    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌，恢复到战斗开始时的生命。（最多20） NL 消耗 。",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌，回复到战斗开始时的生命。（最多20） NL 消耗 。",
     "EXTENDED_DESCRIPTION":["抽牌堆中有相同的牌"]
   },
   "WarlordEmblem:MantleCardWalana": {
@@ -397,7 +397,7 @@
   },
   "WarlordEmblem:QuestCardPaladin": {
     "NAME":  "终极进化",
-    "DESCRIPTION": " warlord_emblem:任务 ：获得6个状态。 NL 奖励： *嘉沃顿 。 虚无 消耗 。"
+    "DESCRIPTION": " warlord_emblem:任务 ：获得6个增益或负面状态。 NL 奖励： *嘉沃顿 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardPaladinReward": {
     "NAME":  "嘉沃顿",

@@ -38,7 +38,7 @@ public class HatTrick extends CustomRelic {
                          flash();
                          this.counter = 0;
                          AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                         AbstractDungeon.actionManager.addToBottom((new DrawCardAction(AbstractDungeon.player, 1, true)));
+                         AbstractDungeon.actionManager.addToBottom((new DrawCardAction(AbstractDungeon.player, 1)));
                        }
                  }
            }

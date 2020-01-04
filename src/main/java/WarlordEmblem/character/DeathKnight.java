@@ -173,7 +173,7 @@ public class DeathKnight extends CustomPlayer {
 		CardCrawlGame.mainMenuScreen.charSelectScreen.bgCharImg = CharacterSelectScreenPatches.updateBgImg();
 
 		CardCrawlGame.sound.playA("ATTACK_HEAVY", MathUtils.random(-0.2F, 0.2F));
-		CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, false);
+		CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, true);
 	}
 
 	@Override

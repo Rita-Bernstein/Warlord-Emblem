@@ -83,7 +83,7 @@ public class WarlordEmblem implements
     public static boolean mantleRelic = true;
     public static Properties WarlordEmblemDefaults = new Properties();
 
-
+    public static final Color DeathKnight_Color = new Color(0.171F,0.722F,0.722F,1.0F);
 
  public WarlordEmblem(){
      logger.debug("Constructor started.");
@@ -91,7 +91,7 @@ public class WarlordEmblem implements
      //CaseMod.subscribe(this);
 
      BaseMod.addColor(CardColorEnum.DeathKnight_LIME,
-             Color.SKY.cpy(),  Color.SKY.cpy(),  Color.SKY.cpy(),  Color.SKY.cpy(),  Color.SKY.cpy(),  Color.SKY.cpy(), Color.SKY.cpy(),
+             DeathKnight_Color,  DeathKnight_Color,  DeathKnight_Color,  DeathKnight_Color,  DeathKnight_Color,  DeathKnight_Color, DeathKnight_Color,
              assetPath("img/cardui/512/bg_attack_lime.png"),
              assetPath("img/cardui/512/bg_skill_lime.png"),
              assetPath("img/cardui/512/bg_power_lime.png"),
