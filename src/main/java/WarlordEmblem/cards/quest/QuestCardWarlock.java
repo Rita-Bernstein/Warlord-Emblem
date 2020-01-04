@@ -33,6 +33,7 @@ public class QuestCardWarlock extends AbstractQuestCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.isEthereal = true;
         this.exhaust = true;
+        this.cardsToPreview = new QuestCardWarlockReward();
     }
 
     public AbstractCard makeCopy() {

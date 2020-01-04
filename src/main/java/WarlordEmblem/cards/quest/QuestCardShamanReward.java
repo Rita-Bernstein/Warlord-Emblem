@@ -33,6 +33,7 @@ public class QuestCardShamanReward extends AbstractQuestCard {
     public QuestCardShamanReward() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 10;
+        this.cardsToPreview = new Shiv();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

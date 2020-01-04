@@ -2,16 +2,23 @@
   "WarlordEmblem:DK_Talent": {
     "TEXT": [
       "天赋：",
-      "鲜血",
+      "鲜血领域",
       "",
-      "冰霜",
+      "冰霜领域",
       "",
-      "邪恶"
+      "邪恶领域"
     ]
   },
   "WarlordEmblem:UtilizeAction": {
     "TEXT": [
       "选择丢弃一张手牌并获得其耗能等量的能量"
+    ]
+  },
+  "WarlordEmblem:RelicFilter": {
+    "TEXT": [
+      "加入附加遗物（需要重启游戏）",
+      "加入戒指遗物（需要重启游戏）",
+      "加入斗篷遗物（需要重启游戏）"
     ]
   }
 }

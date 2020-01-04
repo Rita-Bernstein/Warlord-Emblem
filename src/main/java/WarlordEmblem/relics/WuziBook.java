@@ -33,6 +33,7 @@ public class WuziBook extends CustomRelic {
 
        public void atPreBattle() {
              flash();
+             this.counter = 0;
              this.firstTurn = true;
              this.HealingEndOfTurn = true;
              if (!this.pulse) {
@@ -48,7 +49,8 @@ public class WuziBook extends CustomRelic {
              this.firstTurn = false;
              this.HealingEndOfTurn = true;
            }
-    
+
+
     
        public void onUseCard(AbstractCard card, UseCardAction action) {
              if (card.type == AbstractCard.CardType.SKILL) {
@@ -61,14 +63,14 @@ public class WuziBook extends CustomRelic {
 
     @Override
     public void onPlayerEndTurn() {
-        if(this.HealingEndOfTurn = true && this.counter <= 8){
+        if(this.HealingEndOfTurn && this.counter < 8 && this.counter >= 0){
             flash();
             AbstractPlayer p = AbstractDungeon.player;
             AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(p, this));
             if (p.currentHealth > 0 ) {
                 p.heal(2);
                 this.counter +=2;
-                if (this.counter >8 ){this.counter = -1;}
+                if (this.counter >=8 ){this.counter = -1;}
             }
         }
     }

@@ -48,6 +48,7 @@ public class CharacterSelectScreenPatches
     private static float Talent_RIGHT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
     private static float Talent_LEFT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
 
+    private static float X_fixed = 30.0f;
 
     public static Field charInfoField;
 
@@ -60,10 +61,10 @@ public class CharacterSelectScreenPatches
         public static void Initialize(CharacterSelectScreen __instance)
         {
             // Called when you first open the screen, create hitbox for each button
-            TalentRight = new Hitbox(Talent_RIGHT_W - 10.0F * Settings.scale, 50.0F * Settings.scale);
-            TalentLeft = new Hitbox(Talent_RIGHT_W - 10.0F * Settings.scale, 50.0F * Settings.scale);
-            TalentRight.move(Settings.WIDTH / 2.0F - Talent_RIGHT_W / 2.0F - 600.0F * Settings.scale + 16.0f, 800.0F * Settings.scale);
-            TalentLeft.move(Settings.WIDTH / 2.0F - Talent_LEFT_W / 2.0F - 800.0F * Settings.scale + 16.0f, 800.0F * Settings.scale);
+            TalentRight = new Hitbox(Talent_RIGHT_W - 10.0F * Settings.scale + X_fixed, 50.0F * Settings.scale);
+            TalentLeft = new Hitbox(Talent_RIGHT_W - 10.0F * Settings.scale + X_fixed, 50.0F * Settings.scale);
+            TalentRight.move(Settings.WIDTH / 2.0F - Talent_RIGHT_W / 2.0F - 600.0F * Settings.scale + 16.0f + X_fixed, 800.0F * Settings.scale);
+            TalentLeft.move(Settings.WIDTH / 2.0F - Talent_LEFT_W / 2.0F - 800.0F * Settings.scale + 16.0f + X_fixed, 800.0F * Settings.scale);
 
 
         }
@@ -76,6 +77,8 @@ public class CharacterSelectScreenPatches
         public static void Postfix(CharacterSelectScreen __instance, SpriteBatch sb)
         {
             // Render your buttons/images by passing SpriteBatch
+            if (!(TalentCount == 1 ||TalentCount == 3 ||TalentCount == 5 ))
+            {TalentCount = 1;}
 
             for (CharacterOption o : __instance.options) {
                 if (o.name.equals(DeathKnight.charStrings.NAMES[1]) && o.selected) {
@@ -84,9 +87,9 @@ public class CharacterSelectScreenPatches
                     TalentLeft.render(sb);
 
                     if (TalentRight.hovered || Settings.isControllerMode) {sb.setColor(Color.WHITE);} else {sb.setColor(Color.LIGHT_GRAY);}
-                    sb.draw(ImageMaster.CF_RIGHT_ARROW, Settings.WIDTH / 2.0F - Talent_RIGHT_W / 2.0F - 600.0F * Settings.scale, 800.0F * Settings.scale - 16.0F, 16.0F, 16.0F, 32.0F, 32.0F, Settings.scale*2.0f, Settings.scale*2.0f, 0.0F, 0, 0, 48, 48, false, false);
+                    sb.draw(ImageMaster.CF_RIGHT_ARROW, Settings.WIDTH / 2.0F - Talent_RIGHT_W / 2.0F - 600.0F * Settings.scale + X_fixed, 800.0F * Settings.scale - 16.0F, 16.0F, 16.0F, 32.0F, 32.0F, Settings.scale*2.0f, Settings.scale*2.0f, 0.0F, 0, 0, 48, 48, false, false);
                     if (TalentLeft.hovered || Settings.isControllerMode) {sb.setColor(Color.WHITE);} else {sb.setColor(Color.LIGHT_GRAY);}
-                    sb.draw(ImageMaster.CF_LEFT_ARROW, Settings.WIDTH / 2.0F - Talent_LEFT_W / 2.0F - 800.0F * Settings.scale, 800.0F * Settings.scale - 16.0F, 16.0F, 16.0F, 32.0F, 32.0F, Settings.scale*2.0f, Settings.scale*2.0f, 0.0F, 0, 0, 48, 48, false, false);
+                    sb.draw(ImageMaster.CF_LEFT_ARROW, Settings.WIDTH / 2.0F - Talent_LEFT_W / 2.0F - 800.0F * Settings.scale + X_fixed, 800.0F * Settings.scale - 16.0F, 16.0F, 16.0F, 32.0F, 32.0F, Settings.scale*2.0f, Settings.scale*2.0f, 0.0F, 0, 0, 48, 48, false, false);
 
                     FontHelper.cardTitleFont.getData().setScale(1.0F);
                     FontHelper.bannerFont.getData().setScale(0.8F);

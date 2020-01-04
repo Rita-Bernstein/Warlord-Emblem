@@ -35,6 +35,7 @@ public class QuestCardHunterReward extends AbstractQuestCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 10;
         this.exhaust = true;
+        this.cardsToPreview = new FlashOfSteel();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

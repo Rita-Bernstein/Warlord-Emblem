@@ -172,13 +172,13 @@ public class DeathKnight extends CustomPlayer {
 	public void doCharSelectScreenSelectEffect() {
 		CardCrawlGame.mainMenuScreen.charSelectScreen.bgCharImg = CharacterSelectScreenPatches.updateBgImg();
 
-		CardCrawlGame.sound.playA("ATTACK_MAGIC_BEAM_SHORT", MathUtils.random(-0.2F, 0.2F));
+		CardCrawlGame.sound.playA("ATTACK_HEAVY", MathUtils.random(-0.2F, 0.2F));
 		CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, false);
 	}
 
 	@Override
 	public String getCustomModeCharacterButtonSoundKey() {
-		return "ATTACK_MAGIC_BEAM_SHORT";
+		return "ATTACK_HEAVY";
 	}
 
 	@Override

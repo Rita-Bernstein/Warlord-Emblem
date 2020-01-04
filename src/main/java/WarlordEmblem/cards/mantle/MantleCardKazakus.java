@@ -31,6 +31,7 @@ public class MantleCardKazakus extends AbstractMantleCard {
     public MantleCardKazakus() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        //this.cardsToPreview = new MantleCardKazakusPotion();
     }
 
     @Override

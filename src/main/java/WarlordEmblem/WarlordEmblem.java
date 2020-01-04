@@ -15,11 +15,13 @@ import WarlordEmblem.patches.CharacterSelectScreenPatches;
 import WarlordEmblem.relics.*;
 import WarlordEmblem.relics.mantle.*;
 import WarlordEmblem.relics.quest.*;
+import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
 import basemod.interfaces.*;
@@ -30,6 +32,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.dungeons.TheEnding;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.orbs.Dark;
@@ -42,6 +45,8 @@ import com.badlogic.gdx.graphics.Color;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
+
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import WarlordEmblem.character.Kael.*;
 import WarlordEmblem.cards.DeathKnight.*;
@@ -73,6 +78,13 @@ public class WarlordEmblem implements
     public static final String DESCRIPTION = "Porting Warlord Emblem to latest version.";
     public static String  DK_bgImg = assetPath("img/character/DeathKnight/dk_blood.png");
 
+    public static boolean addonRelic = true;
+    public static boolean ringRelic = true;
+    public static boolean mantleRelic = true;
+    public static Properties WarlordEmblemDefaults = new Properties();
+
+
+
  public WarlordEmblem(){
      logger.debug("Constructor started.");
      BaseMod.subscribe(this);
@@ -91,6 +103,7 @@ public class WarlordEmblem implements
              assetPath("img/cardui/512/card_lime_small_orb.png")
      );
 
+     loadConfig();
      logger.debug("Constructor finished.");
     }
 
@@ -100,12 +113,59 @@ public class WarlordEmblem implements
         logger.info("========================= 初始化完成 =========================");
     }
 
+    public static void loadConfig() {
+        logger.debug("===徽章读取设置======");
+        try {
+            SpireConfig config = new SpireConfig("WarlordEmblem", "WarlordEmblemSaveData", WarlordEmblemDefaults);
+            config.load();
+            addonRelic = config.getBool("addonRelic");
+            ringRelic = config.getBool("ringRelic");
+            mantleRelic = config.getBool("mantleRelic");
+        } catch (Exception e) {
+            e.printStackTrace();
+            clearConfig();
+        }
+        logger.debug("===徽章读取设置完成======");
+    }
+
+    public static void saveConfig() {
+        logger.debug("===徽章存储设置======");
+        try {
+            SpireConfig config = new SpireConfig("WarlordEmblem", "WarlordEmblemSaveData", WarlordEmblemDefaults);
+            config.setBool("addonRelic", addonRelic);
+            config.setBool("ringRelic", ringRelic);
+            config.setBool("mantleRelic", mantleRelic);
+            config.save();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        logger.debug("===徽章存储设置完成======");
+    }
+
+    public static void clearConfig() {
+        saveConfig();
+    }
+
 
     @Override
     public void receivePostInitialize() {
         Texture badgeTexture = new Texture(assetPath("/img/badge.png"));
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
+
+        ModLabeledToggleButton addonRelicSwitch = new ModLabeledToggleButton(CardCrawlGame.languagePack.getUIString(makeID("RelicFilter")).TEXT[0],400.0f, 720.0f, Settings.CREAM_COLOR, FontHelper.charDescFont,addonRelic, settingsPanel,
+                (label) -> {}, (button) -> {addonRelic = button.enabled;saveConfig();});
+        ModLabeledToggleButton ringRelicSwitch = new ModLabeledToggleButton(CardCrawlGame.languagePack.getUIString(makeID("RelicFilter")).TEXT[1],400.0f, 660.0f, Settings.CREAM_COLOR, FontHelper.charDescFont,ringRelic, settingsPanel,
+                (label) -> {}, (button) -> {ringRelic = button.enabled;saveConfig();});
+        ModLabeledToggleButton mantleRelicSwitch = new ModLabeledToggleButton(CardCrawlGame.languagePack.getUIString(makeID("RelicFilter")).TEXT[2],400.0f, 600.0f, Settings.CREAM_COLOR, FontHelper.charDescFont,mantleRelic, settingsPanel,
+                (label) -> {}, (button) -> {mantleRelic = button.enabled;saveConfig();});
+
+        settingsPanel.addUIElement(addonRelicSwitch);
+        settingsPanel.addUIElement(ringRelicSwitch);
+        settingsPanel.addUIElement(mantleRelicSwitch);
+
+
+
     }
 
     @Override
@@ -257,29 +317,32 @@ public class WarlordEmblem implements
     @Override
     public void receiveEditRelics() {
         logger.debug("receiveEditRelics started.");
+        if(addonRelic){
+            BaseMod.addRelic(new BadgeBless(), RelicType.SHARED);
+            BaseMod.addRelic(new BadgeWrath(), RelicType.SHARED);
+            BaseMod.addRelic(new EvilBlood(), RelicType.SHARED);
+            BaseMod.addRelic(new HatTrick(), RelicType.SHARED);
+            BaseMod.addRelic(new HeavyShield(), RelicType.SHARED);
+            BaseMod.addRelic(new OldTorch(), RelicType.SHARED);
+            //BaseMod.addRelic(new Pill(), RelicType.SHARED);
+            //BaseMod.addRelic(new BurningIceCream(), RelicType.SHARED);
+            BaseMod.addRelic(new SaveLoadDisk(), RelicType.SHARED);
+            BaseMod.addRelic(new SmileMask(), RelicType.SHARED);
+            BaseMod.addRelic(new SoftArmor(), RelicType.SHARED);
+            BaseMod.addRelic(new VoidPower(), RelicType.SHARED);
+            BaseMod.addRelic(new BrokenMantle(), RelicType.SHARED);
+            BaseMod.addRelic(new Scar(), RelicType.SHARED);
+            BaseMod.addRelic(new BrokenWatch(), RelicType.SHARED);
+            BaseMod.addRelic(new WuziBook(), RelicType.SHARED);
+            BaseMod.addRelic(new BadgeProtect(), RelicType.SHARED);
+            BaseMod.addRelic(new KitchenKnife(), RelicType.SHARED);
+            BaseMod.addRelic(new BadgeMouse(), RelicType.SHARED);
+            BaseMod.addRelic(new GoldMime(), RelicType.SHARED);
+            BaseMod.addRelic(new BreastProtector(), RelicType.SHARED);
+            BaseMod.addRelic(new SoulOfKael(), RelicType.SHARED);
 
-        BaseMod.addRelic(new BadgeBless(), RelicType.SHARED);
-        BaseMod.addRelic(new BadgeWrath(), RelicType.SHARED);
-        BaseMod.addRelic(new EvilBlood(), RelicType.SHARED);
-        BaseMod.addRelic(new HatTrick(), RelicType.SHARED);
-        BaseMod.addRelic(new HeavyShield(), RelicType.SHARED);
-        BaseMod.addRelic(new OldTorch(), RelicType.SHARED);
-        //BaseMod.addRelic(new Pill(), RelicType.SHARED);
-        //BaseMod.addRelic(new BurningIceCream(), RelicType.SHARED);
-        BaseMod.addRelic(new SaveLoadDisk(), RelicType.SHARED);
-        BaseMod.addRelic(new SmileMask(), RelicType.SHARED);
-        BaseMod.addRelic(new SoftArmor(), RelicType.SHARED);
-        BaseMod.addRelic(new VoidPower(), RelicType.SHARED);
-        BaseMod.addRelic(new BrokenMantle(), RelicType.SHARED);
-        BaseMod.addRelic(new Scar(), RelicType.SHARED);
-        BaseMod.addRelic(new BrokenWatch(), RelicType.SHARED);
-        BaseMod.addRelic(new WuziBook(), RelicType.SHARED);
-        BaseMod.addRelic(new BadgeProtect(), RelicType.SHARED);
-        BaseMod.addRelic(new KitchenKnife(), RelicType.SHARED);
-        BaseMod.addRelic(new BadgeMouse(), RelicType.SHARED);
-        BaseMod.addRelic(new GoldMime(), RelicType.SHARED);
-        BaseMod.addRelic(new BreastProtector(), RelicType.SHARED);
-        BaseMod.addRelic(new SoulOfKael(), RelicType.SHARED);
+        }
+
 
         BaseMod.addRelicToCustomPool(new SoulOfKael(), CardColorEnum.Kael_LIME);
 
@@ -289,27 +352,32 @@ public class WarlordEmblem implements
         BaseMod.addRelicToCustomPool(new IceRealm(), CardColorEnum.DeathKnight_LIME);
         BaseMod.addRelicToCustomPool(new EvilRealm(), CardColorEnum.DeathKnight_LIME);
 
-        BaseMod.addRelic(new MantleBaku(), RelicType.SHARED);
-        BaseMod.addRelic(new MantleCaireseth(), RelicType.SHARED);
-        BaseMod.addRelic(new MantleJean(), RelicType.SHARED);
-        BaseMod.addRelic(new MantleKazakus(), RelicType.SHARED);
 
-        BaseMod.addRelic(new MantleLazz(), RelicType.SHARED);
-        BaseMod.addRelic(new MantleLiam(), RelicType.SHARED);
-        BaseMod.addRelic(new MantleMarkzar(), RelicType.SHARED);
-        BaseMod.addRelic(new MantleReynold(), RelicType.SHARED);
-        BaseMod.addRelic(new MantleWalana(), RelicType.SHARED);
+        if(mantleRelic){
+            BaseMod.addRelic(new MantleBaku(), RelicType.SHARED);
+            BaseMod.addRelic(new MantleCaireseth(), RelicType.SHARED);
+            BaseMod.addRelic(new MantleJean(), RelicType.SHARED);
+            BaseMod.addRelic(new MantleKazakus(), RelicType.SHARED);
+            BaseMod.addRelic(new MantleLazz(), RelicType.SHARED);
+            BaseMod.addRelic(new MantleLiam(), RelicType.SHARED);
+            BaseMod.addRelic(new MantleMarkzar(), RelicType.SHARED);
+            BaseMod.addRelic(new MantleReynold(), RelicType.SHARED);
+            BaseMod.addRelic(new MantleWalana(), RelicType.SHARED);
+        }
 
-        BaseMod.addRelic(new QuestDK(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestDruid(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestHunter(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestMage(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestPaladin(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestPriest(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestRogue(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestShaman(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestWarlock(), RelicType.SHARED);
-        BaseMod.addRelic(new QuestWarrior(), RelicType.SHARED);
+        if(ringRelic){
+            BaseMod.addRelic(new QuestDK(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestDruid(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestHunter(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestMage(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestPaladin(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestPriest(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestRogue(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestShaman(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestWarlock(), RelicType.SHARED);
+            BaseMod.addRelic(new QuestWarrior(), RelicType.SHARED);
+        }
+
 
         logger.debug("receiveEditRelics finished.");
     }

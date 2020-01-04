@@ -111,6 +111,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.KaelColdSnap_ColdDown > 0)
         str = "," + Kael.KaelColdSnap_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[2] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new KaelColdSnap();
       initializeDescription();
     }//急速冷却
 
@@ -120,6 +121,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.GhostWalk_ColdDown > 0)
         str = "," + Kael.GhostWalk_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[3] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new GhostWalk();
       initializeDescription();
     }//幽灵漫步
 
@@ -127,6 +129,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.Alacrity_ColdDown > 0)
         str = "," + Kael.Alacrity_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[4] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new Alacrity();
       initializeDescription();
     }//灵动迅捷
 
@@ -134,6 +137,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.SunStrike_ColdDown > 0)
         str = "," + Kael.SunStrike_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[5] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new SunStrike();
       initializeDescription();
     }//阳炎冲击
 
@@ -141,6 +145,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.EMP_ColdDown > 0)
         str = "," + Kael.EMP_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[6] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new EMP();
       initializeDescription();
     }//电磁脉冲
 
@@ -149,6 +154,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.ChaosMeteor_ColdDown > 0)
         str = "," + Kael.ChaosMeteor_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[7] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new ChaosMeteor();
       initializeDescription();
     }//混沌陨石
 
@@ -157,6 +163,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.IceWall_ColdDown > 0)
         str = "," + Kael.IceWall_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION+EXTENDED_DESCRIPTION[8] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new IceWall();
       initializeDescription();
     }//寒冰之墙
 
@@ -165,6 +172,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.DeafeningBlast_ColdDown > 0)
         str = "," + Kael.DeafeningBlast_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION+EXTENDED_DESCRIPTION[9] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new DeafeningBlast();
       initializeDescription();
     }//超震声波
 
@@ -174,6 +182,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.Tornado_ColdDown > 0)
         str = "," + Kael.Tornado_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION+EXTENDED_DESCRIPTION[10] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new Tornado();
       initializeDescription();
     }//"强袭飓风"
 
@@ -183,6 +192,7 @@ public class ElementInvoke extends CustomCard {
       if (Kael.ForgeSpirit_ColdDown > 0)
         str = "," + Kael.ForgeSpirit_ColdDown + EXTENDED_DESCRIPTION[1];
       this.rawDescription = DESCRIPTION+EXTENDED_DESCRIPTION[11] + str + EXTENDED_DESCRIPTION[12];
+      this.cardsToPreview = new ForgeSpirit();
       initializeDescription();
     }//熔炉精灵
 

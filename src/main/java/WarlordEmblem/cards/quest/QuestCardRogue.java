@@ -33,6 +33,7 @@ public class QuestCardRogue extends AbstractQuestCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.isEthereal = true;
         this.exhaust = true;
+        this.cardsToPreview = new QuestCardRogueReward();
     }
 
     public AbstractCard makeCopy() {
