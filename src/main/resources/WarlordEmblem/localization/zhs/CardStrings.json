@@ -31,7 +31,7 @@
   },
   "WarlordEmblem:DeafeningBlast": {
     "NAME": "超震声波",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 1 层 warlord_emblem:缴械 。  NL warlord_emblem:冷却 4。 NL 虚无 消耗 。",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 1 层 warlord_emblem:缴械 。  NL warlord_emblem:冷却 4。 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:Tornado": {
@@ -178,7 +178,7 @@
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "心灵冰冻",
-    "DESCRIPTION":  "获得1层 无实体 ，下回合少抽1张牌。 NL warlord_emblem:冰霜领域 ：不会少抽牌。 消耗 。"
+    "DESCRIPTION":  "获得1层 无实体 ，下回合少抽1张牌。 消耗 。 NL warlord_emblem:冰霜领域 ：不会少抽牌。"
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "冰霜打击",
@@ -331,16 +331,16 @@
   "WarlordEmblem:MantleCardKazakus": {
     "NAME":  "卡扎库斯",
     "DESCRIPTION":  "如果你的抽牌堆没有重复的牌， NL 随机制造一张 *卡扎库斯的药水 。 NL 消耗 。",
-    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的牌","。 NL ","。 NL 消耗"]
+    "EXTENDED_DESCRIPTION":["抽牌堆中有相同的牌"]
   },
   "WarlordEmblem:MantleCardKazakusPotion": {
     "NAME":  "卡扎库斯药水",
-    "DESCRIPTION":  "",
-    "EXTENDED_DESCRIPTION": ["对所有敌人造成 !D! 点伤害","获得 !B! 点 格挡 ","给予所有敌人6层 中毒 ","获得 [E] [E] ","获得3点 力量 ","获得3点 敏捷 ","回复10生命","抽4张牌","给予所有敌人2层 易伤 ","给予所有敌人2层 虚弱 "]
+    "DESCRIPTION":  "随机三种效果。",
+    "EXTENDED_DESCRIPTION": ["对所有敌人造成 !D! 点伤害","获得 !B! 点 格挡 ","给予所有敌人6层 中毒 ","获得 [E] [E] ","获得3点 力量 ","获得3点 敏捷 ","回复10生命","抽4张牌","给予所有敌人2层 易伤 ","给予所有敌人2层 虚弱 ","。 NL ","。 NL 消耗"]
   },
   "WarlordEmblem:MantleCardLazz": {
     "NAME":  "缚链者拉兹",
-    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌， NL 这场战斗中，每回合额外获得2 [E] 。 NL 消耗 。",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌， NL 这场战斗中，每回合额外获得2 [E] 。 消耗 。",
     "EXTENDED_DESCRIPTION":["抽牌堆中有相同的牌"]
   },
   "WarlordEmblem:MantleCardLiam": {
@@ -353,7 +353,7 @@
   },
   "WarlordEmblem:MantleCardReynold": {
     "NAME":  "雷诺.杰克逊",
-    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌，回复到战斗开始时的生命。（最多20） NL 消耗 。",
+    "DESCRIPTION":  "如果你的抽牌堆没有重复的牌，回复到战斗开始时的生命（最多20）。 消耗 。",
     "EXTENDED_DESCRIPTION":["抽牌堆中有相同的牌"]
   },
   "WarlordEmblem:MantleCardWalana": {
@@ -381,7 +381,7 @@
   },
   "WarlordEmblem:QuestCardHunter": {
     "NAME":  "湿地女王",
-    "DESCRIPTION": " warlord_emblem:任务 ：使用7张0点能量的牌。 NL 奖励： *卡纳莎女王 。 虚无 消耗 。"
+    "DESCRIPTION": " warlord_emblem:任务 ：使用7张0点耗能的牌。 NL 奖励： *卡纳莎女王 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardHunterReward": {
     "NAME":  "卡纳莎女王",
@@ -397,7 +397,7 @@
   },
   "WarlordEmblem:QuestCardPaladin": {
     "NAME":  "终极进化",
-    "DESCRIPTION": " warlord_emblem:任务 ：获得6个增益或负面状态。 NL 奖励： *嘉沃顿 。 虚无 消耗 。"
+    "DESCRIPTION": " warlord_emblem:任务 ：获得6个增益或负面状态。 NL 奖励： *嘉沃顿 。 NL 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardPaladinReward": {
     "NAME":  "嘉沃顿",
@@ -405,7 +405,7 @@
   },
   "WarlordEmblem:QuestCardPriest": {
     "NAME":  "唤醒造物者",
-    "DESCRIPTION": " warlord_emblem:任务 ： 消耗 7张牌。 NL 奖励：  *希望守护者阿玛拉 。 虚无 消耗 。"
+    "DESCRIPTION": " warlord_emblem:任务 ： 消耗 7张牌。 NL 奖励： NL *希望守护者阿玛拉 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardPriestReward": {
     "NAME":  "希望守护者阿玛拉",
@@ -413,7 +413,7 @@
   },
   "WarlordEmblem:QuestCardRogue": {
     "NAME":  "探索地下洞穴",
-    "DESCRIPTION":  " warlord_emblem:任务 ：使用5张相同的牌。 NL 奖励： *水晶核心 。 虚无 消耗 。"
+    "DESCRIPTION":  " warlord_emblem:任务 ： NL 使用5张相同的牌。 NL 奖励： *水晶核心 。 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardRogueReward": {
     "NAME":  "水晶核心",
@@ -421,7 +421,7 @@
   },
   "WarlordEmblem:QuestCardShaman": {
     "NAME":  "鱼人总动员",
-    "DESCRIPTION":  " warlord_emblem:任务 ：使用10张技能牌。 NL 奖励： *老鲨嘴 。 虚无 消耗 。"
+    "DESCRIPTION":  " warlord_emblem:任务 ：使用10张技能牌。 NL 奖励： *老鲨嘴 。 NL 虚无 消耗 。"
   },
   "WarlordEmblem:QuestCardShamanReward": {
     "NAME":  "老鲨嘴",
@@ -433,7 +433,7 @@
   },
   "WarlordEmblem:QuestCardWarlockReward": {
     "NAME":  "虚空传送门",
-    "DESCRIPTION":  "每回合开始时对所有敌人造成6点伤害，获得4点 格挡 。 NL 消耗 。"
+    "DESCRIPTION":  "每回合开始时对所有敌人造成6点伤害，获得4点 格挡 。 消耗 。"
   },
   "WarlordEmblem:QuestCardWarrior": {
     "NAME":  "火羽之心",

@@ -31,28 +31,18 @@ public class MantleCardKazakus extends AbstractMantleCard {
     public MantleCardKazakus() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
-        //this.cardsToPreview = new MantleCardKazakusPotion();
+        this.cardsToPreview = new MantleCardKazakusPotion();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i = 0; i < 10; i++) {
-            list.add(i);
-        }
-        Collections.shuffle(list);
-        int v1 = list.remove(0);
-        Collections.shuffle(list);
-        int v2 = list.remove(0);
-        Collections.shuffle(list);
-        int v3 = list.remove(0);
-        String s1 = MantleCardKazakusPotion.descList.get(v1);
-        String s2 = MantleCardKazakusPotion.descList.get(v2);
-        String s3 = MantleCardKazakusPotion.descList.get(v3);
-        String desc = s1 + EXTENDED_DESCRIPTION[1] + s2 + EXTENDED_DESCRIPTION[1]  + s3 + EXTENDED_DESCRIPTION[2] ;
+        int v1 = AbstractDungeon.cardRandomRng.random(0,9);
+        int v2 = AbstractDungeon.cardRandomRng.random(0,9);
+        int v3 = AbstractDungeon.cardRandomRng.random(0,9);
         AbstractDungeon.actionManager
-                .addToBottom(new MakeTempCardInHandAction(new MantleCardKazakusPotion(v1, v2, v3, desc), false));
+                .addToBottom(new MakeTempCardInHandAction(new MantleCardKazakusPotion(v1, v2, v3), false));
     }
+
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {

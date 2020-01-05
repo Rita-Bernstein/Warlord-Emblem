@@ -3,7 +3,9 @@ package WarlordEmblem.relics;
 import WarlordEmblem.WarlordEmblem;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.Settings;
@@ -25,11 +27,25 @@ public class GoldMime extends CustomRelic {
  
    
    public String getUpdatedDescription() { return this.DESCRIPTIONS[0] ; }
+/*
+    @Override
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        if (info.owner != null && info.type == DamageInfo.DamageType.HP_LOSS && damageAmount >= 0 && info.output > 0){
+            this.flash();
+            AbstractDungeon.player.gainGold(info.output);
+        }
 
 
+        return super.onAttacked(info, damageAmount);
+    }
+*/
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
-        AbstractDungeon.player.gainGold(info.output);
+        if (info.owner != null  && info.type != DamageInfo.DamageType.THORNS && damageAmount > 0 && info.output > 0) {
+            this.flash();
+
+            AbstractDungeon.player.gainGold(damageAmount);
+        }
         return super.onAttackedToChangeDamage(info, damageAmount);
     }
 

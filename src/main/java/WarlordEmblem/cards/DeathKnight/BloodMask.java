@@ -22,7 +22,7 @@ public class BloodMask extends AbstractDKCard {
     private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    public static final CardType TYPE = CardType.SKILL;
+    public static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

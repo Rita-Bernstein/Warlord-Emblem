@@ -160,7 +160,7 @@ public class DeathKnight extends CustomPlayer {
 
 	@Override
 	public int getAscensionMaxHPLoss() {
-		return 4;
+		return 5;
 	}
 
 	@Override

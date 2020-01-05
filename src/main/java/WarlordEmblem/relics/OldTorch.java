@@ -5,11 +5,14 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
@@ -33,13 +36,14 @@ public class OldTorch extends CustomRelic {
              if (this.counter < 2) {
                    this.counter++;
                  }
-             if (this.counter == 2) {
+             if (this.counter >= 2) {
                    flash();
-                 AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                  AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                 AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 14));
+                 AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
+                 if (AbstractDungeon.player.hasRelic("Lantern"))
+                     AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
                    this.counter = -1;
-                   //this.grayscale = true;
+                   this.grayscale = true;
                  }
            }
 

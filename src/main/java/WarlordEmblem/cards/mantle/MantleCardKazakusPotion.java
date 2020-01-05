@@ -23,54 +23,37 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class MantleCardKazakusPotion extends AbstractMantleCard {
-    public static final String ID = WarlordEmblem.makeID("MantleCardCaireseth");
+    public static final String ID = WarlordEmblem.makeID("MantleCardKazakusPotion");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/Mantle/mantle_card_kazakus_potion.png");
     private static final int COST = 1;
+    public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColor.COLORLESS;
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.ALL;
-    public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;
 
-
-    public static String DESC1 = EXTENDED_DESCRIPTION[0];
-    public static String DESC2 = EXTENDED_DESCRIPTION[1];
-    public static String DESC3 = EXTENDED_DESCRIPTION[2];
-    public static String DESC4 = EXTENDED_DESCRIPTION[3];
-    public static String DESC5 = EXTENDED_DESCRIPTION[4];
-    public static String DESC6 = EXTENDED_DESCRIPTION[5];
-    public static String DESC7 = EXTENDED_DESCRIPTION[6];
-    public static String DESC8 = EXTENDED_DESCRIPTION[7];
-    public static String DESC9 = EXTENDED_DESCRIPTION[8];
-    public static String DESC10 = EXTENDED_DESCRIPTION[9];
-    public static ArrayList<String> descList = new ArrayList<String>();
-    static {
-        descList.add(DESC1);
-        descList.add(DESC2);
-        descList.add(DESC3);
-        descList.add(DESC4);
-        descList.add(DESC5);
-        descList.add(DESC6);
-        descList.add(DESC7);
-        descList.add(DESC8);
-        descList.add(DESC9);
-        descList.add(DESC10);
-    }
 
     public int value1;
     public int value2;
     public int value3;
-    public String desc;
 
-    public MantleCardKazakusPotion(int v1, int v2, int v3, String desc) {
+    public MantleCardKazakusPotion() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+    }
+
+    public MantleCardKazakusPotion(int v1, int v2, int v3) {
+        super(ID, NAME, IMG, COST,
+                MantleCardKazakusPotion.EXTENDED_DESCRIPTION[v1] + MantleCardKazakusPotion.EXTENDED_DESCRIPTION[10]
+                + MantleCardKazakusPotion.EXTENDED_DESCRIPTION[v2] + MantleCardKazakusPotion.EXTENDED_DESCRIPTION[10]
+                + MantleCardKazakusPotion.EXTENDED_DESCRIPTION[v3] + MantleCardKazakusPotion.EXTENDED_DESCRIPTION[11]
+                , TYPE, COLOR, RARITY, TARGET);
         this.value1 = v1;
         this.value2 = v2;
         this.value3 = v3;
-        this.desc = desc;
+        //this.DESCRIPTION = EXTENDED_DESCRIPTION[value1] + EXTENDED_DESCRIPTION[value2] +EXTENDED_DESCRIPTION[value3];
         this.baseDamage = 12;
         this.baseBlock = 20;
         this.exhaust = true;
@@ -117,6 +100,6 @@ public class MantleCardKazakusPotion extends AbstractMantleCard {
     }
 
     public AbstractCard makeCopy() {
-        return new MantleCardKazakusPotion(value1, value2, value3, desc);
+        return new MantleCardKazakusPotion(value1, value2, value3);
     }
 }
