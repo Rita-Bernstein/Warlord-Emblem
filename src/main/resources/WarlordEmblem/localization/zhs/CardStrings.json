@@ -11,12 +11,12 @@
   },
   "WarlordEmblem:KaelColdSnap": {
     "NAME": "急速冷却",
-    "DESCRIPTION": "降低目标2点 力量 ，给予目标1层 虚弱 ，3层 warlord_emblem:急速冷冻 。 NL warlord_emblem:冷却 2。 NL 虚无 消耗 。",
+    "DESCRIPTION": "降低目标2点 力量 ，给予1层 虚弱 ，3层 warlord_emblem:急速冷冻 。 NL warlord_emblem:冷却 2。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:EMP": {
     "NAME": "电磁脉冲",
-    "DESCRIPTION":"吸收所有敌人的 格挡 ，获得等量的 格挡 。 NL warlord_emblem:冷却 2。 NL 虚无 消耗 。",
+    "DESCRIPTION":"吸收所有敌人的 格挡 。 NL warlord_emblem:冷却 2。 NL 虚无 消耗 。",
     "EXTENDED_DESCRIPTION": ["还有","回合冷却"]
   },
   "WarlordEmblem:IceWall": {
