@@ -1,10 +1,12 @@
 package WarlordEmblem.powers;
 
 import WarlordEmblem.WarlordEmblem;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -27,11 +29,10 @@ public class CrystalCenterPower extends AbstractPower {
     public void updateDescription() { this.description = powerStrings.DESCRIPTIONS[0]; }
 
     @Override
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        if (type == DamageType.NORMAL) {
-            return 12f;
-        } else {
-            return damage;
-        }
+    public int onAttackToChangeDamage(DamageInfo info, int damageAmount) {
+        if (info.owner != null && info.type != DamageInfo.DamageType.HP_LOSS && info.type != DamageInfo.DamageType.THORNS && damageAmount > 0 ) {
+            flash();
+            return 12;}
+        else { return damageAmount;}
     }
 }

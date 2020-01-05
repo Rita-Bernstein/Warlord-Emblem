@@ -90,6 +90,7 @@ public class Kael extends CustomPlayer {
 	public ArrayList<String> getStartingRelics() {
 		ArrayList<String> retVal = new ArrayList<>();
 		retVal.add(SoulOfKael.ID);
+
 		return retVal;
 	}
 

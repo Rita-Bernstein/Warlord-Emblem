@@ -121,7 +121,7 @@
   },
   "WarlordEmblem:DeathStrike": {
     "NAME": "死亡打击",
-    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 中毒 ，给予!M! 层 易伤 。 NL warlord_emblem:邪恶领域 ：额外给予 1层 易伤 。"
+    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 中毒 ，给予 !M! 层 易伤 。 NL warlord_emblem:邪恶领域 ：额外给予 1层 易伤 。"
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "死亡凋零",

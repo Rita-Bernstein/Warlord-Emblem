@@ -106,37 +106,37 @@
   },
   "WarlordEmblem:RuneSword": {
     "NAME": "Rune Sword",
-    "FLAVOR": "充满神秘力量的武器。",
+    "FLAVOR": "Weapons full of mysterious power.",
     "DESCRIPTIONS": [
-      "死亡骑士存储符文能量的武器，初始符文上限为6。每回合获得2点符文能量。"
+      "Energy charged in Rune Sword.It can only be charged to 6 at start.Gain 2 rune energy at the start of your turn."
     ]
   },
   "WarlordEmblem:BloodRealm": {
     "NAME": "Blood Realm",
-    "FLAVOR": "鲜血天赋。",
+    "FLAVOR": "Blood Talent.",
     "DESCRIPTIONS": [
-      "强化鲜血系技能。"
+      "Buff the Blood cards."
     ]
   },
   "WarlordEmblem:IceRealm": {
     "NAME": "Ice Realm",
-    "FLAVOR": "冰霜天赋。",
+    "FLAVOR": "Ice Talent.",
     "DESCRIPTIONS": [
-      "强化冰霜系技能。"
+      "Buff the Ice cards."
     ]
   },
   "WarlordEmblem:EvilRealm": {
     "NAME": "Evil Realm",
-    "FLAVOR": "邪恶天赋。",
+    "FLAVOR": "Evil Talent.",
     "DESCRIPTIONS": [
-      "强化邪恶系技能。"
+      "Buff the Evil cards."
     ]
   },
   "WarlordEmblem:DKHelm": {
     "NAME": "Death Knight Helm",
-    "FLAVOR": "无与伦比的死亡骑士头盔。",
+    "FLAVOR": "Unmatched Death Knight Helmet.",
     "DESCRIPTIONS": [
-      "当你拥有6点或以上符文能量时，视为同时拥有鲜血，冰霜，邪恶领域。"
+      "When you have 6 or more Rune Energy,you are regarded have Blood Realm ,Ice Realm and Evil Realm."
     ]
   },
   "WarlordEmblem:Clown": {
@@ -343,10 +343,10 @@
     ]
   },
   "WarlordEmblem:SoulOfKael": {
-    "NAME": "Soul Of Kael",
-    "FLAVOR": "充满元素力量的灵魂。",
+    "NAME": "Soul Of Carl",
+    "FLAVOR": "A soul full of elemental power.",
     "DESCRIPTIONS": [
-      "回合开始时，将1张 #y元素祈唤 放入你的手牌。"
+      "At the start of your turn,add a #yElement #yInvoke to into your hand."
     ]
   }
 }

@@ -103,6 +103,8 @@ public class WarlordEmblem implements
              assetPath("img/cardui/512/card_lime_small_orb.png")
      );
 
+
+
      loadConfig();
      logger.debug("Constructor finished.");
     }
@@ -339,12 +341,12 @@ public class WarlordEmblem implements
             BaseMod.addRelic(new BadgeMouse(), RelicType.SHARED);
             BaseMod.addRelic(new GoldMime(), RelicType.SHARED);
             BaseMod.addRelic(new BreastProtector(), RelicType.SHARED);
-            BaseMod.addRelic(new SoulOfKael(), RelicType.SHARED);
+            //BaseMod.addRelic(new SoulOfKael(), RelicType.SHARED);
 
         }
 
-
-        BaseMod.addRelicToCustomPool(new SoulOfKael(), CardColorEnum.Kael_LIME);
+        BaseMod.addRelic(new SoulOfKael(), RelicType.BLUE);
+        //BaseMod.addRelicToCustomPool(new SoulOfKael(), CardColorEnum.Kael_LIME);
 
         BaseMod.addRelicToCustomPool(new RuneSword(), CardColorEnum.DeathKnight_LIME);
         BaseMod.addRelicToCustomPool(new DKHelm(), CardColorEnum.DeathKnight_LIME);

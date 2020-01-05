@@ -4,9 +4,9 @@
 		"NAME": "Forged Spirit",
 		"DESCRIPTION":
 		[
-			"#y被动： 在你的回合开始时，对一名随机敌人造成 #b",
-			" 点伤害，1层易伤。 NL #y激发： 对一名随机敌人造成 #b" ,
-			" 点伤害，2层易伤。"
+			"#yPassive: At the end of turn, deal #b",
+			" damage to a random enemy and apply 1 Vulnerable. NL #yEvoke: deal  #b" ,
+			" damage to a random enemy and apply 2 Vulnerable."
 		]
 	}
 }

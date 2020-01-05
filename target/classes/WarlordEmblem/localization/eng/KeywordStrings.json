@@ -1,50 +1,50 @@
 [
     {
       "PROPER_NAME": "Cold Down",
-      "NAMES": ["Cold_Down"],
-      "DESCRIPTION": "你在特定回合内不能再打出同名牌。"
+      "NAMES": ["cold_down"],
+      "DESCRIPTION": "You can't play card with same name in several turn."
     },
   {
     "PROPER_NAME": "Cold Snap",
-    "NAMES": ["Cold_Snap"],
-    "DESCRIPTION": "接下来受到多次攻击伤害会给予 #y易伤  #y虚弱 。"
+    "NAMES": ["cold_snap"],
+    "DESCRIPTION": "Next damage will also apply #yVulnerable and #yWeak ."
   },
   {
     "PROPER_NAME": "Forge Spirit",
-    "NAMES": ["Forge_Spirit"],
-    "DESCRIPTION": "充能球：被动造成伤害，激发给予 #y易伤 。"
+    "NAMES": ["forge_spirit"],
+    "DESCRIPTION": "orb: deal damage and apply #yVulnerable ."
   },
   {
     "PROPER_NAME": "Disarm",
-    "NAMES": ["Disarm"],
-    "DESCRIPTION": "接下来受到的攻击伤害会给予 #y易伤  #y虚弱 。"
+    "NAMES": ["disarm"],
+    "DESCRIPTION": "Half damage."
   },
-  {"PROPER_NAME": "真实伤害",
-    "NAMES": ["真实伤害"],
-    "DESCRIPTION": "无视格挡造成伤害。不受攻击加成。"
+  {"PROPER_NAME": "true_damage",
+    "NAMES": ["true_damage"],
+    "DESCRIPTION": "Won't affected by damage modifiers."
   },
-  {"PROPER_NAME": "天赋领域",
-    "NAMES": ["鲜血领域","邪恶领域","冰霜领域"],
-    "DESCRIPTION": "在拥有对应领域时获得对应效果。"
+  {"PROPER_NAME": "Talent Realm",
+    "NAMES": ["blood_realm","evil_realm","ice_realm"],
+    "DESCRIPTION": "Gain additional effect when you have talent."
   },
-  {"PROPER_NAME": "吸血",
-    "NAMES": ["吸血"],
-    "DESCRIPTION": "回复造成伤害等量的生命。"
+  {"PROPER_NAME": "Life Leech",
+    "NAMES": ["life_leech"],
+    "DESCRIPTION": "Heal equals to damage amount."
   },
-  {"PROPER_NAME": "残虐",
-    "NAMES": ["残虐"],
-    "DESCRIPTION": "当你对一名敌人造成负面状态时造成伤害。"
+  {"PROPER_NAME": "sadistic",
+    "NAMES": ["sadistic"],
+    "DESCRIPTION": "Whenever you apply a debuff to an enemy, deal damage."
   },
-  {"PROPER_NAME": "符文能量",
-    "NAMES": ["符文能量"],
-    "DESCRIPTION": "符文巨剑中存储的能量。初始符文上限为6。每回合获得2点符文能量。"
+  {"PROPER_NAME": "Rune Energy",
+    "NAMES": ["rune_energy"],
+    "DESCRIPTION": "Energy charged in Rune Sword.It can only be charged to 6 at start.Gain 2 rune energy at the start of your turn."
   },
-  {"PROPER_NAME": "多层护甲",
-    "NAMES": ["多层护甲"],
-    "DESCRIPTION": "在你的回合结束时获得 #y格挡 。受到攻击伤害而失去生命时， #y多层护甲 的层数将会减少 #b1 。"
+  {"PROPER_NAME": "Plated Armor",
+    "NAMES": ["plated_armor"],
+    "DESCRIPTION": "At the end of your turn, gain #yBlock .Receiving unblocked attack damage reduces #yPlated #yArmor by #b1."
   },
-  {"PROPER_NAME": "任务",
-    "NAMES": ["任务"],
-    "DESCRIPTION": "完成任务，获得奖励"
+  {"PROPER_NAME": "Quest",
+    "NAMES": ["quest"],
+    "DESCRIPTION": "Clear the Quest,Gain the Reward."
   }
 ]

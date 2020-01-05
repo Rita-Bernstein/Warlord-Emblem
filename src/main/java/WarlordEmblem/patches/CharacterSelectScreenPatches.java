@@ -48,7 +48,7 @@ public class CharacterSelectScreenPatches
     private static float Talent_RIGHT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
     private static float Talent_LEFT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
 
-    private static float X_fixed = 30.0f;
+    private static float X_fixed = 30.0f *Settings.scale;
 
     public static Field charInfoField;
 
@@ -63,8 +63,8 @@ public class CharacterSelectScreenPatches
             // Called when you first open the screen, create hitbox for each button
             TalentRight = new Hitbox(Talent_RIGHT_W - 10.0F * Settings.scale + X_fixed, 50.0F * Settings.scale);
             TalentLeft = new Hitbox(Talent_RIGHT_W - 10.0F * Settings.scale + X_fixed, 50.0F * Settings.scale);
-            TalentRight.move(Settings.WIDTH / 2.0F - Talent_RIGHT_W / 2.0F - 550.0F * Settings.scale + 16.0f + X_fixed, 800.0F * Settings.scale);
-            TalentLeft.move(Settings.WIDTH / 2.0F - Talent_LEFT_W / 2.0F - 800.0F * Settings.scale + 16.0f + X_fixed, 800.0F * Settings.scale);
+            TalentRight.move(Settings.WIDTH / 2.0F - Talent_RIGHT_W / 2.0F - 550.0F * Settings.scale + 16.0f*Settings.scale + X_fixed, 800.0F * Settings.scale);
+            TalentLeft.move(Settings.WIDTH / 2.0F - Talent_LEFT_W / 2.0F - 800.0F * Settings.scale + 16.0f*Settings.scale + X_fixed, 800.0F * Settings.scale);
 
 
         }

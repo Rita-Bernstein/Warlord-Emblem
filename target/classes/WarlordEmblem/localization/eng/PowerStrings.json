@@ -2,21 +2,20 @@
   "WarlordEmblem:ColdSnapPower": {
     "NAME": "Cold Snap",
     "DESCRIPTIONS": [
-      "接下来受到的",
-      "次攻击伤害会给予 #y易伤  #y虚弱 。"
+      "Next ",
+      " attack damage will also apply  #yVulnerable and #yWeak ."
     ]
   },
   "WarlordEmblem:DeafeningBlastPower": {
   "NAME": "Deafening Blast",
   "DESCRIPTIONS": [
-    "接下来受到的",
-    "次攻击伤害会给予 #y易伤  #y虚弱 。"
+    "Deal Half damage"
   ]
 },
   "WarlordEmblem:CrystalCenterPower": {
   "NAME": "Crystal Center",
   "DESCRIPTIONS": [
-    "你的卡牌造成的伤害锁定为12点"
+    "All damage of your card is 12 ."
   ]
 }
 }
