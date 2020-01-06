@@ -1,107 +1,107 @@
 {
   "WarlordEmblem:BadgeBless": {
     "NAME": "Badge Bless",
-    "FLAVOR": "来自东方国度的神秘祝福。",
+    "FLAVOR": "Mysterious blessing from the East.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得 #b1 点 #y力量 、 #y敏捷 和 #y集中 。"
+      "Gain #b1 #yStrength , #yDexterity and #yFouce At the start of combat."
     ]
   },
   "WarlordEmblem:BadgeWrath": {
     "NAME": "Badge Wrath",
-    "FLAVOR": "徽章很少发怒，但是发怒了后果很严重。",
+    "FLAVOR": "Badges rarely get angry.But when he get angry, the consequences are serious.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，所有敌人失去 #b1 点 #y力量 。 NL #b协同-徽章的祝福: 给予所有敌人 #b1 层 #y虚弱 。"
+      "All enemy lost #b1 #yStrength at the start of combat. NL #bSynergy-Badge\u00a0Bless: Apply #b1 #yWeak to all enemy."
     ]
   },
   "WarlordEmblem:EvilBlood": {
     "NAME": "Evil Blood",
-    "FLAVOR": "任何东西都有代价。",
+    "FLAVOR": "Nothing is without a price.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，失去 #r4 生命 。战斗结束时，回复 #b11 生命 。 NL #b协同-燃烧之血/黑暗之血: 战斗开始不会失去生命 。"
+      "Lost #b4 HP at the start of combat.Heal #b11 HP on victory. NL #bSynergy-Burning Blood/Black Blood: you wont lost health at the start of combat by this relic."
     ]
   },
   "WarlordEmblem:HatTrick": {
     "NAME": "Hat Trick",
-    "FLAVOR": "你出神入化的操作让发牌员也忍不住为你赞叹。",
+    "FLAVOR": "Your amazing operation makes the dealer can't help but admire you.",
     "DESCRIPTIONS": [
-      "你在同一回合内每打出 #b3 张 #y技能牌 ，抽 #b1 张牌。"
+      "Every time you play #b3 #ySkills in a single turn, draw #b1 card."
     ]
   },
   "WarlordEmblem:HeavyShield": {
     "NAME": "Heavy Shield",
-    "FLAVOR": "强大的力量会让你失去行动力。",
+    "FLAVOR": "Powerful power will make you lose your mobility.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得 #y壁垒 ，失去 #r1 点 #y敏捷 。"
+      "Gain #yBarricade and lost #r1 #yDexterity at the start of combat."
     ]
   },
   "WarlordEmblem:OldTorch": {
     "NAME": "Old Torch",
-    "FLAVOR": "火把有点老了，烧起来有点慢。",
+    "FLAVOR": "The torch is a little old. It's a little slow.",
     "DESCRIPTIONS": [
-      "每场战斗的第二回合获得 #b1 点 #y能量 。 NL #b协同-灯笼： 第一回合额外获得 #b1 点 #y能量 。"
+      "Gain #b1 energy at the second turn of combat. NL #bSynergy-Lantern: Gain extra energy at the start of combat."
     ]
   },
   "WarlordEmblem:Pill": {
     "NAME": "DEPRECATED Pill",
-    "FLAVOR": "它会让你更猛，也会让你更脆弱。(“茶雨微凉”)",
+    "FLAVOR": "It will make you stronger and more vulnerable.(“茶雨微凉”)",
     "DESCRIPTIONS": [
-      "在战斗开始时，获得 #b2 点 #y力量 ，失去 #r2 点 #y敏捷 ， NL #b协同-医药箱: 战斗开始则不会失去敏捷 。"
+      "Gain #b2 #yStrength and lost #r2 #yDexterity at the start of each combat. NL #bSynergy-Medical Kit: You wont lost #YDexterity by this relic."
     ]
   },
   "WarlordEmblem:SaveLoadDisk": {
     "NAME": "Save Load Disk",
-    "FLAVOR": "没什么比它更适合Save/Load的了。",
+    "FLAVOR": "Nothing is more suitable for save / load.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，生命变为最大生命的 #r40% 。"
+      "Set you HP to 40% of your max health at the start of combat."
     ]
   },
   "WarlordEmblem:SmileMask": {
     "NAME": "Smile Mask",
-    "FLAVOR": "它一边笑着，一边塞过来一张牌。",
+    "FLAVOR": "He smiled and shoved a card in.",
     "DESCRIPTIONS": [
-      "每3个回合，抽 #b1 张牌， NL #b协同-开心小花： 额外抽 #b1 张牌 。"
+      "Every 3 turns,draw #b1 card. NL #bSynergy-Happy Flower: Draw #b1 extra card."
     ]
   },
   "WarlordEmblem:SoftArmor": {
     "NAME": "Soft Armor",
-    "FLAVOR": "用这张图片是因为战神徽章找不到更好的图片了。",
+    "FLAVOR": "This is because we can't find a better picture.",
     "DESCRIPTIONS": [
-      "在战斗开始时，获得 #b2 层 #y多层护甲 和 #y荆棘 。"
+      "Gain #b2 #yPlated Armor and #yThorns at the start of combat."
     ]
   },
   "WarlordEmblem:VoidPower": {
     "NAME": "Void Power",
-    "FLAVOR": "强大的力量让你头晕目眩。",
+    "FLAVOR": "Powerful power makes you dazed.",
     "DESCRIPTIONS": [
-      "每回合多获得 #b1 点能量， NL 每场战斗开始时，将 #r5张晕眩 加入你的抽牌堆。"
+      "Gain [E] at  the start of your turn. NL Shuffle #r5 #yDazed into your draw pile at the start of combat."
     ]
   },
   "WarlordEmblem:BrokenMantle": {
     "NAME": "Broken Mantle",
-    "FLAVOR": "穿上这件斗篷，整个人轻盈了许多。(“prttt”)",
+    "FLAVOR": "Put on this mantle, the whole person is much lighter.(“prttt”)",
     "DESCRIPTIONS": [
-      "战斗开始时，如果当前生命小于等于最大生命的一半，获得 #b2 点 #y敏捷 。"
+      "If you have less than 50% of your health at the start of combat,gain #b2 #yDexterity ."
     ]
   },
   "WarlordEmblem:Scar": {
     "NAME": "Scar",
-    "FLAVOR": "这件遗物还没有描述。(“prttt”)",
+    "FLAVOR": "ToDo.(“prttt”)",
     "DESCRIPTIONS": [
-      "每回合开始时， #r失去1-2生命 ，获得 #b1 点 #y能量 。"
+      "Gain [E]  and lost 1 or 2 HP at  the start of your turn."
     ]
   },
   "WarlordEmblem:BrokenWatch": {
     "NAME": "Broken Watch",
-    "FLAVOR": "这件遗物还没有描述。(“Kane11”)",
+    "FLAVOR": "ToDo.(“Kane11”)",
     "DESCRIPTIONS": [
-      "每打出12张牌，获得 #b1 点 #y力量 。将1张 #r伤口 加入你的弃牌堆。"
+      "Every time you play 12 cards,gain #b1 #yStrength.Shuffle 1 #rWound into your discard pile."
     ]
   },
   "WarlordEmblem:BurningIcecream": {
     "NAME": "DEPRECATED Burning Ice cream",
-    "FLAVOR": "这个冰淇淋，很多人根本就拿不住。(“夜影丿殇”)",
+    "FLAVOR": "Many people can't hold the ice cream at all.(“夜影丿殇”)",
     "DESCRIPTIONS": [
-      "每回合开始，增加 #b1 点 #y力量 。 NL 回合结束时， #r失去所有力量 ，对所有敌人造成等额的伤害。"
+      "每回合开始，增加 #b1 点 #y力量 . NL 回合结束时， #r失去所有力量 ，对所有敌人造成等额的伤害."
     ]
   },
   "WarlordEmblem:RuneSword": {
@@ -141,205 +141,205 @@
   },
   "WarlordEmblem:Clown": {
     "NAME": "Clown",
-    "FLAVOR": "杂技小丑，真的很苟。",
+    "FLAVOR": "Acrobatic clown,drag out an ignoble existence.",
     "DESCRIPTIONS": [
-      "每连续打出不同类型的卡牌一次，对所有敌人造成1点伤害。"
+      "For each you play a different type card,deal 1 damage to all enemy."
     ]
   },
   "WarlordEmblem:WuziBook": {
     "NAME": "Wuzi Book",
-    "FLAVOR": "这本古兵书记载着远古时代的智慧。",
+    "FLAVOR": "This ancient manuscript contains wisdom from a past age.",
     "DESCRIPTIONS": [
-      "如果你在回合中不打出任何 #y技能牌 ， NL 回合结束时回复2生命。 NL 每场战斗最多回复8生命。， NL #b协同-孙子兵法： 战斗开始获得1层 #y人工制品 。"
+      "If you do not play any #ySkills during your turn, NL heal 2 HP at the end of your turn.(at most 8). NL #bSynergy-Art of War: Gain #b1 Artifact at the start of combat."
     ]
   },
   "WarlordEmblem:BadgeProtect": {
     "NAME": "Badge Protect",
-    "FLAVOR": "避免让你被敌人无情地蹂躏。",
+    "FLAVOR": "Don't let your enemies ravage you mercilessly.",
     "DESCRIPTIONS": [
-      "如果你在回合结束时没有任何 #y格挡 ， NL 给予所有敌人1层 #y虚弱 。"
+      "If you end your turn without #yBlock, apply #b1 #yWeak to all enemy."
     ]
   },
   "WarlordEmblem:KitchenKnife": {
     "NAME": "Kitchen Knife",
-    "FLAVOR": "武功再高，也怕菜刀。",
+    "FLAVOR": "A martial artist also fears a knife.",
     "DESCRIPTIONS": [
-      "每当你杀死非爪牙的敌人，回复2生命， NL 每场战斗最多回复8生命。"
+      "Heal 2 HP when you kill a non-minion enemy.(at most 8)"
     ]
   },
   "WarlordEmblem:BadgeMouse": {
     "NAME": "Badge Mouse",
-    "FLAVOR": "快手流的福音。",
+    "FLAVOR": "Gospel of quick strategy.",
     "DESCRIPTIONS": [
-      "当前回合操作时间少于4秒，下回合多2点 #y能量 ， NL 当前回合操作时间少于8秒，下回合多1点 #y能量 。"
+      "Gain [E] [E] next turn if you end of your turn in #b4 second. NL Gain [E] if in #b8 second."
     ]
   },
   "WarlordEmblem:BreastProtector": {
     "NAME": "Breast Protector",
-    "FLAVOR": "使你免遭暗算。",
+    "FLAVOR": "To save you from a conspiracy.",
     "DESCRIPTIONS": [
-      "每场战斗第一次受到超过 #b20 的伤害，视为受到 #b20 点伤害。"
+      "The first time you take more than #b20 damage,reduce it into #b20 damage."
     ]
   },
   "WarlordEmblem:GoldMime": {
     "NAME": "Gold Mime",
-    "FLAVOR": "招财进宝，大吉大利。",
+    "FLAVOR": "Good fortune brings good fortune.",
     "DESCRIPTIONS": [
-      "受到伤害时获得等量的 #y金钱 。"
+      "Gain golds equals to health you lost on you are attacked."
     ]
   },
   "WarlordEmblem:BadgeIronclad": {
     "NAME": "Badge Ironclad",
-    "FLAVOR": "拥有神秘力量的徽章。",
+    "FLAVOR": "A badge of mystical power.",
     "DESCRIPTIONS": [
-      "你可以获得 #y战士牌 。"
+      "You can gain #rRed #rCard."
     ]
-  },  
+  },
   "WarlordEmblem:BadgeTheSilent": {
     "NAME": "Badge The Silent",
-    "FLAVOR": "拥有神秘力量的徽章。",
+    "FLAVOR": "A badge of mystical power.",
     "DESCRIPTIONS": [
-      "你可以获得 #y猎人牌 。"
+      "You can gain #gGreen #rCard."
     ]
   },
   "WarlordEmblem:BadgeDefect": {
     "NAME": "Badge Defect",
-    "FLAVOR": "拥有神秘力量的徽章。",
+    "FLAVOR": "A badge of mystical power.",
     "DESCRIPTIONS": [
-      "你可以获得 #y机器人牌 。"
+      "You can gain #bBlue #rCard."
     ]
   },
   "WarlordEmblem:QuestMage": {
     "NAME": "Quest Mage",
-    "FLAVOR": "蕴含精英法师力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Mage.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y打开时空之门 。 NL 任务： #y使用6张无色牌 ， NL 奖励：  #y时空扭曲 。"
+      "Add a #yOpen #ythe #yWaygate to your hand at the start of combat. NL Quest: #yPlay #y6 #yColorless #ycards. ， NL Reward:  #yTime Warp."
     ]
   },
   "WarlordEmblem:QuestHunter": {
     "NAME": "Quest Hunter",
-    "FLAVOR": "蕴含精英猎人力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Hunter.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y湿地女王 。 NL 任务： #y使用7张0点能量的牌 ， NL 奖励： #y卡纳莎女王 。"
+      "Add a #yThe #yMarsh #yQueen to your hand at the start of combat. NL Quest: #yPlay 7 0-cost cards. NL Reward: #yQueen #yCamassa."
     ]
   },
   "WarlordEmblem:QuestWarrior": {
     "NAME": "Quest Warrior",
-    "FLAVOR": "蕴含精英战士力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Warrior.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y火羽之心 。 NL 任务： #y获得7次格挡 ， NL 奖励： #y萨弗拉斯 。"
+      "Add a #yFire #yPlume's #yHeart to your hand at the start of combat. NL Quest: #yGain Block 7 times. NL Reward: #ySulfuras."
     ]
   },
   "WarlordEmblem:QuestDruid": {
     "NAME": "Quest Druid",
-    "FLAVOR": "蕴含精英德鲁伊力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Druid.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y丛林巨兽 。 NL 任务： #y使用5张能量大于等于2的牌 ， NL 奖励： #y班纳布斯 。"
+      "Add a #yJungle #yGiants to your hand at the start of combat. NL Quest: #yPlay 5 cards has 2 or more cost. NL Reward: #yBamabus."
     ]
   },
   "WarlordEmblem:QuestPaladin": {
     "NAME": "Quest Paladin",
-    "FLAVOR": "蕴含精英圣骑士力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Paladin.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y终极进化 。 NL 任务： #y获得6个状态 ， NL 奖励： #y嘉沃顿 。"
+      "Add a #yThe #yLast #yKaeidosaur to your hand at the start of combat. NL Quest: #yGain 6 buff or debuff.  NL Reward: #yGalvadon."
     ]
   },
   "WarlordEmblem:QuestPriest": {
     "NAME": "Quest Priest",
-    "FLAVOR": "蕴含精英牧师力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Priest.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y唤醒造物者 。 NL 任务： #y消耗7张牌 ， NL 奖励： #y希望守护者阿玛拉 。"
+      "Add a #yAwaken #ythe #yMakers to your hand at the start of combat. NL Quest: #yExhaust 7 cards. ， NL Reward: #yAmara,Warden of Hope."
     ]
   },
   "WarlordEmblem:QuestWarlock": {
     "NAME": "Quest Warlock",
-    "FLAVOR": "蕴含精英术士力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Warlock.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y拉卡利献祭 。 NL 任务： #y弃掉6张牌 ， NL 奖励： #y虚空传送门 。"
+      "Add a #yLakkari #ySacrifice to your hand at the start of combat. NL Quest: #yDiscard 6 cards. NL Reward: #yNether Portal."
     ]
   },
   "WarlordEmblem:QuestRogue": {
     "NAME": "Quest Rogue",
-    "FLAVOR": "蕴含精英盗贼力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Rogue.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y探索地下洞穴 。 NL 任务： #y使用5张相同的牌 ， NL 奖励： #y水晶核心 。"
+      "Add a #yThe #yCaverns #yBelow to your hand at the start of combat. NL Quest: #yPlay 5 same cards. NL Reward: #yCrystal Core."
     ]
   },
   "WarlordEmblem:QuestShaman": {
     "NAME": "Quest Shaman",
-    "FLAVOR": "蕴含精英萨满力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Shaman.",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得一张 #y鱼人总动员 。 NL 任务： #y使用10张技能牌 ， NL 奖励： #y老鲨嘴 。"
+      "Add a #yUnite #ythe #yMurlocs to your hand at the start of combat. NL Quest: #yPlay 10 Skills. NL Reward: #yMegafin."
     ]
   },
   "WarlordEmblem:QuestDK": {
     "NAME": "Quest Death Knight",
-    "FLAVOR": "蕴含精英死亡骑士力量的戒指。",
+    "FLAVOR": "Ring containing the power of elite Death Knight.",
     "DESCRIPTIONS": [
-      "任务：抽到5张 #r诅咒牌或状态牌 ， NL 奖励： NL #y霜之哀伤 。"
+      "Add a #yPower #yof #yDark to your hand at the start of combat. NL Quest:Draw 5 Curse or Status cards. NL Reward: NL #yFrostmourne."
     ]
   },
   "WarlordEmblem:MantleReynold": {
     "NAME": "Mantle Reynold",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y雷诺.杰克逊 放入你的抽牌堆。 NL 如果你的抽牌堆没有重复的卡牌，恢复到战斗开始的HP，最多恢复20点HP。"
+      "Shuffle a #yReynold to your draw pile at the start of combat. NL If all your cards in your draw pile is different.Heal your health at the start of this combat.(at most 20)."
     ]
   },
   "WarlordEmblem:MantleLazz": {
     "NAME": "Mantle Lazz",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y缚链者拉兹 放入你的抽牌堆。 NL 如果你的抽牌堆没有重复的卡牌，这场战斗中，每回合额外获得2点能量。"
+      "Shuffle a #yLazz to your draw pile at the start of combat. NL If all your cards in your draw pile is different.  NL Gain [E] [E] each turn in this combat."
     ]
   },
   "WarlordEmblem:MantleKazakus": {
     "NAME": "Mantle Kazakus",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y卡扎库斯 放入你的抽牌堆。 NL 如果你的抽牌堆没有重复的卡牌，随机制造一张卡扎库斯的药水。"
+      "Shuffle a #yKazakus to your draw pile at the start of combat. NL If all your cards in your draw pile is different. NL Random craft a #yKazakus Potion ."
     ]
   },
   "WarlordEmblem:MantleBaku": {
     "NAME": "Mantle Baku",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y噬月者巴库 放入你的抽牌堆。 NL 在这场战斗中，升级所有消耗奇数能量的卡牌。"
+      "Shuffle a #yBaku #ythe #yMooneater to your draw pile at the start of combat. NL Upgrade odd-Cost cards in this combat."
     ]
   },
   "WarlordEmblem:MantleJean": {
     "NAME": "Mantle Jean",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y吉恩.格雷迈恩 放入你的抽牌堆。 NL 在这场战斗中，消耗2点能量的牌耗能降为1点。"
+      "Shuffle a #yJean to your draw pile at the start of combat. NL Reduce the cost of all Even-Cost cards to 1 this combat."
     ]
   },
   "WarlordEmblem:MantleMarkzar": {
     "NAME": "Mantle Markzar",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y马克扎尔王子 放入你的抽牌堆。 NL 将5张随机稀有牌加入抽牌堆，它们消耗的能量变为1。"
+      "Shuffle a #yMarkzar to your draw pile at the start of combat.NL Shuffle 5 random Rare cards into your draw pile. NL They cost 1 ."
     ]
   },
   "WarlordEmblem:MantleLiam": {
     "NAME": "Mantle Liam",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y利亚姆王子 放入你的抽牌堆。 NL 将抽牌堆消耗1点能量的卡牌变为随机稀有卡。"
+      "Shuffle a #yPrince #yLiam to your draw pile at the start of combat. NL Transform 1-Cost card in your draw pile into random Rare card."
     ]
   },
   "WarlordEmblem:MantleWalana": {
     "NAME": "Mantle Walana",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y瓦拉纳王子 放入你的抽牌堆。 NL 如果你的抽牌堆没有消耗0点能量的牌，这场战斗中，你获得30%吸血。"
+      "Shuffle a #yWalana to your draw pile at the start of combat. NL If there is no 0-Cost in your draw pile, NL Gain 30%  #ylife #yleech in this combat."
     ]
   },
   "WarlordEmblem:MantleCaireseth": {
     "NAME": "Mantle Caireseth",
-    "FLAVOR": "充满神秘力量的斗篷。",
+    "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
-      "战斗开始时，将1张 #y凯雷塞斯王子 放入你的抽牌堆。 NL 如果你的抽牌堆没有消耗2点能量的牌，永久升级1张随机卡牌。"
+      "Shuffle a #yPrince #yCaireseth to your draw pile at the start of combat. NL If there is no 2-Cost in your draw pile, NL permanent Upgrade a random card."
     ]
   },
   "WarlordEmblem:SoulOfKael": {

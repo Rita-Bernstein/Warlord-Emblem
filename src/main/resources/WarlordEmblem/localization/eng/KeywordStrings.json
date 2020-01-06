@@ -1,17 +1,17 @@
 [
     {
       "PROPER_NAME": "Cold Down",
-      "NAMES": ["cold_down"],
+      "NAMES": ["cold\u00a0down"],
       "DESCRIPTION": "You can't play card with same name in several turn."
     },
   {
     "PROPER_NAME": "Cold Snap",
-    "NAMES": ["cold_snap"],
+    "NAMES": ["cold\u00a0snap"],
     "DESCRIPTION": "Next damage will also apply #yVulnerable and #yWeak ."
   },
   {
     "PROPER_NAME": "Forge Spirit",
-    "NAMES": ["forge_spirit"],
+    "NAMES": ["forge\u00a0spirit"],
     "DESCRIPTION": "orb: deal damage and apply #yVulnerable ."
   },
   {
@@ -20,15 +20,15 @@
     "DESCRIPTION": "Half damage."
   },
   {"PROPER_NAME": "true_damage",
-    "NAMES": ["true_damage"],
+    "NAMES": ["true\u00a0damage"],
     "DESCRIPTION": "Won't affected by damage modifiers."
   },
   {"PROPER_NAME": "Talent Realm",
-    "NAMES": ["blood_realm","evil_realm","ice_realm"],
+    "NAMES": ["blood\u00a0realm","evil\u00a0realm","ice\u00a0realm"],
     "DESCRIPTION": "Gain additional effect when you have talent."
   },
   {"PROPER_NAME": "Life Leech",
-    "NAMES": ["life_leech"],
+    "NAMES": ["life\u00a0leech"],
     "DESCRIPTION": "Heal equals to damage amount."
   },
   {"PROPER_NAME": "sadistic",
@@ -36,11 +36,11 @@
     "DESCRIPTION": "Whenever you apply a debuff to an enemy, deal damage."
   },
   {"PROPER_NAME": "Rune Energy",
-    "NAMES": ["rune_energy"],
+    "NAMES": ["rune\u00a0energy"],
     "DESCRIPTION": "Energy charged in Rune Sword.It can only be charged to 6 at start.Gain 2 rune energy at the start of your turn."
   },
   {"PROPER_NAME": "Plated Armor",
-    "NAMES": ["plated_armor"],
+    "NAMES": ["plated\u00a0armor"],
     "DESCRIPTION": "At the end of your turn, gain #yBlock .Receiving unblocked attack damage reduces #yPlated #yArmor by #b1."
   },
   {"PROPER_NAME": "Quest",
