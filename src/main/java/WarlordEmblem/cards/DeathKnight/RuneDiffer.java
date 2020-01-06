@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
 
 public class RuneDiffer extends AbstractDKCard {
-    public static final String ID = WarlordEmblem.makeID("CurseStrike");
+    public static final String ID = WarlordEmblem.makeID("RuneDiffer");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/rune_differ.png");

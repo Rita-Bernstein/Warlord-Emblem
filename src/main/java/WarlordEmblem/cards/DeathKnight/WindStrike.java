@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class WindStrike extends AbstractDKCard {
-    public static final String ID = WarlordEmblem.makeID("CurseStrike");
+    public static final String ID = WarlordEmblem.makeID("WindStrike");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/wind_strike.png");
