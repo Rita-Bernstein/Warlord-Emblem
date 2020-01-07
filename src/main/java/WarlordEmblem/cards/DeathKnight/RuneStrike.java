@@ -32,7 +32,7 @@ public class RuneStrike extends AbstractDKCard {
         this.baseMagicNumber = 1;
         this.magicNumber = 1;
         this.tags.add(CardTags.STRIKE);
-        this.tags.add(BaseModCardTags.BASIC_STRIKE);
+        this.tags.add(CardTags.STARTER_STRIKE);
     }
 
     public AbstractCard makeCopy() {
