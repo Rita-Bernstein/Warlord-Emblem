@@ -34,8 +34,8 @@ public class FrozenDeath extends AbstractDKCard {
     public FrozenDeath() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 6;
-        this.magicNumber = 1;
-        this.baseMagicNumber = magicNumber;
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

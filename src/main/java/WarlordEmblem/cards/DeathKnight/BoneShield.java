@@ -28,7 +28,7 @@ public class BoneShield extends AbstractDKCard {
     public BoneShield() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 4;
-        //this.magicNumber = 3;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

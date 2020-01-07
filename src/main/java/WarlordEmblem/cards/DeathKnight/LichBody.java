@@ -30,7 +30,7 @@ public class LichBody extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = 6;
         this.baseMagicNumber = 1;
-        this.magicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

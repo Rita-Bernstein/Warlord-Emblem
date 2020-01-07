@@ -60,6 +60,7 @@ WarlordEmblem\relics\SoftArmor.class
 WarlordEmblem\patches\CharacterSelectScreenPatches.class
 WarlordEmblem\patches\CharacterSelectScreenPatches$CharacterSelectScreenPatch_Render.class
 WarlordEmblem\character\DeathKnight.class
+WarlordEmblem\variables\SecondMagicNumber.class
 WarlordEmblem\relics\mantle\MantleLiam.class
 WarlordEmblem\cards\DeathKnight\DeathGateway.class
 WarlordEmblem\relics\HatTrick.class

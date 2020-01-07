@@ -154,7 +154,7 @@
   },
   "WarlordEmblem:EvilStrike": {
     "NAME":  "邪恶打击",
-    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，获得 [E] ，抽1张牌。 NL warlord_emblem:邪恶领域 : NL 额外获得 !WarlordEmblem:RealmMagic! [E] 。"
+    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，获得 [E] ，抽1张牌。 NL warlord_emblem:邪恶领域 : NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
   },
   "WarlordEmblem:EvilWorm": {
     "NAME":  "邪恶虫群",
@@ -260,7 +260,7 @@
   },
   "WarlordEmblem:RuneRecast": {
     "NAME":  "符文重铸",
-    "DESCRIPTION":  " warlord_emblem:符文能量 2，抽 !M! 张牌，然后丢弃 !M! 张牌。",
+    "DESCRIPTION":  "抽 1 张牌。 warlord_emblem:符文能量 2，抽 !M! 张牌，然后丢弃 !M! 张牌。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:RuneRecover": {
@@ -303,7 +303,7 @@
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "凛风打击",
-    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得1点 能量 ，抽1张牌。 NL warlord_emblem:冰霜领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 点 能量 。"
+    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得1点 能量 ，抽1张牌。 NL warlord_emblem:冰霜领域 ： NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
   },
   "WarlordEmblem:WinterHorn": {
     "NAME":  "寒冬号角",

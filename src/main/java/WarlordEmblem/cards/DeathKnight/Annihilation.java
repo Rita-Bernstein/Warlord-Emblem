@@ -40,8 +40,9 @@ public class Annihilation extends AbstractDKCard {
     public Annihilation() {
         super(ID, NAME, IMG, COST, DESCRIPTION,TYPE, COLOR,RARITY,TARGET);
         this.baseDamage = 0;
-        this.magicNumber = 2;
-        this.baseMagicNumber = magicNumber;
+        this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
+
     }
 
 

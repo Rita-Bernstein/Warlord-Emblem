@@ -4,6 +4,7 @@ import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.powers.LichkingWraithPower;
 import basemod.BaseMod;
+import basemod.helpers.BaseModCardTags;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -35,7 +36,9 @@ public class LichkingWraith extends AbstractDKCard {
     public LichkingWraith() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
         this.isEthereal = true;
+        tags.add(BaseModCardTags.FORM);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

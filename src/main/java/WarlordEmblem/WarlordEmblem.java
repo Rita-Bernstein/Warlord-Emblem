@@ -16,6 +16,7 @@ import WarlordEmblem.relics.*;
 import WarlordEmblem.relics.mantle.*;
 import WarlordEmblem.relics.quest.*;
 import WarlordEmblem.variables.RealmMagicNumber;
+import WarlordEmblem.variables.SecondMagicNumber;
 import WarlordEmblem.variables.SecondRealmMagicNumber;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
@@ -197,6 +198,7 @@ public class WarlordEmblem implements
 
         BaseMod.addDynamicVariable(new RealmMagicNumber());
         BaseMod.addDynamicVariable(new SecondRealmMagicNumber());
+        BaseMod.addDynamicVariable(new SecondMagicNumber());
 
         logger.debug("receiveEditCards started.");
         List<CustomCard> cards = new ArrayList<>();

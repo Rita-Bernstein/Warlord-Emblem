@@ -33,7 +33,7 @@ public class SwordWave extends AbstractDKCard {
         this.isMultiDamage = true;
         this.baseDamage = 3;
         this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

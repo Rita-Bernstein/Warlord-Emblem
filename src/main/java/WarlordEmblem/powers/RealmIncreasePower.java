@@ -14,14 +14,14 @@ package WarlordEmblem.powers;
  import com.megacrit.cardcrawl.unlock.UnlockTracker;
  
  public class RealmIncreasePower extends AbstractPower {
-   public static final String POWER_ID = "Strength";
-   private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("Strength");
+   public static final String POWER_ID = WarlordEmblem.makeID("RealmIncreasePower");
+   private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(WarlordEmblem.makeID("RealmIncreasePower"));
    public static final String NAME = powerStrings.NAME;
    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
    
    public RealmIncreasePower(AbstractCreature owner, int amount) {
      this.name = NAME;
-     this.ID = WarlordEmblem.makeID( "RealmIncrease");
+     this.ID = POWER_ID;
      this.owner = owner;
      this.amount = amount;
      if (this.amount >= 999) {
@@ -88,6 +88,8 @@ package WarlordEmblem.powers;
      } 
    }
 
+
+/*
    @Override
    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
      AbstractDKCard.RealmMagicNumber = AbstractDKCard.BaseRealmMagicNumber+this.amount;
@@ -104,7 +106,7 @@ package WarlordEmblem.powers;
      AbstractDKCard.SecondRealmMagicNumber = AbstractDKCard.BaseSecondRealmMagicNumber;
      AbstractDKCard.isSecondRealmMagicNumberModified = false;
      super.onRemove();
-   }
+   }*/
  }
 
 

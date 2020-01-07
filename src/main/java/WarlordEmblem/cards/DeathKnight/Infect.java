@@ -30,7 +30,7 @@ public class Infect extends AbstractDKCard {
     public Infect() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 3;
-        this.magicNumber = 3;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -32,31 +32,25 @@ public class RuneRecast extends AbstractDKCard {
 
     public RuneRecast() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
+
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager
-                .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber-1, false));
-        super.useRune(2);
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
+
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
+        int amount = super.getRuneCount();
+        if (amount >= 2) {
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber, false));
+            super.useRune(2);
+        }
+
+
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (!canUse) {
-            return false;
-        }
-        int amount = super.getRuneCount();
-        if (amount < 2) {
-            this.cantUseMessage = ERROR;
-            return false;
-        } else {
-            return true;
-        }
-    }
 
     public AbstractCard makeCopy() {
         return new RuneRecast();

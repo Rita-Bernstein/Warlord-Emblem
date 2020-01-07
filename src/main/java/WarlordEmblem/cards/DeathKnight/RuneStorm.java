@@ -32,6 +32,7 @@ public class RuneStorm extends AbstractDKCard {
         this.isMultiDamage = true;
         this.baseDamage = 3;
         this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

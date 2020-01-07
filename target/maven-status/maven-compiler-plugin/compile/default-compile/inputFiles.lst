@@ -9,6 +9,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\mantle\MantleLazz.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DKDefend.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\HeavyShield.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RunePerfusion.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\variables\RealmMagicNumber.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\SoftArmor.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\GhostWalk.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardPriest.java
@@ -16,6 +17,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardRogueRewar
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\quest\QuestHunter.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\BadgeMouse.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\ColdSnapPower.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\RealmRiderPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\SmileMask.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\SoulOfKael.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardDruidReward.java
@@ -41,6 +43,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DeathShake.ja
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\Withstand.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\mantle\MantleCardMask.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardShamanReward.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\variables\SecondMagicNumber.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DeathCoil.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\VoidPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardRogue.java
@@ -85,6 +88,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\CondemnStrike
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\CrystalCenterPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardMageReward.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\Infect.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RealmRider.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\FrozenChain.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardMask.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\Scar.java
@@ -131,6 +135,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\DeafeningBlastPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BloodMask.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\KitchenKnife.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardWarlock.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\variables\SecondRealmMagicNumber.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\HeartStrike.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\mantle\MantleCardMarkzar.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\SaveLoadDisk.java
@@ -158,8 +163,10 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DeathWither.j
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\BurningIcecream.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\GhostStrike.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\IceRealm.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\RealmIncreasePower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\HatTrick.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\EvilStrike.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\LichkingWraithPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\ElementInvoke.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BodyStrike.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\BreastProtector.java

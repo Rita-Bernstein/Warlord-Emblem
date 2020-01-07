@@ -32,6 +32,7 @@ public class RuneDiffer extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         // this.exhaust = true;
         this.baseMagicNumber = 3;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

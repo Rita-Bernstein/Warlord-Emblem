@@ -39,9 +39,9 @@ public class EvilStrike extends AbstractDKCard {
         if (m.hasPower("Poison")) {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
             if (hasEvilRealm())
-                AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1+AbstractDKCard.RealmMagicNumber));
+                AbstractDungeon.actionManager.addToTop(new DrawCardAction(1+AbstractDKCard.RealmMagicNumber));
             else
-                AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
+                AbstractDungeon.actionManager.addToTop(new DrawCardAction(1));
         }
     }
 

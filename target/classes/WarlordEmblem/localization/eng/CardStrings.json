@@ -154,7 +154,7 @@
   },
   "WarlordEmblem:EvilStrike": {
     "NAME":  "Evil Strike",
-    "DESCRIPTION":   "Deal !D! damage.If target has Poison,gain [E] ,draw a card. NL warlord_emblem:Evil\u00a0Realm :additional gain !WarlordEmblem:RealmMagic! [E]."
+    "DESCRIPTION":   "Deal !D! damage.If target has Poison,gain [E] ,draw a card. NL warlord_emblem:Evil\u00a0Realm :additional draw !WarlordEmblem:RealmMagic! card(s)."
   },
   "WarlordEmblem:EvilWorm": {
     "NAME":  "Evil Worm",
@@ -182,7 +182,7 @@
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "Frozen Strike",
-    "DESCRIPTION":  "Deal !D! damage,enemy lost !M! Strength this turn. NL warlord_emblem:Ice\u00a0Realm :additional lost!WarlordEmblem:RealmMagic! Strength."
+    "DESCRIPTION":  "Deal !D! damage,enemy lost !M! Strength this turn. NL warlord_emblem:Ice\u00a0Realm :additional lost !WarlordEmblem:RealmMagic! Strength."
   },
   "WarlordEmblem:FrozenTouch": {
     "NAME":  "Frozen Touch",
@@ -260,7 +260,7 @@
   },
   "WarlordEmblem:RuneRecast": {
     "NAME":  "Rune Recast",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy 2，draw !M! card(s).Discard !M! card(s).",
+    "DESCRIPTION":  "Draw a card. warlord_emblem:Rune\u00a0Energy 2，draw !M! card(s).Discard !M! card(s).",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
   },
   "WarlordEmblem:RuneRecover": {
@@ -303,7 +303,7 @@
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "Wind Strike",
-    "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E],draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional gain !WarlordEmblem:RealmMagic! [E]."
+    "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E],draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional draw !WarlordEmblem:RealmMagic! card(s)."
   },
   "WarlordEmblem:WinterHorn": {
     "NAME":  "Winter Horn",

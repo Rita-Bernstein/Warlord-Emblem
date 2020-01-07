@@ -44,9 +44,9 @@ public class WindStrike extends AbstractDKCard {
             if (sp.amount < 0) {
                 AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
                 if (hasIceRealm())
-                    AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1+AbstractDKCard.RealmMagicNumber));
+                    AbstractDungeon.actionManager.addToTop(new DrawCardAction(1+AbstractDKCard.RealmMagicNumber));
                 else
-                    AbstractDungeon.actionManager.addToTop(new GainEnergyAction(1));
+                    AbstractDungeon.actionManager.addToTop(new DrawCardAction(1));
             }
         }
     }

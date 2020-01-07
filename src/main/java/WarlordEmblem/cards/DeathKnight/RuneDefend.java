@@ -32,6 +32,7 @@ public class RuneDefend extends AbstractDKCard {
     public RuneDefend() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber;
     }
 
 

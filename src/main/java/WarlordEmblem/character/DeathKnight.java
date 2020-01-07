@@ -26,14 +26,17 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbBlue;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import static WarlordEmblem.patches.CharacterSelectScreenPatches.TalentCount;
 
@@ -135,6 +138,27 @@ public class DeathKnight extends CustomPlayer {
 	}
 
 	@Override
+	public void onVictory() {
+		for (Iterator<AbstractPower> s = this.powers.iterator(); s.hasNext(); ) {
+			AbstractPower p = (AbstractPower)s.next();
+			if (p.ID.equals(WarlordEmblem.makeID("RealmIncreasePower"))) {
+				s.remove();
+			}}
+		AbstractDKCard.RealmMagicNumber = 1;
+		AbstractDKCard.BaseRealmMagicNumber = 1;
+		AbstractDKCard.upgradedRealmMagicNumber = false;
+		AbstractDKCard.isRealmMagicNumberModified = false;
+
+		AbstractDKCard.SecondRealmMagicNumber = 2;
+		AbstractDKCard.BaseSecondRealmMagicNumber = 2;
+		AbstractDKCard.upgradedSecondRealmMagicNumber = false;
+		AbstractDKCard.isSecondRealmMagicNumberModified = false;
+		super.onVictory();
+	}
+
+
+
+	@Override
 	public void applyStartOfCombatPreDrawLogic() {
 		AbstractDKCard.RealmMagicNumber = 1;
 		AbstractDKCard.BaseRealmMagicNumber = 1;
@@ -145,7 +169,6 @@ public class DeathKnight extends CustomPlayer {
 		AbstractDKCard.BaseSecondRealmMagicNumber = 2;
 		AbstractDKCard.upgradedSecondRealmMagicNumber = false;
 		AbstractDKCard.isSecondRealmMagicNumberModified = false;
-
 		super.applyStartOfCombatPreDrawLogic();
 	}
 

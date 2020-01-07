@@ -31,7 +31,7 @@ public class RuneHeavyBlow extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 8;
         this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTags.STRIKE);
     }
 

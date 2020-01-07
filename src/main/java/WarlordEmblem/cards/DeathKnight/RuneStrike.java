@@ -30,7 +30,7 @@ public class RuneStrike extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 6;
         this.baseMagicNumber = 1;
-        this.magicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTags.STRIKE);
         this.tags.add(CardTags.STARTER_STRIKE);
     }
