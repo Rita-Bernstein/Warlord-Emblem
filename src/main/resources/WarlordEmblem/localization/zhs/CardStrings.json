@@ -235,7 +235,7 @@
   },
   "WarlordEmblem:RuneDiffer": {
     "NAME":  "符文分流",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多3），抽X张牌。"
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多 !M! ），抽X张牌。"
   },
   "WarlordEmblem:RuneExplode": {
     "NAME":  "符文爆发",

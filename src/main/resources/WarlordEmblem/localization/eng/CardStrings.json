@@ -235,7 +235,7 @@
   },
   "WarlordEmblem:RuneDiffer": {
     "NAME":  "Rune Differ",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most 3). NL Draw X card(s)."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL Draw X card(s)."
   },
   "WarlordEmblem:RuneExplode": {
     "NAME":  "Rune Explode",

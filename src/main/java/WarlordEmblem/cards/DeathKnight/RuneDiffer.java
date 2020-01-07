@@ -27,11 +27,11 @@ public class RuneDiffer extends AbstractDKCard {
     private static final CardTarget TARGET = CardTarget.SELF;
 
 
-    private final static int MAX = 3;
 
     public RuneDiffer() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         // this.exhaust = true;
+        this.baseMagicNumber = 3;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -45,8 +45,8 @@ public class RuneDiffer extends AbstractDKCard {
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
 
         int amount = super.getRuneCount();
-        if (amount > MAX)
-            amount = MAX;
+        if (amount > this.magicNumber)
+            amount = this.magicNumber;
         AbstractDungeon.actionManager.addToTop(new DrawCardAction(AbstractDungeon.player, amount));
         super.useRune(amount);
     }
@@ -58,7 +58,7 @@ public class RuneDiffer extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(0);
+            upgradeMagicNumber(1);
         }
     }
 }
