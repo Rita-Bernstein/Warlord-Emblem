@@ -31,7 +31,9 @@ public class RuneDefend extends AbstractDKCard {
 
     public RuneDefend() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 4;
     }
+
 
     public void use(AbstractPlayer p, AbstractMonster m) {
 
@@ -45,8 +47,8 @@ public class RuneDefend extends AbstractDKCard {
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
 
         int amount = super.getRuneCount();
-        if (amount > MAX)
-            amount = MAX;
+        if (amount > this.magicNumber)
+            amount = magicNumber;
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, amount * 3));
         super.useRune(amount);
     }
@@ -58,7 +60,7 @@ public class RuneDefend extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(0);
+            upgradeMagicNumber(2);
         }
     }
 

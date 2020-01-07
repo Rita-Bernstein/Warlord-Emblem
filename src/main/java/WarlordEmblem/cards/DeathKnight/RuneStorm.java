@@ -31,6 +31,7 @@ public class RuneStorm extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.isMultiDamage = true;
         this.baseDamage = 3;
+        this.baseMagicNumber = 4;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -52,7 +53,7 @@ public class RuneStorm extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(1);
+            upgradeMagicNumber(2);
         }
     }
 }

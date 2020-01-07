@@ -28,12 +28,13 @@ public class RuneFocus extends AbstractDKCard {
     public RuneFocus() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = 8;
+        this.baseMagicNumber = 3;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         AbstractDungeon.actionManager.addToBottom(new ExhaustAction(1, false, false, false));
-        plusRune(4);
+        plusRune(this.magicNumber);
     }
 
     public AbstractCard makeCopy() {
@@ -43,7 +44,7 @@ public class RuneFocus extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(0);
+            upgradeMagicNumber(1);
         }
     }
 }

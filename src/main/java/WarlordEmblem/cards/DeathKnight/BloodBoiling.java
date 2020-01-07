@@ -27,7 +27,7 @@ public class BloodBoiling extends AbstractDKCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    private static final int UPGRADE_BONUS = 1;
+    private static final int UPGRADE_BONUS = 2;
 
     public BloodBoiling() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

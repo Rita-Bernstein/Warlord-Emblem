@@ -44,8 +44,6 @@ public class LichkingWraith extends AbstractDKCard {
         AbstractDungeon.actionManager
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
 
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                new ConfusionPower(AbstractDungeon.player)));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, 99, false), 99, true));

@@ -23,7 +23,7 @@ public class RuneRecast extends AbstractDKCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;
 
@@ -40,7 +40,7 @@ public class RuneRecast extends AbstractDKCard {
         AbstractDungeon.actionManager
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber, false));
+        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber-1, false));
         super.useRune(2);
     }
 

@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 
@@ -36,7 +37,7 @@ public class FrozenStrike extends AbstractDKCard {
         this.baseDamage = 5;
         this.magicNumber = 1;
         this.baseMagicNumber = magicNumber;
-        this.exhaust = true;
+        //this.exhaust = true;
         this.tags.add(CardTags.STRIKE);
     }
 
@@ -45,14 +46,23 @@ public class FrozenStrike extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
 
-        if (!hasIceRealm())
+        if (!hasIceRealm()){
             AbstractDungeon.actionManager
                     .addToBottom(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber,
                             true, AbstractGameAction.AttackEffect.NONE));
-        else
+            if (!m.hasPower("Artifact"))
+            addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+
+        }
+        else{
             AbstractDungeon.actionManager
                     .addToBottom(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber - 1),
                             -this.magicNumber - 1, true, AbstractGameAction.AttackEffect.NONE));
+            if (!m.hasPower("Artifact"))
+                addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber+1), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+
+        }
+
 
     }
 

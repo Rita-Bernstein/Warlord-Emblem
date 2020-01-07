@@ -42,7 +42,7 @@ public class RuneStrike extends AbstractDKCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        plusRune(this.magicNumber);
+        //plusRune(this.magicNumber);
     }
 
     public void upgrade() {

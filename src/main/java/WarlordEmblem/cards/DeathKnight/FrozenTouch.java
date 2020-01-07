@@ -24,7 +24,7 @@ public class FrozenTouch extends AbstractDKCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 

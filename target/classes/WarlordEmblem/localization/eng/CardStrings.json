@@ -58,7 +58,7 @@
 
   "WarlordEmblem:Annihilation": {
     "NAME": "Annihilation",
-    "DESCRIPTION":  "Lost all of your Block,Deal warlord_emblem:True\u00a0Damage equals to !M! time(s) of your lost Block. NL warlord_emblem:Blood\u00a0Realm :only will lost half your Block."
+    "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Blood\u00a0Realm :only will lost half your Block."
   },
   "WarlordEmblem:AntiMagicShield": {
     "NAME": "Anti-Magic Shield",
@@ -178,11 +178,11 @@
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "Frozen Heart",
-    "DESCRIPTION":  "Gain 1 Intangible .Next turn you draw 1 less card. NL warlord_emblem:Ice\u00a0Realm ：just gain Intangible. Exhaust."
+    "DESCRIPTION":  "Gain 2 Intangible .Next turn you draw 1 less card. NL warlord_emblem:Ice\u00a0Realm ：just gain Intangible. Exhaust."
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "Frozen Strike",
-    "DESCRIPTION":  "Deal !D! damage,enemy lost !M! Strength. NL warlord_emblem:Ice\u00a0Realm :additional lost 1 Strength. Exhaust."
+    "DESCRIPTION":  "Deal !D! damage,enemy lost !M! Strength this turn. NL warlord_emblem:Ice\u00a0Realm :additional lost 1 Strength."
   },
   "WarlordEmblem:FrozenTouch": {
     "NAME":  "Frozen Touch",
@@ -214,7 +214,7 @@
   },
   "WarlordEmblem:LichkingWraith": {
     "NAME":  "Lichking Wraith",
-    "DESCRIPTION":  "Gain Confusion. NL Apply 99 Vulnerable. NL warlord_emblem:Ice\u00a0Realm ：additional apply 99 Weak."
+    "DESCRIPTION":  "Apply 99 Vulnerable to all enemy. NL warlord_emblem:Ice\u00a0Realm ：additional apply 99 Weak."
   },
   "WarlordEmblem:RuneBlade": {
     "NAME":  "Rune Blade",
@@ -230,7 +230,7 @@
   },
   "WarlordEmblem:RuneDefend": {
     "NAME":  "Rune Defend",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most 6). NL For each warlord_emblem:Rune\u00a0Energy ,gain 3 Block. NL Won't affected by Dexterity."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL For each warlord_emblem:Rune\u00a0Energy ,gain 3 Block. NL Won't affected by Dexterity."
   },
   "WarlordEmblem:RuneDiffer": {
     "NAME":  "Rune Differ",
@@ -242,7 +242,7 @@
   },
   "WarlordEmblem:RuneFocus": {
     "NAME":  "Rune Focus",
-    "DESCRIPTION":  " Exhaust 1 card.Gain !B! Block.Gain 4 warlord_emblem:Rune\u00a0Energy ."
+    "DESCRIPTION":  " Exhaust 1 card.Gain !B! Block.Gain !M! warlord_emblem:Rune\u00a0Energy ."
   },
   "WarlordEmblem:RuneHeavyStrike": {
     "NAME":  "Rune Strike",
@@ -272,11 +272,11 @@
   },
   "WarlordEmblem:RuneStorm": {
     "NAME":  "Rune Storm",
-    "DESCRIPTION": " warlord_emblem:Rune\u00a0Energy X NL (at most 4). NL Deal !D! damage for each warlord_emblem:Rune\u00a0Energy cost."
+    "DESCRIPTION": " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL Deal !D! damage for each warlord_emblem:Rune\u00a0Energy cost."
   },
   "WarlordEmblem:RuneStrike": {
     "NAME":  "Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! warlord_emblem:Rune\u00a0Energy ."
+    "DESCRIPTION": "Deal !D! damage."
   },
   "WarlordEmblem:SwordWave": {
     "NAME":  "Sword Wave",

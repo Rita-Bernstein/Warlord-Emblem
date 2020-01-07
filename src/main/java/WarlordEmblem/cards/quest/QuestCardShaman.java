@@ -39,7 +39,7 @@ public class QuestCardShaman extends AbstractQuestCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.BLUE), 0.0F, true));
         if (p.hasRelic(WarlordEmblem.makeID("QuestShaman"))) {
-            QuestShaman relic = (QuestShaman) p.getRelic(WarlordEmblem.makeID("Quest Shaman"));
+            QuestShaman relic = (QuestShaman) p.getRelic(WarlordEmblem.makeID("QuestShaman"));
             relic.startQuest();
         }
     }

@@ -30,8 +30,7 @@ public class DeathWither extends AbstractDKCard {
 
     public DeathWither() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 8;
-        this.magicNumber = 8;
+        this.baseMagicNumber = 10;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -55,7 +54,7 @@ public class DeathWither extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(4);
+            upgradeMagicNumber(5);
         }
     }
 }

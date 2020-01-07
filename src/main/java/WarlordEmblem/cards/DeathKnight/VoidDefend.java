@@ -30,7 +30,7 @@ public class VoidDefend extends AbstractDKCard {
     public VoidDefend() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.cantUseMessage = ERROR;
-        this.baseBlock = 12;
+        this.baseBlock = 10;
     }
 
     public AbstractCard makeCopy() {

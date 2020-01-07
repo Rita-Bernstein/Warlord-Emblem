@@ -31,7 +31,7 @@ public class UndeadWill extends AbstractDKCard {
 
     public UndeadWill() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 3;
+        this.baseBlock = 5;
         this.exhaust = true;
     }
 
