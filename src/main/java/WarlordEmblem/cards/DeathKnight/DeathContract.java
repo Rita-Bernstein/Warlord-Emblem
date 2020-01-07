@@ -37,6 +37,7 @@ public class DeathContract extends AbstractDKCard {
         this.baseMagicNumber = 2;
         this.magicNumber = 2;
         this.exhaust = true;
+        this.tags.add(CardTags.HEALING);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -41,7 +41,7 @@ public class WinterHorn extends AbstractDKCard {
                 new DexterityPower(AbstractDungeon.player, 1), 1));
         if (hasIceRealm())
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player,
-                    AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, 1), 1));
+                    AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, AbstractDKCard.RealmMagicNumber), AbstractDKCard.RealmMagicNumber));
     }
 
     public AbstractCard makeCopy() {

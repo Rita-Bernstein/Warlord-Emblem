@@ -17,6 +17,7 @@ WarlordEmblem\cards\Kael\DeafeningBlast.class
 WarlordEmblem\cards\mantle\MantleCardWalana.class
 WarlordEmblem\WarlordEmblem$1.class
 WarlordEmblem\cards\quest\QuestCardShamanReward.class
+WarlordEmblem\powers\LichkingWraithPower.class
 WarlordEmblem\cards\DeathKnight\BloodMask.class
 WarlordEmblem\cards\mantle\MantleCardJean.class
 WarlordEmblem\patches\CharacterSelectScreenPatches$CharacterSelectScreenPatch_Initialize.class
@@ -73,6 +74,7 @@ WarlordEmblem\powers\RegenerationPower.class
 WarlordEmblem\cards\DeathKnight\ForceDeflexion.class
 WarlordEmblem\cards\quest\QuestCardPaladinReward.class
 WarlordEmblem\helpers\SecondaryMagicVariable.class
+WarlordEmblem\cards\DeathKnight\RealmRider.class
 WarlordEmblem\cards\mantle\MantleCardKazakusPotion.class
 WarlordEmblem\relics\HeavyShield.class
 WarlordEmblem\cards\DeathKnight\RuneRegen.class
@@ -123,6 +125,7 @@ WarlordEmblem\relics\mantle\MantleJean.class
 WarlordEmblem\orbs\ForgedSpiritOrb.class
 WarlordEmblem\cards\quest\QuestCardRogue.class
 WarlordEmblem\cards\DeathKnight\DeathStrike.class
+WarlordEmblem\variables\SecondRealmMagicNumber.class
 WarlordEmblem\cards\Kael\Alacrity.class
 WarlordEmblem\relics\VoidPower.class
 WarlordEmblem\cards\DeathKnight\BloodBoiling.class
@@ -162,6 +165,7 @@ WarlordEmblem\cards\DeathKnight\WindStrike.class
 WarlordEmblem\cards\DeathKnight\RuneBlade.class
 WarlordEmblem\relics\IceRealm.class
 WarlordEmblem\cards\DeathKnight\BodyStrike.class
+WarlordEmblem\variables\RealmMagicNumber.class
 WarlordEmblem\cards\quest\QuestCardPriestReward.class
 WarlordEmblem\relics\mantle\MantleReynold.class
 WarlordEmblem\cards\DeathKnight\Hanging.class
@@ -170,7 +174,9 @@ WarlordEmblem\relics\quest\QuestBase.class
 WarlordEmblem\cards\DeathKnight\BloodDiffer.class
 WarlordEmblem\powers\DeafeningBlastPower.class
 WarlordEmblem\relics\BreastProtector.class
+WarlordEmblem\powers\RealmIncreasePower.class
 WarlordEmblem\relics\EvilRealm.class
 WarlordEmblem\cards\DeathKnight\CondemnStrike.class
 WarlordEmblem\cards\DeathKnight\NoLightShield.class
+WarlordEmblem\powers\RealmRiderPower.class
 WarlordEmblem\cards\DeathKnight\DeathWither.class

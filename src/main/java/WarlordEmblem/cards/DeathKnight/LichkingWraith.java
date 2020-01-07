@@ -2,6 +2,8 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.powers.LichkingWraithPower;
+import basemod.BaseMod;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -32,6 +34,8 @@ public class LichkingWraith extends AbstractDKCard {
 
     public LichkingWraith() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 1;
+        this.isEthereal = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -44,13 +48,8 @@ public class LichkingWraith extends AbstractDKCard {
         AbstractDungeon.actionManager
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
 
-        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, 99, false), 99, true));
-            if (hasIceRealm())
-                AbstractDungeon.actionManager.addToBottom(
-                        new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, 99, false), 99, true));
-        }
+                    new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new LichkingWraithPower(AbstractDungeon.player, this.magicNumber), this.magicNumber, true));
     }
 
     public AbstractCard makeCopy() {
@@ -60,7 +59,9 @@ public class LichkingWraith extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(2);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+            this.isEthereal = false;
         }
     }
 

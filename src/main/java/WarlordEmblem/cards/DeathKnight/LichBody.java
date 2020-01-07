@@ -37,7 +37,7 @@ public class LichBody extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         if (hasIceRealm())
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
-                    new WeakPower(m, this.magicNumber + 1, false), this.magicNumber + 1, true));
+                    new WeakPower(m, this.magicNumber + AbstractDKCard.RealmMagicNumber, false), this.magicNumber + AbstractDKCard.RealmMagicNumber, true));
         else
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
                     new WeakPower(m, this.magicNumber, false), this.magicNumber, true));

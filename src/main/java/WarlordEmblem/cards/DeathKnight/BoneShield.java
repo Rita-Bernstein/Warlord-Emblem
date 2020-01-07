@@ -20,21 +20,21 @@ public class BoneShield extends AbstractDKCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     private static final int UPGRADE_BONUS = 2;
 
     public BoneShield() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 3;
-        this.magicNumber = 3;
+        this.baseMagicNumber = 4;
+        //this.magicNumber = 3;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (super.hasBloodRealm())
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                    new ThornsPower(AbstractDungeon.player, magicNumber + 1), magicNumber + 1));
+                    new ThornsPower(AbstractDungeon.player, magicNumber + AbstractDKCard.RealmMagicNumber), magicNumber + AbstractDKCard.RealmMagicNumber));
         else
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
                     new ThornsPower(AbstractDungeon.player, magicNumber), magicNumber));

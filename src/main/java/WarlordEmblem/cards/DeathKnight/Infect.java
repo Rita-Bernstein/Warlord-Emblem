@@ -41,7 +41,7 @@ public class Infect extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.GREEN)));
         int times = amount;
         if (hasEvilRealm())
-            times++;
+            times += AbstractDKCard.RealmMagicNumber;
         for (int i = 0; i < times; i++)
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, 1), 1));
         super.useRune(amount);

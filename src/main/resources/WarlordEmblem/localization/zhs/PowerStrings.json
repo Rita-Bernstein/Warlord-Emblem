@@ -17,5 +17,26 @@
   "DESCRIPTIONS": [
     "你的卡牌造成的攻击伤害锁定为12点"
   ]
+},
+  "WarlordEmblem:RealmRiderPower": {
+  "NAME": "领域驾驭",
+  "DESCRIPTIONS": [
+    "本场战斗视为你拥有所有的领域"
+  ]
+},
+  "WarlordEmblem:RealmIncreasePower": {
+    "NAME": "领域提升",
+    "DESCRIPTIONS": [
+      "天赋领域效果提升 #b",
+      "天赋领域效果提升 #b",
+      " 。"
+    ]
+  },
+  "WarlordEmblem:LichkingWraithPower": {
+  "NAME": "巫妖王之怒",
+  "DESCRIPTIONS": [
+    "在你的回合开始时，获得 #b",
+    " 点 #领域提升 。"
+  ]
 }
 }

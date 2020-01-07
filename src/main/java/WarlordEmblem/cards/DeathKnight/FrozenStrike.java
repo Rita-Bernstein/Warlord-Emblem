@@ -56,10 +56,10 @@ public class FrozenStrike extends AbstractDKCard {
         }
         else{
             AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber - 1),
-                            -this.magicNumber - 1, true, AbstractGameAction.AttackEffect.NONE));
+                    .addToBottom(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber - AbstractDKCard.RealmMagicNumber),
+                            -this.magicNumber - AbstractDKCard.RealmMagicNumber, true, AbstractGameAction.AttackEffect.NONE));
             if (!m.hasPower("Artifact"))
-                addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber+1), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+                addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber+AbstractDKCard.RealmMagicNumber), this.magicNumber+AbstractDKCard.RealmMagicNumber, true, AbstractGameAction.AttackEffect.NONE));
 
         }
 

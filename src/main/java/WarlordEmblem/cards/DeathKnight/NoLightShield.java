@@ -48,7 +48,7 @@ public class NoLightShield extends AbstractDKCard {
             amount = MAX;
         if (super.hasBloodRealm())
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                    new PlatedArmorPower(AbstractDungeon.player, amount + 1), amount + 1));
+                    new PlatedArmorPower(AbstractDungeon.player, amount + AbstractDKCard.RealmMagicNumber), amount + AbstractDKCard.RealmMagicNumber));
         else
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
                     new PlatedArmorPower(AbstractDungeon.player, amount), amount));

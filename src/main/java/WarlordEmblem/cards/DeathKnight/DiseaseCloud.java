@@ -52,7 +52,7 @@ public class DiseaseCloud extends AbstractDKCard {
                         .addToBottom(new ApplyPowerAction(mo, p, new PoisonPower(mo, p, amount), amount));
             else
                 AbstractDungeon.actionManager
-                        .addToBottom(new ApplyPowerAction(mo, p, new PoisonPower(mo, p, amount + 1), amount + 1));
+                        .addToBottom(new ApplyPowerAction(mo, p, new PoisonPower(mo, p, amount + AbstractDKCard.RealmMagicNumber), amount + AbstractDKCard.RealmMagicNumber));
         }
         super.useRune(amount);
     }

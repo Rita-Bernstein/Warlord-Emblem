@@ -38,7 +38,7 @@ public class EvilPower extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.GREEN)));
         if (hasEvilRealm())
             AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber + 1), this.magicNumber + 1));
+                    new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber + AbstractDKCard.RealmMagicNumber), this.magicNumber + AbstractDKCard.RealmMagicNumber));
         else
             AbstractDungeon.actionManager
                     .addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));

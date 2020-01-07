@@ -44,6 +44,12 @@ public class Annihilation extends AbstractDKCard {
         this.baseMagicNumber = magicNumber;
     }
 
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+    }
+
     public void use(AbstractPlayer p, AbstractMonster m) {
         int block = p.currentBlock;
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));

@@ -43,6 +43,7 @@ public class BloodStrike extends AbstractDKCard {
 
         this.exhaust = true;
         this.tags.add(CardTags.STRIKE);
+        this.tags.add(CardTags.HEALING);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -53,7 +54,7 @@ public class BloodStrike extends AbstractDKCard {
         }
         int actual = this.damage;
         if (hasBloodRealm())
-            actual += 2;
+            actual += AbstractDKCard.SecondRealmMagicNumber;
         AbstractDungeon.actionManager
                 .addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
                         AbstractGameAction.AttackEffect.SLASH_DIAGONAL));

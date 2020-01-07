@@ -47,7 +47,7 @@ public class CondemnStrike extends AbstractDKCard {
         }
         int actualBase = this.damage;
         if (hasEvilRealm())
-            actualBase += 2;
+            actualBase += AbstractDKCard.SecondRealmMagicNumber;
         int actualDamage = (int) (actualBase * Math.pow(2, count));
 
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,

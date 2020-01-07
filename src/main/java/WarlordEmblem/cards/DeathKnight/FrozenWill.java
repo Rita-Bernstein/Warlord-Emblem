@@ -23,7 +23,7 @@ public class FrozenWill extends AbstractDKCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
 
@@ -38,7 +38,7 @@ public class FrozenWill extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
         if (hasIceRealm())
             AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber + 1), this.magicNumber + 1));
+                    new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber + AbstractDKCard.RealmMagicNumber), this.magicNumber + AbstractDKCard.RealmMagicNumber));
         else
             AbstractDungeon.actionManager
                     .addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));

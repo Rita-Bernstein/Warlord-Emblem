@@ -47,8 +47,8 @@ public class FrozenTouch extends AbstractDKCard {
                                 -this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
             else
                 AbstractDungeon.actionManager
-                        .addToBottom(new ApplyPowerAction(mo, p, new StrengthPower(mo, -this.magicNumber - 1),
-                                -this.magicNumber - 1, true, AbstractGameAction.AttackEffect.NONE));
+                        .addToBottom(new ApplyPowerAction(mo, p, new StrengthPower(mo, -this.magicNumber - AbstractDKCard.RealmMagicNumber),
+                                -this.magicNumber - AbstractDKCard.RealmMagicNumber, true, AbstractGameAction.AttackEffect.NONE));
         }
     }
 

@@ -32,7 +32,7 @@ public class ForceDeflexion extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 2));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1+AbstractDKCard.RealmMagicNumber));
         if (hasBloodRealm())
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
     }

@@ -44,7 +44,7 @@ public class FrozenChain extends AbstractDKCard {
                 1.5F));
         if (hasIceRealm())
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
-                    new WeakPower(m, amount + 1, false), amount + 1, true));
+                    new WeakPower(m, amount + AbstractDKCard.RealmMagicNumber, false), amount + AbstractDKCard.RealmMagicNumber, true));
         else
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, amount, false), amount, true));

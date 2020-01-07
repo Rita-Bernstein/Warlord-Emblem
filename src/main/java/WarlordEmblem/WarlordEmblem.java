@@ -15,6 +15,8 @@ import WarlordEmblem.patches.CharacterSelectScreenPatches;
 import WarlordEmblem.relics.*;
 import WarlordEmblem.relics.mantle.*;
 import WarlordEmblem.relics.quest.*;
+import WarlordEmblem.variables.RealmMagicNumber;
+import WarlordEmblem.variables.SecondRealmMagicNumber;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.abstracts.CustomRelic;
@@ -193,6 +195,8 @@ public class WarlordEmblem implements
     public void receiveEditCards() {
         //BaseMod.addDynamicVariable(new SecondaryMagicVariable());
 
+        BaseMod.addDynamicVariable(new RealmMagicNumber());
+        BaseMod.addDynamicVariable(new SecondRealmMagicNumber());
 
         logger.debug("receiveEditCards started.");
         List<CustomCard> cards = new ArrayList<>();
@@ -270,6 +274,7 @@ public class WarlordEmblem implements
         cards.add(new WindStrike());
         cards.add(new WinterHorn());
         cards.add(new Withstand());
+        cards.add(new RealmRider());
 
         cards.add(new MantleCardBaku());
         cards.add(new MantleCardCaireseth());

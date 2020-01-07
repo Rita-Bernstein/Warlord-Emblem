@@ -37,7 +37,7 @@ public class BodyStrike extends AbstractDKCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         int times = 3;
         if (hasBloodRealm())
-            times = 4;
+            times = 3 + AbstractDKCard.RealmMagicNumber;
         for (int i = 0; i < times; i++)
             AbstractDungeon.actionManager
                     .addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),

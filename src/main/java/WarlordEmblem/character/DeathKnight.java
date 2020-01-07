@@ -134,6 +134,20 @@ public class DeathKnight extends CustomPlayer {
 				false);
 	}
 
+	@Override
+	public void applyStartOfCombatPreDrawLogic() {
+		AbstractDKCard.RealmMagicNumber = 1;
+		AbstractDKCard.BaseRealmMagicNumber = 1;
+		AbstractDKCard.upgradedRealmMagicNumber = false;
+		AbstractDKCard.isRealmMagicNumberModified = false;
+
+		AbstractDKCard.SecondRealmMagicNumber = 2;
+		AbstractDKCard.BaseSecondRealmMagicNumber = 2;
+		AbstractDKCard.upgradedSecondRealmMagicNumber = false;
+		AbstractDKCard.isSecondRealmMagicNumberModified = false;
+
+		super.applyStartOfCombatPreDrawLogic();
+	}
 
 	@Override
 	public String getTitle(PlayerClass playerClass) {

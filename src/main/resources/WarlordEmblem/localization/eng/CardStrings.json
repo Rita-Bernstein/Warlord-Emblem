@@ -83,19 +83,19 @@
   },
   "WarlordEmblem:BloodStrike": {
     "NAME": "Blood Strike",
-    "DESCRIPTION":  "Deal !D! damage. warlord_emblem:life\u00a0Leech . NL warlord_emblem:Blood\u00a0Realm ：heal 2 HP. Exhaust."
+    "DESCRIPTION":  "Deal !D! damage. warlord_emblem:life\u00a0Leech . NL warlord_emblem:Blood\u00a0Realm ：heal !WarlordEmblem:SecondRealmMagic! HP. Exhaust."
   },
   "WarlordEmblem:BodyStrike": {
     "NAME": "Body Strike",
-    "DESCRIPTION":  "Deal !D! damage 3 times. NL warlord_emblem:Blood\u00a0Realm :deal 4 times instead."
+    "DESCRIPTION":  "Deal !D! damage 3 times. NL warlord_emblem:Blood\u00a0Realm :Additional !WarlordEmblem:RealmMagic! time(s) instead."
   },
   "WarlordEmblem:BoneShield": {
     "NAME": "Bone Shield",
-    "DESCRIPTION":  "Gain !M! Thorns. NL warlord_emblem:Blood\u00a0Realm :additional gain 1 Thorns."
+    "DESCRIPTION":  "Gain !M! Thorns. NL warlord_emblem:Blood\u00a0Realm :additional gain !WarlordEmblem:RealmMagic! Thorns."
   },
   "WarlordEmblem:CondemnStrike": {
     "NAME": "Condemn Strike",
-    "DESCRIPTION":  "Deal !D! damage.Upon a Curse or Status in your hand,double this damage. NL warlord_emblem:Evil\u00a0Realm :add 2 base damage."
+    "DESCRIPTION":  "Deal !D! damage.Upon a Curse or Status in your hand,double this damage. NL warlord_emblem:Evil\u00a0Realm :add !WarlordEmblem:SecondRealmMagic! base damage."
   },
   "WarlordEmblem:CurseStrike": {
     "NAME": "Curse Strike",
@@ -117,11 +117,11 @@
   },
   "WarlordEmblem:DeathShake": {
     "NAME": "Death Shake",
-    "DESCRIPTION":  "Deal !D! damage.If it is minion enemy,deal 1000 extra damage. NL warlord_emblem:Blood\u00a0Realm :draw a card."
+    "DESCRIPTION":  "Deal !D! damage.If it is minion enemy,deal 1000 extra damage. NL warlord_emblem:Blood\u00a0Realm :draw !WarlordEmblem:RealmMagic! card(s)."
   },
   "WarlordEmblem:DeathStrike": {
     "NAME": "Death Strike",
-    "DESCRIPTION":  "Deal !D! damage.If target has Poison ,apply !M! Vulnerable. NL warlord_emblem:Evil\u00a0Realm :additional apply 2 Vulnerable ."
+    "DESCRIPTION":  "Deal !D! damage.If target has Poison ,apply !M! Vulnerable. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:SecondRealmMagic! Vulnerable ."
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "Death Wither",
@@ -129,11 +129,11 @@
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "Disease Cloud",
-    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy X NL (At most 8). NL Apply Poison to all enemy X time(s). NL warlord_emblem:Evil\u00a0Realm :additional apply 1 Poison."
+    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy X NL (At most 8). NL Apply Poison to all enemy X time(s). NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
   },
   "WarlordEmblem:DiseaseStrike": {
     "NAME": "Disease Strike",
-    "DESCRIPTION":  "Deal !D! damage to all enemy. NL Apply !M! Poison. NL warlord_emblem:Evil\u00a0Realm :additional apply 1 Poison."
+    "DESCRIPTION":  "Deal !D! damage to all enemy. NL Apply !M! Poison. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
   },
   "WarlordEmblem:Defend_DK": {
     "NAME": "Defend",
@@ -141,11 +141,11 @@
   },
   "WarlordEmblem:EvilEager": {
     "NAME":  "Evil Eager",
-    "DESCRIPTION":   " warlord_emblem:Rune\u00a0Energy X NL (At most 6). NL Gain X warlord_emblem:Sadistic . NL warlord_emblem:Evil\u00a0Realm :additional gain 1 warlord_emblem:Sadistic."
+    "DESCRIPTION":   " warlord_emblem:Rune\u00a0Energy X NL (At most 6). NL Gain X warlord_emblem:Sadistic . NL warlord_emblem:Evil\u00a0Realm :additional gain !WarlordEmblem:RealmMagic! warlord_emblem:Sadistic."
   },
   "WarlordEmblem:EvilPower": {
     "NAME":  "Evil Power",
-    "DESCRIPTION":   "Gain !M! Strength. NL warlord_emblem:Evil\u00a0Realm :additional gain 1 Strength."
+    "DESCRIPTION":   "Gain !M! Strength. NL warlord_emblem:Evil\u00a0Realm :additional gain !WarlordEmblem:RealmMagic! Strength."
   },
   "WarlordEmblem:EvilSee": {
     "NAME":  "Evil See",
@@ -154,7 +154,7 @@
   },
   "WarlordEmblem:EvilStrike": {
     "NAME":  "Evil Strike",
-    "DESCRIPTION":   "Deal !D! damage.If target has Poison,gain [E] ,draw a card. NL warlord_emblem:Evil\u00a0Realm :additional gain [E]."
+    "DESCRIPTION":   "Deal !D! damage.If target has Poison,gain [E] ,draw a card. NL warlord_emblem:Evil\u00a0Realm :additional gain !WarlordEmblem:RealmMagic! [E]."
   },
   "WarlordEmblem:EvilWorm": {
     "NAME":  "Evil Worm",
@@ -166,15 +166,15 @@
   },
   "WarlordEmblem:ForceDeflexion": {
     "NAME":  "Force Deflexion",
-    "DESCRIPTION":   "Gain !B! Block. NL Draw 2 cards. NL warlord_emblem:Blood\u00a0Realm :additional draw 1 card."
+    "DESCRIPTION":   "Gain !B! Block. NL Draw 2 cards. NL warlord_emblem:Blood\u00a0Realm :additional draw !WarlordEmblem:RealmMagic! card."
   },
   "WarlordEmblem:FrozenChain": {
     "NAME":  "Frozen Chain",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (At most 6). NL Apply X Weak. NL warlord_emblem:Ice\u00a0Realm :additional apply 1 Weak."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (At most 6). NL Apply X Weak. NL warlord_emblem:Ice\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Weak."
   },
   "WarlordEmblem:FrozenDeath": {
     "NAME":  "Frozen Death",
-    "DESCRIPTION":  "Deal !D! damage.If target has Weak,apply !M! Vulnerable. NL warlord_emblem:Ice\u00a0Realm :additional apply 1 Vulnerable."
+    "DESCRIPTION":  "Deal !D! damage.If target has Weak,apply !M! Vulnerable. NL warlord_emblem:Ice\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Vulnerable."
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "Frozen Heart",
@@ -182,15 +182,15 @@
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "Frozen Strike",
-    "DESCRIPTION":  "Deal !D! damage,enemy lost !M! Strength this turn. NL warlord_emblem:Ice\u00a0Realm :additional lost 1 Strength."
+    "DESCRIPTION":  "Deal !D! damage,enemy lost !M! Strength this turn. NL warlord_emblem:Ice\u00a0Realm :additional lost!WarlordEmblem:RealmMagic! Strength."
   },
   "WarlordEmblem:FrozenTouch": {
     "NAME":  "Frozen Touch",
-    "DESCRIPTION":  "All enemy lost !M! Strength. warlord_emblem:Ice\u00a0Realm ：additional lost 1 Strength. Exhaust."
+    "DESCRIPTION":  "All enemy lost !M! Strength. warlord_emblem:Ice\u00a0Realm ：additional lost !WarlordEmblem:RealmMagic! Strength. Exhaust."
   },
   "WarlordEmblem:FrozenWill": {
     "NAME":  "Frozen Will",
-    "DESCRIPTION":  "Gain !M! Dexterity. NL warlord_emblem:Ice\u00a0Realm ：additional gain 1 Dexterity"
+    "DESCRIPTION":  "Gain !M! Dexterity. NL warlord_emblem:Ice\u00a0Realm ：additional gain !WarlordEmblem:RealmMagic! Dexterity"
   },
   "WarlordEmblem:GhostStrike": {
     "NAME":  "Ghost Strike",
@@ -206,15 +206,16 @@
   },
   "WarlordEmblem:Infect": {
     "NAME":  "Infect",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply Poison X times. NL warlord_emblem:Evil\u00a0Realm :additional apply 1 Poison."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply Poison X times. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
   },
   "WarlordEmblem:LichBody": {
     "NAME":  "Lich Body",
-    "DESCRIPTION":  "Gain !B! Block,apply !M! Weak. NL warlord_emblem:Ice\u00a0Realm ：additional apply 1 Weak."
+    "DESCRIPTION":  "Gain !B! Block,apply !M! Weak. NL warlord_emblem:Ice\u00a0Realm ：additional apply !WarlordEmblem:RealmMagic! Weak."
   },
   "WarlordEmblem:LichkingWraith": {
     "NAME":  "Lichking Wraith",
-    "DESCRIPTION":  "Apply 99 Vulnerable to all enemy. NL warlord_emblem:Ice\u00a0Realm ：additional apply 99 Weak."
+    "DESCRIPTION":  "Ethereal .At the start of your turn, gain warlord_emblem:Realm Increase. ",
+    "UPGRADE_DESCRIPTION":  "At the start of your turn, gain warlord_emblem:Realm Increase."
   },
   "WarlordEmblem:RuneBlade": {
     "NAME":  "Rune Blade",
@@ -222,7 +223,7 @@
   },
   "WarlordEmblem:NoLightShield": {
     "NAME":  "No Light Shield",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most 8). NL Gain X warlord_emblem:Plated\u00a0Armor. NL warlord_emblem:Blood\u00a0Realm ：additional gain 1 warlord_emblem:Plated\u00a0Armor ."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most 8). NL Gain X warlord_emblem:Plated\u00a0Armor. NL warlord_emblem:Blood\u00a0Realm ：additional gain !WarlordEmblem:RealmMagic! warlord_emblem:Plated\u00a0Armor ."
   },
   "WarlordEmblem:RuneBurn": {
     "NAME":  "Rune Burn",
@@ -302,17 +303,23 @@
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "Wind Strike",
-    "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E],draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional gain [E]."
+    "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E],draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional gain !WarlordEmblem:RealmMagic! [E]."
   },
   "WarlordEmblem:WinterHorn": {
     "NAME":  "Winter Horn",
-    "DESCRIPTION": "Gain 1 Strength and Dexterity.  NL warlord_emblem:Ice\u00a0Realm ：Gain 1 Artifact.",
-    "UPGRADE_DESCRIPTION": " Innate .Gain 1 Strength and Dexterity.  NL warlord_emblem:Ice\u00a0Realm ：Gain 1 Artifact."
+    "DESCRIPTION": "Gain 1 Strength and Dexterity.  NL warlord_emblem:Ice\u00a0Realm ：Gain !WarlordEmblem:RealmMagic! Artifact.",
+    "UPGRADE_DESCRIPTION": " Innate .Gain 1 Strength and Dexterity.  NL warlord_emblem:Ice\u00a0Realm ：Gain !WarlordEmblem:RealmMagic! Artifact."
   },
   "WarlordEmblem:Withstand": {
     "NAME":  "With stand",
     "DESCRIPTION": "Gain !B! Block.Gain 1 Dexterity. Exhaust."
   },
+  "WarlordEmblem:RealmRider": {
+    "NAME":  "Realm Rider",
+    "DESCRIPTION": "Regard you have all warlord_emblem:Talent Realm this combat."
+  },
+
+
 
 
   "WarlordEmblem:MantleCardBaku": {

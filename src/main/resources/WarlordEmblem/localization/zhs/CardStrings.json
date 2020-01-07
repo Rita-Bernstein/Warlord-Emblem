@@ -74,7 +74,7 @@
   },
   "WarlordEmblem:BloodDiffer": {
     "NAME": "鲜血分流",
-    "DESCRIPTION":  "失去 !M! 生命。获得 !M! [E] 。抽 !M! 张牌。 NL warlord_emblem:鲜血领域 ：不会失去生命。 消耗 。"
+    "DESCRIPTION":  "失去 !M! 生命。获得 !M! [E] 。抽 !M! 张牌。 NL warlord_emblem:鲜血领域 ： NL 不会失去生命。 消耗 。"
   },
   "WarlordEmblem:BloodMask": {
     "NAME": "鲜血印记",
@@ -83,23 +83,23 @@
   },
   "WarlordEmblem:BloodStrike": {
     "NAME": "鲜血打击",
-    "DESCRIPTION":  "造成 !D! 点伤害。 warlord_emblem:吸血 。 NL warlord_emblem:鲜血领域 ：额外回复2生命。 消耗 。"
+    "DESCRIPTION":  "造成 !D! 点伤害。 warlord_emblem:吸血 。 NL warlord_emblem:鲜血领域 ： NL 额外回复 !WarlordEmblem:SecondRealmMagic! 生命。 消耗 。"
   },
   "WarlordEmblem:BodyStrike": {
     "NAME": "跗骨之蛆",
-    "DESCRIPTION":  "造成 !D! 点伤害3次， NL warlord_emblem:鲜血领域 ：额外多1次伤害。"
+    "DESCRIPTION":  "造成 !D! 点伤害3次， NL warlord_emblem:鲜血领域 ： NL 额外多 !WarlordEmblem:RealmMagic! 次伤害。"
   },
   "WarlordEmblem:BoneShield": {
     "NAME": "白骨护甲",
-    "DESCRIPTION":  "获得 !M! 层 荆棘 。 NL warlord_emblem:鲜血领域 ：额外获得1层。"
+    "DESCRIPTION":  "获得 !M! 层 荆棘 。 NL warlord_emblem:鲜血领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 层。"
   },
   "WarlordEmblem:CondemnStrike": {
     "NAME": "天谴打击",
-    "DESCRIPTION":  "造成 !D! 点伤害。手牌每有一张 诅咒 或 状态 牌，伤害翻倍。 NL warlord_emblem:邪恶领域 ：基础伤害加2。"
+    "DESCRIPTION":  "造成 !D! 点伤害。手牌每有一张 诅咒 或 状态 牌，伤害翻倍。 NL warlord_emblem:邪恶领域 ： NL 基础伤害加 !WarlordEmblem:SecondRealmMagic! 。"
   },
   "WarlordEmblem:CurseStrike": {
     "NAME": "诅咒打击",
-    "DESCRIPTION":  "手牌中有诅咒或状态牌才能打出。 NL 造成 !D! 点伤害。 NL warlord_emblem:邪恶领域 ：打出无限制。",
+    "DESCRIPTION":  "手牌中有诅咒或状态牌才能打出。 NL 造成 !D! 点伤害。 NL warlord_emblem:邪恶领域 ： NL 打出无限制。",
     "EXTENDED_DESCRIPTION": ["手牌中没有诅咒牌"]
   },
   "WarlordEmblem:DeathCoil": {
@@ -117,11 +117,11 @@
   },
   "WarlordEmblem:DeathShake": {
     "NAME": "死亡之握",
-    "DESCRIPTION":  "造成 !D! 点伤害。如果目标是 爪牙 ，额外造成1000点伤害。 NL warlord_emblem:鲜血领域 ：额外抽1张牌。"
+    "DESCRIPTION":  "造成 !D! 点伤害。如果目标是 爪牙 ，额外造成1000点伤害。 NL warlord_emblem:鲜血领域 ： NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
   },
   "WarlordEmblem:DeathStrike": {
     "NAME": "死亡打击",
-    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 中毒 ，给予 !M! 层 易伤 。 NL warlord_emblem:邪恶领域 ：额外给予 1层 易伤 。"
+    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 中毒 ，给予 !M! 层 易伤 。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 易伤 。"
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "死亡凋零",
@@ -129,11 +129,11 @@
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "疾病云雾",
-    "DESCRIPTION":  "warlord_emblem:符文能量 X（最多8）。给予所有敌人 中毒 X次。 NL warlord_emblem:邪恶领域 ：额外给予1层 中毒 。"
+    "DESCRIPTION":  "warlord_emblem:符文能量 X（最多8）。给予所有敌人 中毒 X次。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 中毒 。"
   },
   "WarlordEmblem:DiseaseStrike": {
     "NAME": "瘟疫打击",
-    "DESCRIPTION":  "对所有敌人造成 !D! 点伤害。给予 !M! 层 中毒 。 NL warlord_emblem:邪恶领域 ：额外给予1层 中毒 。"
+    "DESCRIPTION":  "对所有敌人造成 !D! 点伤害。给予 !M! 层 中毒 。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 中毒 。"
   },
   "WarlordEmblem:Defend_DK": {
     "NAME": "防御",
@@ -141,11 +141,11 @@
   },
   "WarlordEmblem:EvilEager": {
     "NAME":  "邪恶之心",
-    "DESCRIPTION":   " warlord_emblem:符文能量 X（最多6），获得X层 warlord_emblem:残虐 。 NL warlord_emblem:邪恶领域 ：额外获得1层 残虐 。"
+    "DESCRIPTION":   " warlord_emblem:符文能量 X（最多6），获得X层 warlord_emblem:残虐 。 NL warlord_emblem:邪恶领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 层 warlord_emblem:残虐 。"
   },
   "WarlordEmblem:EvilPower": {
     "NAME":  "邪恶之力",
-    "DESCRIPTION":   "获得 !M! 点 力量 ， NL warlord_emblem:邪恶领域 ：额外获得1点 力量 。"
+    "DESCRIPTION":   "获得 !M! 点 力量 ， NL warlord_emblem:邪恶领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 点 力量 。"
   },
   "WarlordEmblem:EvilSee": {
     "NAME":  "邪恶凝视",
@@ -154,43 +154,43 @@
   },
   "WarlordEmblem:EvilStrike": {
     "NAME":  "邪恶打击",
-    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，获得 [E] ，抽1张牌。 NL warlord_emblem:邪恶领域 :额外获得1点 能量 。"
+    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，获得 [E] ，抽1张牌。 NL warlord_emblem:邪恶领域 : NL 额外获得 !WarlordEmblem:RealmMagic! [E] 。"
   },
   "WarlordEmblem:EvilWorm": {
     "NAME":  "邪恶虫群",
-    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，改为给予 !D! 层 中毒 。 NL warlord_emblem:邪恶领域 ：无视条件给予 中毒 。"
+    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，改为给予 !D! 层 中毒 。 NL warlord_emblem:邪恶领域 ： NL 无视条件给予 中毒 。"
   },
   "WarlordEmblem:Execute": {
-    "NAME":  "斩杀",
+    "NAME":  "处决",
     "DESCRIPTION":   "造成 !D! 点伤害。 NL 如果目标低于一半生命，造成2倍伤害。"
   },
   "WarlordEmblem:ForceDeflexion": {
     "NAME":  "强制偏斜",
-    "DESCRIPTION":   "获得 !B! 点 格挡 。 NL 抽2张牌。 NL warlord_emblem:鲜血领域 ：额外抽1张牌。"
+    "DESCRIPTION":   "获得 !B! 点 格挡 。 NL 抽2张牌。 NL warlord_emblem:鲜血领域 ： NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
   },
   "WarlordEmblem:FrozenChain": {
     "NAME":  "寒冰锁链",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多3），给予目标X层 虚弱 。 NL warlord_emblem:冰霜领域 ：额外给予1层 虚弱 。"
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多3），给予目标X层 虚弱 。 NL warlord_emblem:冰霜领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 虚弱 。"
   },
   "WarlordEmblem:FrozenDeath": {
     "NAME":  "死亡冰寒",
-    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 虚弱 ，给予!M! 层 易伤 。 NL warlord_emblem:冰霜领域 ：额外给予 1层 易伤 。"
+    "DESCRIPTION":  "造成 !D! 点伤害，如果目标 虚弱 ，给予!M! 层 易伤 。 NL warlord_emblem:冰霜领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 易伤 。"
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "心灵冰冻",
-    "DESCRIPTION":  "获得2层 无实体 ，下回合少抽1张牌。 消耗 。 NL warlord_emblem:冰霜领域 ：不会少抽牌。"
+    "DESCRIPTION":  "获得2层 无实体 ，下回合少抽1张牌。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 不会少抽牌。"
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "冰霜打击",
-    "DESCRIPTION":  "造成 !D! 点伤害，这名敌人本回合降低 !M! 点 力量 。 NL warlord_emblem:冰霜领域 ：额外降低1点 力量 。"
+    "DESCRIPTION":  "造成 !D! 点伤害，这名敌人本回合降低 !M! 点 力量 。 NL warlord_emblem:冰霜领域 ： NL 额外降低 !WarlordEmblem:RealmMagic! 点 力量 。"
   },
   "WarlordEmblem:FrozenTouch": {
     "NAME":  "冰冷触摸",
-    "DESCRIPTION":  "所有敌人 力量 降低 !M! 点。 warlord_emblem:冰霜领域 ：额外降低1点。 消耗 。"
+    "DESCRIPTION":  "所有敌人 力量 降低 !M! 点。 warlord_emblem:冰霜领域 ： NL 额外降低 !WarlordEmblem:RealmMagic! 点。 消耗 。"
   },
   "WarlordEmblem:FrozenWill": {
     "NAME":  "冰霜意志",
-    "DESCRIPTION":  "获得 !M! 点 敏捷 。 NL warlord_emblem:冰霜领域 ：额外加1点 敏捷 。"
+    "DESCRIPTION":  "获得 !M! 点 敏捷 。 NL warlord_emblem:冰霜领域 ： NL 额外加 !WarlordEmblem:RealmMagic! 点 敏捷 。"
   },
   "WarlordEmblem:GhostStrike": {
     "NAME":  "灵界打击",
@@ -206,15 +206,16 @@
   },
   "WarlordEmblem:Infect": {
     "NAME":  "传染",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多 !M! ），给予 中毒 X次。 NL warlord_emblem:邪恶领域 ：额外给予1次 中毒 。 "
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多 !M! ），给予 中毒 X次。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 次 中毒 。 "
   },
   "WarlordEmblem:LichBody": {
     "NAME":  "巫妖之躯",
-    "DESCRIPTION":  "获得 !B! 点 格挡 ，给予目标 !M! 层 虚弱 。 NL warlord_emblem:冰霜领域 ：额外给予1层 虚弱 。"
+    "DESCRIPTION":  "获得 !B! 点 格挡 ，给予目标 !M! 层 虚弱 。 NL warlord_emblem:冰霜领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 虚弱 。"
   },
   "WarlordEmblem:LichkingWraith": {
     "NAME":  "巫妖王之怒",
-    "DESCRIPTION":  "给予所有敌人99层 易伤 ， NL warlord_emblem:冰霜领域 ：额外给予99层 虚弱 。"
+    "DESCRIPTION":  "虚无 ，在每回合开始时获得 !M! 点 warlord_emblem:领域提升 。",
+    "UPGRADE_DESCRIPTION":  "在每回合开始时获得 !M! 点 warlord_emblem:领域提升 。"
   },
   "WarlordEmblem:RuneBlade": {
     "NAME":  "符文刃舞",
@@ -222,7 +223,7 @@
   },
   "WarlordEmblem:NoLightShield": {
     "NAME":  "无光之盾",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多8），获得X层 warlord_emblem:多层护甲 。 NL warlord_emblem:鲜血领域 ：额外多1层 warlord_emblem:多层护甲 。"
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多8），获得X层 warlord_emblem:多层护甲 。 NL warlord_emblem:鲜血领域 ： NL 额外多 !WarlordEmblem:RealmMagic! 层 warlord_emblem:多层护甲 。"
   },
   "WarlordEmblem:RuneBurn": {
     "NAME":  "符文燃烧",
@@ -284,7 +285,7 @@
   },
   "WarlordEmblem:UltimateCold": {
     "NAME":  "极度寒冷",
-    "DESCRIPTION": "所有单位失去 力量 。 NL warlord_emblem:冰霜领域 ：自身不会失去 力量 。 消耗 。"
+    "DESCRIPTION": "所有单位失去 力量 。 NL warlord_emblem:冰霜领域 ： NL 自身不会失去 力量 。 消耗 。"
   },
   "WarlordEmblem:UndeadWill": {
     "NAME":  "亡灵意志",
@@ -302,16 +303,20 @@
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "凛风打击",
-    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得1点 能量 ，抽1张牌。 NL warlord_emblem:冰霜领域 ：额外获得1点 能量 。"
+    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得1点 能量 ，抽1张牌。 NL warlord_emblem:冰霜领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 点 能量 。"
   },
   "WarlordEmblem:WinterHorn": {
     "NAME":  "寒冬号角",
-    "DESCRIPTION": "获得1点 力量 ，1点 敏捷 。 NL warlord_emblem:冰霜领域 ：额外获得1层 人工制品 。",
-    "UPGRADE_DESCRIPTION": "固有 。获得1点 力量 ，1点 敏捷 。 NL warlord_emblem:冰霜领域 ：额外获得1层 人工制品 。"
+    "DESCRIPTION": "获得1点 力量 ，1点 敏捷 。 NL warlord_emblem:冰霜领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 层 人工制品 。",
+    "UPGRADE_DESCRIPTION": "固有 。获得1点 力量 ，1点 敏捷 。 NL warlord_emblem:冰霜领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 层 人工制品 。"
   },
   "WarlordEmblem:Withstand": {
     "NAME":  "招架",
     "DESCRIPTION": "获得 !B! 点 格挡 ，获得1点 敏捷 。 消耗"
+  },
+  "WarlordEmblem:RealmRider": {
+    "NAME":  "领域驾驭",
+    "DESCRIPTION": "本场战斗视为你拥有所有的 warlord_emblem:天赋领域 。"
   },
 
 

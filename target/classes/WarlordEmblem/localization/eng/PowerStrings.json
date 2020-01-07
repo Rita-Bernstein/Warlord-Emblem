@@ -17,5 +17,26 @@
   "DESCRIPTIONS": [
     "All damage of your card is 12 ."
   ]
+},
+  "WarlordEmblem:RealmRiderPower": {
+  "NAME": "Realm Rider",
+  "DESCRIPTIONS": [
+    "Regard you have all Talent Realm this combat."
+  ]
+},
+  "WarlordEmblem:RealmIncreasePower": {
+  "NAME": "Realm Increase",
+  "DESCRIPTIONS": [
+    "Increases Realm effect by #b",
+    "Decreases Realm effect by #b",
+    "."
+  ]
+},
+  "WarlordEmblem:LichkingWraithPower": {
+  "NAME": "Lichking Wraith",
+  "DESCRIPTIONS": [
+    "At the start of your turn, gain #b",
+    " #yRealm Increase 。"
+  ]
 }
 }

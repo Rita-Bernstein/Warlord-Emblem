@@ -50,8 +50,8 @@ public class FrozenDeath extends AbstractDKCard {
                                 this.magicNumber, true, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
             else
                 AbstractDungeon.actionManager
-                        .addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber + 1, false),
-                                this.magicNumber + 1, true, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+                        .addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber + AbstractDKCard.RealmMagicNumber, false),
+                                this.magicNumber + AbstractDKCard.RealmMagicNumber, true, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }
     }
 

@@ -54,7 +54,7 @@ public class DiseaseStrike extends AbstractDKCard {
                         new ApplyPowerAction(mo, p, new PoisonPower(mo, p, this.magicNumber), this.magicNumber));
             else
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p,
-                        new PoisonPower(mo, p, this.magicNumber + 1), this.magicNumber + 1));
+                        new PoisonPower(mo, p, this.magicNumber + AbstractDKCard.RealmMagicNumber), this.magicNumber + AbstractDKCard.RealmMagicNumber));
         }
     }
 

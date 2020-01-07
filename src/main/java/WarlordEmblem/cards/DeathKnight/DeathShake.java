@@ -31,6 +31,7 @@ public class DeathShake extends AbstractDKCard {
     public DeathShake() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 6;
+
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -41,7 +42,7 @@ public class DeathShake extends AbstractDKCard {
                     new DamageInfo(p, 1000, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
         if (hasBloodRealm()) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.RealmMagicNumber));
         }
     }
 
@@ -53,6 +54,7 @@ public class DeathShake extends AbstractDKCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_BONUS);
+            //upgradeDefaultSecondMagicNumber(1);
         }
     }
 }

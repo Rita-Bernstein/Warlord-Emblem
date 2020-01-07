@@ -24,7 +24,7 @@
     "DESCRIPTION": "Won't affected by damage modifiers."
   },
   {"PROPER_NAME": "Talent Realm",
-    "NAMES": ["blood\u00a0realm","evil\u00a0realm","ice\u00a0realm"],
+    "NAMES": ["blood\u00a0realm","evil\u00a0realm","ice\u00a0realm","talent realm"],
     "DESCRIPTION": "Gain additional effect when you have talent."
   },
   {"PROPER_NAME": "Life Leech",
@@ -46,5 +46,9 @@
   {"PROPER_NAME": "Quest",
     "NAMES": ["quest"],
     "DESCRIPTION": "Clear the Quest,Gain the Reward."
+  },
+  {"PROPER_NAME": "Realm Increase",
+    "NAMES": ["realm increase"],
+    "DESCRIPTION": "effect your Realm effect."
   }
 ]
