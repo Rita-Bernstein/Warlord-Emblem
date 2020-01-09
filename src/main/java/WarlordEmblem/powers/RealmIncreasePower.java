@@ -2,6 +2,7 @@ package WarlordEmblem.powers;
  
  import WarlordEmblem.WarlordEmblem;
  import WarlordEmblem.cards.DeathKnight.AbstractDKCard;
+ import com.badlogic.gdx.graphics.Texture;
  import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -32,8 +33,9 @@ package WarlordEmblem.powers;
        this.amount = -999;
      }
      updateDescription();
-     loadRegion("strength");
+     //loadRegion("strength");
      this.canGoNegative = true;
+       this.img = new Texture(WarlordEmblem.assetPath("img/powers/RealmIncreasePower.png"));
    }
  
  

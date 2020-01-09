@@ -39,7 +39,8 @@ public class Tornado extends CustomCard {
     this.exhaust = true;
     this.isEthereal = true;
     this.baseDamage = 0;
-    this.baseMagicNumber = 5;
+    this.damage = this.baseDamage;
+    this.baseMagicNumber = 1;
     this.magicNumber = this.baseMagicNumber;
     this.isMultiDamage = true;
 
@@ -53,19 +54,18 @@ public class Tornado extends CustomCard {
 
 
     if (m.hasPower("Poison"))
-      this.baseDamage += m.getPower("Poison").amount;
+      this.damage += m.getPower("Poison").amount;
     if (m.hasPower("Weakened"))
-      this.baseDamage += m.getPower("Weakened").amount;
+      this.damage += m.getPower("Weakened").amount;
     if (m.hasPower("Vulnerable"))
-      this.baseDamage += m.getPower("Vulnerable").amount;
+      this.damage += m.getPower("Vulnerable").amount;
 
 
       AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(m,p, "Poison"));
       AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(m,p, "Weakened"));
       AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(m, p, "Vulnerable"));
 
-
-    AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
+    AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage * 5, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
   }
 
 

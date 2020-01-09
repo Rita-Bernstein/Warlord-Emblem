@@ -12,7 +12,7 @@ public class BloodRealm extends CustomRelic {
     private static Texture texture = new Texture(WarlordEmblem.assetPath("img/relics/blood_realm.png")) ;
 
     public BloodRealm() {
-        super(ID, texture, AbstractRelic.RelicTier.BOSS, AbstractRelic.LandingSound.MAGICAL);
+        super(ID, texture, RelicTier.RARE, AbstractRelic.LandingSound.MAGICAL);
     }
 
     public void onEquip(){

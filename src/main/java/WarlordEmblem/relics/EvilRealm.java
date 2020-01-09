@@ -11,7 +11,7 @@ public class EvilRealm extends CustomRelic {
     private static Texture texture = new Texture(WarlordEmblem.assetPath("img/relics/evil_realm.png")) ;
 
     public EvilRealm() {
-        super(ID, texture, AbstractRelic.RelicTier.BOSS, AbstractRelic.LandingSound.MAGICAL);
+        super(ID, texture,RelicTier.RARE, AbstractRelic.LandingSound.MAGICAL);
     }
 
     public void onEquip(){

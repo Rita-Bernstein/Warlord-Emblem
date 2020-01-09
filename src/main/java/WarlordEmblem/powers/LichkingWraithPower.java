@@ -1,6 +1,7 @@
 package WarlordEmblem.powers;
 
 import WarlordEmblem.WarlordEmblem;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -27,9 +28,9 @@ public class LichkingWraithPower extends AbstractPower {
     this.type = PowerType.BUFF;
     this.isTurnBased = false;
     updateDescription();
-    //this.img = new Texture(WarlordEmblem.assetPath("img/powers/Exploding.png"));
+    this.img = new Texture(WarlordEmblem.assetPath("img/powers/LichkingWraithPower.png"));
 
-    loadRegion("anger");
+    //loadRegion("anger");
   }
   
   public void updateDescription() { this.description = powerStrings.DESCRIPTIONS[0] + this.amount+ powerStrings.DESCRIPTIONS[1];}

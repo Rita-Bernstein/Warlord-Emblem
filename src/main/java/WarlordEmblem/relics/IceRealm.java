@@ -11,7 +11,7 @@ public class IceRealm extends CustomRelic {
     private static Texture texture = new Texture(WarlordEmblem.assetPath("img/relics/ice_realm.png")) ;
 
     public IceRealm() {
-        super(ID, texture, AbstractRelic.RelicTier.BOSS, AbstractRelic.LandingSound.MAGICAL);
+        super(ID, texture, RelicTier.RARE, AbstractRelic.LandingSound.MAGICAL);
     }
 
     public void onEquip(){

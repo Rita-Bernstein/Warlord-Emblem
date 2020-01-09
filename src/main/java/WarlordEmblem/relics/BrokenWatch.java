@@ -25,15 +25,19 @@ public class BrokenWatch extends CustomRelic {
    public BrokenWatch() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/broken_watch.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
 
 
-    public void atTurnStart() { this.counter = 0; }
- 
-   
-   public String getUpdatedDescription() { return this.DESCRIPTIONS[0] ; }
+
+    @Override
+    public void atBattleStartPreDraw() {
+        this.counter = 0;
+       super.atBattleStartPreDraw();
+    }
+
+    public String getUpdatedDescription() { return this.DESCRIPTIONS[0] ; }
 
 
 
        public void onUseCard(AbstractCard card, UseCardAction action) {
-             if (card.type == AbstractCard.CardType.SKILL) {
+
                    this.counter++;
             
                    if (this.counter % 12 == 0) {
@@ -43,7 +47,7 @@ public class BrokenWatch extends CustomRelic {
                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new StrengthPower(AbstractDungeon.player, 1)));
                        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Wound(), 1));
                        }
-                 }
+
            }
 
 

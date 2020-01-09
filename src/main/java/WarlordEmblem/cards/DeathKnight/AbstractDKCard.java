@@ -143,6 +143,8 @@ public abstract class AbstractDKCard extends CustomCard {
 
     @Override
     public void update() {
+
+
         if(AbstractDungeon.player != null){
             if(AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RealmIncreasePower") )){
                 AbstractDKCard.RealmMagicNumber = AbstractDKCard.BaseRealmMagicNumber+AbstractDungeon.player.getPower(WarlordEmblem.makeID("RealmIncreasePower")).amount;
@@ -156,6 +158,16 @@ public abstract class AbstractDKCard extends CustomCard {
                 AbstractDKCard.SecondRealmMagicNumber = AbstractDKCard.BaseSecondRealmMagicNumber;
                 AbstractDKCard.isSecondRealmMagicNumberModified = false;
             }
+        }else{
+            AbstractDKCard.RealmMagicNumber = 1;
+            AbstractDKCard.BaseRealmMagicNumber = 1;
+            AbstractDKCard.upgradedRealmMagicNumber = false;
+            AbstractDKCard.isRealmMagicNumberModified = false;
+
+            AbstractDKCard.SecondRealmMagicNumber = 2;
+            AbstractDKCard.BaseSecondRealmMagicNumber = 2;
+            AbstractDKCard.upgradedSecondRealmMagicNumber = false;
+            AbstractDKCard.isSecondRealmMagicNumberModified = false;
         }
         super.update();
     }
