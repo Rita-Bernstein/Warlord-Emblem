@@ -23,18 +23,13 @@ public class BrokenWatch extends CustomRelic {
 
  
    
-   public BrokenWatch() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/broken_watch.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT); }
+   public BrokenWatch() {
+       super(ID,new Texture(WarlordEmblem.assetPath("img/relics/broken_watch.png")) , RelicTier.RARE, CustomRelic.LandingSound.FLAT);
+       this.counter = 0;
+   }
 
-
-
-    @Override
-    public void atBattleStartPreDraw() {
-        this.counter = 0;
-       super.atBattleStartPreDraw();
-    }
 
     public String getUpdatedDescription() { return this.DESCRIPTIONS[0] ; }
-
 
 
        public void onUseCard(AbstractCard card, UseCardAction action) {
@@ -44,21 +39,26 @@ public class BrokenWatch extends CustomRelic {
                    if (this.counter % 12 == 0) {
                          flash();
                          this.counter = 0;
+                       this.pulse = false;
                        AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new StrengthPower(AbstractDungeon.player, 2)));
                        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Slimed(), 1));
-                       }
+                       }else if (this.counter == 11) {
+                       beginPulse();
+                       this.pulse = true;
+                   }
 
            }
 
+    public void atBattleStart() {
+        if (this.counter == 11) {
+            beginPulse();
+            this.pulse = true;
+        }
+    }
 
-    public void onVictory() { this.counter = -1; }
-
-   
    public boolean canSpawn() { return (Settings.isEndless || AbstractDungeon.floorNum <= 52); }
- 
- 
- 
+
    
    public CustomRelic makeCopy() { return new BrokenWatch(); }
  }
