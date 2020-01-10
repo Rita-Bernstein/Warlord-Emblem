@@ -31,6 +31,7 @@ WarlordEmblem\relics\WuziBook.class
 WarlordEmblem\cards\DeathKnight\DiseaseStrike.class
 WarlordEmblem\cards\DeathKnight\HeartStrike.class
 WarlordEmblem\cards\DeathKnight\FrozenDeath.class
+WarlordEmblem\cards\DeathKnight\CurseBlade.class
 WarlordEmblem\relics\quest\QuestWarlock.class
 WarlordEmblem\relics\quest\QuestDruid.class
 WarlordEmblem\cards\quest\QuestCardWarlockReward.class

@@ -277,6 +277,7 @@ public class WarlordEmblem implements
         cards.add(new WinterHorn());
         cards.add(new Withstand());
         cards.add(new RealmRider());
+        cards.add(new CurseBlade());
 
         cards.add(new MantleCardBaku());
         cards.add(new MantleCardCaireseth());

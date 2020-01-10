@@ -318,6 +318,11 @@
     "NAME":  "领域驾驭",
     "DESCRIPTION": "本场战斗视为你拥有所有的 warlord_emblem:天赋领域 。"
   },
+  "WarlordEmblem:CurseBlade": {
+    "NAME":  "诅咒之刃",
+    "DESCRIPTION":  "在每回合开始时获得 [E] 。将2张 *伤口 加入你的抽牌堆。",
+    "UPGRADE_DESCRIPTION":  "在每回合开始时获得 [E] 。将1张 *伤口 加入你的抽牌堆和弃牌堆。"
+  },
 
 
   "WarlordEmblem:MantleCardBaku": {

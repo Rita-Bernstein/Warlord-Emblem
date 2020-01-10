@@ -318,6 +318,11 @@
     "NAME":  "Realm Rider",
     "DESCRIPTION": "Regard you have all warlord_emblem:Talent Realm this combat."
   },
+  "WarlordEmblem:CurseBlade": {
+  "NAME":  "Curse Blade",
+  "DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 2 *Wounds to your draw pile.",
+  "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 1 *Wound to your draw pile and discard pile."
+},
 
 
 
