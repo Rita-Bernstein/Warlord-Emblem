@@ -70,7 +70,7 @@
   },
   "WarlordEmblem:BloodBoiling": {
     "NAME": "血沸",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X （最多 !M! ）。失去3生命，获得X点 力量 。"
+    "DESCRIPTION":  " warlord_emblem:符文能量 X （最多6）。失去 !M! 生命，获得X点 力量 。"
   },
   "WarlordEmblem:BloodDiffer": {
     "NAME": "鲜血分流",

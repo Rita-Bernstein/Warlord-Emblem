@@ -70,7 +70,7 @@
   },
   "WarlordEmblem:BloodBoiling": {
     "NAME": "Blood Boiling",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL （At Most !M! ）. NL Lost 3 health,gain X Strength."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL （At Most 6）. NL Lost !M! health,gain X Strength."
   },
   "WarlordEmblem:BloodDiffer": {
     "NAME": "Blood Differ",

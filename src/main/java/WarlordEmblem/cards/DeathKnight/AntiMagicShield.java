@@ -29,6 +29,7 @@ public class AntiMagicShield extends AbstractDKCard {
     public AntiMagicShield() {
         super(ID, NAME, IMG, COST, DESCRIPTION,TYPE, COLOR,RARITY,TARGET);
         this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
         // this.exhaust = true;
     }
 

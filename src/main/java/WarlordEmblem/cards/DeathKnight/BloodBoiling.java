@@ -27,18 +27,18 @@ public class BloodBoiling extends AbstractDKCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    private static final int UPGRADE_BONUS = 2;
+    private static final int UPGRADE_BONUS = -1;
 
     public BloodBoiling() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 6;
+        this.baseMagicNumber = 3;
         this.magicNumber = baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         int amount = super.getRuneCount();
-        if (amount > this.magicNumber)
-            amount = this.magicNumber;
+        if (amount > 6)
+            amount = 6;
 
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.RED)));
         AbstractDungeon.actionManager.addToBottom(new LoseHPAction(AbstractDungeon.player, AbstractDungeon.player, 3));

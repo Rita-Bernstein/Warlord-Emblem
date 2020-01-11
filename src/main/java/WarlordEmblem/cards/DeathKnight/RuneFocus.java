@@ -27,7 +27,8 @@ public class RuneFocus extends AbstractDKCard {
 
     public RuneFocus() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 8;
+        this.baseBlock = 7;
+        this.block = this.baseBlock;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
     }
@@ -45,6 +46,7 @@ public class RuneFocus extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            upgradeBlock(1);
             upgradeMagicNumber(1);
         }
     }

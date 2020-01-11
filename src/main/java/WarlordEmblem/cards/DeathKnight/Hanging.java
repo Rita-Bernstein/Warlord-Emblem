@@ -55,7 +55,7 @@ public class Hanging extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            upgradeDamage(1);
         }
     }
 

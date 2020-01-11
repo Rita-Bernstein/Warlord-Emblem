@@ -35,10 +35,10 @@ public class WinterHorn extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                new StrengthPower(AbstractDungeon.player, 1), 1));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
-                new DexterityPower(AbstractDungeon.player, 1), 1));
+
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,new StrengthPower(AbstractDungeon.player, 1), 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,new DexterityPower(AbstractDungeon.player, 1), 1));
+
         if (hasIceRealm())
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player,
                     AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, AbstractDKCard.RealmMagicNumber), AbstractDKCard.RealmMagicNumber));
