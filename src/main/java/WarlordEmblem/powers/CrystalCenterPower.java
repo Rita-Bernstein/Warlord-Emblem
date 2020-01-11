@@ -23,7 +23,8 @@ public class CrystalCenterPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         updateDescription();
-        this.img = ImageMaster.loadImage("images/powers/32/drawCardRed.png");
+        //this.img = ImageMaster.loadImage("images/powers/32/drawCardRed.png");
+        loadRegion("buffer");
     }
 
     public void updateDescription() { this.description = powerStrings.DESCRIPTIONS[0]; }
@@ -32,7 +33,8 @@ public class CrystalCenterPower extends AbstractPower {
     public int onAttackToChangeDamage(DamageInfo info, int damageAmount) {
         if (info.owner != null && info.type != DamageInfo.DamageType.HP_LOSS && info.type != DamageInfo.DamageType.THORNS && damageAmount > 0 ) {
             flash();
-            return 12;}
+            return 12;
+        }
         else { return damageAmount;}
     }
 }
