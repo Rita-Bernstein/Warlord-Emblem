@@ -303,7 +303,7 @@
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "凛风打击",
-    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得1点 能量 ，抽1张牌。 NL warlord_emblem:冰霜领域 ： NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
+    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得 [E] ，抽1张牌。 NL warlord_emblem:冰霜领域 ： NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
   },
   "WarlordEmblem:WinterHorn": {
     "NAME":  "寒冬号角",

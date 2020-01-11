@@ -125,7 +125,7 @@
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "Death Wither",
-    "DESCRIPTION":  "Deal warlord_emblem:True\u00a0Damage equals to !M! % of all enemy's heal to them(At least 10 damage). NL If target has Poison,double this damage."
+    "DESCRIPTION":  "Deal warlord_emblem:True\u00a0Damage equals to !M! % of all enemy's heal to them(At least 15 damage). NL If target has Poison,double this damage."
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "Disease Cloud",

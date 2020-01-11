@@ -125,7 +125,7 @@
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "死亡凋零",
-    "DESCRIPTION":  "对所有敌人造成当前生命 !M! %的 warlord_emblem:真实伤害 。至少造成10点伤害， NL 如果目标 中毒 ，造成2倍伤害。"
+    "DESCRIPTION":  "对所有敌人造成当前生命 !M! %的 warlord_emblem:真实伤害 。至少造成15点伤害， NL 如果目标 中毒 ，造成2倍伤害。"
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "疾病云雾",
@@ -303,7 +303,7 @@
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "凛风打击",
-    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得1点 能量 ，抽1张牌。 NL warlord_emblem:冰霜领域 ： NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
+    "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得 [E] ，抽1张牌。 NL warlord_emblem:冰霜领域 ： NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
   },
   "WarlordEmblem:WinterHorn": {
     "NAME":  "寒冬号角",
