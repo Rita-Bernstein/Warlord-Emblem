@@ -45,7 +45,7 @@ public class DeathKnight extends CustomPlayer {
 
 	public static final int ENERGY_PER_TURN = 3;
 	public static final int START_HP = 80;
-	public static final int START_GOLD = 50;
+	public static final int START_GOLD = 99;
 
 
 	public static final String[] orbTextures = {

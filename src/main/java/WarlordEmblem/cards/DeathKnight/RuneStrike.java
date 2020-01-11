@@ -48,7 +48,7 @@ public class RuneStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            upgradeDamage(3);
             upgradeMagicNumber(1);
         }
     }

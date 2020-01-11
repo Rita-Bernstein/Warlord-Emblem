@@ -42,10 +42,10 @@ public class RuneRecast extends AbstractDKCard {
 
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
         int amount = super.getRuneCount();
-        if (amount >= 2) {
+        if (amount >= 1) {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
             AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber, false));
-            super.useRune(2);
+            super.useRune(1);
         }
 
 

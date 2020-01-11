@@ -323,6 +323,10 @@
     "DESCRIPTION":  "在每回合开始时获得 [E] 。将2张 *伤口 加入你的抽牌堆。",
     "UPGRADE_DESCRIPTION":  "在每回合开始时获得 [E] 。将1张 *伤口 加入你的抽牌堆和弃牌堆。"
   },
+  "WarlordEmblem:SevereWinter": {
+    "NAME":  "冷酷严冬",
+    "DESCRIPTION":  "对所有敌人造成 !D! 点伤害。你每有一张名字中有 *打击 的牌，伤害+ !M! 。 NL 敌人本回合失去1点 力量 。 NL  warlord_emblem:冰霜领域 ：额外失去1点 力量 。"
+  },
 
 
   "WarlordEmblem:MantleCardBaku": {

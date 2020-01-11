@@ -323,6 +323,10 @@
   "DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 2 *Wounds to your draw pile.",
   "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 1 *Wound to your draw pile and discard pile."
 },
+  "WarlordEmblem:SevereWinter": {
+    "NAME":  "Severe Winter",
+    "DESCRIPTION":  "Deal !D! damage to all enemy.NL Deals !M! additional damage for ALL your cards containing \"Strike\".Enemy lost 1 Strength this turn. NL warlord_emblem:Ice Realm :additional lost !WarlordEmblem:RealmMagic! Strength."
+  },
 
 
 
