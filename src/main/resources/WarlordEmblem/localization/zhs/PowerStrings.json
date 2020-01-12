@@ -38,5 +38,18 @@
     "在你的回合开始时，获得 #b",
     " 点 #y领域提升 。"
   ]
+},  "WarlordEmblem:RuneMultiplexPower": {
+  "NAME": "符文复用",
+  "DESCRIPTIONS": [
+    "在这个回合，你打出的下 #b",
+    " 张消耗 #y符文能量 的牌不会消耗 #y符文能量 。"
+  ]
+},
+  "WarlordEmblem:BloodMaskPower": {
+  "NAME": "鲜血印记",
+  "DESCRIPTIONS": [
+    "当这名敌人死亡时，你回复 #b",
+    " 生命。"
+  ]
 }
 }

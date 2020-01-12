@@ -38,5 +38,19 @@
     "At the start of your turn, gain #b",
     " #yRealm Increase 。"
   ]
+},
+  "WarlordEmblem:RuneMultiplexPower": {
+  "NAME": "Rune Multiplex",
+  "DESCRIPTIONS": [
+    "This turn, your next #b",
+    " use #yRune Energy card(s) will not use #yRune Energy."
+  ]
+},
+  "WarlordEmblem:BloodMaskPower": {
+  "NAME": "Blood Mark",
+  "DESCRIPTIONS": [
+    "On death, Healing you #b",
+    " HP"
+  ]
 }
 }

@@ -77,9 +77,8 @@
     "DESCRIPTION":  "Lost !M! health.Gain !M! [E] .Draw !M! card(s). NL warlord_emblem:Blood\u00a0Realm :will not lost health. Exhaust."
   },
   "WarlordEmblem:BloodMask": {
-    "NAME": "Blood Mask",
-    "DESCRIPTION":  "Upon receiving attack damage, gains !M! Strength.",
-    "UPGRADE_DESCRIPTION":" Innate .Upon receiving attack damage, gains !M! Strength."
+    "NAME": "Blood Mark",
+    "DESCRIPTION":  "Apply !M! warlord_emblem:Blood Mark to an enemy."
   },
   "WarlordEmblem:BloodStrike": {
     "NAME": "Blood Strike",
@@ -251,12 +250,16 @@
   },
   "WarlordEmblem:RuneInspire": {
     "NAME":  "Rune Inspire",
-    "DESCRIPTION":  "Increase warlord_emblem:Rune\u00a0Energy max limit !M! in this combat. Exhaust."
+    "DESCRIPTION":  "Increase warlord_emblem:Rune\u00a0Energy max limit !M! in this combat."
   },
   "WarlordEmblem:RunePerfusion": {
     "NAME":  "Rune Perfusion",
     "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy 6.Reduce the cost of all cards in your hand to 0 this turn. NL Exhaust.",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
+  },
+  "WarlordEmblem:RuneMultiplex": {
+    "NAME":  "Rune Multiplex",
+    "DESCRIPTION":  "This turn, your next !M! use warlord_emblem:Rune Energy card(s) will not use warlord_emblem:Rune Energy."
   },
   "WarlordEmblem:RuneRecast": {
     "NAME":  "Rune Recast",
@@ -326,6 +329,10 @@
   "WarlordEmblem:SevereWinter": {
     "NAME":  "Severe Winter",
     "DESCRIPTION":  "Deal !D! damage to all enemy.NL Deals !M! additional damage for ALL your cards containing \"Strike\".Enemy lost 1 Strength this turn. NL warlord_emblem:Ice Realm :additional lost !WarlordEmblem:RealmMagic! Strength."
+  },
+  "WarlordEmblem:RuneUpgrade": {
+    "NAME":  "Rune Upgrade",
+    "DESCRIPTION":  "Gain !M! warlord_emblem:Rune Energy .Gain max warlord_emblem:Rune Energy if warlord_emblem:Rune Energy is full."
   },
 
 

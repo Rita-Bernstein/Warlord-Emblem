@@ -4,6 +4,7 @@ import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.relics.RuneSword;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -101,6 +102,14 @@ public abstract class AbstractDKCard extends CustomCard {
         return rs.counter;
     }
 
+    protected int getRuneMax(){
+        if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword"))) {
+            return 0;
+        }
+        RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
+        return rs.getMaxRune();
+    }
+
     protected boolean isRuneFull() {
         if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword"))) {
             return false;
@@ -114,6 +123,13 @@ public abstract class AbstractDKCard extends CustomCard {
             return;
         RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
         if (rs != null)
+            if(AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RuneMultiplexPower"))){
+                AbstractDungeon.player.getPower(WarlordEmblem.makeID("RuneMultiplexPower")).flash();
+                AbstractDungeon.player.getPower(WarlordEmblem.makeID("RuneMultiplexPower")).amount--;
+                if(AbstractDungeon.player.getPower(WarlordEmblem.makeID("RuneMultiplexPower")).amount == 0){addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, WarlordEmblem.makeID("RuneMultiplexPower")));}
+                return;
+            }
+
             rs.useRune(amount);
     }
 

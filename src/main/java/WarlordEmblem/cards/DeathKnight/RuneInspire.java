@@ -18,7 +18,7 @@ public class RuneInspire extends AbstractDKCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/rune_inspire.png");
-    private static final int COST = 0;
+    private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
@@ -29,7 +29,6 @@ public class RuneInspire extends AbstractDKCard {
 
     public RuneInspire() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.exhaust = true;
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
     }

@@ -30,6 +30,7 @@ public class DeathWither extends AbstractDKCard {
 
     public DeathWither() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+
         this.baseMagicNumber = 10;
         this.magicNumber = this.baseMagicNumber;
     }
@@ -39,8 +40,8 @@ public class DeathWither extends AbstractDKCard {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             int currentHp = mo.currentHealth;
             int actual = currentHp * this.magicNumber / 100;
-            if (actual < 15)
-                actual = 15;
+            if (actual < this.magicNumber)
+                actual = this.magicNumber;
             if (mo.hasPower("Poison"))
                 actual = actual * 2;
             AbstractDungeon.actionManager.addToBottom(new DamageAction(mo,

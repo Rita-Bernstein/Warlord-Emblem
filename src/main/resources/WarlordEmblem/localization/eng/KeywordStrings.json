@@ -50,5 +50,9 @@
   {"PROPER_NAME": "Realm Increase",
     "NAMES": ["realm increase"],
     "DESCRIPTION": "effect your Realm effect."
+  },
+  {"PROPER_NAME": "Blood Mark",
+    "NAMES": ["blood mark"],
+    "DESCRIPTION": "On death, Healing you with amount of stack HP."
   }
 ]

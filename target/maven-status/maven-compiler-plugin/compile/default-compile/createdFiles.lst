@@ -70,6 +70,7 @@ WarlordEmblem\cards\DeathKnight\BloodStrike.class
 WarlordEmblem\cards\DeathKnight\CurseStrike.class
 WarlordEmblem\cards\quest\QuestCardMask.class
 WarlordEmblem\relics\RuneSword.class
+WarlordEmblem\cards\DeathKnight\RuneMultiplex.class
 WarlordEmblem\cards\DeathKnight\VoidDefend.class
 WarlordEmblem\cards\DeathKnight\FrozenTouch.class
 WarlordEmblem\powers\RegenerationPower.class
@@ -133,6 +134,7 @@ WarlordEmblem\relics\VoidPower.class
 WarlordEmblem\cards\DeathKnight\BloodBoiling.class
 WarlordEmblem\cards\DeathKnight\RuneBurn.class
 WarlordEmblem\cards\mantle\MantleCardBaku.class
+WarlordEmblem\cards\DeathKnight\RuneUpgrade.class
 WarlordEmblem\cards\DeathKnight\DKDefend.class
 WarlordEmblem\cards\quest\QuestCardPriest.class
 WarlordEmblem\cards\DeathKnight\LichBody.class
@@ -145,6 +147,7 @@ WarlordEmblem\cards\quest\QuestCardHunterReward.class
 WarlordEmblem\cards\mantle\MantleCardKazakus.class
 WarlordEmblem\cards\Kael\ChaosMeteor.class
 WarlordEmblem\modules\EnergyOrbCustomBlue.class
+WarlordEmblem\powers\RuneMultiplexPower.class
 WarlordEmblem\cards\mantle\AbstractMantleCard.class
 WarlordEmblem\cards\DeathKnight\UndeadWill.class
 WarlordEmblem\patches\AbstractPlayerEnum.class
@@ -161,6 +164,7 @@ WarlordEmblem\cards\Kael\EMP.class
 WarlordEmblem\cards\DeathKnight\DeathCoil.class
 WarlordEmblem\relics\BrokenMantle.class
 WarlordEmblem\relics\KitchenKnife.class
+WarlordEmblem\powers\BloodMaskPower.class
 WarlordEmblem\cards\Kael\SunStrike.class
 WarlordEmblem\cards\quest\QuestCardMage.class
 WarlordEmblem\cards\DeathKnight\WindStrike.class

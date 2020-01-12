@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.powers.BloodMaskPower;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -25,19 +26,19 @@ public class BloodMask extends AbstractDKCard {
     public static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
 
 
     public BloodMask() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 5;
         this.magicNumber = baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.RED), 0.0F, true));
         AbstractDungeon.actionManager
-                .addToBottom(new ApplyPowerAction(p, p, new AngryPower(p, this.magicNumber), this.magicNumber));
+                .addToBottom(new ApplyPowerAction(m, p, new BloodMaskPower(p, this.magicNumber), this.magicNumber));
     }
 
     public AbstractCard makeCopy() {
@@ -47,9 +48,7 @@ public class BloodMask extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.isInnate = true;
-            this.rawDescription = UPGRADE_DESCRIPTION;
-            initializeDescription();
+            upgradeMagicNumber(3);
         }
     }
 }

@@ -30,14 +30,20 @@ public class BreastProtector extends CustomRelic {
     @Override
     public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
         if (!this.used  && info.output > 20){
+            flash();
             this.used = true;
+            this.pulse = false;
+            this.grayscale = true;
             return super.onAttackedToChangeDamage(info, 20);
         }
         return super.onAttackedToChangeDamage(info, damageAmount);
+
     }
 
     public void atBattleStart() {
        this.used = false;
+        beginPulse();
+        this.pulse = true;
     }
 
 

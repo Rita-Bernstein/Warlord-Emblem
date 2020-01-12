@@ -2,7 +2,11 @@ package WarlordEmblem.relics;
 
 import WarlordEmblem.WarlordEmblem;
 import basemod.abstracts.CustomRelic;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class RuneSword extends CustomRelic {
@@ -48,10 +52,23 @@ public class RuneSword extends CustomRelic {
         return counter == max;
     }
 
+        public  int getMaxRune(){
+        return max;
+    }
 
+    @Override
+    public void renderCounter(SpriteBatch sb, boolean inTopPanel) {
+        if (this.max > -1) {
+            if (inTopPanel) {
+                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 14.0F * Settings.scale, Color.WHITE);
+            } else {
+                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 14.0F * Settings.scale, Color.WHITE);
+            }
+        }
+        super.renderCounter(sb, inTopPanel);
+    }
 
-
-//符文管理==========================
+    //符文管理==========================
     public void plusRune(int amount) {
         flash();
         // AbstractDungeon.actionManager.addToTop(new
