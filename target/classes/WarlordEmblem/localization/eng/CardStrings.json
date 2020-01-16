@@ -259,7 +259,7 @@
   },
   "WarlordEmblem:RuneMultiplex": {
     "NAME":  "Rune Multiplex",
-    "DESCRIPTION":  "This turn, your next !M! use warlord_emblem:Rune Energy card(s) will not use warlord_emblem:Rune Energy."
+    "DESCRIPTION":  "This turn, your next !M! use warlord_emblem:Rune Energy card(s) will not use warlord_emblem:Rune Energy and regard you have max warlord_emblem:Rune Energy."
   },
   "WarlordEmblem:RuneRecast": {
     "NAME":  "Rune Recast",
@@ -346,6 +346,11 @@
   "NAME":  "Dark Simulation",
   "DESCRIPTION":  "Select a card from 3 warlord_emblem:Talent Realm cards add into your hand. NL It costs 0 this turn. NL Exhaust."
 },
+  "WarlordEmblem:RuneIndex": {
+    "NAME":  "Rune Index",
+    "DESCRIPTION":  "At the start of your turn,add a random warlord_emblem:Talent Realm card into your hand(can not be stacked) and gain !M! warlord_emblem:Rune Energy .",
+    "UPGRADE_DESCRIPTION": " Innate .At the start of your turn,add a random warlord_emblem:Talent Realm card into your hand(can not be stacked) and gain !M! warlord_emblem:Rune Energy ."
+  },
 
 
 

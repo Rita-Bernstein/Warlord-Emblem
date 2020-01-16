@@ -218,7 +218,7 @@
     "UPGRADE_DESCRIPTION":  "在每回合开始时获得 !M! 点 warlord_emblem:领域提升 。"
   },
   "WarlordEmblem:RuneBlade": {
-    "NAME":  "符文刃舞",
+    "NAME":  "符文重击",
     "DESCRIPTION":  "造成 !D! 点伤害， NL 额外附加 !M! 倍于 warlord_emblem:符文能量 的 warlord_emblem:真实伤害 。 NL 消耗一半的 warlord_emblem:符文能量 。"
   },
   "WarlordEmblem:NoLightShield": {
@@ -260,7 +260,7 @@
   },
   "WarlordEmblem:RuneMultiplex": {
     "NAME":  "符文复用",
-    "DESCRIPTION":  "在这个回合，你打出的下 !M! 张消耗 warlord_emblem:符文能量 的牌不会消耗 warlord_emblem:符文能量 。"
+    "DESCRIPTION":  "在这个回合，你打出的下 !M! 张消耗 warlord_emblem:符文能量 的牌不会消耗 warlord_emblem:符文能量 并视为拥有最大 warlord_emblem:符文能量 。"
   },
   "WarlordEmblem:RuneRecast": {
     "NAME":  "符文重铸",
@@ -337,7 +337,7 @@
   },
   "WarlordEmblem:BloodSacrifice": {
     "NAME":  "鲜血祭祀",
-    "DESCRIPTION":  "获得 !M! 层 warlord_emblem:生气 。 NL warlord_emblem:鲜血领域 ： NL 获得  !WarlordEmblem:SecondRealmMagic! 层 warlord_emblem:多层护甲 。"
+    "DESCRIPTION":  "获得 !M! 层 warlord_emblem:生气 。 NL warlord_emblem:鲜血领域 ： NL 获得  !WarlordEmblem:RealmMagic! 层 warlord_emblem:多层护甲 。"
   },
   "WarlordEmblem:FrostbiteStrike": {
     "NAME":  "冰疫打击",
@@ -346,6 +346,11 @@
   "WarlordEmblem:DarkSimulation": {
     "NAME":  "黑暗模拟",
     "DESCRIPTION":  "从三张随机 warlord_emblem:天赋领域 牌中选择一张加入你的手牌。 NL 这张牌在本回合耗能变为0。 消耗 。"
+  },
+  "WarlordEmblem:RuneIndex": {
+    "NAME":  "符文索引",
+    "DESCRIPTION":  "每回合开始时，将抽牌堆中的一张随机 warlord_emblem:天赋领域 牌加入手牌（不能叠加）并获得 !M! 点 warlord_emblem:符文能量 。",
+    "UPGRADE_DESCRIPTION": "固有 。每回合开始时，将抽牌堆中的一张随机 warlord_emblem:天赋领域 牌加入手牌（不能叠加）并获得 !M! 点 warlord_emblem:符文能量 。"
   },
 
 

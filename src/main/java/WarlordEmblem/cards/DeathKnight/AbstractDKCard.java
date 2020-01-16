@@ -4,7 +4,6 @@ import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.relics.RuneSword;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -99,6 +98,9 @@ public abstract class AbstractDKCard extends CustomCard {
         if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword"))) {
             return 0;
         }
+        if(AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RuneMultiplexPower"))){
+            return getRuneMax();
+        }
         RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
         return rs.counter;
     }
@@ -188,11 +190,4 @@ public abstract class AbstractDKCard extends CustomCard {
         }
         super.update();
     }
-
-    @Override
-    public void onChoseThisOption() {
-        addToBot(new MakeTempCardInHandAction(this));
-        super.onChoseThisOption();
-    }
-
 }

@@ -101,6 +101,7 @@ WarlordEmblem\cards\DeathKnight\EvilPower.class
 org\dakiler\slayhelper\relics\mantle\MantleKazakus.class
 WarlordEmblem\cards\DeathKnight\RuneHeavyBlow.class
 WarlordEmblem\cards\Kael\IceWall.class
+WarlordEmblem\powers\RuneIndexPower.class
 WarlordEmblem\relics\BloodRealm.class
 WarlordEmblem\cards\DeathKnight\FrozenChain.class
 WarlordEmblem\cards\DeathKnight\BloodSacrifice.class
@@ -129,6 +130,7 @@ WarlordEmblem\cards\quest\QuestCardDK.class
 WarlordEmblem\cards\DeathKnight\RuneExplode.class
 WarlordEmblem\cards\Kael\ElementInvoke.class
 WarlordEmblem\relics\mantle\MantleJean.class
+WarlordEmblem\cards\DeathKnight\RuneIndex.class
 WarlordEmblem\orbs\ForgedSpiritOrb.class
 WarlordEmblem\cards\quest\QuestCardRogue.class
 WarlordEmblem\cards\DeathKnight\DeathStrike.class
@@ -147,6 +149,7 @@ WarlordEmblem\relics\Pill.class
 WarlordEmblem\patches\CharacterSelectScreenPatches$CharacterSelectScreenCharacterOptionPatch_Relic.class
 WarlordEmblem\cards\DeathKnight\EvilWorm.class
 WarlordEmblem\cards\mantle\MantleCardMarkzar$1.class
+WarlordEmblem\actions\RuneIndexAction.class
 WarlordEmblem\cards\quest\QuestCardHunterReward.class
 WarlordEmblem\cards\mantle\MantleCardKazakus.class
 WarlordEmblem\cards\Kael\ChaosMeteor.class

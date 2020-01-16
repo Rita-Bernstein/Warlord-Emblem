@@ -31,7 +31,7 @@
        }
 
      if (this.duration == Settings.ACTION_DUR_FAST) {
-       AbstractDungeon.cardRewardScreen.customCombatOpen(cards, CardRewardScreen.TEXT[1], true);
+       AbstractDungeon.cardRewardScreen.customCombatOpen(cards, CardRewardScreen.TEXT[1], false);
        tickDuration();
        return;
      }

@@ -52,5 +52,12 @@
     "On death, Healing you #b",
     " HP"
   ]
+},
+  "WarlordEmblem:RuneIndexPower": {
+  "NAME": "Rune Index",
+  "DESCRIPTIONS": [
+    "At the start of your turn,add a random #yTalent Realm card into your hand and gain #b",
+    " #yRune Energy."
+  ]
 }
 }
