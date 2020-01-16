@@ -34,6 +34,9 @@ public class EvilWorm extends AbstractDKCard {
     public EvilWorm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 5;
+        this.damage = this.baseDamage;
+        this.baseMagicNumber = 5;
+        this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
     }
@@ -50,7 +53,7 @@ public class EvilWorm extends AbstractDKCard {
                             AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         } else {
             AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.damage), this.damage));
+                    .addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.magicNumber), this.magicNumber));
         }
     }
 
@@ -62,6 +65,7 @@ public class EvilWorm extends AbstractDKCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(2);
+            upgradeMagicNumber(2);
         }
     }
 

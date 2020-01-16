@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.LoseBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -60,12 +61,9 @@ public class Annihilation extends AbstractDKCard {
         int block = p.currentBlock;
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
         if (!hasBloodRealm())
-            AbstractDungeon.actionManager.addToBottom(new DamageAction(p,
-                    new DamageInfo(p, block, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p,null,p.currentBlock));
         else
-            AbstractDungeon.actionManager
-                    .addToBottom(new DamageAction(p, new DamageInfo(p, block / 2, this.damageTypeForTurn),
-                            AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p,null,(int)Math.floor(p.currentBlock/2)));
 
         if (m != null) {
             AbstractDungeon.actionManager.addToBottom(

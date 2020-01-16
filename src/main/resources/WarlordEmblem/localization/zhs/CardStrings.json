@@ -158,7 +158,7 @@
   },
   "WarlordEmblem:EvilWorm": {
     "NAME":  "邪恶虫群",
-    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，改为给予 !D! 层 中毒 。 NL warlord_emblem:邪恶领域 ： NL 无视条件给予 中毒 。"
+    "DESCRIPTION":   "造成 !D! 点伤害。如果目标 中毒 ，改为给予 !M! 层 中毒 。 NL warlord_emblem:邪恶领域 ： NL 无视条件给予 中毒 。"
   },
   "WarlordEmblem:Execute": {
     "NAME":  "处决",

@@ -157,7 +157,7 @@
   },
   "WarlordEmblem:EvilWorm": {
     "NAME":  "Evil Worm",
-    "DESCRIPTION":   "Deal !D! damage.If target has Poison,apply !D! Poison instead. NL warlord_emblem:Evil\u00a0Realm :ignore if enemy has Poison."
+    "DESCRIPTION":   "Deal !D! damage.If target has Poison,apply !M! Poison instead. NL warlord_emblem:Evil\u00a0Realm :ignore if enemy has Poison."
   },
   "WarlordEmblem:Execute": {
     "NAME":  "Execute",
