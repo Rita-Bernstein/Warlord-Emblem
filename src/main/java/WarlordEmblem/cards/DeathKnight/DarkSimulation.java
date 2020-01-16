@@ -68,7 +68,22 @@ public class DarkSimulation extends AbstractDKCard {
     public static ArrayList<AbstractCard> returnRandomRealmCardInCombat(ArrayList<AbstractCard.CardTags> tags) {
            ArrayList<AbstractCard> list = new ArrayList<AbstractCard>();
            ArrayList<AbstractCard> returnCard = new ArrayList<AbstractCard>();
-
+        for (AbstractCard c : AbstractDungeon.srcCommonCardPool.group) {
+            if (c.hasTag(CustomTagsEnum.Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
+                list.add(c);
+            }
+        }
+        for (AbstractCard c : AbstractDungeon.srcUncommonCardPool.group) {
+            if (c.hasTag(CustomTagsEnum.Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
+                list.add(c);
+            }
+        }
+        for (AbstractCard c : AbstractDungeon.srcRareCardPool.group) {
+            if (c.hasTag(CustomTagsEnum.Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
+                list.add(c);
+            }
+        }
+/*
            if(tags.contains(CustomTagsEnum.Blood_Realm_Tag)){
                for (AbstractCard c : AbstractDungeon.srcCommonCardPool.group) {
                    if (c.hasTag(CustomTagsEnum.Blood_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
@@ -120,6 +135,7 @@ public class DarkSimulation extends AbstractDKCard {
                    }
                }
            }
+*/
 
             int temp;
            for(int i = 0;i < 3;i++){
@@ -132,40 +148,6 @@ public class DarkSimulation extends AbstractDKCard {
        }
 
 
-       /*
-    public AbstractCard getRandomRealmCard(boolean useRng,AbstractCard.CardTags tags) {
-        ArrayList<AbstractCard> tmp = new ArrayList();
-
-        for (AbstractCard c : AbstractDungeon.srcCommonCardPool.group) {
-            if (c.hasTag(tags)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                tmp.add(c);
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.srcUncommonCardPool.group) {
-            if (c.hasTag(tags)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                tmp.add(c);
-            }
-        }
-        for (AbstractCard c : AbstractDungeon.srcRareCardPool.group) {
-            if (c.hasTag(tags)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                tmp.add(c);
-            }
-        }
-
-        if (tmp.isEmpty()) {
-            logger.info("ERROR: No cards left for type: " + this.type.name());
-            return null;
-        } else {
-            Collections.sort(tmp);
-            if (useRng) {
-                return (AbstractCard)tmp.get(AbstractDungeon.cardRng.random(tmp.size() - 1));
-            } else {
-                return (AbstractCard)tmp.get(MathUtils.random(tmp.size() - 1));
-            }
-        }
-    }
-
-*/
 
         public AbstractCard makeCopy() { return new DarkSimulation(); }
 
