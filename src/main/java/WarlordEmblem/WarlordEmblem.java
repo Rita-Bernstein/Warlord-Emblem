@@ -281,6 +281,9 @@ public class WarlordEmblem implements
         cards.add(new SevereWinter());
         cards.add(new RuneMultiplex());
         cards.add(new RuneUpgrade());
+        cards.add(new BloodSacrifice());
+        cards.add(new FrostbiteStrike());
+        cards.add(new DarkSimulation());
 
         cards.add(new MantleCardBaku());
         cards.add(new MantleCardCaireseth());

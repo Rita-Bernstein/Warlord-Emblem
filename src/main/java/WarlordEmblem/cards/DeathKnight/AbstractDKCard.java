@@ -4,6 +4,7 @@ import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.relics.RuneSword;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -187,4 +188,11 @@ public abstract class AbstractDKCard extends CustomCard {
         }
         super.update();
     }
+
+    @Override
+    public void onChoseThisOption() {
+        addToBot(new MakeTempCardInHandAction(this));
+        super.onChoseThisOption();
+    }
+
 }

@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -39,6 +40,8 @@ public class CurseStrike extends AbstractDKCard {
         this.baseDamage = 12;
         this.damage = this.baseDamage;
         this.tags.add(CardTags.STRIKE);
+        this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
+        this.tags.add(CustomTagsEnum.Realm_Tag);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

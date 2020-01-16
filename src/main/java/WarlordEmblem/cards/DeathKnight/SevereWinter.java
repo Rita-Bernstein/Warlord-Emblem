@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -39,6 +40,9 @@ public class SevereWinter extends AbstractDKCard {
         this.damage = this.baseDamage;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(CardTags.STRIKE);
+        this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
+        this.tags.add(CustomTagsEnum.Realm_Tag);
     }
 
        public static int countCards() {

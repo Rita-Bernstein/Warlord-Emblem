@@ -60,9 +60,9 @@ public class RuneSword extends CustomRelic {
     public void renderCounter(SpriteBatch sb, boolean inTopPanel) {
         if (this.max > -1) {
             if (inTopPanel) {
-                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 14.0F * Settings.scale, Color.WHITE);
+                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.WHITE);
             } else {
-                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 14.0F * Settings.scale, Color.WHITE);
+                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.WHITE);
             }
         }
         super.renderCounter(sb, inTopPanel);

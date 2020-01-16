@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
@@ -37,6 +38,7 @@ public class CurseBlade extends AbstractDKCard {
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new Wound();
+
 
     }
 

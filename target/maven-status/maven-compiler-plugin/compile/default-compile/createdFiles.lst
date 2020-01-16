@@ -66,6 +66,8 @@ WarlordEmblem\relics\mantle\MantleLiam.class
 WarlordEmblem\cards\DeathKnight\DeathGateway.class
 WarlordEmblem\relics\HatTrick.class
 WarlordEmblem\relics\Scar.class
+WarlordEmblem\actions\DarkSimulationAction.class
+WarlordEmblem\cards\DeathKnight\FrostbiteStrike.class
 WarlordEmblem\cards\DeathKnight\BloodStrike.class
 WarlordEmblem\cards\DeathKnight\CurseStrike.class
 WarlordEmblem\cards\quest\QuestCardMask.class
@@ -101,6 +103,7 @@ WarlordEmblem\cards\DeathKnight\RuneHeavyBlow.class
 WarlordEmblem\cards\Kael\IceWall.class
 WarlordEmblem\relics\BloodRealm.class
 WarlordEmblem\cards\DeathKnight\FrozenChain.class
+WarlordEmblem\cards\DeathKnight\BloodSacrifice.class
 WarlordEmblem\cards\DeathKnight\BlackCommand.class
 WarlordEmblem\cards\quest\QuestCardMageReward.class
 WarlordEmblem\cards\DeathKnight\DeathShake.class
@@ -120,6 +123,7 @@ WarlordEmblem\cards\DeathKnight\SwordWave.class
 WarlordEmblem\patches\CharacterSelectScreenPatches$CharacterSelectScreenPatch_Update.class
 WarlordEmblem\cards\quest\QuestCardPaladin.class
 WarlordEmblem\cards\DeathKnight\UltimateCold.class
+WarlordEmblem\cards\DeathKnight\DarkSimulation.class
 WarlordEmblem\powers\CrystalCenterPower.class
 WarlordEmblem\cards\quest\QuestCardDK.class
 WarlordEmblem\cards\DeathKnight\RuneExplode.class
@@ -146,6 +150,7 @@ WarlordEmblem\cards\mantle\MantleCardMarkzar$1.class
 WarlordEmblem\cards\quest\QuestCardHunterReward.class
 WarlordEmblem\cards\mantle\MantleCardKazakus.class
 WarlordEmblem\cards\Kael\ChaosMeteor.class
+WarlordEmblem\patches\CustomTagsEnum.class
 WarlordEmblem\modules\EnergyOrbCustomBlue.class
 WarlordEmblem\powers\RuneMultiplexPower.class
 WarlordEmblem\cards\mantle\AbstractMantleCard.class

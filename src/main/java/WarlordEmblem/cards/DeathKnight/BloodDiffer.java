@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -34,6 +35,8 @@ public class BloodDiffer extends AbstractDKCard {
         this.baseMagicNumber = 2;
         this.magicNumber = baseMagicNumber;
         this.exhaust = true;
+        this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
+        this.tags.add(CustomTagsEnum.Realm_Tag);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

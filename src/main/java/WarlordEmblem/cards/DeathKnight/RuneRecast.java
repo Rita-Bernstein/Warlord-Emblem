@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -42,10 +43,10 @@ public class RuneRecast extends AbstractDKCard {
 
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
         int amount = super.getRuneCount();
-        if (amount >= 1) {
+        if (amount >= 2) {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-            AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber, false));
-            super.useRune(1);
+            AbstractDungeon.actionManager.addToBottom(new ExhaustAction(1, false, false, false));
+            super.useRune(2);
         }
 
 

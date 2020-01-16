@@ -2,6 +2,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\Execute.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneStorm.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\FrozenHeart.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardDKReward.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneMultiplex.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\mantle\AbstractMantleCard.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\patches\AbstractPlayerEnum.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardDruid.java
@@ -24,6 +25,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardDruidRewar
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneDefend.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\quest\QuestDK.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\quest\QuestRogue.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\patches\CustomTagsEnum.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\WinterHorn.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\WarlordEmblem.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\Tornado.java
@@ -35,9 +37,11 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardDK.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardMage.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\patches\CardColorEnum.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneDiffer.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\BloodMaskPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\LichBody.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\EvilSee.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\AbstractDKCard.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneUpgrade.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\IceWall.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DeathShake.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\Withstand.java
@@ -105,6 +109,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\mantle\MantleKazakus.jav
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BloodStrike.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\orbs\ForgedSpiritOrb.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\WuziBook.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BloodSacrifice.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\mantle\MantleCardKazakusPotion.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DeathContract.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardShaman.java
@@ -174,6 +179,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BodyStrike.ja
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\BreastProtector.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\BrokenWatch.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\VoidDefend.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\RuneMultiplexPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\UndeadWill.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\mantle\MantleBaku.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\Hanging.java

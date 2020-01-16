@@ -51,5 +51,9 @@
   {"PROPER_NAME": "鲜血印记",
     "NAMES": ["鲜血印记"],
     "DESCRIPTION": "当这名敌人死亡时，你回复层数数量的生命。"
-  }
+  },
+  {"PROPER_NAME": "生气",
+  "NAMES": ["生气"],
+  "DESCRIPTION": "每当你受到 #y攻击 伤害，就获得 #y力量 。"
+}
 ]

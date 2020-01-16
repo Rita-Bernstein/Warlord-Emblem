@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -39,6 +40,8 @@ public class FrozenStrike extends AbstractDKCard {
         this.baseMagicNumber = magicNumber;
         //this.exhaust = true;
         this.tags.add(CardTags.STRIKE);
+        this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
+        this.tags.add(CustomTagsEnum.Realm_Tag);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

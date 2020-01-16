@@ -29,7 +29,7 @@ public class RuneFocus extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = 7;
         this.block = this.baseBlock;
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }
 

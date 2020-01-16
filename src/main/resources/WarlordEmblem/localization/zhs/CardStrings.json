@@ -264,7 +264,7 @@
   },
   "WarlordEmblem:RuneRecast": {
     "NAME":  "符文重铸",
-    "DESCRIPTION":  "抽 1 张牌。 warlord_emblem:符文能量 2，抽 !M! 张牌，然后丢弃 !M! 张牌。",
+    "DESCRIPTION":  "抽 1 张牌。 warlord_emblem:符文能量 2，抽 !M! 张牌，然后 消耗 1 张牌。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:RuneRecover": {
@@ -284,7 +284,7 @@
     "DESCRIPTION": "造成 !D! 点伤害."
   },
   "WarlordEmblem:SwordWave": {
-    "NAME":  "巨剑挥舞",
+    "NAME":  "符文刃舞",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次。"
   },
   "WarlordEmblem:UltimateCold": {
@@ -306,7 +306,7 @@
     "EXTENDED_DESCRIPTION": ["只有当符文能量为空或满的时候才能打出"]
   },
   "WarlordEmblem:WindStrike": {
-    "NAME":  "凛风打击",
+    "NAME":  "凛风冲击",
     "DESCRIPTION": "造成 !D! 点伤害，如果目标 力量 为负，获得 [E] ，抽1张牌。 NL warlord_emblem:冰霜领域 ： NL 额外抽 !WarlordEmblem:RealmMagic! 张牌。"
   },
   "WarlordEmblem:WinterHorn": {
@@ -328,12 +328,24 @@
     "UPGRADE_DESCRIPTION":  "在每回合开始时获得 [E] 。将1张 *伤口 加入你的抽牌堆和弃牌堆。"
   },
   "WarlordEmblem:SevereWinter": {
-    "NAME":  "冷酷严冬",
+    "NAME":  "凛风打击",
     "DESCRIPTION":  "对所有敌人造成 !D! 点伤害。你每有一张名字中有 *打击 的牌，伤害+ !M! 。 NL 敌人本回合失去1点 力量 。 NL  warlord_emblem:冰霜领域 ：额外失去1点 力量 。"
   },
   "WarlordEmblem:RuneUpgrade": {
     "NAME":  "符文升级",
     "DESCRIPTION":  "获得 !M! 点 warlord_emblem:符文能量 。超出上限的部分变为获得上限。"
+  },
+  "WarlordEmblem:BloodSacrifice": {
+    "NAME":  "鲜血祭祀",
+    "DESCRIPTION":  "获得 !M! 层 warlord_emblem:生气 。 NL warlord_emblem:鲜血领域 ： NL 获得  !WarlordEmblem:SecondRealmMagic! 层 warlord_emblem:多层护甲 。"
+  },
+  "WarlordEmblem:FrostbiteStrike": {
+    "NAME":  "冰疫打击",
+    "DESCRIPTION":  "造成 !D! 点伤害。如果目标 力量 为负，给予 !M! 层 虚弱 。 NL warlord_emblem:冰霜领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 虚弱 。"
+  },
+  "WarlordEmblem:DarkSimulation": {
+    "NAME":  "黑暗模拟",
+    "DESCRIPTION":  "从三张随机已有 warlord_emblem:天赋领域 的领域牌中选择一张加入你的手牌。 NL 这张牌在本回合耗能变为0。 消耗 。"
   },
 
 

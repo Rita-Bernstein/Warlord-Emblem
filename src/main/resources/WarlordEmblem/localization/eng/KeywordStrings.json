@@ -54,5 +54,9 @@
   {"PROPER_NAME": "Blood Mark",
     "NAMES": ["blood mark"],
     "DESCRIPTION": "On death, Healing you with amount of stack HP."
+  },
+  {"PROPER_NAME": "Angry",
+    "NAMES": ["angry"],
+    "DESCRIPTION": "Upon receiving attack damage, gain #yStrength."
   }
 ]

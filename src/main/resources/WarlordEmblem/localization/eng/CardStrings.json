@@ -263,7 +263,7 @@
   },
   "WarlordEmblem:RuneRecast": {
     "NAME":  "Rune Recast",
-    "DESCRIPTION":  "Draw a card. warlord_emblem:Rune\u00a0Energy 2，draw !M! card(s).Discard !M! card(s).",
+    "DESCRIPTION":  "Draw a card. warlord_emblem:Rune\u00a0Energy 2，draw !M! card(s). Exhaust 1 card.",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
   },
   "WarlordEmblem:RuneRecover": {
@@ -305,7 +305,7 @@
     "EXTENDED_DESCRIPTION": ["Only can be played when #yRune\u00a0Energy is empty or full"]
   },
   "WarlordEmblem:WindStrike": {
-    "NAME":  "Wind Strike",
+    "NAME":  "Wind Impact",
     "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E],draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional draw !WarlordEmblem:RealmMagic! card(s)."
   },
   "WarlordEmblem:WinterHorn": {
@@ -327,13 +327,25 @@
   "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 1 *Wound to your draw pile and discard pile."
 },
   "WarlordEmblem:SevereWinter": {
-    "NAME":  "Severe Winter",
+    "NAME":  "Wind Strike",
     "DESCRIPTION":  "Deal !D! damage to all enemy.NL Deals !M! additional damage for ALL your cards containing \"Strike\".Enemy lost 1 Strength this turn. NL warlord_emblem:Ice Realm :additional lost !WarlordEmblem:RealmMagic! Strength."
   },
   "WarlordEmblem:RuneUpgrade": {
     "NAME":  "Rune Upgrade",
     "DESCRIPTION":  "Gain !M! warlord_emblem:Rune Energy .Gain max warlord_emblem:Rune Energy if warlord_emblem:Rune Energy is full."
   },
+  "WarlordEmblem:BloodSacrifice": {
+  "NAME":  "Blood Sacrifice",
+  "DESCRIPTION":  "Gain !M! warlord_emblem:Angry . NL warlord_emblem:Blood Realm : NL Gain !WarlordEmblem:RealmMagic! warlord_emblem:plated armor ."
+},
+  "WarlordEmblem:FrostbiteStrike": {
+  "NAME":  "Frostbite Strike",
+  "DESCRIPTION":  "Deal !D! damage.If target has negative Strength,apply !M! Weak. NL warlord_emblem:Ice Realm ： NL Additional apply !WarlordEmblem:RealmMagic! Weak."
+},
+  "WarlordEmblem:DarkSimulation": {
+  "NAME":  "Dark Simulation",
+  "DESCRIPTION":  "Select a card from 3 Realm cards with warlord_emblem:Talent Realm you have add into your hand. NL It costs 0 this turn. NL Exhaust."
+},
 
 
 
