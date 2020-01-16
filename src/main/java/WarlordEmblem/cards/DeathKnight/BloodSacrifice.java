@@ -29,7 +29,7 @@ public class BloodSacrifice extends AbstractDKCard {
     public static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.SELF;
 
 
     public BloodSacrifice() {
@@ -41,10 +41,10 @@ public class BloodSacrifice extends AbstractDKCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.RED), 0.0F, true));
         AbstractDungeon.actionManager
-                .addToBottom(new ApplyPowerAction(m, p, new AngryPower(p, this.magicNumber), this.magicNumber));
+                .addToBottom(new ApplyPowerAction(p, p, new AngryPower(p, this.magicNumber), this.magicNumber));
         if (hasBloodRealm())
             AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(m, p, new PlatedArmorPower(p, AbstractDKCard.SecondRealmMagicNumber), AbstractDKCard.SecondRealmMagicNumber));
+                    .addToBottom(new ApplyPowerAction(p, p, new PlatedArmorPower(p, AbstractDKCard.RealmMagicNumber), AbstractDKCard.RealmMagicNumber));
     }
 
     public AbstractCard makeCopy() {
