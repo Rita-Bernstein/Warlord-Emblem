@@ -71,7 +71,7 @@
   "WarlordEmblem:BloodBoiling": {
     "NAME": "血沸",
     "DESCRIPTION":  " warlord_emblem:符文能量 X （最多6）。失去 !M! 生命， NL 获得X点 力量 。",
-    "UPGRADE_DESCRIPTION":" warlord_emblem:符文能量 X （最多6）。失去 !M! 生命， NL 获得X+2点 力量 。"
+    "UPGRADE_DESCRIPTION":" warlord_emblem:符文能量 X （最多6）。失去 !M! 生命， NL 获得X+1点 力量 。"
   },
   "WarlordEmblem:BloodDiffer": {
     "NAME": "鲜血分流",
@@ -129,7 +129,7 @@
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "疾病云雾",
-    "DESCRIPTION":  "warlord_emblem:符文能量 X（最多8）。给予所有敌人 中毒 X次。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 中毒 。"
+    "DESCRIPTION":  "warlord_emblem:符文能量 X（最多 !M! ）。给予所有敌人 X 层 中毒 。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 中毒 。"
   },
   "WarlordEmblem:DiseaseStrike": {
     "NAME": "瘟疫打击",
@@ -206,7 +206,7 @@
   },
   "WarlordEmblem:Infect": {
     "NAME":  "传染",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多 !M! ），给予 中毒 X次。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 次 中毒 。 "
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多 !M! ），给予随机敌人 中毒 X次。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 次 中毒 。 "
   },
   "WarlordEmblem:LichBody": {
     "NAME":  "巫妖之躯",

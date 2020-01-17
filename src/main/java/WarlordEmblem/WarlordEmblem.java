@@ -84,6 +84,7 @@ public class WarlordEmblem implements
     public static boolean addonRelic = true;
     public static boolean ringRelic = true;
     public static boolean mantleRelic = true;
+    public static boolean RuneCountDisplay = true;
     public static Properties WarlordEmblemDefaults = new Properties();
 
     public static final Color DeathKnight_Color = new Color(0.171F,0.722F,0.722F,1.0F);
@@ -126,6 +127,7 @@ public class WarlordEmblem implements
             addonRelic = config.getBool("addonRelic");
             ringRelic = config.getBool("ringRelic");
             mantleRelic = config.getBool("mantleRelic");
+            RuneCountDisplay = config.getBool("RuneCountDisplay");
         } catch (Exception e) {
             e.printStackTrace();
             clearConfig();
@@ -140,6 +142,7 @@ public class WarlordEmblem implements
             config.setBool("addonRelic", addonRelic);
             config.setBool("ringRelic", ringRelic);
             config.setBool("mantleRelic", mantleRelic);
+            config.setBool("RuneCountDisplay", RuneCountDisplay);
             config.save();
         } catch (Exception e) {
             e.printStackTrace();
@@ -164,10 +167,13 @@ public class WarlordEmblem implements
                 (label) -> {}, (button) -> {ringRelic = button.enabled;saveConfig();});
         ModLabeledToggleButton mantleRelicSwitch = new ModLabeledToggleButton(CardCrawlGame.languagePack.getUIString(makeID("RelicFilter")).TEXT[2],400.0f, 600.0f, Settings.CREAM_COLOR, FontHelper.charDescFont,mantleRelic, settingsPanel,
                 (label) -> {}, (button) -> {mantleRelic = button.enabled;saveConfig();});
+        ModLabeledToggleButton RuneCountDisplaySwitch = new ModLabeledToggleButton(CardCrawlGame.languagePack.getUIString(makeID("RelicFilter")).TEXT[3],400.0f, 540.0f, Settings.CREAM_COLOR, FontHelper.charDescFont,RuneCountDisplay, settingsPanel,
+                (label) -> {}, (button) -> {RuneCountDisplay = button.enabled;saveConfig();});
 
         settingsPanel.addUIElement(addonRelicSwitch);
         settingsPanel.addUIElement(ringRelicSwitch);
         settingsPanel.addUIElement(mantleRelicSwitch);
+        settingsPanel.addUIElement(RuneCountDisplaySwitch);
 
 
 
@@ -353,7 +359,7 @@ public class WarlordEmblem implements
             BaseMod.addRelic(new WuziBook(), RelicType.SHARED);
             BaseMod.addRelic(new BadgeProtect(), RelicType.SHARED);
             BaseMod.addRelic(new KitchenKnife(), RelicType.SHARED);
-            BaseMod.addRelic(new BadgeMouse(), RelicType.SHARED);
+            //BaseMod.addRelic(new BadgeMouse(), RelicType.SHARED);
             BaseMod.addRelic(new GoldMime(), RelicType.SHARED);
             BaseMod.addRelic(new BreastProtector(), RelicType.SHARED);
             //BaseMod.addRelic(new SoulOfKael(), RelicType.SHARED);

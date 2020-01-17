@@ -18,7 +18,9 @@
     "TEXT": [
       "Add addtional relics(restart game)",
       "Add ring relic(restart game)",
-      "Add mantle relic(restart game)"
+      "Add mantle relic(restart game)",
+      "Display count of Rune Sword at the right of character(beta)"
+
     ]
   }
 }

@@ -6,8 +6,10 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class RuneSword extends CustomRelic {
 
@@ -60,11 +62,30 @@ public class RuneSword extends CustomRelic {
     public void renderCounter(SpriteBatch sb, boolean inTopPanel) {
         if (this.max > -1) {
             if (inTopPanel) {
-                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.WHITE);
+                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.YELLOW);
             } else {
-                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.WHITE);
+                FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.YELLOW);
             }
         }
+        if(AbstractDungeon.player != null && WarlordEmblem.RuneCountDisplay ){
+            if((((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.getCurrRoom() instanceof com.megacrit.cardcrawl.rooms.MonsterRoom) && !AbstractDungeon.player.isDead)){
+                if (this.max > -1) {
+                    if (inTopPanel) {
+                        FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), AbstractDungeon.player.drawX + 120.0F * Settings.scale, AbstractDungeon.player.drawY + 35.0F * Settings.scale, Color.YELLOW);
+                    } else {
+                        FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), AbstractDungeon.player.drawX + 120.0F * Settings.scale, AbstractDungeon.player.drawY + 35.0F * Settings.scale, Color.YELLOW);
+                    }
+                }
+                if (this.counter > -1) {
+                    if (inTopPanel) {
+                        FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.counter),  AbstractDungeon.player.drawX + 120.0F * Settings.scale, AbstractDungeon.player.drawY +10.0F * Settings.scale, Color.WHITE);
+                    } else {
+                        FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.counter), AbstractDungeon.player.drawX + 120.0F * Settings.scale, AbstractDungeon.player.drawY +10.0F * Settings.scale, Color.WHITE);
+                    }
+                }
+            }
+        }
+
         super.renderCounter(sb, inTopPanel);
     }
 

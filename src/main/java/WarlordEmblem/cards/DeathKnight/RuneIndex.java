@@ -61,7 +61,7 @@ public class RuneIndex extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
             this.isInnate = true;
         }

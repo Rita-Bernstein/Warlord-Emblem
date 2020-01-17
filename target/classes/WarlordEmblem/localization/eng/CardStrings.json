@@ -70,7 +70,8 @@
   },
   "WarlordEmblem:BloodBoiling": {
     "NAME": "Blood Boiling",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL （At Most 6）. NL Lost !M! health,gain X Strength."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL （At Most 6）. NL Lost !M! health,gain X Strength.",
+    "UPGRADE_DESCRIPTION":" warlord_emblem:Rune Energy X NL （At Most 6）. NL Lost !M! health,gain X+1 Strength."
   },
   "WarlordEmblem:BloodDiffer": {
     "NAME": "Blood Differ",
@@ -128,7 +129,7 @@
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "Disease Cloud",
-    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy X NL (At most 8). NL Apply Poison to all enemy X time(s). NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
+    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy X NL (At most !M! ). NL Apply X Poison to all enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
   },
   "WarlordEmblem:DiseaseStrike": {
     "NAME": "Disease Strike",
@@ -205,7 +206,7 @@
   },
   "WarlordEmblem:Infect": {
     "NAME":  "Infect",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply Poison X times. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply Poison X times to random enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
   },
   "WarlordEmblem:LichBody": {
     "NAME":  "Lich Body",

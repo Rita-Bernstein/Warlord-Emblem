@@ -36,6 +36,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneRecover.j
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardDK.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardMage.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\patches\CardColorEnum.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\FrostbiteStrike.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneDiffer.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\BloodMaskPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\LichBody.java
@@ -45,6 +46,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneUpgrade.j
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\IceWall.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DeathShake.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\Withstand.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\actions\RuneIndexAction.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\mantle\MantleCardMask.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardShamanReward.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\variables\SecondMagicNumber.java
@@ -136,6 +138,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BloodBoiling.
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DeathGateway.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\mantle\MantleMarkzar.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\character\DeathKnight.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\RuneIndexPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\character\Crowbot.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\DeafeningBlastPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BloodMask.java
@@ -153,10 +156,12 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\quest\QuestPaladin.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneHeavyBlow.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\ForgeSpirit.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\CurseStrike.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneIndex.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\Annihilation.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneBlade.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\Alacrity.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneFocus.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\actions\DarkSimulationAction.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\EvilWorm.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneExplode.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DiseaseCloud.java
@@ -177,6 +182,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\LichkingWraithPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\ElementInvoke.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BodyStrike.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\BreastProtector.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DarkSimulation.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\BrokenWatch.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\VoidDefend.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\RuneMultiplexPower.java

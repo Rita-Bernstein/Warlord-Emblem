@@ -32,7 +32,8 @@ public class RuneExplode extends AbstractDKCard {
 
     public RuneExplode() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 4;
+        this.baseDamage = 5;
+        this.damage = this.baseDamage;
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
     }

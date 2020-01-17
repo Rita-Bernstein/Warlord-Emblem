@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -36,6 +37,8 @@ public class BloodSacrifice extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 1;
         this.magicNumber = baseMagicNumber;
+        this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
+        this.tags.add(CustomTagsEnum.Realm_Tag);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

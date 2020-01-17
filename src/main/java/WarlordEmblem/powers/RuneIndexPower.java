@@ -3,9 +3,11 @@ package WarlordEmblem.powers;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.actions.RuneIndexAction;
 import WarlordEmblem.cards.DeathKnight.AbstractDKCard;
+import WarlordEmblem.patches.CustomTagsEnum;
 import WarlordEmblem.relics.RuneSword;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -40,7 +42,8 @@ public class RuneIndexPower extends AbstractPower {
 
   public void atStartOfTurnPostDraw() {
     flash();
-    addToBot(new RuneIndexAction(1));
+    addToBot(new DrawCardAction(1,false));
+    addToBot(new RuneIndexAction(1, CustomTagsEnum.Realm_Tag));
 
     if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword")))
       return;
@@ -48,4 +51,5 @@ public class RuneIndexPower extends AbstractPower {
     if (rs != null)
       rs.plusRune(amount);
   }
+
 }

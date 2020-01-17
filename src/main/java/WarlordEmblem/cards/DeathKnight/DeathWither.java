@@ -56,7 +56,7 @@ public class DeathWither extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(5);
+            upgradeMagicNumber(2);
         }
     }
 }

@@ -29,7 +29,7 @@ public class RuneUpgrade extends AbstractDKCard {
 
     public RuneUpgrade() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
     }
 

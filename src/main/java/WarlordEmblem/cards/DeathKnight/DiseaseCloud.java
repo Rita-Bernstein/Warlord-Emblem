@@ -34,18 +34,18 @@ public class DiseaseCloud extends AbstractDKCard {
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 
-    private final static int MAX = 8;
-
     public DiseaseCloud() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+        this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         int amount = super.getRuneCount();
-        if (amount > MAX)
-            amount = MAX;
+        if (amount > this.magicNumber)
+            amount = this.magicNumber;
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p,
                 new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC),
                 1.5F));
@@ -67,7 +67,7 @@ public class DiseaseCloud extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(1);
+            upgradeMagicNumber(2);
         }
     }
 }
