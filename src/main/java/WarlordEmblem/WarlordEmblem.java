@@ -12,6 +12,9 @@ import WarlordEmblem.helpers.SecondaryMagicVariable;
 import WarlordEmblem.patches.AbstractPlayerEnum;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CharacterSelectScreenPatches;
+import WarlordEmblem.potions.RealmPotion;
+import WarlordEmblem.potions.ReserveRunePotion;
+import WarlordEmblem.potions.RuneExpandPotion;
 import WarlordEmblem.relics.*;
 import WarlordEmblem.relics.mantle.*;
 import WarlordEmblem.relics.quest.*;
@@ -39,6 +42,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.orbs.Dark;
+import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -64,6 +68,7 @@ public class WarlordEmblem implements
         AddAudioSubscriber,
         EditRelicsSubscriber,
         EditKeywordsSubscriber,
+        PotionGetSubscriber,
         EditCharactersSubscriber{
     public static final Logger logger = LogManager.getLogger(WarlordEmblem.class.getSimpleName());
 
@@ -88,6 +93,11 @@ public class WarlordEmblem implements
     public static Properties WarlordEmblemDefaults = new Properties();
 
     public static final Color DeathKnight_Color = new Color(0.171F,0.722F,0.722F,1.0F);
+    public static final Color BloodRealm_Color = new Color(0.835f,0.25f,0.187f,1.0f);
+    public static final Color IceRealm_Color = new Color(0.125F,0.219F,0.633F,1.0F);
+    public static final Color EvilRealm_Color = new Color(0.043F,0.875F,0.195F,1.0F);
+    public static final Color RuneShadow_Color = new Color(0.0F,0.3F,0.35F,0.8F);
+    public static final Color Transparent_Color = new Color(0.0F,0.0F,0.0F,0.0F);
 
  public WarlordEmblem(){
      logger.debug("Constructor started.");
@@ -176,8 +186,12 @@ public class WarlordEmblem implements
         settingsPanel.addUIElement(RuneCountDisplaySwitch);
 
 
+        BaseMod.addPotion(ReserveRunePotion.class,DeathKnight_Color,RuneShadow_Color,Transparent_Color,WarlordEmblem.makeID("ReserveRunePotion"),AbstractPlayerEnum.DeathKnight);
+        BaseMod.addPotion(RuneExpandPotion.class,DeathKnight_Color,RuneShadow_Color,Transparent_Color,WarlordEmblem.makeID("RuneExpandPotion"),AbstractPlayerEnum.DeathKnight);
+        BaseMod.addPotion(RealmPotion.class,BloodRealm_Color,EvilRealm_Color,IceRealm_Color,WarlordEmblem.makeID("RealmPotion"),AbstractPlayerEnum.DeathKnight);
 
     }
+
 
     @Override
     public void receiveEditCharacters() {
@@ -336,6 +350,10 @@ public class WarlordEmblem implements
         logger.debug("receiveEditCards finished.");
     }
 
+    @Override
+    public void receivePotionGet(AbstractPotion abstractPotion) {
+    //    BaseMod.addPotion(ReserveRunePotion.class,DeathKnight_Color,DeathKnight_Color,DeathKnight_Color,WarlordEmblem.makeID("ReserveRunePotion"),AbstractPlayerEnum.DeathKnight);
+    }
 
     @Override
     public void receiveEditRelics() {
@@ -405,6 +423,8 @@ public class WarlordEmblem implements
         logger.debug("receiveEditRelics finished.");
     }
 
+
+
     private Settings.GameLanguage languageSupport()
     {
         switch (Settings.language) {
@@ -434,7 +454,7 @@ public class WarlordEmblem implements
 
         BaseMod.loadCustomStringsFile(EventStrings.class, assetPath(path + "EventStrings.json"));
         BaseMod.loadCustomStringsFile(UIStrings.class, assetPath(path + "UIStrings.json"));
-        //BaseMod.loadCustomStringsFile(PotionStrings.class, assetPath(path + "PotionStrings.json"));
+        BaseMod.loadCustomStringsFile(PotionStrings.class, assetPath(path + "PotionStrings.json"));
         BaseMod.loadCustomStringsFile(CardStrings.class, assetPath(path + "CardStrings.json"));
         //BaseMod.loadCustomStringsFile(MonsterStrings.class, assetPath(path + "monsters.json"));
         BaseMod.loadCustomStringsFile(PowerStrings.class, assetPath(path + "PowerStrings.json"));

@@ -42,8 +42,7 @@ public class RuneIndexPower extends AbstractPower {
 
   public void atStartOfTurnPostDraw() {
     flash();
-    addToBot(new DrawCardAction(1,false));
-    addToBot(new RuneIndexAction(1, CustomTagsEnum.Realm_Tag));
+    addToBot(new RuneIndexAction(amount, CustomTagsEnum.Rune_Tag));
 
     if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword")))
       return;

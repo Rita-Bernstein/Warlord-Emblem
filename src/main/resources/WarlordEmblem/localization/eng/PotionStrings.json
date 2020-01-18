@@ -1,2 +1,23 @@
 {
+  "WarlordEmblem:ReserveRunePotion": {
+    "NAME": "Reserve Rune",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yRune Energy ."
+    ]
+  },
+  "WarlordEmblem:RuneExpandPotion": {
+    "NAME": "Rune Expand",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yMax #yRune."
+    ]
+  },
+  "WarlordEmblem:RealmPotion": {
+    "NAME": "Realm Potion",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yRealm Increase."
+    ]
+  }
 }

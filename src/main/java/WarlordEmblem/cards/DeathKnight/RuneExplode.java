@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -36,6 +37,7 @@ public class RuneExplode extends AbstractDKCard {
         this.damage = this.baseDamage;
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(CustomTagsEnum.Rune_Tag);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

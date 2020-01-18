@@ -32,26 +32,26 @@ public class FrozenChain extends AbstractDKCard {
 
     public FrozenChain() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        // this.exhaust = true;
+        this.exhaust = true;
+        this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int amount = super.getRuneCount();
-        if (amount > MAX)
-            amount = MAX;
 
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p,
                 new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC),
                 1.5F));
-        if (hasIceRealm())
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
-                    new WeakPower(m, amount + AbstractDKCard.RealmMagicNumber, false), amount + AbstractDKCard.RealmMagicNumber, true));
-        else
-            AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, amount, false), amount, true));
-        super.useRune(amount);
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters){
+            if (hasIceRealm())
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
+                        new WeakPower(m, this.magicNumber + AbstractDKCard.RealmMagicNumber, false), this.magicNumber + AbstractDKCard.RealmMagicNumber, true));
+            else
+                AbstractDungeon.actionManager.addToBottom(
+                        new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, this.magicNumber, false), this.magicNumber, true));
+        }
     }
 
     public AbstractCard makeCopy() {
@@ -61,7 +61,9 @@ public class FrozenChain extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(0);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+            this.isInnate = true;
         }
     }
 }

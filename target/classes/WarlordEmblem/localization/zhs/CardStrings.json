@@ -170,7 +170,8 @@
   },
   "WarlordEmblem:FrozenChain": {
     "NAME":  "寒冰锁链",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多3），给予目标X层 虚弱 。 NL warlord_emblem:冰霜领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 虚弱 。"
+    "DESCRIPTION":  "给予所有敌人 !M! 层 虚弱 。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 虚弱 。",
+    "UPGRADE_DESCRIPTION":  "固有 。给予所有敌人 !M! 层 虚弱 。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 虚弱 。"
   },
   "WarlordEmblem:FrozenDeath": {
     "NAME":  "死亡冰寒",
@@ -186,7 +187,7 @@
   },
   "WarlordEmblem:FrozenTouch": {
     "NAME":  "冰冷触摸",
-    "DESCRIPTION":  "所有敌人 力量 降低 !M! 点。 warlord_emblem:冰霜领域 ： NL 额外降低 !WarlordEmblem:RealmMagic! 点。 消耗 。"
+    "DESCRIPTION":  "所有敌人 力量 降低 !M! 点。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 额外降低 !WarlordEmblem:RealmMagic! 点。"
   },
   "WarlordEmblem:FrozenWill": {
     "NAME":  "冰霜意志",
@@ -349,8 +350,8 @@
   },
   "WarlordEmblem:RuneIndex": {
     "NAME":  "符文索引",
-    "DESCRIPTION":  "每回合开始时，将抽牌堆中的一张随机 warlord_emblem:天赋领域 牌加入手牌（不能叠加）并获得 !M! 点 warlord_emblem:符文能量 。",
-    "UPGRADE_DESCRIPTION": "固有 。每回合开始时，将抽牌堆中的一张随机 warlord_emblem:天赋领域 牌加入手牌（不能叠加）并获得 !M! 点 warlord_emblem:符文能量 。"
+    "DESCRIPTION":  "每回合开始时，将抽牌堆中的一张随机“符文”牌加入手牌并获得 !M! 点 warlord_emblem:符文能量 。",
+    "UPGRADE_DESCRIPTION": "固有 。每回合开始时，将抽牌堆中的一张随机“符文”牌加入手牌并获得 !M! 点 warlord_emblem:符文能量 。"
   },
 
 

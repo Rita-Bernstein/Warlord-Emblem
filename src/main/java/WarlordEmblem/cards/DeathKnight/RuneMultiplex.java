@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import WarlordEmblem.powers.RuneMultiplexPower;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -34,6 +35,7 @@ public class RuneMultiplex extends AbstractDKCard {
         this.exhaust = true;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(CustomTagsEnum.Rune_Tag);
 
     }
 

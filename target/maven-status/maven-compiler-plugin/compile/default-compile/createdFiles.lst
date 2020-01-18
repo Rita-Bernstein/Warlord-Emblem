@@ -41,12 +41,14 @@ WarlordEmblem\cards\DeathKnight\Withstand.class
 WarlordEmblem\cards\quest\QuestCardWarrior.class
 WarlordEmblem\cards\mantle\MantleCardCaireseth.class
 WarlordEmblem\relics\BurningIcecream.class
+WarlordEmblem\potions\RuneExpandPotion.class
 WarlordEmblem\cards\DeathKnight\LichkingWraith.class
 WarlordEmblem\relics\mantle\MantleWalana.class
 WarlordEmblem\relics\quest\QuestDK.class
 WarlordEmblem\cards\mantle\MantleCardReynold.class
 WarlordEmblem\relics\quest\QuestRogue.class
 WarlordEmblem\cards\DeathKnight\EvilSee.class
+WarlordEmblem\potions\ReserveRunePotion.class
 WarlordEmblem\cards\quest\QuestCardDruid.class
 WarlordEmblem\relics\BadgeBless.class
 WarlordEmblem\cards\quest\QuestCardDruidReward.class
@@ -105,6 +107,7 @@ WarlordEmblem\powers\RuneIndexPower.class
 WarlordEmblem\relics\BloodRealm.class
 WarlordEmblem\cards\DeathKnight\FrozenChain.class
 WarlordEmblem\cards\DeathKnight\BloodSacrifice.class
+WarlordEmblem\potions\RealmPotion.class
 WarlordEmblem\cards\DeathKnight\BlackCommand.class
 WarlordEmblem\cards\quest\QuestCardMageReward.class
 WarlordEmblem\cards\DeathKnight\DeathShake.class

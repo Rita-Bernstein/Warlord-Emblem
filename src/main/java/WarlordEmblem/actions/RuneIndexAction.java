@@ -39,7 +39,7 @@
                       }
                   CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                   for (AbstractCard c : this.p.drawPile.group) {
-                        if (c.hasTag(CustomTagsEnum.Realm_Tag)) {
+                        if (c.hasTag(this.RealmToCheck)) {
                               tmp.addToRandomSpot(c);
                             }
                       }

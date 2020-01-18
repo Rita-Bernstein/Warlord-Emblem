@@ -1,2 +1,23 @@
 {
+  "WarlordEmblem:ReserveRunePotion": {
+    "NAME": "后备符文",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 点 #y符文能量 。"
+    ]
+  },
+  "WarlordEmblem:RuneExpandPotion": {
+    "NAME": "符文扩充",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 层 #y符文上限 。"
+    ]
+  },
+  "WarlordEmblem:RealmPotion": {
+    "NAME": "领域药水",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 点 #y领域提升 。"
+    ]
+  }
 }

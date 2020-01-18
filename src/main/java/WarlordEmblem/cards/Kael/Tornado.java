@@ -75,6 +75,7 @@ public class Tornado extends CustomCard {
   public void triggerOnEndOfPlayerTurn() {
     if (Kael.Tornado_ColdDown >0)
       Kael.Tornado_ColdDown  -= 1;
+    super.triggerOnEndOfPlayerTurn();
   }
 
   @Override

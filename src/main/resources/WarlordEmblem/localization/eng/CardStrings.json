@@ -170,7 +170,8 @@
   },
   "WarlordEmblem:FrozenChain": {
     "NAME":  "Frozen Chain",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (At most 6). NL Apply X Weak. NL warlord_emblem:Ice\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Weak."
+    "DESCRIPTION":  "Apply !M! Weak to all enemy. Exhaust. NL warlord_emblem:Ice\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Weak.",
+    "UPGRADE_DESCRIPTION":  " Innate.Apply !M! Weak to all enemy. Exhaust. NL warlord_emblem:Ice Realm :additional apply !WarlordEmblem:RealmMagic! Weak."
   },
   "WarlordEmblem:FrozenDeath": {
     "NAME":  "Frozen Death",
@@ -349,8 +350,8 @@
 },
   "WarlordEmblem:RuneIndex": {
     "NAME":  "Rune Index",
-    "DESCRIPTION":  "At the start of your turn,add a random warlord_emblem:Talent Realm card into your hand(can not be stacked) and gain !M! warlord_emblem:Rune Energy .",
-    "UPGRADE_DESCRIPTION": " Innate .At the start of your turn,add a random warlord_emblem:Talent Realm card into your hand(can not be stacked) and gain !M! warlord_emblem:Rune Energy ."
+    "DESCRIPTION":  "At the start of your turn,add a random warlord_emblem:Talent Realm card into your hand and gain !M! warlord_emblem:Rune Energy .",
+    "UPGRADE_DESCRIPTION": " Innate .At the start of your turn,add a random \"Rune\"card into your hand and gain !M! warlord_emblem:Rune Energy ."
   },
 
 
