@@ -31,7 +31,7 @@
      super(NAME, POTION_ID, RARITY,SIZE, PotionColor);
      this.isThrown = false;
      this.targetRequired = false;
-
+     this.labOutlineColor = WarlordEmblem.DeathKnight_Color;
    }
  
    

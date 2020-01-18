@@ -350,8 +350,8 @@
 },
   "WarlordEmblem:RuneIndex": {
     "NAME":  "Rune Index",
-    "DESCRIPTION":  "At the start of your turn,add a random warlord_emblem:Talent Realm card into your hand and gain !M! warlord_emblem:Rune Energy .",
-    "UPGRADE_DESCRIPTION": " Innate .At the start of your turn,add a random \"Rune\"card into your hand and gain !M! warlord_emblem:Rune Energy ."
+    "DESCRIPTION":  "At the start of your turn,add a random warlord_emblem:Talent Realm card from draw pile into your hand and gain !M! warlord_emblem:Rune Energy .",
+    "UPGRADE_DESCRIPTION": " Innate .At the start of your turn,add a random \"Rune\"card from draw pile into your hand and gain !M! warlord_emblem:Rune Energy ."
   },
 
 
