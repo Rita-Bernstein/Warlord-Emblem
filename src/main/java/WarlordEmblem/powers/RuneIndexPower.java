@@ -38,7 +38,7 @@ public class RuneIndexPower extends AbstractPower {
     //loadRegion("anger");
   }
   
-  public void updateDescription() { this.description = powerStrings.DESCRIPTIONS[0] + this.amount+ powerStrings.DESCRIPTIONS[1];}
+  public void updateDescription() { this.description = powerStrings.DESCRIPTIONS[0] + this.amount+ powerStrings.DESCRIPTIONS[1]+ this.amount+ powerStrings.DESCRIPTIONS[2];}
 
   public void atStartOfTurnPostDraw() {
     flash();

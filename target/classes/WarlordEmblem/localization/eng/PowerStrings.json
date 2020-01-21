@@ -56,7 +56,8 @@
   "WarlordEmblem:RuneIndexPower": {
   "NAME": "Rune Index",
   "DESCRIPTIONS": [
-    "At the start of your turn,add a random #yTalent Realm card into your hand and gain #b",
+    "At the start of your turn,add #b",
+    " random \"Rune\" card(s) into your hand and gain #b",
     " #yRune Energy."
   ]
 }

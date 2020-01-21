@@ -23,7 +23,7 @@
        this.p = AbstractDungeon.player;
        setValues(this.p, this.p, amount);
        this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
-       this.duration = Settings.ACTION_DUR_FAST;
+       this.duration = Settings.ACTION_DUR_MED;
        this.RealmToCheck = tags;
 
    }
