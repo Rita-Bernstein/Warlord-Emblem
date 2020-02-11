@@ -129,7 +129,8 @@
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "Disease Cloud",
-    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy X NL (At most !M! ). NL Apply X Poison to all enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
+    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy X NL (At most !M! ). NL Apply X Poison to all enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison.",
+    "UPGRADE_DESCRIPTION":  "warlord_emblem:Rune Energy X NL (At most !M! ). NL Apply X+1 Poison to all enemy. NL warlord_emblem:Evil Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
   },
   "WarlordEmblem:DiseaseStrike": {
     "NAME": "Disease Strike",
@@ -158,7 +159,7 @@
   },
   "WarlordEmblem:EvilWorm": {
     "NAME":  "Evil Worm",
-    "DESCRIPTION":   "Deal !D! damage.If target has Poison,apply !M! Poison instead. NL warlord_emblem:Evil\u00a0Realm :ignore if enemy has Poison."
+    "DESCRIPTION":   "Deal !D! damage.If target has Poison,apply Poison equals to damage amount instead. Exhaust. NL warlord_emblem:Evil\u00a0Realm :ignore if enemy has Poison."
   },
   "WarlordEmblem:Execute": {
     "NAME":  "Execute",
@@ -353,6 +354,16 @@
     "DESCRIPTION":  "At the start of your turn,add a random warlord_emblem:Talent Realm card from draw pile into your hand and gain !M! warlord_emblem:Rune Energy .",
     "UPGRADE_DESCRIPTION": " Innate .At the start of your turn,add a random \"Rune\"card from draw pile into your hand and gain !M! warlord_emblem:Rune Energy ."
   },
+  "WarlordEmblem:HeartOfDeath": {
+  "NAME":  "Heart Of Death",
+  "DESCRIPTION":  " Retain .Gain !M! [E] . NL NL When Retained, increase its energy by 1. Exhaust.",
+  "UPGRADE_DESCRIPTION": "Innate.  Retain .Gain !M! [E] . NL NL When Retained, increase its energy by 1. Exhaust."
+},
+  "WarlordEmblem:Potential": {
+  "NAME":  "Potential",
+  "DESCRIPTION":  "Enemy lost X Strength and apply X Poison. Exhaust.",
+  "UPGRADE_DESCRIPTION": "Enemy lost X+1 Strength and apply X+1 Poison. Exhaust."
+},
 
 
 

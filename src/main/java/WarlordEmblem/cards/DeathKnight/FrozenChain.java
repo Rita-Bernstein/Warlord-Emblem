@@ -25,7 +25,7 @@ public class FrozenChain extends AbstractDKCard {
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 
     private final static int MAX = 3;
@@ -46,11 +46,11 @@ public class FrozenChain extends AbstractDKCard {
                 1.5F));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters){
             if (hasIceRealm())
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
-                        new WeakPower(m, this.magicNumber + AbstractDKCard.RealmMagicNumber, false), this.magicNumber + AbstractDKCard.RealmMagicNumber, true));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player,
+                        new WeakPower(mo, this.magicNumber + AbstractDKCard.RealmMagicNumber, false), this.magicNumber + AbstractDKCard.RealmMagicNumber, true));
             else
                 AbstractDungeon.actionManager.addToBottom(
-                        new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, this.magicNumber, false), this.magicNumber, true));
+                        new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true));
         }
     }
 

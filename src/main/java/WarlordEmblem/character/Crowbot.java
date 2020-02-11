@@ -58,12 +58,16 @@ public class Crowbot extends CustomPlayer {
 		this.dialogX = this.drawX + 0.0F * Settings.scale;
 		this.dialogY = this.drawY + 170.0F * Settings.scale;
 
-		initializeClass(WarlordEmblem.assetPath("/img/character/Crowbot/Crowbot.png"),
+		initializeClass(null,
 				"images/characters/defect/shoulder2.png",
 				"images/characters/defect/shoulder.png",
 				"images/characters/defect/corpse.png",
 				getLoadout(), 0.0F, -5.0F, 240.0F, 244.0F,  new EnergyManager(ENERGY_PER_TURN));
 
+		loadAnimation(WarlordEmblem.assetPath("img/character/Crowbot/Crowbot/crowbot.atlas"), WarlordEmblem.assetPath("img/character/Crowbot/Crowbot/crowbot.json"), 1.0F);
+		AnimationState.TrackEntry e = this.state.setAnimation(0, "idle", true);
+		this.stateData.setMix("hit", "idle", 0.1F);
+		e.setTime(e.getEndTime() * MathUtils.random());
 	}
 
 
@@ -192,6 +196,11 @@ public class Crowbot extends CustomPlayer {
 	}
 
 	public void damage(DamageInfo info) {
+		if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.output - this.currentBlock > 0) {
+			AnimationState.TrackEntry e = this.state.setAnimation(0, "hit", false);
+			this.state.addAnimation(0, "idle", true, 0.0F);
+			e.setTimeScale(0.6F);}
+
 		super.damage(info);
 	}
 	}

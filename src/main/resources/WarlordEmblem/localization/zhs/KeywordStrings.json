@@ -46,7 +46,7 @@
   },
   {"PROPER_NAME": "领域提升",
     "NAMES": ["领域提升"],
-    "DESCRIPTION": "天赋领域的效果增加或减少。"
+    "DESCRIPTION": "天赋领域的效果数值增加或减少。"
   },
   {"PROPER_NAME": "鲜血印记",
     "NAMES": ["鲜血印记"],

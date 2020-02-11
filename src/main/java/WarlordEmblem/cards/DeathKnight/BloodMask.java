@@ -31,7 +31,7 @@ public class BloodMask extends AbstractDKCard {
 
     public BloodMask() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 5;
+        this.baseMagicNumber = 6;
         this.magicNumber = baseMagicNumber;
     }
 

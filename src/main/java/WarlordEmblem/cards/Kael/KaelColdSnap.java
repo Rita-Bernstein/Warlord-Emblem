@@ -88,6 +88,10 @@ public class KaelColdSnap extends CustomCard {
 
   @Override
   public void upgrade() {
+    if (!this.upgraded) {
+      upgradeName();
+      upgradeBaseCost(0);
+    }
   }
 
 }

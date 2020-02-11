@@ -86,6 +86,11 @@ public class Tornado extends CustomCard {
 
 
   @Override
-  public void upgrade() {}
+  public void upgrade() {
+    if (!this.upgraded) {
+      upgradeName();
+      upgradeBaseCost(1);
+    }
+  }
 }
 

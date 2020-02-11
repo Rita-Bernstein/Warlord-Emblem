@@ -27,16 +27,15 @@ public class EvilWorm extends AbstractDKCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
 
     public EvilWorm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 5;
+        this.baseDamage = 7;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 5;
-        this.magicNumber = this.baseMagicNumber;
+        this.exhaust = true;
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
     }
@@ -53,7 +52,7 @@ public class EvilWorm extends AbstractDKCard {
                             AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         } else {
             AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.magicNumber), this.magicNumber));
+                    .addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.damage), this.damage));
         }
     }
 
@@ -64,8 +63,7 @@ public class EvilWorm extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
-            upgradeMagicNumber(2);
+            upgradeDamage(3);
         }
     }
 

@@ -47,6 +47,7 @@ WarlordEmblem\relics\mantle\MantleWalana.class
 WarlordEmblem\relics\quest\QuestDK.class
 WarlordEmblem\cards\mantle\MantleCardReynold.class
 WarlordEmblem\relics\quest\QuestRogue.class
+WarlordEmblem\actions\PotentialAction.class
 WarlordEmblem\cards\DeathKnight\EvilSee.class
 WarlordEmblem\potions\ReserveRunePotion.class
 WarlordEmblem\cards\quest\QuestCardDruid.class
@@ -135,6 +136,7 @@ WarlordEmblem\cards\Kael\ElementInvoke.class
 WarlordEmblem\relics\mantle\MantleJean.class
 WarlordEmblem\cards\DeathKnight\RuneIndex.class
 WarlordEmblem\orbs\ForgedSpiritOrb.class
+WarlordEmblem\cards\DeathKnight\Potential.class
 WarlordEmblem\cards\quest\QuestCardRogue.class
 WarlordEmblem\cards\DeathKnight\DeathStrike.class
 WarlordEmblem\variables\SecondRealmMagicNumber.class
@@ -195,6 +197,7 @@ WarlordEmblem\relics\BreastProtector.class
 WarlordEmblem\powers\RealmIncreasePower.class
 WarlordEmblem\relics\EvilRealm.class
 WarlordEmblem\cards\DeathKnight\CondemnStrike.class
+WarlordEmblem\cards\DeathKnight\HeartOfDeath.class
 WarlordEmblem\cards\DeathKnight\NoLightShield.class
 WarlordEmblem\powers\RealmRiderPower.class
 WarlordEmblem\cards\DeathKnight\DeathWither.class
