@@ -1,4 +1,6 @@
  package WarlordEmblem.actions;
+ import WarlordEmblem.WarlordEmblem;
+ import WarlordEmblem.relics.RuneSword;
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
  import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -54,7 +56,13 @@
             if (effect > 0) {
                   addToBot(new ApplyPowerAction(this.m, this.p, new StrengthPower(this.m, -effect), -effect));
                   addToBot(new ApplyPowerAction(this.m, this.p, new PoisonPower(this.m, this.p, effect), effect));
-           
+
+                if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword")))
+                    return;
+                RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
+                if (rs != null)
+                    rs.plusRune(effect);
+
                   if (!this.freeToPlayOnce) {
                         this.p.energy.use(EnergyPanel.totalCount);
                       }

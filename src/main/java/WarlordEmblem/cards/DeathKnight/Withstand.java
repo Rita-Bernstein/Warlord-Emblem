@@ -45,7 +45,7 @@ public class Withstand extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(6);
+            upgradeBlock(4);
         }
     }
 }

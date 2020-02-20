@@ -307,6 +307,7 @@ public class WarlordEmblem implements
         cards.add(new RuneIndex());
         cards.add(new HeartOfDeath());
         cards.add(new Potential());
+        cards.add(new WrathOfSindragosa());
 
         cards.add(new MantleCardBaku());
         cards.add(new MantleCardCaireseth());

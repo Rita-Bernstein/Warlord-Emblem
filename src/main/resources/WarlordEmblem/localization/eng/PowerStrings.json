@@ -60,5 +60,18 @@
     " random \"Rune\" card(s) into your hand and gain #b",
     " #yRune Energy."
   ]
+},
+  "WarlordEmblem:WrathOfSindragosaPower": {
+  "NAME": "Wrath Of Sindragosa",
+  "DESCRIPTIONS": [
+    "When you played a:",
+    " #rAttack ,apply #y",
+    " Weak to all enemy,",
+    " #gSkill ,deal #y",
+    " damage to all enemy,",
+    " #bPower ,all enemy lost #y",
+    " Strength.",
+    " NL "
+  ]
 }
 }

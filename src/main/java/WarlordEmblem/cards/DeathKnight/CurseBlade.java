@@ -45,7 +45,7 @@ public class CurseBlade extends AbstractDKCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, AbstractDungeon.player, new BerserkPower(p,1),1));
         if(this.upgraded){
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Wound(), 1, true, true, false, Settings.WIDTH * 0.2F, Settings.HEIGHT / 2.0F));
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Wound(), 1));
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Wound(), 1));
         }else {AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Wound(), 2, true, true, false, Settings.WIDTH * 0.2F, Settings.HEIGHT / 2.0F));}
     }

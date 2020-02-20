@@ -34,10 +34,11 @@ public class FrozenTouch extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 2;
         this.magicNumber = baseMagicNumber;
-        this.exhaust = true;
+        //this.exhaust = true;
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
     }
+
 
     public void use(AbstractPlayer p, AbstractMonster am) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p,

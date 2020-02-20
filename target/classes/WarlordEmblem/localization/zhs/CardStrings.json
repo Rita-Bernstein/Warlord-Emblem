@@ -2,6 +2,7 @@
   "WarlordEmblem:ElementInvoke": {
     "NAME": "元素祈唤",
     "DESCRIPTION": "根据最左边三个充能球，加入一张牌。 NL 虚无 消耗 。",
+    "UPGRADE_DESCRIPTION": "根据最左边三个充能球，加入一张牌。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": ["需要三个元素球","回合冷却"," NL (冰冰冰：急速冷却"," NL (冰冰雷：幽冥漫步"," NL (雷雷火：灵动迅捷"," NL (火火火：阳炎冲击"," NL (雷雷雷：电磁脉冲"," NL (火火雷：混沌陨石"," NL (冰冰火：寒冰之墙"," NL (冰雷火：超震声波"," NL (雷雷冰：强袭飓风"," NL (火火冰：熔炉精灵","）"]
   },
   "WarlordEmblem:ChaosMeteor": {
@@ -79,7 +80,7 @@
   },
   "WarlordEmblem:BloodMask": {
     "NAME": "鲜血印记",
-    "DESCRIPTION":  "给予一名敌人 !M! 层 warlord_emblem:鲜血印记 。"
+    "DESCRIPTION":  "给予一名敌人 !M! 层 warlord_emblem:鲜血印记 。 NL warlord_emblem:鲜血领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 warlord_emblem:鲜血印记  。"
   },
   "WarlordEmblem:BloodStrike": {
     "NAME": "鲜血打击",
@@ -188,7 +189,7 @@
   },
   "WarlordEmblem:FrozenTouch": {
     "NAME":  "冰冷触摸",
-    "DESCRIPTION":  "所有敌人 力量 降低 !M! 点。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 额外降低 !WarlordEmblem:RealmMagic! 点。"
+    "DESCRIPTION":  "所有敌人 力量 降低 !M! 点。 NL warlord_emblem:冰霜领域 ： NL 额外降低 !WarlordEmblem:RealmMagic! 点。"
   },
   "WarlordEmblem:FrozenWill": {
     "NAME":  "冰霜意志",
@@ -327,7 +328,7 @@
   "WarlordEmblem:CurseBlade": {
     "NAME":  "诅咒巨剑",
     "DESCRIPTION":  "在每回合开始时获得 [E] 。将2张 *伤口 加入你的抽牌堆。",
-    "UPGRADE_DESCRIPTION":  "在每回合开始时获得 [E] 。将1张 *伤口 加入你的抽牌堆和弃牌堆。"
+    "UPGRADE_DESCRIPTION":  "在每回合开始时获得 [E] 。将1张 *伤口 加入你的手牌和弃牌堆。"
   },
   "WarlordEmblem:SevereWinter": {
     "NAME":  "凛风打击",
@@ -355,15 +356,22 @@
     "UPGRADE_DESCRIPTION": "固有 。每回合开始时，将抽牌堆中的一张随机“符文”牌加入手牌并获得 !M! 点 warlord_emblem:符文能量 。"
   },
   "WarlordEmblem:HeartOfDeath": {
-    "NAME":  "死骑之心",
+    "NAME":  "莫格莱尼之力",
     "DESCRIPTION":  " 保留 。获得 !M! [E] 。 NL 每当这张牌被 保留 时，将其在本场战斗中获得的能量增加1。 消耗 。",
     "UPGRADE_DESCRIPTION": "固有 。 NL 保留 。 获得 !M! [E] 。 NL 每当这张牌被 保留 时，将其在本场战斗中获得的能量增加1。 消耗 。"
   },
   "WarlordEmblem:Potential": {
-    "NAME":  "潜能",
-    "DESCRIPTION":  "敌人失去 X 点 力量 并给予 X 层 中毒 。 消耗 。",
-    "UPGRADE_DESCRIPTION": "敌人失去 X+1 点 力量 并给予 X+1 层 中毒 。 消耗 。"
+    "NAME":  "黑暗定罪",
+    "DESCRIPTION":  "敌人失去 X 点 力量 并给予 X 层 中毒 。获得 X 点 warlord_emblem:符文能量 。 消耗 。",
+    "UPGRADE_DESCRIPTION": "敌人失去 X+1 点 力量 并给予 X+1 层 中毒 。获得 X+1 点 warlord_emblem:符文能量 。 消耗 。"
   },
+  "WarlordEmblem:WrathOfSindragosa": {
+    "NAME":  "辛达苟萨之怒",
+    "DESCRIPTION":  "本回合，每打出一张：攻击牌给予所有敌人1层 虚弱 ；技能牌对所有敌人造成1点伤害；能力牌所有敌人失去1点 力量 。"
+  },
+
+
+
 
 
   "WarlordEmblem:MantleCardBaku": {

@@ -2,6 +2,7 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
 import WarlordEmblem.powers.BloodMaskPower;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -33,12 +34,17 @@ public class BloodMask extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 6;
         this.magicNumber = baseMagicNumber;
+        this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
+        this.tags.add(CustomTagsEnum.Realm_Tag);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.RED), 0.0F, true));
         AbstractDungeon.actionManager
                 .addToBottom(new ApplyPowerAction(m, p, new BloodMaskPower(p, this.magicNumber), this.magicNumber));
+        if (hasBloodRealm())
+            AbstractDungeon.actionManager
+                    .addToBottom(new ApplyPowerAction(m, p, new BloodMaskPower(p, AbstractDKCard.RealmMagicNumber), AbstractDKCard.RealmMagicNumber));
     }
 
     public AbstractCard makeCopy() {

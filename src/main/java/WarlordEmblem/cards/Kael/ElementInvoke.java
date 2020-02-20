@@ -273,11 +273,15 @@ public class ElementInvoke extends CustomCard {
   @Override
   public AbstractCard makeCopy() { return new ElementInvoke(); }
 
-
   @Override
-  public boolean canUpgrade() { return false; }
-  @Override
-  public void upgrade() {}
+  public void upgrade() {
+    if (!this.upgraded) {
+      upgradeName();
+      this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+      initializeDescription();
+      this.isEthereal = false;
+    }
+  }
 }
 
 

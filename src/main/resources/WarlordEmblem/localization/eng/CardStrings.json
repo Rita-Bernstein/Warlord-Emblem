@@ -2,6 +2,7 @@
   "WarlordEmblem:ElementInvoke": {
     "NAME": "Element Invoke",
     "DESCRIPTION": "Add a card depends on the 3 leftest orbs. NL Ethereal Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a card depends on the 3 leftest orbs. NL Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need at least 3 orbs"," turn(s) ColdDown"," NL (Quas/Quas/Quas:Cold Snap"," NL (Quas/Quas/Wex:Ghost Walk"," NL (Wex/Wex/Exort:Alacrity"," NL (Exort/Exort/Exort:Sun Strike"," NL (Wex/Wex/Wex:EMP"," NL (Wex/Exort/Exort:Chaos Meteor"," NL (Quas/Quas/Exort:Ice Wall"," NL (Quas/Wex/Exort:Deafening Blast"," NL (Quas/Wex/Wex:Tornado"," NL (Quas/Exort/Exort:Forge Spirit",")"]
   },
   "WarlordEmblem:ChaosMeteor": {
@@ -79,7 +80,7 @@
   },
   "WarlordEmblem:BloodMask": {
     "NAME": "Blood Mark",
-    "DESCRIPTION":  "Apply !M! warlord_emblem:Blood Mark to an enemy."
+    "DESCRIPTION":  "Apply !M! warlord_emblem:Blood Mark to an enemy. NL warlord_emblem:Blood Realm :apply !WarlordEmblem:RealmMagic! more warlord_emblem:Blood Mark ."
   },
   "WarlordEmblem:BloodStrike": {
     "NAME": "Blood Strike",
@@ -188,7 +189,7 @@
   },
   "WarlordEmblem:FrozenTouch": {
     "NAME":  "Frozen Touch",
-    "DESCRIPTION":  "All enemy lost !M! Strength. warlord_emblem:Ice\u00a0Realm ：additional lost !WarlordEmblem:RealmMagic! Strength. Exhaust."
+    "DESCRIPTION":  "All enemy lost !M! Strength. warlord_emblem:Ice\u00a0Realm ：additional lost !WarlordEmblem:RealmMagic! Strength."
   },
   "WarlordEmblem:FrozenWill": {
     "NAME":  "Frozen Will",
@@ -327,7 +328,7 @@
   "WarlordEmblem:CurseBlade": {
   "NAME":  "Curse Blade",
   "DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 2 *Wounds to your draw pile.",
-  "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 1 *Wound to your draw pile and discard pile."
+  "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 1 *Wound to your hand and discard pile."
 },
   "WarlordEmblem:SevereWinter": {
     "NAME":  "Wind Strike",
@@ -361,8 +362,12 @@
 },
   "WarlordEmblem:Potential": {
   "NAME":  "Potential",
-  "DESCRIPTION":  "Enemy lost X Strength and apply X Poison. Exhaust.",
-  "UPGRADE_DESCRIPTION": "Enemy lost X+1 Strength and apply X+1 Poison. Exhaust."
+  "DESCRIPTION":  "Enemy lost X Strength and apply X Poison.Gain X warlord_emblem:Rune Energy . Exhaust.",
+  "UPGRADE_DESCRIPTION": "Enemy lost X+1 Strength and apply X+1 Poison.Gain X+1 warlord_emblem:Rune Energy . Exhaust."
+},
+  "WarlordEmblem:WrathOfSindragosa": {
+  "NAME":  "Wrath Of Sindragosa",
+  "DESCRIPTION":  "At this turn,when you played a:Attack,apply 1 Weak to all enemy;Skill,deal 1 damage to all enemy;Power,all enemy lost 1 Strength."
 },
 
 

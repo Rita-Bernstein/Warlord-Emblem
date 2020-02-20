@@ -41,6 +41,7 @@ WarlordEmblem\cards\DeathKnight\Withstand.class
 WarlordEmblem\cards\quest\QuestCardWarrior.class
 WarlordEmblem\cards\mantle\MantleCardCaireseth.class
 WarlordEmblem\relics\BurningIcecream.class
+WarlordEmblem\cards\DeathKnight\WrathOfSindragosa.class
 WarlordEmblem\potions\RuneExpandPotion.class
 WarlordEmblem\cards\DeathKnight\LichkingWraith.class
 WarlordEmblem\relics\mantle\MantleWalana.class
@@ -137,6 +138,7 @@ WarlordEmblem\relics\mantle\MantleJean.class
 WarlordEmblem\cards\DeathKnight\RuneIndex.class
 WarlordEmblem\orbs\ForgedSpiritOrb.class
 WarlordEmblem\cards\DeathKnight\Potential.class
+WarlordEmblem\powers\WrathOfSindragosaPower.class
 WarlordEmblem\cards\quest\QuestCardRogue.class
 WarlordEmblem\cards\DeathKnight\DeathStrike.class
 WarlordEmblem\variables\SecondRealmMagicNumber.class

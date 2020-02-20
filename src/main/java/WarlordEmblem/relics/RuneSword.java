@@ -39,7 +39,7 @@ public class RuneSword extends CustomRelic {
 
     @Override
     public void onVictory() {
-        counter = 0;
+        counter = -1;
     }
 
     @Override
@@ -60,14 +60,15 @@ public class RuneSword extends CustomRelic {
 
     @Override
     public void renderCounter(SpriteBatch sb, boolean inTopPanel) {
-        if (this.max > -1) {
+
+        if (this.max > -1 && this.counter > -1) {
             if (inTopPanel) {
                 FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.YELLOW);
             } else {
                 FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.YELLOW);
             }
         }
-        if(AbstractDungeon.player != null && WarlordEmblem.RuneCountDisplay ){
+        if(AbstractDungeon.player != null && WarlordEmblem.RuneCountDisplay && this.counter > -1){
             if((((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.getCurrRoom() instanceof com.megacrit.cardcrawl.rooms.MonsterRoom) && !AbstractDungeon.player.isDead)){
                 if (this.max > -1) {
                     if (inTopPanel) {
