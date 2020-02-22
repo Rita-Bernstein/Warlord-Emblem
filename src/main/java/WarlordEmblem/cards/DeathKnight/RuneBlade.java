@@ -47,7 +47,7 @@ public class RuneBlade extends AbstractDKCard {
                 AbstractGameAction.AttackEffect.NONE));
 
         int amount = super.getRuneCount();
-        super.useRune(amount / 2);
+        super.useRune((int)Math.ceil(amount*0.5));
     }
 
     public AbstractCard makeCopy() {

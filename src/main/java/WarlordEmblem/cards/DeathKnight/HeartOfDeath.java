@@ -28,7 +28,7 @@ public class HeartOfDeath extends AbstractDKCard {
 
     public HeartOfDeath() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
         this.selfRetain = true;
         this.exhaust = true;

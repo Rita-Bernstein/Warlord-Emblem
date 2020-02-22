@@ -94,7 +94,7 @@
     "NAME": "Broken Watch",
     "FLAVOR": "ToDo.(“Kane11”)",
     "DESCRIPTIONS": [
-      "Every time you play 12 cards,gain #b2 #yStrength.Shuffle 1 #rSlimed into your discard pile."
+      "Every time you play 12 cards,gain #b1 #yStrength.Shuffle 1 #rSlimed into your discard pile."
     ]
   },
   "WarlordEmblem:BurningIcecream": {

@@ -24,7 +24,7 @@ public class BloodMask extends AbstractDKCard {
     private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    public static final CardType TYPE = CardType.POWER;
+    public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -36,15 +36,16 @@ public class BloodMask extends AbstractDKCard {
         this.magicNumber = baseMagicNumber;
         this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+        this.exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.RED), 0.0F, true));
         AbstractDungeon.actionManager
-                .addToBottom(new ApplyPowerAction(m, p, new BloodMaskPower(p, this.magicNumber), this.magicNumber));
+                .addToBottom(new ApplyPowerAction(m, p, new BloodMaskPower(m, this.magicNumber), this.magicNumber));
         if (hasBloodRealm())
             AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(m, p, new BloodMaskPower(p, AbstractDKCard.RealmMagicNumber), AbstractDKCard.RealmMagicNumber));
+                    .addToBottom(new ApplyPowerAction(m, p, new BloodMaskPower(m, AbstractDKCard.RealmMagicNumber), AbstractDKCard.RealmMagicNumber));
     }
 
     public AbstractCard makeCopy() {

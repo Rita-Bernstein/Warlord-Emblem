@@ -31,7 +31,7 @@ public class EvilSee extends AbstractDKCard {
     public EvilSee() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }
 
@@ -40,7 +40,7 @@ public class EvilSee extends AbstractDKCard {
                 new VulnerablePower(m, this.magicNumber, false), this.magicNumber, true));
         AbstractDungeon.actionManager
                 .addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.magicNumber), this.magicNumber));
-        super.useRune(2);
+        super.useRune(3);
     }
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
@@ -49,7 +49,7 @@ public class EvilSee extends AbstractDKCard {
             return false;
         }
         int amount = super.getRuneCount();
-        if (amount < 2) {
+        if (amount < 3) {
             this.cantUseMessage = ERROR;
             return false;
         } else {

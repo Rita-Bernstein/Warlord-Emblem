@@ -80,7 +80,7 @@
   },
   "WarlordEmblem:BloodMask": {
     "NAME": "鲜血印记",
-    "DESCRIPTION":  "给予一名敌人 !M! 层 warlord_emblem:鲜血印记 。 NL warlord_emblem:鲜血领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 warlord_emblem:鲜血印记  。"
+    "DESCRIPTION":  "给予一名敌人 !M! 层 warlord_emblem:鲜血印记 。 消耗 。 NL warlord_emblem:鲜血领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 warlord_emblem:鲜血印记  。"
   },
   "WarlordEmblem:BloodStrike": {
     "NAME": "鲜血打击",
@@ -130,8 +130,8 @@
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "疾病云雾",
-    "DESCRIPTION":  "warlord_emblem:符文能量 X（最多 !M! ）。给予所有敌人 X 层 中毒 。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 中毒 。",
-    "UPGRADE_DESCRIPTION":  "warlord_emblem:符文能量 X（最多 !M! ）。给予所有敌人 X+1 层 中毒 。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 中毒 。"
+    "DESCRIPTION":  "warlord_emblem:符文能量 X（最多 !M! ）。给予随机敌人 2 层 中毒 X 次。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 次 中毒 。",
+    "UPGRADE_DESCRIPTION":  "warlord_emblem:符文能量 X（最多 !M! ）。给予随机敌人 3 层 中毒 X 次。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 次 中毒 。"
   },
   "WarlordEmblem:DiseaseStrike": {
     "NAME": "瘟疫打击",
@@ -151,7 +151,7 @@
   },
   "WarlordEmblem:EvilSee": {
     "NAME":  "邪恶凝视",
-    "DESCRIPTION":   " warlord_emblem:符文能量 2，给予目标 !M! 层 易伤 和 中毒 。 消耗 。",
+    "DESCRIPTION":   " warlord_emblem:符文能量 3，给予目标 !M! 层 易伤 和 中毒 。 消耗 。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:EvilStrike": {
@@ -209,7 +209,7 @@
   },
   "WarlordEmblem:Infect": {
     "NAME":  "传染",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多 !M! ），给予随机敌人 中毒 X次。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 次 中毒 。 "
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多 !M! ），给予所有敌人敌人 X 层 中毒 。 NL warlord_emblem:邪恶领域 ： NL 额外给予 !WarlordEmblem:RealmMagic! 层 中毒 。 "
   },
   "WarlordEmblem:LichBody": {
     "NAME":  "巫妖之躯",

@@ -95,7 +95,7 @@
     "NAME": "破损的怀表",
     "FLAVOR": "这件遗物还没有描述。(“Kane11”)",
     "DESCRIPTIONS": [
-      "每打出12张牌，获得 #b2 点 #y力量 。将1张 #r黏液 加入你的弃牌堆。"
+      "每打出12张牌，获得 #b1 点 #y力量 。将1张 #r黏液 加入你的弃牌堆。"
     ]
   },
   "WarlordEmblem:BurningIcecream": {

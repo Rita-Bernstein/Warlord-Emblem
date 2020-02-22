@@ -151,7 +151,7 @@
   },
   "WarlordEmblem:EvilSee": {
     "NAME":  "Evil See",
-    "DESCRIPTION":   " warlord_emblem:Rune\u00a0Energy 2.Apply !M! Vulnerable and Poison. Exhaust.",
+    "DESCRIPTION":   " warlord_emblem:Rune\u00a0Energy 3.Apply !M! Vulnerable and Poison. Exhaust.",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
   },
   "WarlordEmblem:EvilStrike": {
@@ -209,7 +209,8 @@
   },
   "WarlordEmblem:Infect": {
     "NAME":  "Infect",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply Poison X times to random enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply Poison X times to random enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison.",
+    "UPGRADE_DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply 2 Poison X/2 times to random enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
   },
   "WarlordEmblem:LichBody": {
     "NAME":  "Lich Body",

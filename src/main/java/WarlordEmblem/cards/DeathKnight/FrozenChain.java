@@ -33,7 +33,7 @@ public class FrozenChain extends AbstractDKCard {
     public FrozenChain() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);

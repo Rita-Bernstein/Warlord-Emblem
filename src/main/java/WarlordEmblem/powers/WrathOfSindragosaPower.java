@@ -61,7 +61,7 @@ public class WrathOfSindragosaPower extends AbstractPower {
        else if (card.type == AbstractCard.CardType.POWER) {
            for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters){
              AbstractDungeon.actionManager.addToBottom(
-                     new ApplyPowerAction(mo, AbstractDungeon.player, new StrengthPower(mo, this.amount), this.amount, true));
+                     new ApplyPowerAction(mo, AbstractDungeon.player, new StrengthPower(mo, -this.amount), this.amount, true));
            }
            flash();
        }

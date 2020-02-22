@@ -3,8 +3,10 @@ package WarlordEmblem.cards.DeathKnight;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CustomTagsEnum;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.unique.BouncingFlaskAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,6 +15,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
+import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
+import com.megacrit.cardcrawl.vfx.combat.PotionBounceEffect;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 
 /**
@@ -46,19 +50,25 @@ public class DiseaseCloud extends AbstractDKCard {
         int amount = super.getRuneCount();
         if (amount > this.magicNumber)
             amount = this.magicNumber;
-        if(this.upgraded)
-            amount +=1 ;
 
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(p,
-                new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC),
-                1.5F));
-        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if (!hasEvilRealm())
-                AbstractDungeon.actionManager
-                        .addToBottom(new ApplyPowerAction(mo, p, new PoisonPower(mo, p, amount), amount));
-            else
-                AbstractDungeon.actionManager
-                        .addToBottom(new ApplyPowerAction(mo, p, new PoisonPower(mo, p, amount + AbstractDKCard.RealmMagicNumber), amount + AbstractDKCard.RealmMagicNumber));
+        int times = amount;
+
+        if (hasEvilRealm()){
+            times += AbstractDKCard.RealmMagicNumber;
+        }
+
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.GREEN)));
+        AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+
+        if (randomMonster != null) {
+            addToBot(new VFXAction(new PotionBounceEffect(p.hb.cX, p.hb.cY, randomMonster.hb.cX, this.hb.cY), 0.4F));
+        }
+
+        if (!this.upgraded) {
+            addToBot(new BouncingFlaskAction(randomMonster, 2, times));
+        }
+        else {
+            addToBot(new BouncingFlaskAction(randomMonster, 3, times));
         }
         super.useRune(amount);
     }

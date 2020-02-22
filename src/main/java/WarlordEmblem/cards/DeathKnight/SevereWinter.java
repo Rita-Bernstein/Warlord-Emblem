@@ -72,13 +72,15 @@ public class SevereWinter extends AbstractDKCard {
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             AbstractDungeon.actionManager.addToBottom(new DamageAction(mo,
                     new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+
         if (!hasIceRealm()){
             AbstractDungeon.actionManager
                     .addToBottom(new ApplyPowerAction(mo, p, new StrengthPower(mo, -1), -1,
                             true, AbstractGameAction.AttackEffect.NONE));
+            /*
             if (!mo.hasPower("Artifact"))
                 addToBot(new ApplyPowerAction(mo, p, new GainStrengthPower(mo, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
-
+            */
         }
         else{
             AbstractDungeon.actionManager

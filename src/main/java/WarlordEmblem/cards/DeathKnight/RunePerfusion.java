@@ -41,7 +41,9 @@ public class RunePerfusion extends AbstractDKCard {
         for (AbstractCard card : cardList) {
             if (card == this)
                 continue;
-            card.cost = 0;
+            if(card.cost > 0){
+                card.cost = 0;
+            }
             card.costForTurn = 0;
             card.isCostModified = true;
             card.superFlash(Color.GOLD.cpy());

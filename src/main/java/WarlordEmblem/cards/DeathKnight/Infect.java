@@ -10,12 +10,14 @@ import com.megacrit.cardcrawl.actions.unique.BouncingFlaskAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.PotionBounceEffect;
+import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 
 public class Infect extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("Infect");
@@ -32,7 +34,7 @@ public class Infect extends AbstractDKCard {
 
     public Infect() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
@@ -43,21 +45,18 @@ public class Infect extends AbstractDKCard {
         if (amount > this.magicNumber)
             amount = this.magicNumber;
 
-        int times = amount;
-        if (hasEvilRealm())
-            times += 1+AbstractDKCard.RealmMagicNumber;
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(p,
+                new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC),
+                1.5F));
 
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.GREEN)));
-        AbstractMonster randomMonster = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-
-        if (randomMonster != null) {
-            addToBot(new VFXAction(new PotionBounceEffect(p.hb.cX, p.hb.cY, randomMonster.hb.cX, this.hb.cY), 0.4F));
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (!hasEvilRealm())
+                AbstractDungeon.actionManager
+                        .addToBottom(new ApplyPowerAction(mo, p, new PoisonPower(mo, p, amount), amount));
+            else
+                AbstractDungeon.actionManager
+                        .addToBottom(new ApplyPowerAction(mo, p, new PoisonPower(mo, p, amount + AbstractDKCard.RealmMagicNumber), amount + AbstractDKCard.RealmMagicNumber));
         }
-        addToBot(new BouncingFlaskAction(randomMonster, 1, times));
-        /*
-        for (int i = 0; i < times; i++)
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, 1), 1));
-        */
         super.useRune(amount);
     }
 
@@ -68,7 +67,7 @@ public class Infect extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(3);
+            upgradeMagicNumber(2);
         }
     }
 }
