@@ -34,7 +34,7 @@ public class FrozenDeath extends AbstractDKCard {
 
     public FrozenDeath() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 7;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
@@ -61,7 +61,7 @@ public class FrozenDeath extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(3);
             upgradeMagicNumber(1);
         }
     }

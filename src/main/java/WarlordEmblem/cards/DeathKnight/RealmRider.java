@@ -4,6 +4,7 @@ import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CustomTagsEnum;
 import WarlordEmblem.powers.RealmRiderPower;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.vfx.RainbowCardEffect;
 
 public class RealmRider extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("RealmRider");
@@ -36,6 +38,7 @@ public class RealmRider extends AbstractDKCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new VFXAction(new RainbowCardEffect()));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, AbstractDungeon.player, new RealmRiderPower(p),0));
     }
 

@@ -2,8 +2,13 @@
   <dictionary name="Rita">
     <words>
       <w>crowbot</w>
+      <w>debuffs</w>
+      <w>frostmourne</w>
       <w>kael</w>
+      <w>necronomicon</w>
+      <w>nloths</w>
       <w>sindragosa</w>
+      <w>ssserpent</w>
     </words>
   </dictionary>
 </component>

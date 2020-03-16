@@ -18,8 +18,10 @@ public class RuneSword extends CustomRelic {
     public final static int MAX = 100;
     private final int INITIAL_MAX = 6;
     private final int INITIAL_REGEN = 2;
-    private int max = 0;
+    public int max = 0;
     private int regen = 0;
+
+    public int runeGain = 0;
 
     public RuneSword() {
         super(ID,new Texture( WarlordEmblem.assetPath("img/relics/rune_sword.png")), AbstractRelic.RelicTier.STARTER, AbstractRelic.LandingSound.HEAVY);
@@ -35,6 +37,7 @@ public class RuneSword extends CustomRelic {
         max = INITIAL_MAX;
         regen = INITIAL_REGEN;
         counter = 0;
+        runeGain = 0;
     }
 
     @Override
@@ -68,6 +71,7 @@ public class RuneSword extends CustomRelic {
                 FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(this.max), this.currentX + 30.0F * Settings.scale, this.currentY + 16.0F * Settings.scale, Color.YELLOW);
             }
         }
+        /*
         if(AbstractDungeon.player != null && WarlordEmblem.RuneCountDisplay && this.counter > -1){
             if((((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.getCurrRoom() instanceof com.megacrit.cardcrawl.rooms.MonsterRoom) && !AbstractDungeon.player.isDead)){
                 if (this.max > -1) {
@@ -86,7 +90,7 @@ public class RuneSword extends CustomRelic {
                 }
             }
         }
-
+*/
         super.renderCounter(sb, inTopPanel);
     }
 
@@ -98,11 +102,27 @@ public class RuneSword extends CustomRelic {
         counter += amount;
         if (counter > max)
             counter = max;
+        this.runeGain += counter;
     }
 
     public void plusMax(int amount) {
         flash();
         max += amount;
+    }
+
+    public void decreaseMax(int amount) {
+        flash();
+        if(max <= amount)
+        {
+            max = 0;
+            this.counter = 0;
+            return;
+        }
+
+        max -= amount;
+        if(this.counter > max){
+            this.counter = max;
+        }
     }
 
     public void useRune(int amount) {

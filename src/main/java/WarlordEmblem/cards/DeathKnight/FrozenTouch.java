@@ -32,7 +32,7 @@ public class FrozenTouch extends AbstractDKCard {
 
     public FrozenTouch() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 3;
         this.magicNumber = baseMagicNumber;
         //this.exhaust = true;
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);

@@ -31,7 +31,9 @@ public class HeavyShield extends CustomRelic {
        flash();
        AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new BarricadePower(AbstractDungeon.player)));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new DexterityPower(AbstractDungeon.player, -1)));
+       if(!AbstractDungeon.player.hasRelic("Calipers")){
+           AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new DexterityPower(AbstractDungeon.player, -1)));
+       }
          }
 
 

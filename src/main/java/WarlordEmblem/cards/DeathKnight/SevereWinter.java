@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,13 +20,14 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
+import com.megacrit.cardcrawl.vfx.combat.BlizzardEffect;
 import com.megacrit.cardcrawl.vfx.combat.ShockWaveEffect;
 
 public class SevereWinter extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("SevereWinter");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
-    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/Attack.png");
+    public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/severe_winter.png");
     private static final int COST = 3;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;
@@ -43,6 +45,7 @@ public class SevereWinter extends AbstractDKCard {
         this.tags.add(CardTags.STRIKE);
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+        this.isMultiDamage = true;
     }
 
        public static int countCards() {
@@ -68,53 +71,39 @@ public class SevereWinter extends AbstractDKCard {
     public static boolean isStrike(AbstractCard c) { return c.hasTag(AbstractCard.CardTags.STRIKE); }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.BLUE_TEXT_COLOR, ShockWaveEffect.ShockWaveType.ADDITIVE), 0.2F));
-        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            AbstractDungeon.actionManager.addToBottom(new DamageAction(mo,
-                    new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        int frostCount = countCards();
+           if (Settings.FAST_MODE) {
+                 addToBot(new VFXAction(new BlizzardEffect(frostCount,AbstractDungeon.getMonsters().shouldFlipVfx()), 0.25F));
+                 } else {
+                  addToBot(new VFXAction(new BlizzardEffect(frostCount, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
+                 }
 
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_HEAVY, false));
+
+        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
         if (!hasIceRealm()){
-            AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(mo, p, new StrengthPower(mo, -1), -1,
+            addToBot(new ApplyPowerAction(mo, p, new StrengthPower(mo, -1), -1,
                             true, AbstractGameAction.AttackEffect.NONE));
-            /*
-            if (!mo.hasPower("Artifact"))
-                addToBot(new ApplyPowerAction(mo, p, new GainStrengthPower(mo, 1), 1, true, AbstractGameAction.AttackEffect.NONE));
-            */
         }
         else{
-            AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(mo, p, new StrengthPower(mo, -1 - AbstractDKCard.RealmMagicNumber),
+            addToBot(new ApplyPowerAction(mo, p, new StrengthPower(mo, -1 - AbstractDKCard.RealmMagicNumber),
                             -1 - AbstractDKCard.RealmMagicNumber, true, AbstractGameAction.AttackEffect.NONE));
-            if (!mo.hasPower("Artifact"))
-                addToBot(new ApplyPowerAction(mo, p, new GainStrengthPower(mo, 1+AbstractDKCard.RealmMagicNumber), 1+AbstractDKCard.RealmMagicNumber, true, AbstractGameAction.AttackEffect.NONE));
-
         }
     }}
 
        public void calculateCardDamage(AbstractMonster mo) {
              int realBaseDamage = this.baseDamage;
              this.baseDamage += this.magicNumber * countCards();
-        
              super.calculateCardDamage(mo);
-        
              this.baseDamage = realBaseDamage;
-        
-        
              this.isDamageModified = (this.damage != this.baseDamage);
            }
 
-
-    
        public void applyPowers() {
              int realBaseDamage = this.baseDamage;
              this.baseDamage += this.magicNumber * countCards();
-        
              super.applyPowers();
-        
              this.baseDamage = realBaseDamage;
-        
-        
              this.isDamageModified = (this.damage != this.baseDamage);
            }
 

@@ -17,7 +17,7 @@
     "NAME": "Evil Blood",
     "FLAVOR": "Nothing is without a price.",
     "DESCRIPTIONS": [
-      "Lost #b4 HP at the start of combat.Heal #b11 HP on victory. NL #bSynergy-Burning Blood/Black Blood: you wont lost health at the start of combat by this relic."
+      "Lost #b4 HP at the start of combat.Heal #b9 HP on victory. NL #bSynergy-Burning Blood/Black Blood: you wont lost health at the start of combat by this relic."
     ]
   },
   "WarlordEmblem:HatTrick": {
@@ -31,7 +31,7 @@
     "NAME": "Heavy Shield",
     "FLAVOR": "Powerful power will make you lose your mobility.",
     "DESCRIPTIONS": [
-      "Gain #yBarricade and lost #r1 #yDexterity at the start of combat."
+      "Gain #yBarricade and lost #r1 #yDexterity at the start of combat. NL NL Synergy- #yCalipers :will not lost that #yDexterity."
     ]
   },
   "WarlordEmblem:OldTorch": {
@@ -45,14 +45,14 @@
     "NAME": "DEPRECATED Pill",
     "FLAVOR": "It will make you stronger and more vulnerable.(“茶雨微凉”)",
     "DESCRIPTIONS": [
-      "Gain #b2 #yStrength and lost #r2 #yDexterity at the start of each combat. NL #bSynergy-Medical Kit: You wont lost #YDexterity by this relic."
+      "Gain #b2 #yStrength and lost #r2 #yDexterity at the start of each combat.  NL NL #bSynergy-Medical Kit: You wont lost #YDexterity by this relic."
     ]
   },
   "WarlordEmblem:SaveLoadDisk": {
     "NAME": "Save Load Disk",
     "FLAVOR": "Nothing is more suitable for save / load.",
     "DESCRIPTIONS": [
-      "Set you HP to 40% of your max health at the start of combat."
+      "Set you HP to 40% of your max health at the start of combat.  NL NL #bSynergy- #yTiny #yChest: 50%."
     ]
   },
   "WarlordEmblem:SmileMask": {
@@ -73,21 +73,21 @@
     "NAME": "Void Power",
     "FLAVOR": "Powerful power makes you dazed.",
     "DESCRIPTIONS": [
-      "Gain [E] at  the start of your turn. NL Shuffle #r5 #yDazed into your draw pile at the start of combat."
+      "Gain [E] at  the start of your turn. NL Shuffle #r5 #yVoid into your discard pile at the start of combat."
     ]
   },
   "WarlordEmblem:BrokenMantle": {
     "NAME": "Broken Mantle",
     "FLAVOR": "Put on this mantle, the whole person is much lighter.(“prttt”)",
     "DESCRIPTIONS": [
-      "If you have less than 50% of your health at the start of combat,gain #b2 #yDexterity ."
+      "If you have less than 50% of your health at the start of combat,gain #b3 #yDexterity .  NL NL #bSynergy- #yCloak #yClasp: #b4 #yDexterity."
     ]
   },
   "WarlordEmblem:Scar": {
     "NAME": "Scar",
     "FLAVOR": "ToDo.(“prttt”)",
     "DESCRIPTIONS": [
-      "Gain [E]  and lost 1 or 2 HP at  the start of your turn."
+      "Gain [E]  and lost 1 HP at  the start of your turn."
     ]
   },
   "WarlordEmblem:BrokenWatch": {
@@ -136,7 +136,7 @@
     "NAME": "Death Knight Helm",
     "FLAVOR": "Unmatched Death Knight Helmet.",
     "DESCRIPTIONS": [
-      "When you have 6 or more Rune Energy,you are regarded have Blood Realm ,Ice Realm and Evil Realm."
+      "When you have not less than 6 or 0 Rune Energy,you are regarded have Blood Realm ,Ice Realm and Evil Realm. NL NL Synergy- #yCultist #yHeadpiece :ignore Rune Energy."
     ]
   },
   "WarlordEmblem:Clown": {
@@ -348,5 +348,57 @@
     "DESCRIPTIONS": [
       "At the start of your turn,add a #yElement #yInvoke to into your hand."
     ]
-  }
+  },
+  "WarlordEmblem:MagicRuneSword": {
+  "NAME": "Magic Rune Sword",
+  "FLAVOR": "strengthen",
+  "DESCRIPTIONS": [
+    "At the start of each battle,gain #b4 #yMaxRune."
+  ]
+},
+  "WarlordEmblem:ProtectBox": {
+    "NAME": "Protect Box",
+    "FLAVOR": "Protect your soul",
+    "DESCRIPTIONS": [
+      "At the start of your turn,gain #b1 #yRune #yEnergy. NL NL Synergy- #yPandora's #yBox :Draw a card at the start of each combat."
+    ]
+  },
+  "WarlordEmblem:Ghoul": {
+    "NAME": "Ghoul",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "At the start of your turn,deal #b1 damage and apply #b1 #gPoison to all enemy. NL NL Synergy- #yGremlin #yVisage :addition apply 1 #gPoison"
+    ]
+  },
+  "WarlordEmblem:DK_Ghoul": {
+    "NAME": "Ghoul",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "At the start of your turn,each Ghoul deal #b",
+      " damage and apply #b",
+      " #gPoison to all enemy. NL NL Synergy- #yGremlin #yVisage :addition apply #b",
+      " #gPoison ."
+    ]
+  },
+  "WarlordEmblem:Gargoyle": {
+  "NAME": "Gargoyle",
+  "FLAVOR": "",
+  "DESCRIPTIONS": [
+    "Whenever you play #b12 cards,deal #b6 damage and apply #b2 #yVulnerable to all enemy. NL NL Synergy- #yN'loth's #yHungry #yFace :addition deal #b6 damage"
+  ]
+},
+  "WarlordEmblem:Abhor": {
+  "NAME": "Abhor",
+  "FLAVOR": "",
+  "DESCRIPTIONS": [
+    "Whenever you play #b10 cards,deal #b3 damage and apply #b3 #gPoison to all enemy. NL NL Synergy- #ySsserpent #yHead :addition deal #b1 damage"
+  ]
+},
+  "WarlordEmblem:DeathArmy": {
+  "NAME": "Death Army",
+  "FLAVOR": "",
+  "DESCRIPTIONS": [
+    "At the start of your 4th turn, deal #b8 damage and apply #b8 #gPoison to all enemy. NL NL Synergy- #yNecronomicon :addition apply 1 #gPoison"
+  ]
+}
 }

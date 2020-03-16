@@ -32,7 +32,7 @@ public class RuneDiffer extends AbstractDKCard {
     public RuneDiffer() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         // this.exhaust = true;
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Rune_Tag);
     }
@@ -50,7 +50,7 @@ public class RuneDiffer extends AbstractDKCard {
         int amount = super.getRuneCount();
         if (amount > this.magicNumber)
             amount = this.magicNumber;
-        AbstractDungeon.actionManager.addToTop(new DrawCardAction(AbstractDungeon.player, amount));
+        AbstractDungeon.actionManager.addToTop(new DrawCardAction(AbstractDungeon.player, 2*amount));
         super.useRune(amount);
     }
 

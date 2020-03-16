@@ -41,7 +41,7 @@ public class VoidDefend extends AbstractDKCard {
         boolean canUse = super.canUse(p, m);
         if (!canUse)
             return false;
-        if (super.getRuneCount() == 0 || super.isRuneFull())
+        if (super.getRuneCount() == 0 || super.getRuneCount() >= 6)
             return true;
         else {
             this.cantUseMessage = ERROR;

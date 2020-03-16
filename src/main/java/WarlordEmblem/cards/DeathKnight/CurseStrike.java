@@ -6,6 +6,7 @@ import WarlordEmblem.patches.CustomTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,7 +38,7 @@ public class CurseStrike extends AbstractDKCard {
 
     public CurseStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 12;
+        this.baseDamage = 6;
         this.damage = this.baseDamage;
         this.tags.add(CardTags.STRIKE);
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
@@ -45,33 +46,46 @@ public class CurseStrike extends AbstractDKCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m,new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+
+            addToBot(new DamageAction(m,new DamageInfo(p, this.damage+ AbstractDKCard.RealmMagicNumber , this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        if(calculateCurse() !=0){
+            addToBot(new DamageAction(m,new DamageInfo(p, this.damage+ AbstractDKCard.RealmMagicNumber , this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        }
     }
 
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (!canUse) {
-            return false;
-        }
-        if (hasEvilRealm())
-            return true;
-        for (AbstractCard c : p.hand.group) {
-            if (c.type == AbstractCard.CardType.CURSE || c.type == AbstractCard.CardType.STATUS) {
-                return true;
-            }
-        }
-        this.cantUseMessage = ERROR;
-        return false;
-    }
 
     public AbstractCard makeCopy() {
         return new CurseStrike();
     }
 
+    private int calculateCurse(){
+        int sum = 0;
+
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if(c.type ==  AbstractCard.CardType.CURSE){
+                sum++ ;
+            }
+        }
+
+        for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
+            if(c.type ==  AbstractCard.CardType.CURSE){
+                sum++ ;
+            }
+        }
+
+        for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
+            if(c.type ==  AbstractCard.CardType.CURSE){
+                sum++ ;
+            }
+        }
+
+        return sum;
+    }
+
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(2);
         }
     }
 }

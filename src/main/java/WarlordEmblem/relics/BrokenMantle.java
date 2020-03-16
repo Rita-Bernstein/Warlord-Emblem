@@ -30,7 +30,10 @@ public class BrokenMantle extends CustomRelic {
        if (AbstractDungeon.player.currentHealth <= (int)Math.floor(AbstractDungeon.player.maxHealth*0.5)){
            flash();
            AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-           AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new DexterityPower(AbstractDungeon.player, 2)));
+           if(AbstractDungeon.player.hasRelic("CloakClasp")){
+               AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new DexterityPower(AbstractDungeon.player, 4)));
+           }
+           AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new DexterityPower(AbstractDungeon.player, 3)));
        }
          }
 

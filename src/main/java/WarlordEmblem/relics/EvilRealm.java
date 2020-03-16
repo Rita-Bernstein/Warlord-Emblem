@@ -14,15 +14,6 @@ public class EvilRealm extends CustomRelic {
         super(ID, texture,RelicTier.RARE, AbstractRelic.LandingSound.MAGICAL);
     }
 
-    public void onEquip(){
-        if (!(CharacterSelectScreenPatches.TalentCount == 5||
-                CharacterSelectScreenPatches.TalentCount == 8||
-                CharacterSelectScreenPatches.TalentCount == 6||
-                CharacterSelectScreenPatches.TalentCount == 9)){
-            CharacterSelectScreenPatches.TalentCount += 5;
-        }
-    }
-
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
     }

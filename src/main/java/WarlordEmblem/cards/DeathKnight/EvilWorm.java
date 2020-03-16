@@ -43,16 +43,31 @@ public class EvilWorm extends AbstractDKCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.GREEN)));
         boolean needPoison = false;
-        if (m.hasPower("Poison") || super.hasEvilRealm()) {
+
+        if (m.hasPower("Poison")) {
             needPoison = true;
         }
+
         if (!needPoison) {
-            AbstractDungeon.actionManager
-                    .addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                            AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        } else {
-            AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.damage), this.damage));
+            if(super.hasEvilRealm()){
+                AbstractDungeon.actionManager
+                        .addToBottom(new DamageAction(m, new DamageInfo(p, this.damage + AbstractDKCard.RealmMagicNumber, this.damageTypeForTurn),
+                                AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            }else {
+                AbstractDungeon.actionManager
+                        .addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
+                                AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            }
+
+        }
+        else {
+            if(super.hasEvilRealm()){
+                AbstractDungeon.actionManager
+                        .addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.damage + AbstractDKCard.RealmMagicNumber), this.damage));
+            }else {
+                AbstractDungeon.actionManager
+                        .addToBottom(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.damage), this.damage));
+            }
         }
     }
 

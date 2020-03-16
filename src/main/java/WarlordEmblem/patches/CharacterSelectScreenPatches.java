@@ -2,10 +2,7 @@ package WarlordEmblem.patches;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.character.DeathKnight;
-import WarlordEmblem.relics.BloodRealm;
-import WarlordEmblem.relics.EvilRealm;
-import WarlordEmblem.relics.IceRealm;
-import WarlordEmblem.relics.RuneSword;
+import WarlordEmblem.relics.*;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -77,7 +74,7 @@ public class CharacterSelectScreenPatches
         public static void Postfix(CharacterSelectScreen __instance, SpriteBatch sb)
         {
             // Render your buttons/images by passing SpriteBatch
-            if (!(TalentCount == 1 ||TalentCount == 3 ||TalentCount == 5 ))
+            if (!(TalentCount == 1 ||TalentCount == 2 ||TalentCount == 3 || TalentCount == 4 ))
             {TalentCount = 1;}
 
             for (CharacterOption o : __instance.options) {
@@ -129,14 +126,14 @@ public class CharacterSelectScreenPatches
                         CardCrawlGame.sound.playV("UI_HOVER", 0.75f);
                     }
 //==================================
-                    if (!(TalentCount == 1 ||TalentCount == 3 ||TalentCount == 5 ))
+                    if (!(TalentCount == 1 ||TalentCount == 2 ||TalentCount == 3 ||TalentCount == 4 ))
                     {TalentCount = 1;}
 
 
                     if (TalentRight.clicked || CInputActionSet.pageRightViewExhaust.isJustPressed()) {
                         TalentRight.clicked = false;
-                        if (TalentCount < 5) {
-                            TalentCount += 2;
+                        if (TalentCount < 4) {
+                            TalentCount += 1;
                             __instance.bgCharImg = updateBgImg();
                         } else {
                             TalentCount = 1;
@@ -147,10 +144,10 @@ public class CharacterSelectScreenPatches
                         TalentLeft.clicked = false;
 
                         if (TalentCount > 1) {
-                            TalentCount -= 2;
+                            TalentCount -= 1;
                             __instance.bgCharImg = updateBgImg();
                         } else {
-                            TalentCount = 5;
+                            TalentCount = 4;
                             __instance.bgCharImg = updateBgImg();
                         }
                     }
@@ -159,81 +156,6 @@ public class CharacterSelectScreenPatches
                 }}
         }
     }
-
-  /*   @SpirePatch(clz = CharacterOption.class, method = "renderRelics")
-    public static class CharacterSelectScreenCharacterOptionPatch_Render
-    {
-        @SpirePostfixPatch
-        public static void Postfix(CharacterOption obj, SpriteBatch sb)
-        {
-         if (obj.name == DeathKnight.charStrings.NAMES[1] && obj.selected) {
-                if (charInfoField == null) {
-                    try {
-                        charInfoField = CharacterOption.class.getDeclaredField("charInfo");
-                        charInfoField.setAccessible(true);
-                        if(((CharSelectInfo)charInfoField.get(obj)).relics.size() != 1){
-                            if (TalentCount == 1){
-                                ((CharSelectInfo)charInfoField.get(obj)).relics.get(1).equals(BloodRealm.ID);
-                            }
-                            if (TalentCount == 3){
-                                ((CharSelectInfo)charInfoField.get(obj)).relics.get(1).equals(IceRealm.ID);
-                            }
-                            if (TalentCount == 5){
-                                ((CharSelectInfo)charInfoField.get(obj)).relics.get(1).equals(EvilRealm.ID);
-                            }
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-*/
-            // Render your buttons/images by passing SpriteBatch
- /*           if (obj.name == DeathKnight.charStrings.NAMES[1] && obj.selected) {
-                if (TalentCount == 1) {
-                    RelicLibrary.resetForReload();
-
-                    r = RelicLibrary.getRelic(RuneSword.ID);
-                    r = RelicLibrary.getRelic(BloodRealm.ID);
-                }else if (TalentCount == 3){
-                    RelicLibrary.resetForReload();
-                    r = RelicLibrary.getRelic(RuneSword.ID);
-                    r = RelicLibrary.getRelic(IceRealm.ID);
-                }else if(TalentCount == 5){
-                    RelicLibrary.resetForReload();
-                    r = RelicLibrary.getRelic(RuneSword.ID);
-                    r = RelicLibrary.getRelic(EvilRealm.ID);
-                }else {
-                    RelicLibrary.resetForReload();
-                    r = RelicLibrary.getRelic(RuneSword.ID);
-                }
-
-
-
-            }
-        }
-    }
-*/
-
- /*   @SpirePatch(clz = CharacterOption.class, method = "renderRelics")
-    public static class CharacterSelectScreenCharacterOptionPatch_Relic
-    {
-        @SpireInsertPatch{locator = jdk.internal.org.xml.sax.Locator.class}
-        public static void Insert(FlashPotionEffect effect, AbstractPower power) throws NoSuchFieldException,illegalAccessException{
-
-}
-    }
-
-    private static class Locator extends SpireInsertPatch
-    {
-        public  int[] Locate(CtBehavior ctMethodToPatch) throws  Exception
-        {
-            Matcher finalMatcher = new Matcher.FieldAccessMatcher()
-            }
-        }
-    }*/
-
-
 
  @SpirePatch(clz = CharacterOption.class, method = "renderRelics" )
  public  static  class CharacterSelectScreenCharacterOptionPatch_Relic{
@@ -244,12 +166,15 @@ public class CharacterSelectScreenPatches
             if (TalentCount == 1){
               _r[0] = new BloodRealm();
           }
-         if (TalentCount == 3){
+         if (TalentCount == 2){
              _r[0] = new IceRealm();
          }
-         if (TalentCount == 5){
+         if (TalentCount == 3){
              _r[0] = new EvilRealm();
           }
+         if (TalentCount == 4){
+                 _r[0] = new DKHelm();
+             }
             }
          return SpireReturn.Continue();
      }
@@ -261,10 +186,12 @@ public class CharacterSelectScreenPatches
         switch (TalentCount ){
             case 1:
                 return new Texture(WarlordEmblem.assetPath("/img/character/DeathKnight/dk_blood.png"));
-            case 3:
+            case 2:
                 return new Texture(WarlordEmblem.assetPath("/img/character/DeathKnight/dk_frozen.png"));
-            case 5:
+            case 3:
                 return new Texture(WarlordEmblem.assetPath("/img/character/DeathKnight/dk_evil.png"));
+            case 4:
+                return new Texture(WarlordEmblem.assetPath("/img/character/DeathKnight/dk_awakened.png"));
             default:
                 return  null;
         }

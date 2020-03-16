@@ -6,6 +6,7 @@ import WarlordEmblem.patches.CustomTagsEnum;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -43,6 +44,9 @@ public class FrozenHeart extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, 2), 2));
         if (!hasIceRealm())
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawReductionPower(p, 1), 1));
+        else {
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1));
+        }
     }
 
     public AbstractCard makeCopy() {

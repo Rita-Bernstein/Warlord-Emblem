@@ -19,7 +19,7 @@ public class RuneRecover extends AbstractDKCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/rune_recover.png");
-    private static final int COST = 1;
+    private static final int COST = 0;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
@@ -47,6 +47,7 @@ public class RuneRecover extends AbstractDKCard {
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
 
         int amount = super.getRuneCount();
+        if(upgraded){amount++;}
         AbstractDungeon.player.heal(amount);
         super.useRune(amount);
 
@@ -59,7 +60,8 @@ public class RuneRecover extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(0);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

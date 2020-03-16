@@ -36,7 +36,7 @@ public class FrostbiteStrike extends AbstractDKCard {
 
     public FrostbiteStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 7;
         this.magicNumber = 1;
         this.baseMagicNumber = magicNumber;
         //this.exhaust = true;
@@ -50,20 +50,29 @@ public class FrostbiteStrike extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
 
-
-        if (!hasIceRealm()){
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
-                    new WeakPower(m, this.magicNumber, false), this.magicNumber, true));
-        }else {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
-                    new WeakPower(m, this.magicNumber+this.RealmMagicNumber, false),this.magicNumber+ this.RealmMagicNumber, true));
+        if (m.hasPower("Strength")) {
+            StrengthPower sp = (StrengthPower) (m.getPower("Strength"));
+            if (sp.amount < 0) {
+                if (!hasIceRealm()){
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
+                            new WeakPower(m, this.magicNumber, false), this.magicNumber, true));
+                }else {
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, AbstractDungeon.player,
+                            new WeakPower(m, this.magicNumber+this.RealmMagicNumber, false),this.magicNumber+ this.RealmMagicNumber, true));
+                }
+            }
         }
+
+
+
+
+
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(3);
             upgradeMagicNumber(1);
         }
     }

@@ -1,6 +1,7 @@
 package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
+import WarlordEmblem.actions.HeartStrikeAction;
 import WarlordEmblem.patches.CardColorEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -28,7 +29,7 @@ public class HeartStrike extends AbstractDKCard {
 
     public HeartStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.baseDamage = 7;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTags.STRIKE);
@@ -37,7 +38,8 @@ public class HeartStrike extends AbstractDKCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.magicNumber));
+
+        addToBot(new HeartStrikeAction(this.magicNumber));
     }
 
     public AbstractCard makeCopy() {
@@ -47,8 +49,7 @@ public class HeartStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
-            upgradeMagicNumber(1);
+            upgradeDamage(3);
         }
     }
 }

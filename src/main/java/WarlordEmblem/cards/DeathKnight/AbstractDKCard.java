@@ -77,19 +77,19 @@ public abstract class AbstractDKCard extends CustomCard {
 
 
     protected boolean hasBloodRealm() {
-        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) && getRuneCount() >= 6) {return true;}
+        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&( AbstractDungeon.player.hasRelic("CultistMask") || getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
         if (AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RealmRiderPower"))) {return true;}
         return AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("BloodRealm"));
     }
 
     protected boolean hasIceRealm() {
-        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) && getRuneCount() >= 6) {return true;}
+        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&( AbstractDungeon.player.hasRelic("CultistMask") || getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
         if (AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RealmRiderPower"))) {return true;}
         return AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("IceRealm"));
     }
 
     protected boolean hasEvilRealm() {
-        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) && getRuneCount() >= 6) {return true;}
+        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&( AbstractDungeon.player.hasRelic("CultistMask") || getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
         if (AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RealmRiderPower"))) {return true;}
         return AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("EvilRealm"));
     }
@@ -103,6 +103,15 @@ public abstract class AbstractDKCard extends CustomCard {
         }
         RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
         return rs.counter;
+    }
+
+    protected int getGainRune() {
+        if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword"))) {
+            return 0;
+        }
+
+        RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
+        return rs.runeGain;
     }
 
     protected int getRuneMax(){
@@ -150,6 +159,13 @@ public abstract class AbstractDKCard extends CustomCard {
         RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
         if (rs != null)
             rs.plusMax(amount);
+    }
+    protected void decreaseMax(int amount) {
+        if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword")))
+            return;
+        RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
+        if (rs != null)
+            rs.decreaseMax(amount);
     }
 
     // protected void plusRuneRegen(int amount) {

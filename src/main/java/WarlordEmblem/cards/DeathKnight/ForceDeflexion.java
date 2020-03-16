@@ -5,6 +5,7 @@ import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CustomTagsEnum;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.ModifyBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -29,15 +30,18 @@ public class ForceDeflexion extends AbstractDKCard {
     public ForceDeflexion() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = 5;
-        this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
-        this.tags.add(CustomTagsEnum.Realm_Tag);
+        this.baseMagicNumber = 3;
+        this.magicNumber = this.baseMagicNumber;
+        this.isEthereal = true;
+
+        //this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
+        //this.tags.add(CustomTagsEnum.Realm_Tag);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1+AbstractDKCard.RealmMagicNumber));
-        if (hasBloodRealm())
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
+        addToBot(new GainBlockAction(p, p, this.block));
+
+        addToBot(new ModifyBlockAction(this.uuid,this.magicNumber));
     }
 
     public AbstractCard makeCopy() {
@@ -47,7 +51,8 @@ public class ForceDeflexion extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeMagicNumber(2);
+            initializeDescription();
         }
     }
 }

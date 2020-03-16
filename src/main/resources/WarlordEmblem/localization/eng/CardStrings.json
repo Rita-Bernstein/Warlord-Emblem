@@ -59,11 +59,12 @@
 
   "WarlordEmblem:Annihilation": {
     "NAME": "Annihilation",
-    "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Blood\u00a0Realm :only will lost half your Block."
+    "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Ice\u00a0Realm :Gain !WarlordEmblem:SecondRealmMagic! Block."
   },
   "WarlordEmblem:AntiMagicShield": {
     "NAME": "Anti-Magic Shield",
-    "DESCRIPTION":  "Gain !M! Artifact."
+    "DESCRIPTION":  "Gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION":"Gain !M! Artifact.Remove all your debuffs."
   },
   "WarlordEmblem:BlackCommand": {
     "NAME": "Black Command",
@@ -84,11 +85,11 @@
   },
   "WarlordEmblem:BloodStrike": {
     "NAME": "Blood Strike",
-    "DESCRIPTION":  "Deal !D! damage. warlord_emblem:life\u00a0Leech . NL warlord_emblem:Blood\u00a0Realm ：heal !WarlordEmblem:SecondRealmMagic! HP. Exhaust."
+    "DESCRIPTION":  "Deal !D! damage. warlord_emblem:life\u00a0Leech . Exhaust. NL warlord_emblem:Blood\u00a0Realm ：heal !WarlordEmblem:SecondRealmMagic! HP."
   },
   "WarlordEmblem:BodyStrike": {
     "NAME": "Body Strike",
-    "DESCRIPTION":  "Deal !D! damage 3 times. NL warlord_emblem:Blood\u00a0Realm :Additional !WarlordEmblem:RealmMagic! time(s) instead."
+    "DESCRIPTION":  "Deal !D! damage 3 times. NL warlord_emblem:Blood\u00a0Realm :Additional !WarlordEmblem:RealmMagic! time(s) ."
   },
   "WarlordEmblem:BoneShield": {
     "NAME": "Bone Shield",
@@ -100,16 +101,16 @@
   },
   "WarlordEmblem:CurseStrike": {
     "NAME": "Curse Strike",
-    "DESCRIPTION":  "Can only be played if a Curse or Status card in your hand. NL Deal !D! damage. NL warlord_emblem:Evil\u00a0Realm :can be played without limit.",
+    "DESCRIPTION":  "Deal !D! damage.If you have Curse,deal !D! damage again. NL warlord_emblem:Evil\u00a0Realm : NL Increase base damage by !WarlordEmblem:RealmMagic! .",
     "EXTENDED_DESCRIPTION": ["I have no Curse or Status in my hand."]
   },
   "WarlordEmblem:DeathCoil": {
     "NAME": "Death Coil",
-    "DESCRIPTION":  "Deal !D! damage, NL If this card kills an enemy ,gain [E] ,draw a card."
+    "DESCRIPTION":  "Deal !D! damage, NL If this card kills an enemy ,gain [E] and draw a card."
   },
   "WarlordEmblem:DeathContract": {
     "NAME": "Death Contract",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy 4, NL Deal !D! damage. NL raise your Max HP by !M! . Exhaust.",
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy 3, NL Deal !D! damage. NL raise your Max HP by !M! . Exhaust.",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
   },
   "WarlordEmblem:DeathGateway": {
@@ -130,8 +131,8 @@
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "Disease Cloud",
-    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy X NL (At most !M! ). NL Apply X Poison to all enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison.",
-    "UPGRADE_DESCRIPTION":  "warlord_emblem:Rune Energy X NL (At most !M! ). NL Apply X+1 Poison to all enemy. NL warlord_emblem:Evil Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
+    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy X NL (At most !M! ). NL Apply 2 Poison to random enemy X times. NL warlord_emblem:Evil\u00a0Realm :additional apply Poison !WarlordEmblem:RealmMagic! .",
+    "UPGRADE_DESCRIPTION":  "warlord_emblem:Rune Energy X NL (At most !M! ). NL Apply 3 Poison to random enemy X times. NL warlord_emblem:Evil Realm :additional apply Poison !WarlordEmblem:RealmMagic! time(s)."
   },
   "WarlordEmblem:DiseaseStrike": {
     "NAME": "Disease Strike",
@@ -160,7 +161,7 @@
   },
   "WarlordEmblem:EvilWorm": {
     "NAME":  "Evil Worm",
-    "DESCRIPTION":   "Deal !D! damage.If target has Poison,apply Poison equals to damage amount instead. Exhaust. NL warlord_emblem:Evil\u00a0Realm :ignore if enemy has Poison."
+    "DESCRIPTION":   "Deal !D! damage.If target has Poison,apply Poison equals to damage amount instead. Exhaust. NL warlord_emblem:Evil\u00a0Realm :Increase base damage by !WarlordEmblem:RealmMagic!."
   },
   "WarlordEmblem:Execute": {
     "NAME":  "Execute",
@@ -168,7 +169,7 @@
   },
   "WarlordEmblem:ForceDeflexion": {
     "NAME":  "Force Deflexion",
-    "DESCRIPTION":   "Gain !B! Block. NL Draw 2 cards. NL warlord_emblem:Blood\u00a0Realm :additional draw !WarlordEmblem:RealmMagic! card."
+    "DESCRIPTION":   "Ethereal .Gain !B! Block. NL Increase its block by !M! in this combat."
   },
   "WarlordEmblem:FrozenChain": {
     "NAME":  "Frozen Chain",
@@ -181,7 +182,7 @@
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "Frozen Heart",
-    "DESCRIPTION":  "Gain 2 Intangible .Next turn you draw 1 less card. NL warlord_emblem:Ice\u00a0Realm ：just gain Intangible. Exhaust."
+    "DESCRIPTION":  "Gain 2 Intangible .Next turn you draw 1 less card. NL warlord_emblem:Ice\u00a0Realm ：Draw a card. Exhaust."
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "Frozen Strike",
@@ -197,7 +198,8 @@
   },
   "WarlordEmblem:GhostStrike": {
     "NAME":  "Ghost Strike",
-    "DESCRIPTION":  "Deal  warlord_emblem:True\u00a0Damage equals to heath you had lost."
+    "DESCRIPTION":  "Deal !D! damage and deal  warlord_emblem:True\u00a0Damage equals to heath you had lost.",
+    "EXTENDED_DESCRIPTION": ["(deal","damage.)"]
   },
   "WarlordEmblem:Hanging": {
     "NAME":  "Hanging",
@@ -205,12 +207,11 @@
   },
   "WarlordEmblem:HeartStrike": {
     "NAME":  "Heart Strike",
-    "DESCRIPTION":  "Deal !D! damage,draw !M! card(s)."
+    "DESCRIPTION":  "Deal !D! damage.Increase !M! base damage for All your card containing \"Strike\"."
   },
   "WarlordEmblem:Infect": {
     "NAME":  "Infect",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply Poison X times to random enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison.",
-    "UPGRADE_DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply 2 Poison X/2 times to random enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL apply X Poison to all enemy. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:RealmMagic! Poison."
   },
   "WarlordEmblem:LichBody": {
     "NAME":  "Lich Body",
@@ -218,8 +219,8 @@
   },
   "WarlordEmblem:LichkingWraith": {
     "NAME":  "Lichking Wraith",
-    "DESCRIPTION":  "Ethereal .At the start of your turn, gain warlord_emblem:Realm Increase. ",
-    "UPGRADE_DESCRIPTION":  "At the start of your turn, gain warlord_emblem:Realm Increase."
+    "DESCRIPTION":  "Ethereal .At the start of your turn, gain !M! warlord_emblem:Realm Increase. ",
+    "UPGRADE_DESCRIPTION":  "At the start of your turn, gain !M! warlord_emblem:Realm Increase."
   },
   "WarlordEmblem:RuneBlade": {
     "NAME":  "Rune Blade",
@@ -239,11 +240,11 @@
   },
   "WarlordEmblem:RuneDiffer": {
     "NAME":  "Rune Differ",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL Draw X card(s)."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL Draw 2X card(s)."
   },
   "WarlordEmblem:RuneExplode": {
     "NAME":  "Rune Explode",
-    "DESCRIPTION": " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL For each warlord_emblem:Rune\u00a0Energy ,deal !D! damage."
+    "DESCRIPTION": " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL Deal !D! damage X times. NL Can be Upgraded any number of times."
   },
   "WarlordEmblem:RuneFocus": {
     "NAME":  "Rune Focus",
@@ -255,16 +256,16 @@
   },
   "WarlordEmblem:RuneInspire": {
     "NAME":  "Rune Inspire",
-    "DESCRIPTION":  "Increase warlord_emblem:Rune\u00a0Energy max limit !M! in this combat."
+    "DESCRIPTION":  "Increase !M! warlord_emblem:Rune\u00a0Energy max limit in this combat."
   },
   "WarlordEmblem:RunePerfusion": {
     "NAME":  "Rune Perfusion",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy 6.Reduce the cost of all cards in your hand to 0 this turn. NL Exhaust.",
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy !M! .Reduce the cost of all cards in your hand to 0 this turn. NL Exhaust.",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
   },
   "WarlordEmblem:RuneMultiplex": {
     "NAME":  "Rune Multiplex",
-    "DESCRIPTION":  "This turn, your next !M! use warlord_emblem:Rune Energy card(s) will not use warlord_emblem:Rune Energy and regard you have max warlord_emblem:Rune Energy."
+    "DESCRIPTION":  "Retain .This turn, your next !M! use warlord_emblem:Rune Energy card(s) will not use warlord_emblem:Rune Energy and regard you have max warlord_emblem:Rune Energy."
   },
   "WarlordEmblem:RuneRecast": {
     "NAME":  "Rune Recast",
@@ -273,15 +274,16 @@
   },
   "WarlordEmblem:RuneRecover": {
     "NAME":  "Rune Recover",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X. NL Each warlord_emblem:Rune\u00a0Energy heal 1 HP. Exhaust."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X. NL Heal X HP. Exhaust.",
+    "UPGRADE_DESCRIPTION":  " warlord_emblem:Rune Energy X. NL Heal X+1 HP. Exhaust."
   },
   "WarlordEmblem:RuneRegen": {
     "NAME":  "Rune Regen",
-    "DESCRIPTION":  "Gain warlord_emblem:Rune\u00a0Energy to maximum. NL Exhaust."
+    "DESCRIPTION":  "Gain !M! warlord_emblem:Rune\u00a0Energy . NL Retain , Exhaust."
   },
   "WarlordEmblem:RuneStorm": {
     "NAME":  "Rune Storm",
-    "DESCRIPTION": " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL Deal !D! damage for each warlord_emblem:Rune\u00a0Energy cost."
+    "DESCRIPTION": " warlord_emblem:Rune\u00a0Energy X NL (at most !M! ). NL Deal !D! damage X times to all enemy."
   },
   "WarlordEmblem:RuneStrike": {
     "NAME":  "Strike",
@@ -289,11 +291,11 @@
   },
   "WarlordEmblem:SwordWave": {
     "NAME":  "Sword Wave",
-    "DESCRIPTION": "Deal !D! damage to all enemy !M! times."
+    "DESCRIPTION": "Deal !D! damage and deal !D! damage to all enemy.Gain !M! warlord_emblem:Rune Energy ."
   },
   "WarlordEmblem:UltimateCold": {
     "NAME":  "Ultimate Cold",
-    "DESCRIPTION": "All creature lost its Strength. NL warlord_emblem:Ice\u00a0Realm :your won't lost Strength. Exhaust."
+    "DESCRIPTION": "All enemy lost its Strength. Exhaust. NL warlord_emblem:Ice\u00a0Realm :All enemy lost !WarlordEmblem:RealmMagic! Strength."
   },
   "WarlordEmblem:UndeadWill": {
     "NAME":  "Undead Will",
@@ -301,13 +303,13 @@
   },
   "WarlordEmblem:VoidDefend": {
     "NAME":  "Void Defend",
-    "DESCRIPTION": "Only can be played when warlord_emblem:Rune\u00a0Energy is empty or full.Gain !B! Block.",
-    "EXTENDED_DESCRIPTION": ["Only can be played when #yRune\u00a0Energy is empty or full"]
+    "DESCRIPTION": "Only can be played when warlord_emblem:Rune\u00a0Energy is empty or not less than 6.Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": ["Only can be played when #yRune\u00a0Energy is empty is empty or not less than 6."]
   },
   "WarlordEmblem:VoidStrike": {
     "NAME":  "Void Strike",
-    "DESCRIPTION": "Only can be played when warlord_emblem:Rune\u00a0Energy is empty or full.Deal !D! damage.",
-    "EXTENDED_DESCRIPTION": ["Only can be played when #yRune\u00a0Energy is empty or full"]
+    "DESCRIPTION": "Only can be played when warlord_emblem:Rune\u00a0Energy is empty or not less than 6.Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": ["Only can be played when #yRune\u00a0Energy is empty or not less than 6."]
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "Wind Impact",
@@ -353,25 +355,38 @@
 },
   "WarlordEmblem:RuneIndex": {
     "NAME":  "Rune Index",
-    "DESCRIPTION":  "At the start of your turn,add a random warlord_emblem:Talent Realm card from draw pile into your hand and gain !M! warlord_emblem:Rune Energy .",
+    "DESCRIPTION":  "At the start of your turn,add a random \"Rune\"card from draw pile into your hand and gain !M! warlord_emblem:Rune Energy .",
     "UPGRADE_DESCRIPTION": " Innate .At the start of your turn,add a random \"Rune\"card from draw pile into your hand and gain !M! warlord_emblem:Rune Energy ."
   },
   "WarlordEmblem:HeartOfDeath": {
   "NAME":  "Heart Of Death",
-  "DESCRIPTION":  " Retain .Gain !M! [E] . NL NL When Retained, increase its energy by 1. Exhaust.",
-  "UPGRADE_DESCRIPTION": "Innate.  Retain .Gain !M! [E] . NL NL When Retained, increase its energy by 1. Exhaust."
+  "DESCRIPTION":  " Retain .Gain !M! [E] . NL When Retained, increase its energy by 1 and gain 1 warlord_emblem:Rune Energy . Exhaust.",
+  "UPGRADE_DESCRIPTION": "Innate.  Retain .Gain !M! [E] . NL When Retained, increase its energy by 1 and gain 1 warlord_emblem:Rune Energy . Exhaust."
 },
   "WarlordEmblem:Potential": {
-  "NAME":  "Potential",
-  "DESCRIPTION":  "Enemy lost X Strength and apply X Poison.Gain X warlord_emblem:Rune Energy . Exhaust.",
-  "UPGRADE_DESCRIPTION": "Enemy lost X+1 Strength and apply X+1 Poison.Gain X+1 warlord_emblem:Rune Energy . Exhaust."
+  "NAME":  "Dark Conviction",
+  "DESCRIPTION":  "All enemy lost X Strength and apply X Poison.Gain X warlord_emblem:Rune Energy . Exhaust.",
+  "UPGRADE_DESCRIPTION": "All nemy lost X+1 Strength and apply X+1 Poison.Gain X+1 warlord_emblem:Rune Energy . Exhaust."
 },
   "WarlordEmblem:WrathOfSindragosa": {
   "NAME":  "Wrath Of Sindragosa",
   "DESCRIPTION":  "At this turn,when you played a:Attack,apply 1 Weak to all enemy;Skill,deal 1 damage to all enemy;Power,all enemy lost 1 Strength."
 },
-
-
+  "WarlordEmblem:HungeringCold": {
+    "NAME":  "Hungering Cold",
+    "DESCRIPTION":  "Deal !D! damage.Deals additional damage equal to !M! times warlord_emblem:Rune Energy gained this combat."
+  },
+  "WarlordEmblem:RuneMelter": {
+  "NAME":  "Rune Melt",
+  "DESCRIPTION":  " warlord_emblem:Rune Energy 3.Decrease max warlord_emblem:Rune Energy by !M! .Gain 1 warlord_emblem:Realm Increase . Exhaust.",
+  "UPGRADE_DESCRIPTION": " warlord_emblem:Rune Energy 3.Decrease max warlord_emblem:Rune Energy by !M! .Gain 1 warlord_emblem:Realm Increase .",
+    "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
+},
+  "WarlordEmblem:Frostmourne": {
+    "NAME":  "Frostmourne",
+    "DESCRIPTION":  "Deal !D! damage.Gain !M! Strength and !B! Block at the end of turn. If Fatal,Gain Relic Ghoul.",
+    "UPGRADE_DESCRIPTION": "Innate , Retain.Deal !D! damage.Gain !M! Strength and !B! Block at the end of turn. If Fatal,Gain Relic Ghoul."
+  },
 
 
   "WarlordEmblem:MantleCardBaku": {

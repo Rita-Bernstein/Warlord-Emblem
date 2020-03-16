@@ -22,34 +22,27 @@ public class RuneExplode extends AbstractDKCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/rune_explode.png");
-    private static final int COST = 1;
+    private static final int COST = 2;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
+    public RuneExplode() { this(0); }
 
-
-    public RuneExplode() {
+    public RuneExplode(int upgrades) {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 5;
+        this.baseDamage = 7;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Rune_Tag);
+
+        this.timesUpgraded = upgrades;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        // AbstractDungeon.actionManager
-        // .addToBottom(new VFXAction(p, new VerticalAuraEffect(Color.BLACK,
-        // p.hb.cX, p.hb.cY), 0.33F));
-        // AbstractDungeon.actionManager
-        // .addToBottom(new VFXAction(p, new VerticalAuraEffect(Color.PURPLE,
-        // p.hb.cX, p.hb.cY), 0.33F));
-        // AbstractDungeon.actionManager
-        // .addToBottom(new VFXAction(p, new VerticalAuraEffect(Color.CYAN,
-        // p.hb.cX, p.hb.cY), 0.0F));
         AbstractDungeon.actionManager
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new MindblastEffect(p.dialogX, p.dialogY ,p.flipHorizontal)));
@@ -65,14 +58,20 @@ public class RuneExplode extends AbstractDKCard {
     }
 
     public AbstractCard makeCopy() {
-        return new RuneExplode();
+        return new RuneExplode(this.timesUpgraded);
     }
+
+    public boolean canUpgrade() { return true; }
 
     public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            upgradeMagicNumber(2);
+        upgradeMagicNumber(2);
+        upgradeDamage(1);
+        this.timesUpgraded++;
+        this.upgraded = true;
+        this.name = cardStrings.NAME + "+" + this.timesUpgraded;
+        initializeTitle();
         }
+
     }
 
-}
+

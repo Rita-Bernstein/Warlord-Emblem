@@ -43,7 +43,7 @@ public class EvilBlood extends CustomRelic {
              AbstractPlayer p = AbstractDungeon.player;
            AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(p, this));
              if (p.currentHealth > 0) {
-                   p.heal(11);
+                   p.heal(9);
                  }
 
            this.counter = -1;

@@ -40,12 +40,15 @@ public class UltimateCold extends AbstractDKCard {
                 StrengthPower sp = (StrengthPower) mo.getPower("Strength");
                 int amount = sp.amount;
                 if (amount > 0) {
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p,
-                            new StrengthPower(mo, -amount), -amount, true, AbstractGameAction.AttackEffect.NONE));
+                    addToBot(new ApplyPowerAction(mo, p,new StrengthPower(mo, -amount), -amount, true, AbstractGameAction.AttackEffect.NONE));
+                }
+                if (!hasIceRealm()) {
+                    addToBot(new ApplyPowerAction(mo, p,new StrengthPower(mo, -AbstractDKCard.RealmMagicNumber), -AbstractDKCard.RealmMagicNumber, true, AbstractGameAction.AttackEffect.NONE));
                 }
             }
         }
 
+/*
         if (!hasIceRealm()) {
             if (p.hasPower("Strength")) {
                 StrengthPower sp = (StrengthPower) p.getPower("Strength");
@@ -55,7 +58,8 @@ public class UltimateCold extends AbstractDKCard {
                             -amount, true, AbstractGameAction.AttackEffect.NONE));
                 }
             }
-        }
+        }*/
+
     }
 
     public AbstractCard makeCopy() {

@@ -5,6 +5,7 @@ import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -19,7 +20,7 @@ public class BreastProtector extends CustomRelic {
 
     private boolean used = false;
    
-   public BreastProtector() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/breast_protector.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
+   public BreastProtector() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/breast_protector.png")) , RelicTier.DEPRECATED, CustomRelic.LandingSound.FLAT); }
  
  
  
@@ -32,12 +33,18 @@ public class BreastProtector extends CustomRelic {
         if (!this.used  && info.output > 20){
             flash();
             this.used = true;
+            this.flash();
             this.pulse = false;
             this.grayscale = true;
             return super.onAttackedToChangeDamage(info, 20);
         }
         return super.onAttackedToChangeDamage(info, damageAmount);
 
+    }
+
+    @Override
+    public float atDamageModify(float damage, AbstractCard c) {
+        return super.atDamageModify(damage, c);
     }
 
     public void atBattleStart() {

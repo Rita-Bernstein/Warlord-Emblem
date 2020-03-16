@@ -33,13 +33,15 @@ public class RunePerfusion extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
         this.tags.add(CustomTagsEnum.Rune_Tag);
+        this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         CardGroup handGroup = p.hand;
         ArrayList<AbstractCard> cardList = handGroup.group;
         for (AbstractCard card : cardList) {
-            if (card == this)
+            if (card == this || card.type == CardType.CURSE || card.type == CardType.STATUS)
                 continue;
             if(card.cost > 0){
                 card.cost = 0;
@@ -48,7 +50,7 @@ public class RunePerfusion extends AbstractDKCard {
             card.isCostModified = true;
             card.superFlash(Color.GOLD.cpy());
         }
-        super.useRune(6);
+        super.useRune(this.magicNumber);
     }
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
@@ -57,7 +59,7 @@ public class RunePerfusion extends AbstractDKCard {
             return false;
         }
         int amount = super.getRuneCount();
-        if (amount >= 6) {
+        if (amount >= this.magicNumber) {
             return true;
         } else {
             this.cantUseMessage = ERROR;

@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.BiteEffect;
+import com.megacrit.cardcrawl.vfx.combat.HemokinesisEffect;
 
 /**
  * 鲜血系技能
@@ -50,17 +51,18 @@ public class BloodStrike extends AbstractDKCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.RED)));
+        //AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.RED)));
         if (m != null) {
-            AbstractDungeon.actionManager.addToBottom(new VFXAction(
-                    new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Settings.GOLD_COLOR.cpy()), 0.3F));
+            addToBot(new VFXAction(new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Settings.GOLD_COLOR.cpy()), 0.3F));
+            //addToBot(new VFXAction(new HemokinesisEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, p.hb.cX, p.hb.cY), 0.5F));
         }
+
         int actual = this.damage;
         if (hasBloodRealm())
             actual += AbstractDKCard.SecondRealmMagicNumber;
-        AbstractDungeon.actionManager
-                .addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                        AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+
+
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, actual));
     }
 

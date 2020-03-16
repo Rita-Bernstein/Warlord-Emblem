@@ -27,9 +27,9 @@ public class Potential extends AbstractDKCard {
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
-
+    int effect =0 ;
 
     public Potential() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -39,15 +39,6 @@ public class Potential extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
          addToBot(new PotentialAction(p, m, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
-/*
-            if(this.upgraded){
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m,p,new StrengthPower(m,this.energyOnUse+1)));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m,p,new PoisonPower(m,p,this.energyOnUse+1)));
-        }else {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m,p,new LoseStrengthPower(m,this.energyOnUse)));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m,p,new PoisonPower(m,p,this.energyOnUse)));
-        }
-*/
     }
 
 

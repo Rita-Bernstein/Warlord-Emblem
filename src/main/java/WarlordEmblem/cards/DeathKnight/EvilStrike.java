@@ -30,7 +30,7 @@ public class EvilStrike extends AbstractDKCard {
 
     public EvilStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 5;
+        this.baseDamage = 7;
         this.tags.add(CardTags.STRIKE);
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);

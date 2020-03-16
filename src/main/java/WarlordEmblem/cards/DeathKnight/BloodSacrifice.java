@@ -12,12 +12,14 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AngryPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
+import com.megacrit.cardcrawl.vfx.combat.OfferingEffect;
 
 public class BloodSacrifice extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("BloodSacrifice");
@@ -43,6 +45,13 @@ public class BloodSacrifice extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.RED), 0.0F, true));
+             if (Settings.FAST_MODE){
+                 addToBot(new VFXAction(new OfferingEffect(), 0.1F));
+             }
+             else {
+                   addToBot(new VFXAction(new OfferingEffect(), 0.5F));
+                 }
+
         AbstractDungeon.actionManager
                 .addToBottom(new ApplyPowerAction(p, p, new AngryPower(p, this.magicNumber), this.magicNumber));
         if (hasBloodRealm())

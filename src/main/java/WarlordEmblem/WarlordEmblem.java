@@ -12,6 +12,7 @@ import WarlordEmblem.helpers.SecondaryMagicVariable;
 import WarlordEmblem.patches.AbstractPlayerEnum;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CharacterSelectScreenPatches;
+import WarlordEmblem.potions.DKPoisonPotion;
 import WarlordEmblem.potions.RealmPotion;
 import WarlordEmblem.potions.ReserveRunePotion;
 import WarlordEmblem.potions.RuneExpandPotion;
@@ -43,6 +44,7 @@ import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.orbs.Dark;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -90,6 +92,8 @@ public class WarlordEmblem implements
     public static boolean ringRelic = true;
     public static boolean mantleRelic = true;
     public static boolean RuneCountDisplay = true;
+    public static boolean baseGameRelic2DK = true;
+
     public static Properties WarlordEmblemDefaults = new Properties();
 
     public static final Color DeathKnight_Color = new Color(0.171F,0.722F,0.722F,1.0F);
@@ -138,6 +142,7 @@ public class WarlordEmblem implements
             ringRelic = config.getBool("ringRelic");
             mantleRelic = config.getBool("mantleRelic");
             RuneCountDisplay = config.getBool("RuneCountDisplay");
+            baseGameRelic2DK = config.getBool("baseGameRelic2DK");
         } catch (Exception e) {
             e.printStackTrace();
             clearConfig();
@@ -153,6 +158,7 @@ public class WarlordEmblem implements
             config.setBool("ringRelic", ringRelic);
             config.setBool("mantleRelic", mantleRelic);
             config.setBool("RuneCountDisplay", RuneCountDisplay);
+            config.setBool("baseGameRelic2DK", baseGameRelic2DK);
             config.save();
         } catch (Exception e) {
             e.printStackTrace();
@@ -179,16 +185,21 @@ public class WarlordEmblem implements
                 (label) -> {}, (button) -> {mantleRelic = button.enabled;saveConfig();});
         ModLabeledToggleButton RuneCountDisplaySwitch = new ModLabeledToggleButton(CardCrawlGame.languagePack.getUIString(makeID("RelicFilter")).TEXT[3],400.0f, 540.0f, Settings.CREAM_COLOR, FontHelper.charDescFont,RuneCountDisplay, settingsPanel,
                 (label) -> {}, (button) -> {RuneCountDisplay = button.enabled;saveConfig();});
+        ModLabeledToggleButton baseGameRelic2DKSwitch = new ModLabeledToggleButton(CardCrawlGame.languagePack.getUIString(makeID("RelicFilter")).TEXT[4],400.0f, 480.0f, Settings.CREAM_COLOR, FontHelper.charDescFont,baseGameRelic2DK, settingsPanel,
+                (label) -> {}, (button) -> {baseGameRelic2DK = button.enabled;saveConfig();});
 
         settingsPanel.addUIElement(addonRelicSwitch);
         settingsPanel.addUIElement(ringRelicSwitch);
         settingsPanel.addUIElement(mantleRelicSwitch);
         settingsPanel.addUIElement(RuneCountDisplaySwitch);
+        settingsPanel.addUIElement(baseGameRelic2DKSwitch);
 
 
         BaseMod.addPotion(ReserveRunePotion.class,DeathKnight_Color,RuneShadow_Color,Transparent_Color,WarlordEmblem.makeID("ReserveRunePotion"),AbstractPlayerEnum.DeathKnight);
         BaseMod.addPotion(RuneExpandPotion.class,DeathKnight_Color,RuneShadow_Color,Transparent_Color,WarlordEmblem.makeID("RuneExpandPotion"),AbstractPlayerEnum.DeathKnight);
         BaseMod.addPotion(RealmPotion.class,BloodRealm_Color,EvilRealm_Color,IceRealm_Color,WarlordEmblem.makeID("RealmPotion"),AbstractPlayerEnum.DeathKnight);
+        BaseMod.addPotion(DKPoisonPotion.class,BaseMod.getPotionLiquidColor("Poison Potion"),BaseMod.getPotionHybridColor("Poison Potion"),BaseMod.getPotionSpotsColor("Poison Potion"),WarlordEmblem.makeID("DKPoisonPotion"),AbstractPlayerEnum.DeathKnight);
+
 
     }
 
@@ -238,7 +249,7 @@ public class WarlordEmblem implements
         cards.add(new AntiMagicShield());
         cards.add(new BlackCommand());
         cards.add(new BloodBoiling());
-        cards.add(new BloodDiffer());
+        //cards.add(new BloodDiffer());
         cards.add(new BloodMask());
         cards.add(new BloodStrike());
         cards.add(new BodyStrike());
@@ -308,6 +319,9 @@ public class WarlordEmblem implements
         cards.add(new HeartOfDeath());
         cards.add(new Potential());
         cards.add(new WrathOfSindragosa());
+        cards.add(new HungeringCold());
+        cards.add(new RuneMelter());
+        cards.add(new Frostmourne());
 
         cards.add(new MantleCardBaku());
         cards.add(new MantleCardCaireseth());
@@ -395,7 +409,21 @@ public class WarlordEmblem implements
         BaseMod.addRelicToCustomPool(new BloodRealm(), CardColorEnum.DeathKnight_LIME);
         BaseMod.addRelicToCustomPool(new IceRealm(), CardColorEnum.DeathKnight_LIME);
         BaseMod.addRelicToCustomPool(new EvilRealm(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new MagicRuneSword(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new ProtectBox(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new Ghoul(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new Gargoyle(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new Abhor(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new DeathArmy(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new DK_Ghoul(), CardColorEnum.DeathKnight_LIME);
 
+        if(baseGameRelic2DK){
+            BaseMod.addRelicToCustomPool(new TwistedFunnel(), CardColorEnum.DeathKnight_LIME);
+            BaseMod.addRelicToCustomPool(new TheSpecimen(), CardColorEnum.DeathKnight_LIME);
+            BaseMod.addRelicToCustomPool(new SneckoSkull(), CardColorEnum.DeathKnight_LIME);
+            BaseMod.addRelicToCustomPool(new MagicFlower(), CardColorEnum.DeathKnight_LIME);
+            BaseMod.addRelicToCustomPool(new CloakClasp(), CardColorEnum.DeathKnight_LIME);
+        }
 
         if(mantleRelic){
             BaseMod.addRelic(new MantleBaku(), RelicType.SHARED);

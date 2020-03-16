@@ -2,18 +2,17 @@ package WarlordEmblem.character;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.cards.DeathKnight.*;
+import WarlordEmblem.cards.quest.QuestCardDKReward;
 import WarlordEmblem.modules.EnergyOrbCustomBlue;
 import WarlordEmblem.patches.AbstractPlayerEnum;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CharacterSelectScreenPatches;
-import WarlordEmblem.relics.BloodRealm;
-import WarlordEmblem.relics.EvilRealm;
-import WarlordEmblem.relics.IceRealm;
-import WarlordEmblem.relics.RuneSword;
+import WarlordEmblem.relics.*;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -32,6 +31,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.BurningBlood;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbBlue;
 
@@ -78,6 +78,23 @@ public class DeathKnight extends CustomPlayer {
 
 	}
 
+	@Override
+	public void render(SpriteBatch sb) {
+		super.render(sb);
+		if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword"))) {
+			RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
+			if(AbstractDungeon.player != null && WarlordEmblem.RuneCountDisplay && rs.counter > -1){
+				if((((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT || AbstractDungeon.getCurrRoom() instanceof com.megacrit.cardcrawl.rooms.MonsterRoom) && !AbstractDungeon.player.isDead)){
+					if (rs.max > -1) {
+						FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(rs.max), AbstractDungeon.player.drawX + 120.0F * Settings.scale, AbstractDungeon.player.drawY + 35.0F * Settings.scale, Color.YELLOW);
+					}
+					if (rs.counter > -1) {
+						FontHelper.renderFontRightTopAligned(sb, FontHelper.topPanelInfoFont, Integer.toString(rs.counter), AbstractDungeon.player.drawX + 120.0F * Settings.scale, AbstractDungeon.player.drawY +10.0F * Settings.scale, Color.WHITE);
+					}
+				}
+			}
+		}
+	}
 
 	public String getPortraitImageName() {
 		return null;
@@ -88,8 +105,9 @@ public class DeathKnight extends CustomPlayer {
 		retVal.add(RuneSword.ID);
 
 		if(TalentCount == 1){retVal.add(BloodRealm.ID);}
-		else if(TalentCount == 3){retVal.add(IceRealm.ID);}
-		else if(TalentCount == 5){retVal.add(EvilRealm.ID);}
+		else if(TalentCount == 2){retVal.add(IceRealm.ID);}
+		else if(TalentCount == 3){retVal.add(EvilRealm.ID);}
+		else if(TalentCount == 4){retVal.add(DKHelm.ID);}
 		else {retVal.add(BloodRealm.ID);}
 
 		return retVal;
@@ -109,12 +127,15 @@ public class DeathKnight extends CustomPlayer {
 		if(TalentCount == 1){
             retVal.add(RuneHeavyBlow.ID);
         }
-		if(TalentCount == 3){
+		if(TalentCount == 2){
             retVal.add(FrozenStrike.ID);
         }
-		if(TalentCount == 5){
+		if(TalentCount == 3){
             retVal.add(DiseaseStrike.ID);
         }
+		if(TalentCount == 4){
+			retVal.add(Frostmourne.ID);
+		}
 
 
 

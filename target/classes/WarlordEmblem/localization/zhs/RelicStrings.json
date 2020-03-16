@@ -3,7 +3,7 @@
     "NAME": "徽章的祝福",
     "FLAVOR": "来自东方国度的神秘祝福。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得 #b1 点 #y力量 、 #y敏捷 和 #y集中 。"
+      "每场战斗开始时，获得 #b1 点 #y力量 、 #y敏捷 和 #y集中 和 #y领域提升 。"
     ]
   },
   "WarlordEmblem:BadgeWrath": {
@@ -17,7 +17,7 @@
     "NAME": "邪恶之血",
     "FLAVOR": "任何东西都有代价。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，失去 #r4 生命 。战斗结束时，回复 #b11 生命 。 NL #b协同-燃烧之血/黑暗之血: 战斗开始不会失去生命 。"
+      "每场战斗开始时，失去 #r4 生命 。战斗结束时，回复 #b9 生命 。 NL #b协同-燃烧之血/黑暗之血: 战斗开始不会失去生命 。"
     ]
   },
   "WarlordEmblem:HatTrick": {
@@ -31,7 +31,7 @@
     "NAME": "厚重的护盾",
     "FLAVOR": "强大的力量会让你失去行动力。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得 #y壁垒 ，失去 #r1 点 #y敏捷 。"
+      "每场战斗开始时，获得 #y壁垒 ，失去 #r1 点 #y敏捷 。 NL NL 协同- #y外卡钳 ：敏捷不会失去"
     ]
   },
   "WarlordEmblem:OldTorch": {
@@ -52,7 +52,7 @@
     "NAME": "存储盘",
     "FLAVOR": "没什么比它更适合Save/Load的了。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，生命变为最大生命的 #r40% 。"
+      "每场战斗开始时，生命变为最大生命的 #r40% 。 NL #b协同- 小宝箱: 50%。"
     ]
   },
   "WarlordEmblem:SmileMask": {
@@ -73,14 +73,14 @@
     "NAME": "虚空之力",
     "FLAVOR": "强大的力量让你头晕目眩。",
     "DESCRIPTIONS": [
-      "每回合多获得 #b1 点能量， NL 每场战斗开始时，将 #r5张晕眩 加入你的抽牌堆。"
+      "在每回合开始时获得 [E] 。 NL 每场战斗开始时，将 #r2张虚空 加入你的弃牌堆。"
     ]
   },
   "WarlordEmblem:BrokenMantle": {
     "NAME": "残破斗篷",
     "FLAVOR": "穿上这件斗篷，整个人轻盈了许多。(“prttt”)",
     "DESCRIPTIONS": [
-      "战斗开始时，如果当前生命小于等于最大生命的一半，获得 #b2 点 #y敏捷 。"
+      "战斗开始时，如果当前生命小于等于最大生命的一半，获得 #b3 点 #y敏捷 。 NL #b协同- 斗篷扣: #b4 点 #y敏捷 。"
     ]
   },
   "WarlordEmblem:Scar": {
@@ -88,7 +88,7 @@
     "FLAVOR": "这件遗物还没有描述。(“prttt”)",
     "DESCRIPTIONS": [
 
-      "每回合开始时， #r失去1-2生命 ，获得 #b1 点 #y能量 。"
+      "每回合开始时， #r失去 1 生命 ，获得 #b1 点 #y能量 。"
     ]
   },
   "WarlordEmblem:BrokenWatch": {
@@ -134,10 +134,10 @@
     ]
   },
   "WarlordEmblem:DKHelm": {
-    "NAME": "窥亡之盔",
+    "NAME": "巫妖王之冠",
     "FLAVOR": "无与伦比的死亡骑士头盔。",
     "DESCRIPTIONS": [
-      "当你拥有6点或以上符文能量时，视为同时拥有鲜血，冰霜，邪恶领域。"
+      "当你拥有不少于6点或0点符文能量时，视为同时拥有鲜血，冰霜，邪恶领域。 NL NL 协同- #y邪教徒头套 ：无视符文能量。"
     ]
   },
   "WarlordEmblem:Clown": {
@@ -151,7 +151,7 @@
     "NAME": "吴子兵法",
     "FLAVOR": "这本古兵书记载着远古时代的智慧。",
     "DESCRIPTIONS": [
-      "如果你在回合中不打出任何 #y技能牌 ， NL 回合结束时回复2生命。 NL 每场战斗最多回复8生命。， NL #b协同-孙子兵法： 战斗开始获得1层 #y人工制品 。"
+      "如果你在回合中不打出任何 #y技能牌 ， NL 回合结束时回复2生命。 NL 每场战斗最多回复8生命。 NL NL #b协同- #y孙子兵法： 战斗开始获得1层 #y人工制品 。"
     ]
   },
   "WarlordEmblem:BadgeProtect": {
@@ -176,7 +176,7 @@
     ]
   },
   "WarlordEmblem:BreastProtector": {
-    "NAME": "护心镜",
+    "NAME": "DEPRECATED护心镜",
     "FLAVOR": "使你免遭暗算。",
     "DESCRIPTIONS": [
       "每场战斗第一次受到超过 #b20 的伤害，视为受到 #b20 点伤害。"
@@ -348,6 +348,58 @@
     "FLAVOR": "充满元素力量的灵魂。",
     "DESCRIPTIONS": [
       "回合开始时，将1张 #y元素祈唤 放入你的手牌。"
+    ]
+  },
+  "WarlordEmblem:MagicRuneSword": {
+    "NAME": "附魔符文剑",
+    "FLAVOR": "附魔，附魔，附魔",
+    "DESCRIPTIONS": [
+      "每场战斗开始时，获得 #b4 点 #y符文上限 。"
+    ]
+  },
+   "WarlordEmblem:ProtectBox": {
+    "NAME": "符文护命匣",
+    "FLAVOR": "灵魂所在",
+    "DESCRIPTIONS": [
+      "每回合开始时，获得 #b1 点 #y符文能量 。 NL NL 协同- #y潘多拉的魔盒 ：每场战斗开始时抽 #b1 张牌。"
+    ]
+  },
+  "WarlordEmblem:Ghoul": {
+    "NAME": "食尸鬼",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "每回合开始时，对所有敌人造成 #b1 点伤害并给予 #b1 层 #g中毒 。 NL NL 协同- #y地精容貌 ：额外给予1层 #g中毒 。"
+    ]
+  },
+  "WarlordEmblem:DK_Ghoul": {
+    "NAME": "食尸鬼",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "每回合开始时，对所有敌人造成 #b",
+      " 点伤害并给予 #b",
+      " 层 #g中毒 。（可叠加） NL NL 协同- #y地精容貌 ：额外给予 #b",
+      " 层 #g中毒 。"
+    ]
+  },
+  "WarlordEmblem:Gargoyle": {
+    "NAME": "石像鬼",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "每打出 #b12 张牌，对所有敌人造成 #b6 点伤害并给予 #b2层 #y易伤 。 NL NL 协同- #y恩洛斯的饥饿的脸 ：额外造成 #b6 点伤害。"
+    ]
+  },
+  "WarlordEmblem:Abhor": {
+    "NAME": "憎恶",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "每打出 #b10 张牌，对所有敌人造成 #b3 点伤害并给予 #b3 层 #g中毒 。 NL NL 协同- #y蛇的头 ：额外造成 #b1 点伤害。"
+    ]
+  },
+  "WarlordEmblem:DeathArmy": {
+    "NAME": "亡者大军",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "在你的第四回合开始时，对所有敌人造成 #b8 点伤害并给予 #b8 层 #g中毒 。 NL NL 协同- #y死灵之书 ：额外给予 #b1 层 #g中毒。"
     ]
   }
 }

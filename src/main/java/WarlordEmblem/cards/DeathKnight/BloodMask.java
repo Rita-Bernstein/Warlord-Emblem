@@ -36,6 +36,7 @@ public class BloodMask extends AbstractDKCard {
         this.magicNumber = baseMagicNumber;
         this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+        this.tags.add(CardTags.HEALING);
         this.exhaust = true;
     }
 

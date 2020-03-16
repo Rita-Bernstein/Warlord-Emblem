@@ -15,16 +15,6 @@ public class BloodRealm extends CustomRelic {
         super(ID, texture, RelicTier.RARE, AbstractRelic.LandingSound.MAGICAL);
     }
 
-    public void onEquip(){
-        if (!(CharacterSelectScreenPatches.TalentCount == 1||
-                CharacterSelectScreenPatches.TalentCount == 4||
-                CharacterSelectScreenPatches.TalentCount == 6||
-                CharacterSelectScreenPatches.TalentCount == 9)){
-            CharacterSelectScreenPatches.TalentCount += 1;
-        }
-    }
-
-
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
     }

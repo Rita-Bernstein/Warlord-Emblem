@@ -12,7 +12,7 @@ public class DKHelm extends CustomRelic {
     private static Texture texture = new Texture(WarlordEmblem.assetPath("img/relics/dk_helm.png")) ;
 
     public DKHelm() {
-        super(ID, texture, AbstractRelic.RelicTier.BOSS, AbstractRelic.LandingSound.HEAVY);
+        super(ID, texture, RelicTier.BOSS, AbstractRelic.LandingSound.HEAVY);
     }
 
     public String getUpdatedDescription() {

@@ -36,6 +36,7 @@ public class RuneMultiplex extends AbstractDKCard {
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Rune_Tag);
+        this.selfRetain = true;
 
     }
 

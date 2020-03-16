@@ -45,7 +45,7 @@ public class DeathContract extends AbstractDKCard {
                 .add(new FlashAtkImgEffect(m.hb.cX, m.hb.cY, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
                 new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        super.useRune(4);
+        super.useRune(3);
         p.increaseMaxHp(magicNumber, true);
 
     }
@@ -56,7 +56,7 @@ public class DeathContract extends AbstractDKCard {
             return false;
         }
         int amount = super.getRuneCount();
-        if (amount >= 4) {
+        if (amount >= 3) {
             return true;
         } else {
             this.cantUseMessage = ERROR;

@@ -1,6 +1,7 @@
 package WarlordEmblem.relics;
  
 import WarlordEmblem.WarlordEmblem;
+import WarlordEmblem.powers.RealmIncreasePower;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -33,6 +34,7 @@ public class BadgeBless extends CustomRelic {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new StrengthPower(AbstractDungeon.player, 1)));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new DexterityPower(AbstractDungeon.player, 1)));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new FocusPower(AbstractDungeon.player, 1)));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new RealmIncreasePower(AbstractDungeon.player, 1)));
 
          }
 

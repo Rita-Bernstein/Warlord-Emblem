@@ -3,10 +3,9 @@
     "TEXT": [
       "Talent:",
       "Blood Realm",
-      "",
       "Ice Realm",
-      "",
-      "Evil Realm"
+      "Evil Realm",
+      "Awakened"
     ]
   },
   "WarlordEmblem:UtilizeAction": {
@@ -19,8 +18,8 @@
       "Add addtional relics(restart game)",
       "Add ring relic(restart game)",
       "Add mantle relic(restart game)",
-      "Display count of Rune Sword at the right of character(beta)"
-
+      "Display count of Rune Sword at the right of character",
+      "Death Knight will obtain some relic from other color in base game.(beta)"
     ]
   }
 }

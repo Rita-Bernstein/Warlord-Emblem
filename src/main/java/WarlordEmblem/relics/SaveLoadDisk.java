@@ -31,7 +31,10 @@ public class SaveLoadDisk extends CustomRelic {
    public void atBattleStart() {
        flash();
        AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-       AbstractDungeon.player.currentHealth = (int)Math.floor(AbstractDungeon.player.maxHealth*0.4);
+       if(AbstractDungeon.player.hasRelic("Tiny Chest")){
+           AbstractDungeon.player.currentHealth = (int)Math.ceil(AbstractDungeon.player.maxHealth*0.5);
+       }
+        AbstractDungeon.player.currentHealth = (int)Math.ceil(AbstractDungeon.player.maxHealth*0.4);
    }
 
 

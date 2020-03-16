@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.LoseBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -45,7 +46,7 @@ public class Annihilation extends AbstractDKCard {
         this.baseDamage = 0;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
-        this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
+        this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
 
     }
@@ -58,17 +59,17 @@ public class Annihilation extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.effectsQueue.add(new StanceChangeParticleGenerator(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, "Wrath"));
+
         int block = p.currentBlock;
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
-        if (!hasBloodRealm())
-            AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p,null,p.currentBlock));
-        else
-            AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p,null,(int)Math.floor(p.currentBlock/2)));
-
+        AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p,null,block));
+        if (hasIceRealm())
+            addToBot(new GainBlockAction(p,p,AbstractDKCard.SecondRealmMagicNumber));
         if (m != null) {
             AbstractDungeon.actionManager.addToBottom(
                     new VFXAction(new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));
         }
+
         AbstractDungeon.actionManager
                 .addToBottom(new DamageAction(m, new DamageInfo(p, block * this.magicNumber, this.damageTypeForTurn),
                         AbstractGameAction.AttackEffect.SLASH_HEAVY));

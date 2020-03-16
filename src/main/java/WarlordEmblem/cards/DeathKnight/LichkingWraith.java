@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.powers.ConfusionPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
+import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
 
 public class LichkingWraith extends AbstractDKCard {
@@ -42,17 +43,15 @@ public class LichkingWraith extends AbstractDKCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager
-                .addToBottom(new VFXAction(p, new VerticalAuraEffect(Color.BLACK, p.hb.cX, p.hb.cY), 0.33F));
-        AbstractDungeon.actionManager
-                .addToBottom(new VFXAction(p, new VerticalAuraEffect(Color.PURPLE, p.hb.cX, p.hb.cY), 0.33F));
-        AbstractDungeon.actionManager
-                .addToBottom(new VFXAction(p, new VerticalAuraEffect(Color.CYAN, p.hb.cX, p.hb.cY), 0.0F));
-        AbstractDungeon.actionManager
-                .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
+        addToBot(new VFXAction(p, new VerticalAuraEffect(Color.BLACK, p.hb.cX, p.hb.cY), 0.33F));
+        addToBot(new VFXAction(p, new VerticalAuraEffect(Color.PURPLE, p.hb.cX, p.hb.cY), 0.33F));
+        addToBot(new VFXAction(p, new VerticalAuraEffect(Color.CYAN, p.hb.cX, p.hb.cY), 0.0F));
+        addToBot(new VFXAction(p, new InflameEffect(p), 0.25F));
+        addToBot(new VFXAction(p, new InflameEffect(p), 0.25F));
+        addToBot(new VFXAction(p, new InflameEffect(p), 0.25F));
+        addToBot(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
 
-            AbstractDungeon.actionManager.addToBottom(
-                    new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new LichkingWraithPower(AbstractDungeon.player, this.magicNumber), this.magicNumber, true));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new LichkingWraithPower(AbstractDungeon.player, this.magicNumber), this.magicNumber, true));
     }
 
     public AbstractCard makeCopy() {

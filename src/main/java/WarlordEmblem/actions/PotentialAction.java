@@ -26,8 +26,6 @@
      private int energyOnUse;
 
    public PotentialAction(AbstractPlayer p, AbstractMonster m, boolean upgraded, boolean freeToPlayOnce, int energyOnUse) {
-       this.freeToPlayOnce = false; this.upgraded = false;
-       this.energyOnUse = -1;
        this.p = p;
        this.m = m;
        this.freeToPlayOnce = freeToPlayOnce;
@@ -54,21 +52,26 @@
                 }
 
             if (effect > 0) {
-                  addToBot(new ApplyPowerAction(this.m, this.p, new StrengthPower(this.m, -effect), -effect));
-                  addToBot(new ApplyPowerAction(this.m, this.p, new PoisonPower(this.m, this.p, effect), effect));
+                for (AbstractMonster mo : (AbstractDungeon.getMonsters()).monsters){
+                    if (!mo.isDead && !mo.isDying) {
+                        addToBot(new ApplyPowerAction(mo, this.p, new StrengthPower(mo, -effect), -effect));
+                        addToBot(new ApplyPowerAction(mo, this.p, new PoisonPower(mo, this.p, effect), effect));
+                    }
+                }
 
-                if (!AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword")))
-                    return;
-                RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
-                if (rs != null)
-                    rs.plusRune(effect);
-
-                  if (!this.freeToPlayOnce) {
+                if (!this.freeToPlayOnce) {
                         this.p.energy.use(EnergyPanel.totalCount);
                       }
                 }
-            this.isDone = true;
-       
+
+       if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("RuneSword"))){
+           RuneSword rs = (RuneSword) AbstractDungeon.player.getRelic(WarlordEmblem.makeID("RuneSword"));
+           if (rs != null)
+               rs.plusRune(effect);
+           this.isDone = true;
+       }else {
+           this.isDone = true;
+       }
    }
  }
 

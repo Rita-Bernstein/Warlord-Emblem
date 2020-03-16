@@ -29,18 +29,21 @@ public class KitchenKnife extends CustomRelic {
 
     @Override
        public void onMonsterDeath(AbstractMonster m) {
-             if (m.currentHealth == 0 && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-                   flash();
-                 AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(m, this));
-                 if(this.counter <=8){
-                     AbstractDungeon.actionManager.addToBottom(new HealAction(AbstractDungeon.player,AbstractDungeon.player,2));
-                     this.counter += 2;
-                     if (this.counter >8 ){this.counter = -1;}
-                 }
+        if (((m.isDying || m.currentHealth <= 0) && !m.halfDead &&!m.hasPower("Minion"))){
+            flash();
+            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(m, this));
+            if(this.counter <= 8){
+                AbstractDungeon.actionManager.addToBottom(new HealAction(AbstractDungeon.player,AbstractDungeon.player,2));
+                this.counter += 2;
+                if (this.counter >8 ){this.counter = -1;}
+            }
+        }
 
-                 }
-           }
+        if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead()) {
+            AbstractDungeon.actionManager.clearPostCombatActions();
+        }
 
+    }
 
     public void onVictory() {
         if(this.counter <=8){

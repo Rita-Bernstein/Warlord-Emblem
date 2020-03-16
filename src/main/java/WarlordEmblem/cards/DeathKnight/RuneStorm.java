@@ -5,6 +5,7 @@ import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CustomTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.unique.WhirlwindAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -26,8 +27,6 @@ public class RuneStorm extends AbstractDKCard {
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 
-    private final static int MAX = 4;
-
     public RuneStorm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.isMultiDamage = true;
@@ -39,13 +38,10 @@ public class RuneStorm extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         int amount = super.getRuneCount();
-        if (amount > MAX)
-            amount = MAX;
-        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            AbstractDungeon.actionManager
-                    .addToBottom(new DamageAction(mo, new DamageInfo(p, amount * this.damage, this.damageTypeForTurn),
-                            AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        }
+        if (amount > this.baseMagicNumber)
+            amount = this.baseMagicNumber;
+
+        addToBot(new WhirlwindAction(p, this.multiDamage, this.damageTypeForTurn, true, amount));
         super.useRune(amount);
     }
 
@@ -57,7 +53,7 @@ public class RuneStorm extends AbstractDKCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(3);
-            //upgradeMagicNumber(1);
+
         }
     }
 }

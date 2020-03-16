@@ -14,14 +14,7 @@ public class IceRealm extends CustomRelic {
         super(ID, texture, RelicTier.RARE, AbstractRelic.LandingSound.MAGICAL);
     }
 
-    public void onEquip(){
-        if (!(CharacterSelectScreenPatches.TalentCount == 3||
-                CharacterSelectScreenPatches.TalentCount == 4||
-                CharacterSelectScreenPatches.TalentCount == 8||
-                CharacterSelectScreenPatches.TalentCount == 9)){
-            CharacterSelectScreenPatches.TalentCount += 3;
-        }
-    }
+
 
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];

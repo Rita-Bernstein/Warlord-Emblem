@@ -30,7 +30,7 @@ public class WrathOfSindragosaPower extends AbstractPower {
     this.owner = owner;
     this.amount = Amount;
     this.type = PowerType.BUFF;
-    this.isTurnBased = true;
+    this.isTurnBased = false;
     updateDescription();
     //this.img = new Texture(WarlordEmblem.assetPath("img/powers/WrathOfSindragosaPower.png"));
 
@@ -61,7 +61,7 @@ public class WrathOfSindragosaPower extends AbstractPower {
        else if (card.type == AbstractCard.CardType.POWER) {
            for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters){
              AbstractDungeon.actionManager.addToBottom(
-                     new ApplyPowerAction(mo, AbstractDungeon.player, new StrengthPower(mo, -this.amount), this.amount, true));
+                     new ApplyPowerAction(mo, AbstractDungeon.player, new StrengthPower(mo, -this.amount), -this.amount, true));
            }
            flash();
        }

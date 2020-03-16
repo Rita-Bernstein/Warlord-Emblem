@@ -32,6 +32,9 @@ public class RuneRegen extends AbstractDKCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
         this.tags.add(CustomTagsEnum.Rune_Tag);
+        this.selfRetain = true;
+        this.baseMagicNumber = 6;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -44,7 +47,7 @@ public class RuneRegen extends AbstractDKCard {
         AbstractDungeon.actionManager
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
 
-        plusRune(RuneSword.MAX);
+        plusRune(this.magicNumber);
     }
 
     public AbstractCard makeCopy() {

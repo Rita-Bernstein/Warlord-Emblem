@@ -35,7 +35,7 @@ public class DeathStrike extends AbstractDKCard {
 
     public DeathStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 7;
         this.magicNumber = 1;
         this.baseMagicNumber = magicNumber;
         this.tags.add(CardTags.STRIKE);
@@ -63,7 +63,7 @@ public class DeathStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            upgradeDamage(3);
             upgradeMagicNumber(1);
         }
     }

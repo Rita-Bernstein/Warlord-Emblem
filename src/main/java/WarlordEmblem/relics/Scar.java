@@ -33,7 +33,7 @@ public class Scar extends CustomRelic {
    public void atTurnStart() {
        flash();
        AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-       AbstractDungeon.actionManager.addToBottom(new LoseHPAction(AbstractDungeon.player,AbstractDungeon.player,AbstractDungeon.cardRandomRng.random(1,2)));
+       AbstractDungeon.actionManager.addToBottom(new LoseHPAction(AbstractDungeon.player,AbstractDungeon.player,1));
             
          }
 

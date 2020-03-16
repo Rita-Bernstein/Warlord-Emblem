@@ -7,12 +7,15 @@ WarlordEmblem\cards\DeathKnight\Infect.class
 WarlordEmblem\relics\DKHelm.class
 WarlordEmblem\WarlordEmblem.class
 WarlordEmblem\cards\mantle\MantleCardLazz.class
+WarlordEmblem\cards\DeathKnight\HungeringCold.class
+WarlordEmblem\relics\Ghoul.class
 WarlordEmblem\cards\quest\QuestCardRogueReward.class
 WarlordEmblem\relics\GoldMime.class
 WarlordEmblem\relics\SaveLoadDisk.class
 WarlordEmblem\character\Crowbot.class
 WarlordEmblem\relics\BrokenWatch.class
 WarlordEmblem\cards\quest\AbstractQuestCard.class
+WarlordEmblem\relics\MagicRuneSword.class
 WarlordEmblem\cards\Kael\DeafeningBlast.class
 WarlordEmblem\cards\mantle\MantleCardWalana.class
 WarlordEmblem\WarlordEmblem$1.class
@@ -67,6 +70,7 @@ WarlordEmblem\patches\CharacterSelectScreenPatches$CharacterSelectScreenPatch_Re
 WarlordEmblem\character\DeathKnight.class
 WarlordEmblem\variables\SecondMagicNumber.class
 WarlordEmblem\relics\mantle\MantleLiam.class
+WarlordEmblem\relics\ProtectBox.class
 WarlordEmblem\cards\DeathKnight\DeathGateway.class
 WarlordEmblem\relics\HatTrick.class
 WarlordEmblem\relics\Scar.class
@@ -78,6 +82,7 @@ WarlordEmblem\cards\quest\QuestCardMask.class
 WarlordEmblem\relics\RuneSword.class
 WarlordEmblem\cards\DeathKnight\RuneMultiplex.class
 WarlordEmblem\cards\DeathKnight\VoidDefend.class
+WarlordEmblem\relics\Abhor.class
 WarlordEmblem\cards\DeathKnight\FrozenTouch.class
 WarlordEmblem\powers\RegenerationPower.class
 WarlordEmblem\cards\DeathKnight\ForceDeflexion.class
@@ -86,6 +91,7 @@ WarlordEmblem\helpers\SecondaryMagicVariable.class
 WarlordEmblem\cards\DeathKnight\RealmRider.class
 WarlordEmblem\cards\mantle\MantleCardKazakusPotion.class
 WarlordEmblem\relics\HeavyShield.class
+WarlordEmblem\cards\DeathKnight\RuneMelter.class
 WarlordEmblem\cards\DeathKnight\RuneRegen.class
 WarlordEmblem\cards\Kael\ForgeSpirit.class
 WarlordEmblem\cards\DeathKnight\EvilEager.class
@@ -141,10 +147,13 @@ WarlordEmblem\cards\DeathKnight\Potential.class
 WarlordEmblem\powers\WrathOfSindragosaPower.class
 WarlordEmblem\cards\quest\QuestCardRogue.class
 WarlordEmblem\cards\DeathKnight\DeathStrike.class
+WarlordEmblem\potions\DKPoisonPotion.class
+WarlordEmblem\actions\FrostmourneAction.class
 WarlordEmblem\variables\SecondRealmMagicNumber.class
 WarlordEmblem\cards\Kael\Alacrity.class
 WarlordEmblem\relics\VoidPower.class
 WarlordEmblem\cards\DeathKnight\BloodBoiling.class
+WarlordEmblem\relics\DeathArmy.class
 WarlordEmblem\cards\DeathKnight\RuneBurn.class
 WarlordEmblem\cards\mantle\MantleCardBaku.class
 WarlordEmblem\cards\DeathKnight\RuneUpgrade.class
@@ -156,6 +165,7 @@ WarlordEmblem\relics\Pill.class
 WarlordEmblem\patches\CharacterSelectScreenPatches$CharacterSelectScreenCharacterOptionPatch_Relic.class
 WarlordEmblem\cards\DeathKnight\EvilWorm.class
 WarlordEmblem\cards\mantle\MantleCardMarkzar$1.class
+WarlordEmblem\actions\HeartStrikeAction.class
 WarlordEmblem\actions\RuneIndexAction.class
 WarlordEmblem\cards\quest\QuestCardHunterReward.class
 WarlordEmblem\cards\mantle\MantleCardKazakus.class
@@ -164,11 +174,13 @@ WarlordEmblem\patches\CustomTagsEnum.class
 WarlordEmblem\modules\EnergyOrbCustomBlue.class
 WarlordEmblem\powers\RuneMultiplexPower.class
 WarlordEmblem\cards\mantle\AbstractMantleCard.class
+WarlordEmblem\relics\Gargoyle.class
 WarlordEmblem\cards\DeathKnight\UndeadWill.class
 WarlordEmblem\patches\AbstractPlayerEnum.class
 WarlordEmblem\patches\CardColorEnum.class
 WarlordEmblem\cards\Kael\Tornado.class
 WarlordEmblem\relics\BadgeMouse.class
+WarlordEmblem\relics\DK_Ghoul.class
 WarlordEmblem\relics\quest\QuestPaladin.class
 WarlordEmblem\cards\mantle\MantleCardLiam.class
 WarlordEmblem\cards\DeathKnight\GhostStrike.class
@@ -188,6 +200,7 @@ WarlordEmblem\relics\IceRealm.class
 WarlordEmblem\cards\DeathKnight\BodyStrike.class
 WarlordEmblem\variables\RealmMagicNumber.class
 WarlordEmblem\cards\quest\QuestCardPriestReward.class
+WarlordEmblem\cards\DeathKnight\Frostmourne.class
 WarlordEmblem\relics\mantle\MantleReynold.class
 WarlordEmblem\cards\DeathKnight\Hanging.class
 WarlordEmblem\cards\DeathKnight\WinterHorn.class

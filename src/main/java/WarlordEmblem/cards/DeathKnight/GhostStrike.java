@@ -32,18 +32,28 @@ public class GhostStrike extends AbstractDKCard {
 
     public GhostStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        // this.exhaust = true;
         this.tags.add(CardTags.STRIKE);
+        this.baseDamage = 10;
+        this.damage = this.baseDamage;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+
+
+        int actual = (int)Math.ceil((p.maxHealth - p.currentHealth)*0.5);
+
+
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.MAGENTA)));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new CollectorCurseEffect(m.hb.cX, m.hb.cY), 2.0F));
 
-        int actual = p.maxHealth - p.currentHealth;
+
+
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
+                AbstractGameAction.AttackEffect.SLASH_HEAVY));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, actual, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_HEAVY));
     }
+
 
     public AbstractCard makeCopy() {
         return new GhostStrike();

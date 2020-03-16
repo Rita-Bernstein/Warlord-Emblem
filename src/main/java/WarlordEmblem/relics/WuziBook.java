@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
@@ -29,9 +30,15 @@ public class WuziBook extends CustomRelic {
    
    public String getUpdatedDescription() { return this.DESCRIPTIONS[0] ; }
 
+    @Override
+    public void atBattleStart() {
+        super.atBattleStart();
+        if(AbstractDungeon.player.hasRelic("Art of War")){
+            addToBot(new ApplyPowerAction(AbstractDungeon.player,null,new ArtifactPower(AbstractDungeon.player,1),1));
+        }
+    }
 
-
-       public void atPreBattle() {
+    public void atPreBattle() {
              flash();
              this.counter = 0;
              this.firstTurn = true;

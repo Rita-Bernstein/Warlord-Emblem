@@ -3,6 +3,7 @@ package WarlordEmblem.cards.DeathKnight;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -36,6 +37,8 @@ public class AntiMagicShield extends AbstractDKCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,
                 new ArtifactPower(AbstractDungeon.player, this.magicNumber), this.magicNumber));
+        if(upgraded)
+        addToBot(new RemoveDebuffsAction(AbstractDungeon.player));
     }
 
     public AbstractCard makeCopy() {
@@ -45,6 +48,8 @@ public class AntiMagicShield extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
             upgradeMagicNumber(UPGRADE_BONUS);
         }
     }
