@@ -42,7 +42,7 @@ public class UltimateCold extends AbstractDKCard {
                 if (amount > 0) {
                     addToBot(new ApplyPowerAction(mo, p,new StrengthPower(mo, -amount), -amount, true, AbstractGameAction.AttackEffect.NONE));
                 }
-                if (!hasIceRealm()) {
+                if (hasIceRealm()) {
                     addToBot(new ApplyPowerAction(mo, p,new StrengthPower(mo, -AbstractDKCard.RealmMagicNumber), -AbstractDKCard.RealmMagicNumber, true, AbstractGameAction.AttackEffect.NONE));
                 }
             }

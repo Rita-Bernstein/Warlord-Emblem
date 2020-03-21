@@ -374,10 +374,10 @@
     "NAME": "Ghoul",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "At the start of your turn,deal #b",
+      "At the start of your turn,each Ghoul deal #b",
       " damage and apply #b",
-      " #gPoison to all enemy. (can be stacked)NL NL Synergy- #yGremlin #yVisage :addition apply #b",
-      " #gPoison"
+      " #gPoison to all enemy. NL NL Synergy- #yGremlin #yVisage :addition apply #b",
+      " #gPoison ."
     ]
   },
   "WarlordEmblem:Gargoyle": {

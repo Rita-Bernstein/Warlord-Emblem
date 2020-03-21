@@ -37,9 +37,18 @@ public class RuneUpgrade extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         int extraRuneEnergy = super.getRuneMax() - super.getRuneCount();
-        if(extraRuneEnergy >= this.magicNumber){plusRune(this.magicNumber);}
-        else if(extraRuneEnergy < this.magicNumber){plusRune(extraRuneEnergy); plusMax(this.magicNumber-extraRuneEnergy);}
-        else {super.plusMax(this.magicNumber);}
+
+        if(extraRuneEnergy >= this.magicNumber)
+        {
+            plusRune(this.magicNumber);
+        }
+        else
+        {
+            plusRune(extraRuneEnergy);
+            plusMax(this.magicNumber-extraRuneEnergy);
+        }
+
+
     }
 
     public AbstractCard makeCopy() {

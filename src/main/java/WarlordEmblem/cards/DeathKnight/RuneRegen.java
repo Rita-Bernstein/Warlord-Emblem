@@ -30,11 +30,12 @@ public class RuneRegen extends AbstractDKCard {
 
     public RuneRegen() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.exhaust = true;
+        //this.exhaust = true;
         this.tags.add(CustomTagsEnum.Rune_Tag);
         this.selfRetain = true;
-        this.baseMagicNumber = 6;
+        this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
+        this.exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -47,7 +48,19 @@ public class RuneRegen extends AbstractDKCard {
         AbstractDungeon.actionManager
                 .addToBottom(new VFXAction(p, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
 
-        plusRune(this.magicNumber);
+        //plusRune(this.magicNumber);
+
+        int extraRuneEnergy = super.getRuneMax() - super.getRuneCount();
+
+        if(extraRuneEnergy >= this.magicNumber)
+        {
+            plusRune(this.magicNumber);
+        }
+        else
+        {
+            plusRune(extraRuneEnergy);
+            plusMax(this.magicNumber-extraRuneEnergy);
+        }
     }
 
     public AbstractCard makeCopy() {
@@ -57,6 +70,9 @@ public class RuneRegen extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+            this.exhaust = false;
             upgradeBaseCost(0);
         }
     }

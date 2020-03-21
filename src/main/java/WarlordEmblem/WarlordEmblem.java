@@ -311,7 +311,7 @@ public class WarlordEmblem implements
         cards.add(new CurseBlade());
         cards.add(new SevereWinter());
         cards.add(new RuneMultiplex());
-        cards.add(new RuneUpgrade());
+        //cards.add(new RuneUpgrade());
         cards.add(new BloodSacrifice());
         cards.add(new FrostbiteStrike());
         cards.add(new DarkSimulation());
@@ -322,6 +322,7 @@ public class WarlordEmblem implements
         cards.add(new HungeringCold());
         cards.add(new RuneMelter());
         cards.add(new Frostmourne());
+        cards.add(new WillOfTheNecropolis());
 
         cards.add(new MantleCardBaku());
         cards.add(new MantleCardCaireseth());

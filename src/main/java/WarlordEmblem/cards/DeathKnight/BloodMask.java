@@ -32,7 +32,7 @@ public class BloodMask extends AbstractDKCard {
 
     public BloodMask() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 6;
+        this.baseMagicNumber = 7;
         this.magicNumber = baseMagicNumber;
         this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);

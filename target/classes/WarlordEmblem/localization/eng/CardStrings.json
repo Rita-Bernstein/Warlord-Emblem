@@ -62,7 +62,7 @@
     "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Ice\u00a0Realm :Gain !WarlordEmblem:SecondRealmMagic! Block."
   },
   "WarlordEmblem:AntiMagicShield": {
-    "NAME": "Anti-Magic Shield",
+    "NAME": "Anti-Magic Zone",
     "DESCRIPTION":  "Gain !M! Artifact.",
     "UPGRADE_DESCRIPTION":"Gain !M! Artifact.Remove all your debuffs."
   },
@@ -279,7 +279,8 @@
   },
   "WarlordEmblem:RuneRegen": {
     "NAME":  "Rune Regen",
-    "DESCRIPTION":  "Gain !M! warlord_emblem:Rune\u00a0Energy . NL Retain , Exhaust."
+    "DESCRIPTION":  "Gain !M! warlord_emblem:Rune\u00a0Energy .Gain max warlord_emblem:Rune Energy if warlord_emblem:Rune Energy is full. NL Retain , Exhaust.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! warlord_emblem:Rune\u00a0Energy .Gain max warlord_emblem:Rune Energy if warlord_emblem:Rune Energy is full. NL Retain ."
   },
   "WarlordEmblem:RuneStorm": {
     "NAME":  "Rune Storm",
@@ -385,7 +386,11 @@
   "WarlordEmblem:Frostmourne": {
     "NAME":  "Frostmourne",
     "DESCRIPTION":  "Deal !D! damage.Gain !M! Strength and !B! Block at the end of turn. If Fatal,Gain Relic Ghoul.",
-    "UPGRADE_DESCRIPTION": "Innate , Retain.Deal !D! damage.If Fatal,Gain Relic Ghoul."
+    "UPGRADE_DESCRIPTION": "Innate , Retain.Deal !D! damage.Gain !M! Strength and !B! Block at the end of turn. If Fatal,Gain Relic Ghoul."
+  },
+  "WarlordEmblem:WillOfTheNecropolis": {
+    "NAME":  "Will Of The Necropolis",
+    "DESCRIPTION":  "If you have no Block, gain !B! Block. NL Put all basic Defend to your hand."
   },
 
 

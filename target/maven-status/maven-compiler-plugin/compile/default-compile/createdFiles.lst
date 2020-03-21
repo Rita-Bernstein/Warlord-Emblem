@@ -31,6 +31,7 @@ WarlordEmblem\relics\mantle\MantleMarkzar.class
 WarlordEmblem\cards\DeathKnight\AbstractDKCard.class
 WarlordEmblem\cards\DeathKnight\BoneShield.class
 WarlordEmblem\relics\WuziBook.class
+WarlordEmblem\actions\BasicDefendToHandAction.class
 WarlordEmblem\cards\DeathKnight\DiseaseStrike.class
 WarlordEmblem\cards\DeathKnight\HeartStrike.class
 WarlordEmblem\cards\DeathKnight\FrozenDeath.class
@@ -156,6 +157,7 @@ WarlordEmblem\cards\DeathKnight\BloodBoiling.class
 WarlordEmblem\relics\DeathArmy.class
 WarlordEmblem\cards\DeathKnight\RuneBurn.class
 WarlordEmblem\cards\mantle\MantleCardBaku.class
+WarlordEmblem\cards\DeathKnight\WillOfTheNecropolis.class
 WarlordEmblem\cards\DeathKnight\RuneUpgrade.class
 WarlordEmblem\cards\DeathKnight\DKDefend.class
 WarlordEmblem\cards\quest\QuestCardPriest.class

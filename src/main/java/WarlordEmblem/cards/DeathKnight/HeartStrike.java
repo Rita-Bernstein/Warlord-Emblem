@@ -29,7 +29,7 @@ public class HeartStrike extends AbstractDKCard {
 
     public HeartStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 7;
+        this.baseDamage = 6;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTags.STRIKE);
@@ -49,7 +49,7 @@ public class HeartStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(4 );
         }
     }
 }

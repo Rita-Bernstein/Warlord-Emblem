@@ -28,8 +28,6 @@ public class DeathContract extends AbstractDKCard {
 
 
     public final static String ERROR = EXTENDED_DESCRIPTION[0];
-    private static final int UPGRADE_BONUS = 2;
-    private static final int UPGRADE_BONUS2 = 1;
 
     public DeathContract() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -71,8 +69,8 @@ public class DeathContract extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_BONUS);
-            upgradeMagicNumber(UPGRADE_BONUS2);
+            upgradeDamage(4);
+            upgradeMagicNumber(1);
         }
     }
 }

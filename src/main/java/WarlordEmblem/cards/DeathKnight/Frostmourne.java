@@ -24,6 +24,7 @@ import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ViolentAttackEffect;
 import com.badlogic.gdx.graphics.Color;
 
+
 public class Frostmourne extends AbstractDKCard {
     public static final String ID = WarlordEmblem.makeID("Frostmourne");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -32,7 +33,7 @@ public class Frostmourne extends AbstractDKCard {
     private static final int COST = 3;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;
-    private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
+    private static final CardColor COLOR = CardColor.COLORLESS;
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
@@ -51,9 +52,11 @@ public class Frostmourne extends AbstractDKCard {
         //this.exhaust = true;
     }
 
-    public void onRetained() {
-            addToBot(new GainBlockAction(AbstractDungeon.player, this.block));
-            addToBot(new ApplyPowerAction(AbstractDungeon.player,null,new StrengthPower(AbstractDungeon.player,this.magicNumber),this.magicNumber));
+
+    public void triggerOnEndOfTurnForPlayingCard() {
+        addToBot(new GainBlockAction(AbstractDungeon.player, this.block));
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,null,new StrengthPower(AbstractDungeon.player,this.magicNumber),this.magicNumber));
+        super.triggerOnEndOfTurnForPlayingCard();
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

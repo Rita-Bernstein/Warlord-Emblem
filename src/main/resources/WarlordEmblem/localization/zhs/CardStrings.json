@@ -279,7 +279,8 @@
   },
   "WarlordEmblem:RuneRegen": {
     "NAME":  "符文再生",
-  "DESCRIPTION":  "获得 !M! 点 warlord_emblem:符文能量 。 NL 保留 ， 消耗 。"
+  "DESCRIPTION":  "获得 !M! 点 warlord_emblem:符文能量 。超出上限的部分变为获得上限。 NL 保留 ， 消耗 。",
+  "UPGRADE_DESCRIPTION":  "获得 !M! 点 warlord_emblem:符文能量 。超出上限的部分变为获得上限。 NL 保留 。"
   },
   "WarlordEmblem:RuneStorm": {
     "NAME":  "符文风暴",
@@ -338,7 +339,7 @@
     "DESCRIPTION":  "对所有敌人造成 !D! 点伤害。你每有一张名字中有 *打击 的牌，伤害+ !M! 。 NL 敌人失去1点 力量 。 NL  warlord_emblem:冰霜领域 ：敌人额外失去 !WarlordEmblem:RealmMagic! 点 力量 。"
   },
   "WarlordEmblem:RuneUpgrade": {
-    "NAME":  "符文升级",
+    "NAME":  "DEPRECATED符文升级",
     "DESCRIPTION":  "获得 !M! 点 warlord_emblem:符文能量 。超出上限的部分变为获得上限。"
   },
   "WarlordEmblem:BloodSacrifice": {
@@ -387,6 +388,10 @@
     "DESCRIPTION":  "造成 !D! 点伤害。回合结束时获得 !M! 点 力量 !B! 点 格挡 。 斩杀 时，获得食尸鬼。",
     "UPGRADE_DESCRIPTION": "固有 ， 保留 。造成 !D! 点伤害。回合结束时获得 !M! 点 力量 !B! 点 格挡 。 斩杀 时，获得食尸鬼。"
   },
+  "WarlordEmblem:WillOfTheNecropolis": {
+  "NAME":  "大墓地的意志",
+  "DESCRIPTION":  "如果你没有 格挡 ， NL 获得 !B! 点 格挡 。 NL 将弃牌堆中所有基础防御加入手牌。"
+},
 
 
 
