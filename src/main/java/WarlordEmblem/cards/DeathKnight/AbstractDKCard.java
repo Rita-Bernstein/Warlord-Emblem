@@ -77,19 +77,19 @@ public abstract class AbstractDKCard extends CustomCard {
 
 
     protected boolean hasBloodRealm() {
-        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&( AbstractDungeon.player.hasRelic("CultistMask") || getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
+        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&(  getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
         if (AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RealmRiderPower"))) {return true;}
         return AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("BloodRealm"));
     }
 
     protected boolean hasIceRealm() {
-        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&( AbstractDungeon.player.hasRelic("CultistMask") || getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
+        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&( getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
         if (AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RealmRiderPower"))) {return true;}
         return AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("IceRealm"));
     }
 
     protected boolean hasEvilRealm() {
-        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&( AbstractDungeon.player.hasRelic("CultistMask") || getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
+        if (AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("DKHelm")) &&( getRuneCount() >= 6 || getRuneCount() == 0) ) {return true;}
         if (AbstractDungeon.player.hasPower(WarlordEmblem.makeID("RealmRiderPower"))) {return true;}
         return AbstractDungeon.player.hasRelic(WarlordEmblem.makeID("EvilRealm"));
     }

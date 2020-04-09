@@ -101,7 +101,7 @@
   },
   "WarlordEmblem:CurseStrike": {
     "NAME": "Curse Strike",
-    "DESCRIPTION":  "Deal !D! damage.If you have Curse,deal !D! damage again. NL warlord_emblem:Evil\u00a0Realm : NL Increase base damage by !WarlordEmblem:RealmMagic! .",
+    "DESCRIPTION":  "Deal !D! damage.If you have Curse or State,deal !D! damage again. NL warlord_emblem:Evil\u00a0Realm : NL Increase base damage by !WarlordEmblem:RealmMagic! .",
     "EXTENDED_DESCRIPTION": ["I have no Curse or Status in my hand."]
   },
   "WarlordEmblem:DeathCoil": {
@@ -127,7 +127,7 @@
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "Death Wither",
-    "DESCRIPTION":  "Deal warlord_emblem:True\u00a0Damage equals to !M! % of all enemy's heal to them(At least 15 damage). NL If target has Poison,double this damage."
+    "DESCRIPTION":  "Deal warlord_emblem:True\u00a0Damage equals to !M! % of all enemy's hp to them(At least 15 damage). NL If target has Poison,double this damage."
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "Disease Cloud",
@@ -144,7 +144,7 @@
   },
   "WarlordEmblem:EvilEager": {
     "NAME":  "Evil Eager",
-    "DESCRIPTION":   " warlord_emblem:Rune\u00a0Energy X NL (At most 6). NL Gain X warlord_emblem:Sadistic . NL warlord_emblem:Evil\u00a0Realm :additional gain !WarlordEmblem:RealmMagic! warlord_emblem:Sadistic."
+    "DESCRIPTION":   " warlord_emblem:Rune\u00a0Energy X NL (At most 3). NL Gain 2X warlord_emblem:Sadistic . NL warlord_emblem:Evil\u00a0Realm :additional gain !WarlordEmblem:RealmMagic! warlord_emblem:Sadistic."
   },
   "WarlordEmblem:EvilPower": {
     "NAME":  "Evil Power",
@@ -165,7 +165,7 @@
   },
   "WarlordEmblem:Execute": {
     "NAME":  "Execute",
-    "DESCRIPTION":   "Deal !D! damage. NL If target has lower than half of its HP,double this damage."
+    "DESCRIPTION":   "Deal !D! damage. NL If target has lower than half of its HP,double this damage and Shuffle this card into your draw pile."
   },
   "WarlordEmblem:ForceDeflexion": {
     "NAME":  "Force Deflexion",
@@ -182,7 +182,7 @@
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "Frozen Heart",
-    "DESCRIPTION":  "Gain 2 Intangible .Next turn you draw 1 less card. NL warlord_emblem:Ice\u00a0Realm ：Draw a card. Exhaust."
+    "DESCRIPTION":  "Gain 2 Intangible .Lost 1 Dexterity. NL warlord_emblem:Ice\u00a0Realm ：Draw a card. Exhaust."
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "Frozen Strike",
@@ -203,7 +203,7 @@
   },
   "WarlordEmblem:Hanging": {
     "NAME":  "Hanging",
-    "DESCRIPTION":  "Deal !D! damage.Upon target has Poison, Weak and Vulnerable ,double this damage."
+    "DESCRIPTION":  "Deal !D! damage.Upon target has negative Strength, Poison, Weak and Vulnerable ,double this damage."
   },
   "WarlordEmblem:HeartStrike": {
     "NAME":  "Heart Strike",
@@ -327,7 +327,7 @@
   },
   "WarlordEmblem:RealmRider": {
     "NAME":  "Realm Rider",
-    "DESCRIPTION": "Regard you have all warlord_emblem:Talent Realm this combat."
+    "DESCRIPTION": "Regard you have all warlord_emblem:Talent Realm this combat. NL If be Exhausted　,gain !M! warlord_emblem:Realm Increase ."
   },
   "WarlordEmblem:CurseBlade": {
   "NAME":  "Curse Blade",
@@ -375,12 +375,12 @@
 },
   "WarlordEmblem:HungeringCold": {
     "NAME":  "Hungering Cold",
-    "DESCRIPTION":  "Deal !D! damage.Deals additional damage equal to !M! times warlord_emblem:Rune Energy gained this combat."
+    "DESCRIPTION":  "Deal !D! damage.Deals additional damage equals to !M! times warlord_emblem:Rune Energy gained this combat."
   },
   "WarlordEmblem:RuneMelter": {
   "NAME":  "Rune Melt",
   "DESCRIPTION":  " warlord_emblem:Rune Energy 3.Decrease max warlord_emblem:Rune Energy by !M! .Gain 1 warlord_emblem:Realm Increase . Exhaust.",
-  "UPGRADE_DESCRIPTION": " warlord_emblem:Rune Energy 3.Decrease max warlord_emblem:Rune Energy by !M! .Gain 1 warlord_emblem:Realm Increase .",
+  "UPGRADE_DESCRIPTION": " warlord_emblem:Rune Energy 3.Decrease max warlord_emblem:Rune Energy by !M! .Gain 2 warlord_emblem:Realm Increase . Exhaust.",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
 },
   "WarlordEmblem:Frostmourne": {
@@ -392,6 +392,17 @@
     "NAME":  "Will Of The Necropolis",
     "DESCRIPTION":  "If you have no Block, gain !B! Block. NL Put all basic Defend to your hand."
   },
+  "WarlordEmblem:BloodyStrike": {
+    "NAME":  "Sudden Doom",
+    "DESCRIPTION":  "Deal !D! damage.Permanently decrease this damage by 1.If Fatal,permanently increase this card's damage by !M!."
+  },
+  "WarlordEmblem:RealmStorm": {
+    "NAME":  "Realm Storm",
+    "DESCRIPTION":  "Deal !D! damage to all enemy.Deal addition times for each warlord_emblem:Realm Increase you have."
+  },
+
+
+
 
 
   "WarlordEmblem:MantleCardBaku": {

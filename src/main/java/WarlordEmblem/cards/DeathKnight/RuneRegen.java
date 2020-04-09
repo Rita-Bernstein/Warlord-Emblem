@@ -73,7 +73,6 @@ public class RuneRegen extends AbstractDKCard {
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
             this.exhaust = false;
-            upgradeBaseCost(0);
         }
     }
 

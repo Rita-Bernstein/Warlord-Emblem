@@ -29,7 +29,12 @@ public class OldTorch extends CustomRelic {
 
 
 
-    public void atBattleStart() { this.counter = 0; }
+    public void atBattleStart() {
+       this.counter = 0;
+        if (AbstractDungeon.player.hasRelic("Lantern")){
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
+        }
+   }
 
     
        public void atTurnStart() {
@@ -40,8 +45,6 @@ public class OldTorch extends CustomRelic {
                    flash();
                  AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                  AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
-                 if (AbstractDungeon.player.hasRelic("Lantern"))
-                     AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
                    this.counter = -1;
                    this.grayscale = true;
                  }

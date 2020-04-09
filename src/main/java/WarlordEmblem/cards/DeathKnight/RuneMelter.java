@@ -27,7 +27,7 @@ public class RuneMelter extends AbstractDKCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     public static final String EXTENDED_DESCRIPTION[] = cardStrings.EXTENDED_DESCRIPTION;
 
@@ -46,7 +46,11 @@ public class RuneMelter extends AbstractDKCard {
 
         super.useRune(this.magicNumber);
         super.decreaseMax(this.magicNumber);
-        addToBot(new ApplyPowerAction(p,p,new RealmIncreasePower(p,1),1));
+        if(!this.upgraded){
+            addToBot(new ApplyPowerAction(p,p,new RealmIncreasePower(p,1),1));
+        }else {
+            addToBot(new ApplyPowerAction(p,p,new RealmIncreasePower(p,2),2));
+        }
     }
 
     public AbstractCard makeCopy() {
@@ -60,7 +64,7 @@ public class RuneMelter extends AbstractDKCard {
             return false;
         }
         int amount = super.getRuneCount();
-        if (amount < this.magicNumber) {
+        if (amount < 3) {
             this.cantUseMessage = ERROR;
             return false;
         } else {
@@ -71,11 +75,8 @@ public class RuneMelter extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
-            this.exhaust = false;
-            //upgradeBaseCost(0);
         }
     }
 }

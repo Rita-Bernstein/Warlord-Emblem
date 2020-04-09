@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
@@ -27,12 +28,15 @@ public class ProtectBox extends CustomRelic {
 
     @Override
     public void atBattleStart() {
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         if(AbstractDungeon.player.hasRelic("Pandora's Box")){
             flash();
-            addToBot(new DrawCardAction(1));
+            addToBot(new DrawCardAction(AbstractDungeon.player,1));
         }
         super.atBattleStart();
     }
+
+
 
     @Override
     public void atTurnStartPostDraw() {

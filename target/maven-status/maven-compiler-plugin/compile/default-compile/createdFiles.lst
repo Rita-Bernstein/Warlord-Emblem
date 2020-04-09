@@ -19,6 +19,7 @@ WarlordEmblem\relics\MagicRuneSword.class
 WarlordEmblem\cards\Kael\DeafeningBlast.class
 WarlordEmblem\cards\mantle\MantleCardWalana.class
 WarlordEmblem\WarlordEmblem$1.class
+WarlordEmblem\cards\DeathKnight\BloodyStrike.class
 WarlordEmblem\cards\quest\QuestCardShamanReward.class
 WarlordEmblem\powers\LichkingWraithPower.class
 WarlordEmblem\cards\DeathKnight\BloodMask.class
@@ -116,6 +117,7 @@ WarlordEmblem\powers\RuneIndexPower.class
 WarlordEmblem\relics\BloodRealm.class
 WarlordEmblem\cards\DeathKnight\FrozenChain.class
 WarlordEmblem\cards\DeathKnight\BloodSacrifice.class
+WarlordEmblem\cards\DeathKnight\RealmStorm.class
 WarlordEmblem\potions\RealmPotion.class
 WarlordEmblem\cards\DeathKnight\BlackCommand.class
 WarlordEmblem\cards\quest\QuestCardMageReward.class
@@ -196,6 +198,7 @@ WarlordEmblem\relics\KitchenKnife.class
 WarlordEmblem\powers\BloodMaskPower.class
 WarlordEmblem\cards\Kael\SunStrike.class
 WarlordEmblem\cards\quest\QuestCardMage.class
+WarlordEmblem\relics\IceDragon.class
 WarlordEmblem\cards\DeathKnight\WindStrike.class
 WarlordEmblem\cards\DeathKnight\RuneBlade.class
 WarlordEmblem\relics\IceRealm.class

@@ -73,7 +73,7 @@
     "NAME": "虚空之力",
     "FLAVOR": "强大的力量让你头晕目眩。",
     "DESCRIPTIONS": [
-      "在每回合开始时获得 [E] 。 NL 每场战斗开始时，将 #r2张虚空 加入你的弃牌堆。"
+      "在每回合开始时获得 [E] 。 NL 每场战斗开始时，将 #r3张虚空 加入你的弃牌堆。"
     ]
   },
   "WarlordEmblem:BrokenMantle": {
@@ -137,7 +137,7 @@
     "NAME": "巫妖王之冠",
     "FLAVOR": "无与伦比的死亡骑士头盔。",
     "DESCRIPTIONS": [
-      "当你拥有不少于6点或0点符文能量时，视为同时拥有鲜血，冰霜，邪恶领域。 NL NL 协同- #y邪教徒头套 ：无视符文能量。"
+      "当你拥有不少于6点或0点符文能量时，视为同时拥有鲜血，冰霜，邪恶领域。"
     ]
   },
   "WarlordEmblem:Clown": {
@@ -176,10 +176,10 @@
     ]
   },
   "WarlordEmblem:BreastProtector": {
-    "NAME": "DEPRECATED护心镜",
+    "NAME": "护心镜",
     "FLAVOR": "使你免遭暗算。",
     "DESCRIPTIONS": [
-      "每场战斗第一次受到超过 #b20 的伤害，视为受到 #b20 点伤害。"
+      "拾起时，获得 #b28 最大生命（不回复生命）。"
     ]
   },
   "WarlordEmblem:GoldMime": {
@@ -400,6 +400,13 @@
     "FLAVOR": "",
     "DESCRIPTIONS": [
       "在你的第四回合开始时，对所有敌人造成 #b8 点伤害并给予 #b8 层 #g中毒 。 NL NL 协同- #y死灵之书 ：额外给予 #b1 层 #g中毒。"
+    ]
+  },
+  "WarlordEmblem:IceDragon": {
+    "NAME": "冰霜巨龙",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "每3个回合，对所有敌人造成8点伤害，给予2层虚弱，所有敌人失去1点力量。  NL NL 协同- #y邪教徒头套 ：额外降低 #b1 点力量。"
     ]
   }
 }

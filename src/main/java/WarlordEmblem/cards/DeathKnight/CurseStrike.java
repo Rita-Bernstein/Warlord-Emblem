@@ -38,7 +38,7 @@ public class CurseStrike extends AbstractDKCard {
 
     public CurseStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 8;
         this.damage = this.baseDamage;
         this.tags.add(CardTags.STRIKE);
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
@@ -62,19 +62,19 @@ public class CurseStrike extends AbstractDKCard {
         int sum = 0;
 
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if(c.type ==  AbstractCard.CardType.CURSE){
+            if(c.type ==  AbstractCard.CardType.CURSE ||c.type ==  AbstractCard.CardType.STATUS){
                 sum++ ;
             }
         }
 
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
-            if(c.type ==  AbstractCard.CardType.CURSE){
+            if(c.type ==  AbstractCard.CardType.CURSE ||c.type ==  AbstractCard.CardType.STATUS){
                 sum++ ;
             }
         }
 
         for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-            if(c.type ==  AbstractCard.CardType.CURSE){
+            if(c.type ==  AbstractCard.CardType.CURSE ||c.type ==  AbstractCard.CardType.STATUS){
                 sum++ ;
             }
         }

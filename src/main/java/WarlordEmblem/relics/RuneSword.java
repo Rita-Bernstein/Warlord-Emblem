@@ -96,13 +96,18 @@ public class RuneSword extends CustomRelic {
 
     //符文管理==========================
     public void plusRune(int amount) {
+        if(counter != max)
         flash();
-        // AbstractDungeon.actionManager.addToTop(new
-        // RelicAboveCreatureAction(AbstractDungeon.player, this));
-        counter += amount;
-        if (counter > max)
+
+        int actualAmount = amount;
+
+        if(counter + amount > max){
+            actualAmount = max - counter;
             counter = max;
-        this.runeGain += counter;
+        }else {
+            counter += amount;
+        }
+        this.runeGain += actualAmount;
     }
 
     public void plusMax(int amount) {

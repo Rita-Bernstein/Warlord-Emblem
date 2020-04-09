@@ -29,7 +29,7 @@ public class WillOfTheNecropolis extends AbstractDKCard {
 
     public WillOfTheNecropolis() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 9;
+        this.baseBlock = 10;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -24,7 +24,7 @@ public class Ghoul extends CustomRelic {
 
 
     public Ghoul() {
-        super(ID,new Texture( WarlordEmblem.assetPath("img/relics/ghoul.png")), RelicTier.COMMON, AbstractRelic.LandingSound.HEAVY);
+        super(ID,new Texture( WarlordEmblem.assetPath("img/relics/ghoul.png")), RelicTier.DEPRECATED, AbstractRelic.LandingSound.HEAVY);
     }
 
     public String getUpdatedDescription() {

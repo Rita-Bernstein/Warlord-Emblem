@@ -36,6 +36,7 @@ public class Execute extends AbstractDKCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.shuffleBackIntoDrawPile = false;
         int actualDamage = this.damage;
         //addToBot(new AnimateJumpAction(p));
 
@@ -44,7 +45,9 @@ public class Execute extends AbstractDKCard {
         if (m.currentHealth <= m.maxHealth / 2) {
             addToBot(new VFXAction(new GoldenSlashEffect(m.hb.cX - 60.0F * Settings.scale, m.hb.cY, true), 0.1F));
             addToBot(new DamageAction(m,new DamageInfo(p, actualDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+            this.shuffleBackIntoDrawPile = true;
         }
+
     }
 
     public AbstractCard makeCopy() {

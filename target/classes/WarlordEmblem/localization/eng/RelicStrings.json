@@ -73,7 +73,7 @@
     "NAME": "Void Power",
     "FLAVOR": "Powerful power makes you dazed.",
     "DESCRIPTIONS": [
-      "Gain [E] at  the start of your turn. NL Shuffle #r5 #yVoid into your discard pile at the start of combat."
+      "Gain [E] at  the start of your turn. NL Shuffle #r3 #yVoid into your discard pile at the start of combat."
     ]
   },
   "WarlordEmblem:BrokenMantle": {
@@ -136,7 +136,7 @@
     "NAME": "Death Knight Helm",
     "FLAVOR": "Unmatched Death Knight Helmet.",
     "DESCRIPTIONS": [
-      "When you have not less than 6 or 0 Rune Energy,you are regarded have Blood Realm ,Ice Realm and Evil Realm. NL NL Synergy- #yCultist #yHeadpiece :ignore Rune Energy."
+      "When you have not less than 6 or 0 Rune Energy,you are regarded have Blood Realm ,Ice Realm and Evil Realm. "
     ]
   },
   "WarlordEmblem:Clown": {
@@ -178,7 +178,7 @@
     "NAME": "Breast Protector",
     "FLAVOR": "To save you from a conspiracy.",
     "DESCRIPTIONS": [
-      "The first time you take more than #b20 damage,reduce it into #b20 damage."
+      "Upon pickup.Gain #b28 max hp(without healing)."
     ]
   },
   "WarlordEmblem:GoldMime": {
@@ -399,6 +399,13 @@
   "FLAVOR": "",
   "DESCRIPTIONS": [
     "At the start of your 4th turn, deal #b8 damage and apply #b8 #gPoison to all enemy. NL NL Synergy- #yNecronomicon :addition apply 1 #gPoison"
+  ]
+},
+  "WarlordEmblem:IceDragon": {
+  "NAME": "Ice Dragon",
+  "FLAVOR": "",
+  "DESCRIPTIONS": [
+    "Every #b6 turns,deal 8 damage apply 2 Weak and lose 1 Strength to all enemy. NL NL Synergy- #yCultist #yHeadpiece :additional lose #b1 Strength."
   ]
 }
 }

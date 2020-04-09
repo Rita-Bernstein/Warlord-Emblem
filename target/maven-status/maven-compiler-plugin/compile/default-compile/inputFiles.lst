@@ -87,6 +87,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\SaveLoadDisk.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\DeafeningBlast.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\EvilEager.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\quest\QuestPaladin.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BloodyStrike.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\Abhor.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneFocus.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\actions\DarkSimulationAction.java
@@ -155,6 +156,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\FrozenTouch.j
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BlackCommand.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\CrystalCenterPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\Infect.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RealmStorm.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\potions\RuneExpandPotion.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RealmRider.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\Scar.java
@@ -185,6 +187,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\BloodMask.jav
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\CurseBlade.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\HeartOfDeath.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\HeartStrike.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\WillOfTheNecropolis.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\Ghoul.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\BadgeProtect.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\RuneHeavyBlow.java
@@ -203,6 +206,7 @@ F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\quest\QuestCardPaladin.ja
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\Gargoyle.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\GhostStrike.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\relics\IceRealm.java
+F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\actions\BasicDefendToHandAction.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\powers\LichkingWraithPower.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\Kael\ElementInvoke.java
 F:\STS\WarlordEmblem\src\main\java\WarlordEmblem\cards\DeathKnight\DarkSimulation.java

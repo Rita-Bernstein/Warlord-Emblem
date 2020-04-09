@@ -63,8 +63,9 @@ public class Annihilation extends AbstractDKCard {
         int block = p.currentBlock;
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
         AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p,null,block));
-        if (hasIceRealm())
+        if (hasIceRealm()){
             addToBot(new GainBlockAction(p,p,AbstractDKCard.SecondRealmMagicNumber));
+        }
         if (m != null) {
             AbstractDungeon.actionManager.addToBottom(
                     new VFXAction(new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));

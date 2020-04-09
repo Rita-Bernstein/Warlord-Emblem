@@ -38,7 +38,7 @@ public class EvilEager extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.GREEN)));
-        int amount = super.getRuneCount();
+        int amount = 2*super.getRuneCount();
         if (amount > MAX)
             amount = MAX;
         if (hasEvilRealm())

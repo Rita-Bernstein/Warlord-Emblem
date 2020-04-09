@@ -57,7 +57,6 @@ import java.util.List;
 import java.util.Properties;
 
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
-import WarlordEmblem.character.Kael.*;
 import WarlordEmblem.cards.DeathKnight.*;
 import org.dakiler.slayhelper.relics.mantle.MantleKazakus;
 
@@ -297,7 +296,7 @@ public class WarlordEmblem implements
         cards.add(new RuneRecast());
         cards.add(new RuneRecover());
         cards.add(new RuneRegen());
-        cards.add(new RuneStorm());
+        //cards.add(new RuneStorm());
         cards.add(new RuneStrike());
         cards.add(new SwordWave());
         cards.add(new UltimateCold());
@@ -323,6 +322,10 @@ public class WarlordEmblem implements
         cards.add(new RuneMelter());
         cards.add(new Frostmourne());
         cards.add(new WillOfTheNecropolis());
+        //cards.add(new BloodyStrike());
+        cards.add(new RealmStorm());
+
+
 
         cards.add(new MantleCardBaku());
         cards.add(new MantleCardCaireseth());
@@ -400,6 +403,7 @@ public class WarlordEmblem implements
             BaseMod.addRelic(new BreastProtector(), RelicType.SHARED);
             //BaseMod.addRelic(new SoulOfKael(), RelicType.SHARED);
 
+
         }
 
         BaseMod.addRelic(new SoulOfKael(), RelicType.BLUE);
@@ -417,6 +421,7 @@ public class WarlordEmblem implements
         BaseMod.addRelicToCustomPool(new Abhor(), CardColorEnum.DeathKnight_LIME);
         BaseMod.addRelicToCustomPool(new DeathArmy(), CardColorEnum.DeathKnight_LIME);
         BaseMod.addRelicToCustomPool(new DK_Ghoul(), CardColorEnum.DeathKnight_LIME);
+        BaseMod.addRelicToCustomPool(new IceDragon(), CardColorEnum.DeathKnight_LIME);
 
         if(baseGameRelic2DK){
             BaseMod.addRelicToCustomPool(new TwistedFunnel(), CardColorEnum.DeathKnight_LIME);
@@ -424,6 +429,9 @@ public class WarlordEmblem implements
             BaseMod.addRelicToCustomPool(new SneckoSkull(), CardColorEnum.DeathKnight_LIME);
             BaseMod.addRelicToCustomPool(new MagicFlower(), CardColorEnum.DeathKnight_LIME);
             BaseMod.addRelicToCustomPool(new CloakClasp(), CardColorEnum.DeathKnight_LIME);
+            BaseMod.addRelicToCustomPool(new PaperFrog(), CardColorEnum.DeathKnight_LIME);
+            BaseMod.addRelicToCustomPool(new PaperCrane(), CardColorEnum.DeathKnight_LIME);
+
         }
 
         if(mantleRelic){

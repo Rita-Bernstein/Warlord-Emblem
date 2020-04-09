@@ -100,8 +100,8 @@
     "DESCRIPTION":  "造成 !D! 点伤害。手牌每有一张 诅咒 或 状态 牌，伤害翻倍。 NL warlord_emblem:邪恶领域 ： NL 基础伤害加 !WarlordEmblem:SecondRealmMagic! 。"
   },
   "WarlordEmblem:CurseStrike": {
-    "NAME": "诅咒打击",
-    "DESCRIPTION":  "造成 !D! 点伤害。如果牌组中有诅咒，再造成一次伤害。 NL warlord_emblem:邪恶领域 ： NL 基础伤害增加 !WarlordEmblem:RealmMagic! 。",
+    "NAME": "不洁打击",
+    "DESCRIPTION":  "造成 !D! 点伤害。如果你有诅咒或状态，再造成一次伤害。 NL warlord_emblem:邪恶领域 ： NL 基础伤害增加 !WarlordEmblem:RealmMagic! 。",
     "EXTENDED_DESCRIPTION": ["手牌中没有诅咒牌或状态牌"]
   },
   "WarlordEmblem:DeathCoil": {
@@ -144,7 +144,7 @@
   },
   "WarlordEmblem:EvilEager": {
     "NAME":  "邪恶之心",
-    "DESCRIPTION":   " warlord_emblem:符文能量 X（最多6），获得X层 warlord_emblem:残虐 。 NL warlord_emblem:邪恶领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 层 warlord_emblem:残虐 。"
+    "DESCRIPTION":   " warlord_emblem:符文能量 X（最多3），获得2X层 warlord_emblem:残虐 。 NL warlord_emblem:邪恶领域 ： NL 额外获得 !WarlordEmblem:RealmMagic! 层 warlord_emblem:残虐 。"
   },
   "WarlordEmblem:EvilPower": {
     "NAME":  "邪恶之力",
@@ -165,7 +165,7 @@
   },
   "WarlordEmblem:Execute": {
     "NAME":  "处决",
-    "DESCRIPTION":   "造成 !D! 点伤害。 NL 如果目标低于一半生命，造成2倍伤害。"
+    "DESCRIPTION":   "造成 !D! 点伤害。 NL 如果目标低于一半生命，造成2倍伤害，回到抽牌堆。"
   },
   "WarlordEmblem:ForceDeflexion": {
     "NAME":  "强制偏斜",
@@ -182,7 +182,7 @@
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "心灵冰冻",
-    "DESCRIPTION":  "获得2层 无实体 ，下回合少抽1张牌。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 抽一张牌。"
+    "DESCRIPTION":  "获得2层 无实体 ，失去 1 点 敏捷 。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 抽一张牌。"
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "冰霜打击",
@@ -203,7 +203,7 @@
   },
   "WarlordEmblem:Hanging": {
     "NAME":  "绞杀",
-    "DESCRIPTION":  "造成 !D! 点 warlord_emblem:真实伤害 ，目标每有 中毒 、 虚弱 、 易伤 状态中的一种，伤害翻倍。"
+    "DESCRIPTION":  "造成 !D! 点 warlord_emblem:真实伤害 ，目标每有负数 力量 、 中毒 、 虚弱 、 易伤 状态中的一种，伤害翻倍。"
   },
   "WarlordEmblem:HeartStrike": {
     "NAME":  "心脏打击",
@@ -327,7 +327,7 @@
   },
   "WarlordEmblem:RealmRider": {
     "NAME":  "领域驾驭",
-    "DESCRIPTION": "本场战斗视为你拥有所有的 warlord_emblem:天赋领域 。"
+    "DESCRIPTION": "本场战斗视为你拥有所有的 warlord_emblem:天赋领域 。 NL 如果这张牌被 消耗 ，获得 !M! 点 warlord_emblem:领域提升 。"
   },
   "WarlordEmblem:CurseBlade": {
     "NAME":  "诅咒巨剑",
@@ -380,7 +380,7 @@
   "WarlordEmblem:RuneMelter": {
     "NAME":  "符文融化",
     "DESCRIPTION":  " warlord_emblem:符文能量 3。失去 !M! 点 warlord_emblem:符文能量 上限。获得 1 点 warlord_emblem:领域提升 。消耗 。",
-    "UPGRADE_DESCRIPTION": " warlord_emblem:符文能量 3。失去 !M! 点 warlord_emblem:符文能量 上限。获得 1 点 warlord_emblem:领域提升 。",
+    "UPGRADE_DESCRIPTION": " warlord_emblem:符文能量 3。失去 !M! 点 warlord_emblem:符文能量 上限。获得 2 点 warlord_emblem:领域提升 。 消耗 。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:Frostmourne": {
@@ -391,6 +391,14 @@
   "WarlordEmblem:WillOfTheNecropolis": {
   "NAME":  "大墓地的意志",
   "DESCRIPTION":  "如果你没有 格挡 ， NL 获得 !B! 点 格挡 。 NL 将弃牌堆中所有基础防御加入手牌。"
+},
+  "WarlordEmblem:BloodyStrike": {
+  "NAME":  "末日突降",
+  "DESCRIPTION":  "造成 !D! 点伤害。伤害永久减少 1. 斩杀 时，伤害永久增加 !M! ."
+},
+  "WarlordEmblem:RealmStorm": {
+  "NAME":  "领域风暴",
+  "DESCRIPTION":  "对所有敌人造成 !D! 点伤害。每有一点 warlord_emblem:领域提升 ，额外造成一次伤害。"
 },
 
 

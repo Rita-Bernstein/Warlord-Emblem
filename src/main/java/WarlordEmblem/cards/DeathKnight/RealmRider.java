@@ -3,6 +3,7 @@ package WarlordEmblem.cards.DeathKnight;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CustomTagsEnum;
+import WarlordEmblem.powers.RealmIncreasePower;
 import WarlordEmblem.powers.RealmRiderPower;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -37,9 +38,15 @@ public class RealmRider extends AbstractDKCard {
         this.tags.add(CustomTagsEnum.Rune_Tag);
     }
 
+    @Override
+    public void triggerOnExhaust() {
+        addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new RealmIncreasePower(AbstractDungeon.player,this.magicNumber)));
+        super.triggerOnExhaust();
+    }
+
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(new RainbowCardEffect()));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, AbstractDungeon.player, new RealmRiderPower(p),0));
+        addToBot(new ApplyPowerAction(p, AbstractDungeon.player, new RealmRiderPower(p),0));
     }
 
     public AbstractCard makeCopy() {
@@ -50,6 +57,7 @@ public class RealmRider extends AbstractDKCard {
         if (!this.upgraded) {
             upgradeName();
             updateCost(-1);
+            upgradeMagicNumber(1);
         }
     }
 }

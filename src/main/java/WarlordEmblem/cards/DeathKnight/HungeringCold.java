@@ -50,6 +50,7 @@ public class HungeringCold extends AbstractDKCard {
         this.isDamageModified = (this.damage != this.baseDamage);
     }
 
+    @Override
     public void calculateCardDamage(AbstractMonster mo) {
         int realBaseDamage = this.baseDamage;
         this.baseDamage += this.magicNumber*super.getGainRune();
@@ -59,13 +60,12 @@ public class HungeringCold extends AbstractDKCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        calculateCardDamage(m);
         this.damage += super.getGainRune() * this.magicNumber;
-        /*if (m != null) {
-            addToBot(new VFXAction(new ClashEffect(m.hb.cX, m.hb.cY), 0.1F));
-        }*/
+        calculateCardDamage(m);
+
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new GoldenSlashEffect(m.hb.cX - 60.0F * Settings.scale, m.hb.cY, false), 0.0F));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE, true));
+
     }
 
     public AbstractCard makeCopy() {

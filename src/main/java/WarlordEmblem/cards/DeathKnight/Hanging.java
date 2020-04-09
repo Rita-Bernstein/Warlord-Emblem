@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.CollectorCurseEffect;
 
@@ -25,13 +26,13 @@ public class Hanging extends AbstractDKCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE    ;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
 
     public Hanging() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 7;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -43,6 +44,12 @@ public class Hanging extends AbstractDKCard {
             actual *= 2;
         if (m.hasPower("Poison"))
             actual *= 2;
+        if (m.hasPower("Strength")) {
+            StrengthPower sp = (StrengthPower) (m.getPower("Strength"));
+            if (sp.amount < 0) {
+                actual *= 2;
+            }
+        }
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new CollectorCurseEffect(m.hb.cX, m.hb.cY), 2.0F));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, actual, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.SLASH_HEAVY));

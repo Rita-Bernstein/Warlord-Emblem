@@ -7,57 +7,43 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.vfx.TextAboveCreatureEffect;
+import com.megacrit.cardcrawl.vfx.combat.HealEffect;
 
 public class BreastProtector extends CustomRelic {
    public static final String ID = WarlordEmblem.makeID("BreastProtector");
+    private int amount = 28;
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("AbstractCreature");
+    public static final String[] TEXT = uiStrings.TEXT;
 
-    private boolean used = false;
-   
-   public BreastProtector() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/breast_protector.png")) , RelicTier.DEPRECATED, CustomRelic.LandingSound.FLAT); }
- 
- 
- 
-   
+   public BreastProtector() { super(ID,new Texture(WarlordEmblem.assetPath("img/relics/breast_protector.png")) , RelicTier.UNCOMMON, CustomRelic.LandingSound.FLAT); }
+
+
+
    public String getUpdatedDescription() { return this.DESCRIPTIONS[0] ; }
 
 
-    @Override
-    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
-        if (!this.used  && info.output > 20){
-            flash();
-            this.used = true;
-            this.flash();
-            this.pulse = false;
-            this.grayscale = true;
-            return super.onAttackedToChangeDamage(info, 20);
+    public void onEquip() {
+        if (!Settings.isEndless || !AbstractDungeon.player.hasBlight("FullBelly")) {
+
+       AbstractDungeon.player.maxHealth += amount;
+        AbstractDungeon.effectsQueue.add(new TextAboveCreatureEffect(AbstractDungeon.player.hb.cX - AbstractDungeon.player.animX, AbstractDungeon.player.hb.cY, TEXT[2] + Integer.toString(amount), Settings.GREEN_TEXT_COLOR));
+        AbstractDungeon.topPanel.panelHealEffect();
+        AbstractDungeon.effectsQueue.add(new HealEffect(AbstractDungeon.player.hb.cX - AbstractDungeon.player.animX, AbstractDungeon.player.hb.cY, amount));
+        AbstractDungeon.player.healthBarUpdatedEvent();
         }
-        return super.onAttackedToChangeDamage(info, damageAmount);
+   }
 
-    }
-
-    @Override
-    public float atDamageModify(float damage, AbstractCard c) {
-        return super.atDamageModify(damage, c);
-    }
-
-    public void atBattleStart() {
-       this.used = false;
-        beginPulse();
-        this.pulse = true;
-    }
-
-
-    public boolean canSpawn() { return (Settings.isEndless || AbstractDungeon.floorNum <= 52); }
-
-
-
+    public boolean canSpawn() { return (Settings.isEndless || AbstractDungeon.floorNum <= 48); }
 
    public CustomRelic makeCopy() { return new BreastProtector(); }
  }
