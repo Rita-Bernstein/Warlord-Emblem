@@ -85,7 +85,7 @@ public class CurseStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            upgradeDamage(4);
         }
     }
 }

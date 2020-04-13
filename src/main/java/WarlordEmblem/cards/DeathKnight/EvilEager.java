@@ -41,11 +41,13 @@ public class EvilEager extends AbstractDKCard {
         int amount = 2*super.getRuneCount();
         if (amount > MAX)
             amount = MAX;
-        if (hasEvilRealm())
+        if (hasEvilRealm()) {
             AbstractDungeon.actionManager
                     .addToBottom(new ApplyPowerAction(p, p, new SadisticPower(p, amount + AbstractDKCard.RealmMagicNumber), amount + AbstractDKCard.RealmMagicNumber));
-        else
+        }else {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SadisticPower(p, amount), amount));
+        }
+        amount = super.getRuneCount();
         super.useRune(amount);
     }
 

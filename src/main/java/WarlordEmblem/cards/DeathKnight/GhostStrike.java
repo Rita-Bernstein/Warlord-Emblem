@@ -38,10 +38,13 @@ public class GhostStrike extends AbstractDKCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        int actual;
 
-
-        int actual = (int)Math.ceil((p.maxHealth - p.currentHealth)*0.5);
-
+        if(this.upgraded){
+             actual = (int)Math.ceil((p.maxHealth - p.currentHealth));
+            }else {
+             actual = (int)Math.ceil((p.maxHealth - p.currentHealth)*0.5);
+        }
 
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.MAGENTA)));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new CollectorCurseEffect(m.hb.cX, m.hb.cY), 2.0F));
@@ -62,7 +65,10 @@ public class GhostStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
             upgradeBaseCost(1);
+
         }
     }
 }

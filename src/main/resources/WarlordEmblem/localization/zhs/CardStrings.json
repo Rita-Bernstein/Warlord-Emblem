@@ -59,7 +59,7 @@
 
   "WarlordEmblem:Annihilation": {
     "NAME": "湮灭",
-    "DESCRIPTION":  "造成失去 格挡 的 !M! 倍的 warlord_emblem:真实伤害 。失去所有 格挡 。 NL warlord_emblem:冰霜领域 : NL 获得 !WarlordEmblem:SecondRealmMagic! 点 格挡 。"
+    "DESCRIPTION":  "造成失去 格挡 的 !M! 倍的 warlord_emblem:真实伤害 。失去所有 格挡 。 NL warlord_emblem:冰霜领域 : NL 抽 !WarlordEmblem:RealmMagic! 张牌。"
   },
   "WarlordEmblem:AntiMagicShield": {
     "NAME": "反魔法护盾",
@@ -127,7 +127,7 @@
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "死亡凋零",
-    "DESCRIPTION":  "对所有敌人造成当前生命 !M! %的 warlord_emblem:真实伤害 。至少造成 !M! 点伤害， NL 如果目标 中毒 ，造成2倍伤害。"
+    "DESCRIPTION":  "对所有敌人造成当前生命 !M! %的 warlord_emblem:真实伤害 。至少造成 !M! 点伤害， NL 如果目标 中毒 或 虚弱 ，造成2倍伤害。"
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "疾病云雾",
@@ -182,7 +182,7 @@
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "心灵冰冻",
-    "DESCRIPTION":  "获得2层 无实体 ，失去 1 点 敏捷 。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 抽一张牌。"
+    "DESCRIPTION":  "获得2层 无实体 ，失去 1 点 力量 。 消耗 。 NL warlord_emblem:冰霜领域 ： NL 抽一张牌。"
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "冰霜打击",
@@ -199,6 +199,7 @@
   "WarlordEmblem:GhostStrike": {
     "NAME":  "灵界打击",
     "DESCRIPTION":  "造成 !D! 点伤害。再造成自身失去生命值一半的 warlord_emblem:真实伤害 。",
+    "UPGRADE_DESCRIPTION":  "造成 !D! 点伤害。再造成自身失去生命值的 warlord_emblem:真实伤害 。",
     "EXTENDED_DESCRIPTION": ["（","点伤害。）"]
   },
   "WarlordEmblem:Hanging": {
