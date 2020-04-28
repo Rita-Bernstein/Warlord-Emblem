@@ -3,42 +3,42 @@
     "NAME": "Badge Bless",
     "FLAVOR": "Mysterious blessing from the East.",
     "DESCRIPTIONS": [
-      "Gain #b1 #yStrength , #yDexterity and #yFouce At the start of combat."
+      "Gain #b1 #yStrength, #yDexterity and #yFouce At the start of combat."
     ]
   },
   "WarlordEmblem:BadgeWrath": {
     "NAME": "Badge Wrath",
-    "FLAVOR": "Badges rarely get angry.But when he get angry, the consequences are serious.",
+    "FLAVOR": "Badges rarely get angry. But when he get angry, the consequences are serious.",
     "DESCRIPTIONS": [
-      "All enemy lost #b1 #yStrength at the start of combat. NL #bSynergy-Badge\u00a0Bless: Apply #b1 #yWeak to all enemy."
+      "All enemies lose #b1 #yStrength at the beginning of combat. NL #bSynergy-Badge\u00a0Bless: Apply #b1 #yWeak to all enemy at the beginning of combat."
     ]
   },
   "WarlordEmblem:EvilBlood": {
     "NAME": "Evil Blood",
     "FLAVOR": "Nothing is without a price.",
     "DESCRIPTIONS": [
-      "Lost #b4 HP at the start of combat.Heal #b9 HP on victory. NL #bSynergy-Burning Blood/Black Blood: you wont lost health at the start of combat by this relic."
+      "Lost #b4 HP at the start of combat. Heal #b9 HP on victory. NL #bSynergy-Burning Blood/Black Blood: You don't lose health at the start of combat from this relic."
     ]
   },
   "WarlordEmblem:HatTrick": {
     "NAME": "Hat Trick",
-    "FLAVOR": "Your amazing operation makes the dealer can't help but admire you.",
+    "FLAVOR": "Your amazing skills ensure the dealer can't help but admire you.",
     "DESCRIPTIONS": [
       "Every time you play #b3 #ySkills in a single turn, draw #b1 card."
     ]
   },
   "WarlordEmblem:HeavyShield": {
     "NAME": "Heavy Shield",
-    "FLAVOR": "Powerful power will make you lose your mobility.",
+    "FLAVOR": "Powerful defense will make you lose your mobility.",
     "DESCRIPTIONS": [
-      "Gain #yBarricade and lost #r1 #yDexterity at the start of combat. NL NL Synergy- #yCalipers :will not lost that #yDexterity."
+      "Gain #yBarricade and lose #r1 #yDexterity at the start of combat. NL Synergy- #yCalipers: You don't lose that #yDexterity."
     ]
   },
   "WarlordEmblem:OldTorch": {
     "NAME": "Old Torch",
-    "FLAVOR": "The torch is a little old. It's a little slow.",
+    "FLAVOR": "The torch is a little old, and a little dim.",
     "DESCRIPTIONS": [
-      "Gain #b1 energy at the second turn of combat. NL #bSynergy-Lantern: Gain extra energy at the start of combat."
+      "Gain #b1 energy on the second turn of combat. NL #bSynergy-Lantern: Gain an extra energy at the beginning of combat."
     ]
   },
   "WarlordEmblem:Pill": {
@@ -52,14 +52,14 @@
     "NAME": "Save Load Disk",
     "FLAVOR": "Nothing is more suitable for save / load.",
     "DESCRIPTIONS": [
-      "Set you HP to 40% of your max health at the start of combat.  NL NL #bSynergy- #yTiny #yChest: 50%."
+      "Set your HP to 40% of your max health at the start of combat.  NL NL #bSynergy- #yTiny #yChest: Set your HP to 50% instead."
     ]
   },
   "WarlordEmblem:SmileMask": {
     "NAME": "Smile Mask",
-    "FLAVOR": "He smiled and shoved a card in.",
+    "FLAVOR": "He smiled, and slipped a card in.",
     "DESCRIPTIONS": [
-      "Every 3 turns,draw #b1 card. NL #bSynergy-Happy Flower: Draw #b1 extra card."
+      "Every 3 turns, draw #b1 card. NL #bSynergy-Happy Flower: Draw #b1 extra card."
     ]
   },
   "WarlordEmblem:SoftArmor": {
@@ -71,30 +71,30 @@
   },
   "WarlordEmblem:VoidPower": {
     "NAME": "Void Power",
-    "FLAVOR": "Powerful power makes you dazed.",
+    "FLAVOR": "Powerful energy makes you dazed.",
     "DESCRIPTIONS": [
-      "Gain [E] at  the start of your turn. NL Shuffle #r3 #yVoid into your discard pile at the start of combat."
+      "Gain [E] at the start of your turn. NL Shuffle #r3 #yVoid into your discard pile at the start of combat."
     ]
   },
   "WarlordEmblem:BrokenMantle": {
     "NAME": "Broken Mantle",
-    "FLAVOR": "Put on this mantle, the whole person is much lighter.(“prttt”)",
+    "FLAVOR": "When you put on this mantle, you become much lighter.(“prttt”)",
     "DESCRIPTIONS": [
-      "If you have less than 50% of your health at the start of combat,gain #b3 #yDexterity .  NL NL #bSynergy- #yCloak #yClasp: #b4 #yDexterity."
+      "If you have less than 50% of your health at the start of combat, gain #b3 #yDexterity.  NL NL #bSynergy- #yCloak #yClasp: #b4 #yDexterity."
     ]
   },
   "WarlordEmblem:Scar": {
     "NAME": "Scar",
     "FLAVOR": "ToDo.(“prttt”)",
     "DESCRIPTIONS": [
-      "Gain [E]  and lost 1 HP at  the start of your turn."
+      "Gain [E] and lose 1 HP at the start of your turn."
     ]
   },
   "WarlordEmblem:BrokenWatch": {
     "NAME": "Broken Watch",
     "FLAVOR": "ToDo.(“Kane11”)",
     "DESCRIPTIONS": [
-      "Every time you play 12 cards,gain #b1 #yStrength.Shuffle 1 #rSlimed into your discard pile."
+      "Every time you play 12 cards, gain #b1 #yStrength.Shuffle 1 #rSlimed into your discard pile."
     ]
   },
   "WarlordEmblem:BurningIcecream": {
@@ -106,51 +106,51 @@
   },
   "WarlordEmblem:RuneSword": {
     "NAME": "Rune Sword",
-    "FLAVOR": "Weapons full of mysterious power.",
+    "FLAVOR": "A Weapon full of mysterious power.",
     "DESCRIPTIONS": [
-      "Energy charged in Rune Sword.It can only be charged to 6 at start.Gain 2 rune energy at the start of your turn."
+      "Energy charged in your Rune Sword, to a maximum of 6. Gain 2 rune energy at the start of your turn."
     ]
   },
   "WarlordEmblem:BloodRealm": {
-    "NAME": "Blood Realm",
+    "NAME": "Blood Specialization",
     "FLAVOR": "Blood Talent.",
     "DESCRIPTIONS": [
-      "Buff the Blood cards."
+      "Improves Blood cards."
     ]
   },
   "WarlordEmblem:IceRealm": {
-    "NAME": "Ice Realm",
+    "NAME": "Ice Specialization",
     "FLAVOR": "Ice Talent.",
     "DESCRIPTIONS": [
-      "Buff the Ice cards."
+      "Improves Ice cards."
     ]
   },
   "WarlordEmblem:EvilRealm": {
-    "NAME": "Evil Realm",
+    "NAME": "Evil Specialization",
     "FLAVOR": "Evil Talent.",
     "DESCRIPTIONS": [
-      "Buff the Evil cards."
+      "Improves Evil cards."
     ]
   },
   "WarlordEmblem:DKHelm": {
     "NAME": "Death Knight Helm",
-    "FLAVOR": "Unmatched Death Knight Helmet.",
+    "FLAVOR": "The helmet of an unmatched Death Knight.",
     "DESCRIPTIONS": [
-      "When you have not less than 6 or 0 Rune Energy,you are regarded have Blood Realm ,Ice Realm and Evil Realm. "
+      "When you have either 6 or 0 Rune Energy, you are considered to have Blood, Ice, and Evil specializations."
     ]
   },
   "WarlordEmblem:Clown": {
     "NAME": "Clown",
-    "FLAVOR": "Acrobatic clown,drag out an ignoble existence.",
+    "FLAVOR": "An acrobatic clown, living an ignoble existence.",
     "DESCRIPTIONS": [
-      "For each you play a different type card,deal 1 damage to all enemy."
+      "Each time you play a different card type in a turn, deal 1 damage to all enemies."
     ]
   },
   "WarlordEmblem:WuziBook": {
     "NAME": "Wuzi Book",
     "FLAVOR": "This ancient manuscript contains wisdom from a past age.",
     "DESCRIPTIONS": [
-      "If you do not play any #ySkills during your turn, NL heal 2 HP at the end of your turn.(at most 8). NL #bSynergy-Art of War: Gain #b1 Artifact at the start of combat."
+      "If you do not play any #ySkills during your turn, NL heal 2 HP at the end of your turn. (Maximum 8). NL #bSynergy-Art of War: Gain #b1 Artifact at the start of combat."
     ]
   },
   "WarlordEmblem:BadgeProtect": {
@@ -162,30 +162,30 @@
   },
   "WarlordEmblem:KitchenKnife": {
     "NAME": "Kitchen Knife",
-    "FLAVOR": "A martial artist also fears a knife.",
+    "FLAVOR": "Even a martial artist fears a knife.",
     "DESCRIPTIONS": [
-      "Heal 2 HP when you kill a non-minion enemy.(at most 8)"
+      "Heal 2 HP when you kill a non-minion enemy. (Maximum 8)"
     ]
   },
   "WarlordEmblem:BadgeMouse": {
     "NAME": "Badge Mouse",
-    "FLAVOR": "Gospel of quick strategy.",
+    "FLAVOR": "The Gospel of quick strategy.",
     "DESCRIPTIONS": [
       "Gain [E] [E] next turn if you end of your turn in #b4 second. NL Gain [E] if in #b8 second."
     ]
   },
   "WarlordEmblem:BreastProtector": {
     "NAME": "Breast Protector",
-    "FLAVOR": "To save you from a conspiracy.",
+    "FLAVOR": "A guard against knives in the dark.",
     "DESCRIPTIONS": [
-      "Upon pickup.Gain #b28 max hp(without healing)."
+      "Upon pickup, increase your max HP by #b28."
     ]
   },
   "WarlordEmblem:GoldMime": {
     "NAME": "Gold Mime",
     "FLAVOR": "Good fortune brings good fortune.",
     "DESCRIPTIONS": [
-      "Gain golds equals to health you lost on you are attacked."
+      "Gain gold equal to damage taken when attacked."
     ]
   },
   "WarlordEmblem:BadgeIronclad": {

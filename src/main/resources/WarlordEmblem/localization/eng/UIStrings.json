@@ -2,22 +2,22 @@
   "WarlordEmblem:DK_Talent": {
     "TEXT": [
       "Talent:",
-      "Blood Realm",
-      "Ice Realm",
-      "Evil Realm",
+      "Blood Specialization",
+      "Ice Specialization",
+      "Evil Specialization",
       "Awakened"
     ]
   },
   "WarlordEmblem:UtilizeAction": {
     "TEXT": [
-      "Discard a card and gain energy equals to its cost"
+      "Discard a card and gain energy equal to its cost."
     ]
   },
   "WarlordEmblem:RelicFilter": {
     "TEXT": [
-      "Add addtional relics(restart game)",
-      "Add ring relic(restart game)",
-      "Add mantle relic(restart game)",
+      "Add addtional relics (restart game)",
+      "Add ring relic (restart game)",
+      "Add mantle relic (restart game)",
       "Display count of Rune Sword at the right of character",
       "Death Knight will obtain some relic from other color in base game.(beta)"
     ]
