@@ -37,6 +37,13 @@ public class BloodDiffer extends AbstractDKCard {
         this.exhaust = true;
         this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+        if(AbstractDungeon.player != null){
+            if(hasBloodRealm()){
+                this.glowColor = Color.RED;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

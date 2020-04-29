@@ -43,6 +43,14 @@ public class FrostbiteStrike extends AbstractDKCard {
         this.tags.add(CardTags.STRIKE);
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+
+        if(AbstractDungeon.player != null){
+            if(hasIceRealm()){
+                this.glowColor = Color.BLUE;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

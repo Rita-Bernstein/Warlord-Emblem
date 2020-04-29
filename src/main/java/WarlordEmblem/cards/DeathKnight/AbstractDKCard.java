@@ -1,9 +1,11 @@
 package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
+import WarlordEmblem.patches.CustomTagsEnum;
 import WarlordEmblem.relics.RuneSword;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;

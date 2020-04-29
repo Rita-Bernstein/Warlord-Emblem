@@ -3,6 +3,7 @@ package WarlordEmblem.cards.DeathKnight;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CustomTagsEnum;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -32,6 +33,14 @@ public class DeathShake extends AbstractDKCard {
         this.baseDamage = 8;
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+
+        if(AbstractDungeon.player != null){
+            if(hasEvilRealm()){
+                this.glowColor = Color.GREEN;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
 
     }
 

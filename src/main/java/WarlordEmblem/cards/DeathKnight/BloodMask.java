@@ -38,6 +38,14 @@ public class BloodMask extends AbstractDKCard {
         this.tags.add(CustomTagsEnum.Realm_Tag);
         this.tags.add(CardTags.HEALING);
         this.exhaust = true;
+
+        if(AbstractDungeon.player != null){
+            if(hasBloodRealm()){
+                this.glowColor = Color.RED;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

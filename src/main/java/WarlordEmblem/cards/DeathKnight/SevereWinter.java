@@ -46,6 +46,14 @@ public class SevereWinter extends AbstractDKCard {
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
         this.isMultiDamage = true;
+
+        if(AbstractDungeon.player != null){
+            if(hasIceRealm()){
+                this.glowColor = Color.BLUE;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
     }
 
        public static int countCards() {

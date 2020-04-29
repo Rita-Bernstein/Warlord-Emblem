@@ -44,6 +44,14 @@ public class DiseaseCloud extends AbstractDKCard {
         this.tags.add(CustomTagsEnum.Realm_Tag);
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
+
+        if(AbstractDungeon.player != null){
+            if(hasEvilRealm()){
+                this.glowColor = Color.GREEN;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

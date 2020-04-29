@@ -38,6 +38,14 @@ public class Infect extends AbstractDKCard {
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+
+        if(AbstractDungeon.player != null){
+            if(hasEvilRealm()){
+                this.glowColor = Color.GREEN;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

@@ -15,6 +15,7 @@
         <SlayTheSpire.version>01-27-2020</SlayTheSpire.version>
         <ModTheSpire.version>3.16.0</ModTheSpire.version>
         <Steam.path>C:/Program Files (x86)/Steam/steamapps</Steam.path>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>

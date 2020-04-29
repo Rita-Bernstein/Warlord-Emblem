@@ -3,6 +3,7 @@ package WarlordEmblem.cards.DeathKnight;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CustomTagsEnum;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -34,6 +35,14 @@ public class LichBody extends AbstractDKCard {
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
+
+        if(AbstractDungeon.player != null){
+            if(hasIceRealm()){
+                this.glowColor = Color.BLUE;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
