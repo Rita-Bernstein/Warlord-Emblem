@@ -46,7 +46,7 @@ public class WillOfTheNecropolis extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(4);
+            upgradeBlock(3);
         }
     }
 

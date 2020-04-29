@@ -52,7 +52,7 @@
     "NAME": "存储盘",
     "FLAVOR": "没什么比它更适合Save/Load的了。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，生命变为最大生命的 #r40% 。 NL #b协同- 小宝箱: 50%。"
+      "每场战斗开始时，生命变为最大生命的 #r50% 。"
     ]
   },
   "WarlordEmblem:SmileMask": {

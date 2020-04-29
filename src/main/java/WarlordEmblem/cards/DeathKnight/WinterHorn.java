@@ -22,11 +22,11 @@ public class WinterHorn extends AbstractDKCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/winter_horn.png");
-    private static final int COST = 1;
+    private static final int COST = 2;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final CardType TYPE = CardType.POWER;
+    public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 

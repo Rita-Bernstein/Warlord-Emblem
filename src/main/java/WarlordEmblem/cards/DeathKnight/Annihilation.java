@@ -7,7 +7,6 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.LoseBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -37,7 +36,7 @@ public class Annihilation extends AbstractDKCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     private static final int UPGRADE_BONUS = 1;
@@ -73,7 +72,7 @@ public class Annihilation extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
         AbstractDungeon.actionManager.addToBottom(new LoseBlockAction(p,null,block));
         if (hasIceRealm()){
-            addToBot(new DrawCardAction(AbstractDKCard.RealmMagicNumber));
+            addToBot(new GainBlockAction(p,p,AbstractDKCard.SecondRealmMagicNumber));
         }
         if (m != null) {
             AbstractDungeon.actionManager.addToBottom(

@@ -35,7 +35,7 @@ public class FrozenStrike extends AbstractDKCard {
 
     public FrozenStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 7;
+        this.baseDamage = 8;
         this.magicNumber = 1;
         this.baseMagicNumber = magicNumber;
         //this.exhaust = true;

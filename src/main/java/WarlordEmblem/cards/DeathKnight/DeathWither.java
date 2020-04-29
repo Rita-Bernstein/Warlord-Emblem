@@ -31,7 +31,7 @@ public class DeathWither extends AbstractDKCard {
     public DeathWither() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
 
-        this.baseMagicNumber = 10;
+        this.baseMagicNumber = 12;
         this.magicNumber = this.baseMagicNumber;
     }
 
@@ -42,7 +42,7 @@ public class DeathWither extends AbstractDKCard {
             int actual = currentHp * this.magicNumber / 100;
             if (actual < this.magicNumber)
                 actual = this.magicNumber;
-            if (mo.hasPower("Poison") ||  mo.hasPower("Weakened"))
+            if (mo.hasPower("Poison"))
                 actual = actual * 2;
             AbstractDungeon.actionManager.addToBottom(new DamageAction(mo,
                     new DamageInfo(p, actual, this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
@@ -56,7 +56,7 @@ public class DeathWither extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
+            upgradeMagicNumber(3);
         }
     }
 }

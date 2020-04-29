@@ -30,7 +30,7 @@ public class LichBody extends AbstractDKCard {
 
     public LichBody() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 6;
+        this.baseBlock = 7;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CustomTagsEnum.Ice_Realm_Tag);

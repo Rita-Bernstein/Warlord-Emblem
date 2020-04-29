@@ -31,7 +31,7 @@ public class DeathContract extends AbstractDKCard {
 
     public DeathContract() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.baseDamage = 10;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
@@ -69,7 +69,7 @@ public class DeathContract extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(2);
             upgradeMagicNumber(1);
         }
     }
