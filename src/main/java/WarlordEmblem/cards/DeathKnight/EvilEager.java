@@ -28,7 +28,7 @@ public class EvilEager extends AbstractDKCard {
     private static final CardTarget TARGET = CardTarget.SELF;
 
 
-    private final static int MAX = 6;
+    private final static int MAX = 3;
 
     public EvilEager() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -38,16 +38,16 @@ public class EvilEager extends AbstractDKCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.GREEN)));
-        int amount = 2*super.getRuneCount();
+        int amount = super.getRuneCount();
         if (amount > MAX)
             amount = MAX;
+
         if (hasEvilRealm()) {
             AbstractDungeon.actionManager
-                    .addToBottom(new ApplyPowerAction(p, p, new SadisticPower(p, amount + AbstractDKCard.RealmMagicNumber), amount + AbstractDKCard.RealmMagicNumber));
+                    .addToBottom(new ApplyPowerAction(p, p, new SadisticPower(p, 2*amount + AbstractDKCard.RealmMagicNumber), 2*amount + AbstractDKCard.RealmMagicNumber));
         }else {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SadisticPower(p, amount), amount));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SadisticPower(p, 2*amount), 2*amount));
         }
-        amount = super.getRuneCount();
         super.useRune(amount);
     }
 

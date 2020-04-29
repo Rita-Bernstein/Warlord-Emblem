@@ -4,8 +4,8 @@
   "author_list": ["Rita"],
   "credits": "Warlord Emblem",
   "description": "重制战神徽章",
-  "version": "2.1.3",
-  "sts_version": "07-17-2019",
-  "mts_version": "3.8.3",
+  "version": "2.1.4",
+  "sts_version": "01-27-2020",
+  "mts_version": "3.16.0",
   "dependencies": ["basemod", "stslib"]
 }
