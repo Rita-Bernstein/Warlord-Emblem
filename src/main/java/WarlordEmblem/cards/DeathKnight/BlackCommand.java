@@ -18,14 +18,14 @@ public class BlackCommand extends AbstractDKCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/black_command.png");
-    private static final int COST = 2;
+    private static final int COST = 1;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
-    private static final int UPGRADE_BONUS = 1;
+    private static final int UPGRADE_BONUS = 0;
     public BlackCommand() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;

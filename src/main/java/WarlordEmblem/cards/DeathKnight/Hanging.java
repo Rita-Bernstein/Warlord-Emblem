@@ -32,7 +32,7 @@ public class Hanging extends AbstractDKCard {
 
     public Hanging() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 7;
+        this.baseDamage = 8;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -62,7 +62,7 @@ public class Hanging extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(1);
+            upgradeDamage(2);
         }
     }
 

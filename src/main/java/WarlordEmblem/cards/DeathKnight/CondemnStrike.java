@@ -35,7 +35,7 @@ public class CondemnStrike extends AbstractDKCard {
 
     public CondemnStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 12;
+        this.baseDamage = 19;
         this.tags.add(CardTags.STRIKE);
         this.tags.add(CustomTagsEnum.Evil_Realm_Tag);
         this.tags.add(CustomTagsEnum.Realm_Tag);
@@ -64,7 +64,7 @@ public class CondemnStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(5);
         }
     }
 }

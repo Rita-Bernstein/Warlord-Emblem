@@ -27,24 +27,24 @@ public class GhostStrike extends AbstractDKCard {
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
 
 
     public GhostStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.tags.add(CardTags.STRIKE);
-        this.baseDamage = 10;
+        this.baseDamage = 18;
         this.damage = this.baseDamage;
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int actual;
 
-        if(this.upgraded){
-             actual = (int)Math.ceil((p.maxHealth - p.currentHealth));
-            }else {
-             actual = (int)Math.ceil((p.maxHealth - p.currentHealth)*0.5);
-        }
+
+        int actual = (int)Math.ceil((p.maxHealth - p.currentHealth)*magicNumber/2);
+
 
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.MAGENTA)));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(new CollectorCurseEffect(m.hb.cX, m.hb.cY), 2.0F));
@@ -65,10 +65,10 @@ public class GhostStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            upgradeDamage(4);
+            upgradeMagicNumber(2);
+            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
-            upgradeBaseCost(1);
-
         }
     }
 }

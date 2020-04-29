@@ -29,7 +29,7 @@ public class ForceDeflexion extends AbstractDKCard {
 
     public ForceDeflexion() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 5;
+        this.baseBlock = 6;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.isEthereal = true;
@@ -51,7 +51,7 @@ public class ForceDeflexion extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
+            upgradeMagicNumber(3);
             initializeDescription();
         }
     }

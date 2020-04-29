@@ -59,7 +59,7 @@
 
   "WarlordEmblem:Annihilation": {
     "NAME": "湮灭",
-    "DESCRIPTION":  "造成失去 格挡 的 !M! 倍的 warlord_emblem:真实伤害 。失去所有 格挡 。 NL warlord_emblem:冰霜领域 : NL 抽 !WarlordEmblem:RealmMagic! 张牌。"
+    "DESCRIPTION":  "造成失去 格挡 的 !M! 倍的 warlord_emblem:真实伤害 。失去所有 格挡 。 NL warlord_emblem:冰霜领域 : NL 获得 !WarlordEmblem:SecondRealmMagic! 点 格挡 。"
   },
   "WarlordEmblem:AntiMagicShield": {
     "NAME": "反魔法护盾",
@@ -127,7 +127,7 @@
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "死亡凋零",
-    "DESCRIPTION":  "对所有敌人造成当前生命 !M! %的 warlord_emblem:真实伤害 。至少造成 !M! 点伤害， NL 如果目标 中毒 或 虚弱 ，造成2倍伤害。"
+    "DESCRIPTION":  "对所有敌人造成当前生命 !M! %的 warlord_emblem:真实伤害 。至少造成 !M! 点伤害， NL 如果目标 中毒 ，造成2倍伤害。"
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "疾病云雾",
@@ -199,7 +199,7 @@
   "WarlordEmblem:GhostStrike": {
     "NAME":  "灵界打击",
     "DESCRIPTION":  "造成 !D! 点伤害。再造成自身失去生命值一半的 warlord_emblem:真实伤害 。",
-    "UPGRADE_DESCRIPTION":  "造成 !D! 点伤害。再造成自身失去生命值的 warlord_emblem:真实伤害 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。再造成自身失去生命值的 warlord_emblem:真实伤害 。",
     "EXTENDED_DESCRIPTION": ["（","点伤害。）"]
   },
   "WarlordEmblem:Hanging": {
@@ -229,7 +229,7 @@
   },
   "WarlordEmblem:NoLightShield": {
     "NAME":  "无光之盾",
-    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多8），获得X层 warlord_emblem:多层护甲 。 NL warlord_emblem:鲜血领域 ： NL 额外多 !WarlordEmblem:RealmMagic! 层 warlord_emblem:多层护甲 。"
+    "DESCRIPTION":  " warlord_emblem:符文能量 X（最多6），获得X层 warlord_emblem:多层护甲 。 NL warlord_emblem:鲜血领域 ： NL 额外多 !WarlordEmblem:RealmMagic! 层 warlord_emblem:多层护甲 。"
   },
   "WarlordEmblem:RuneBurn": {
     "NAME":  "符文燃烧",
@@ -380,8 +380,8 @@
   },
   "WarlordEmblem:RuneMelter": {
     "NAME":  "符文融化",
-    "DESCRIPTION":  " warlord_emblem:符文能量 3。失去 !M! 点 warlord_emblem:符文能量 上限。获得 1 点 warlord_emblem:领域提升 。消耗 。",
-    "UPGRADE_DESCRIPTION": " warlord_emblem:符文能量 3。失去 !M! 点 warlord_emblem:符文能量 上限。获得 2 点 warlord_emblem:领域提升 。 消耗 。",
+    "DESCRIPTION":  " warlord_emblem:符文能量 2。失去 !M! 点 warlord_emblem:符文能量 上限。获得 1 点 warlord_emblem:领域提升 。 消耗 。",
+    "UPGRADE_DESCRIPTION": " warlord_emblem:符文能量 2。失去 !M! 点 warlord_emblem:符文能量 上限。获得 2 点 warlord_emblem:领域提升 。 消耗 。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:Frostmourne": {

@@ -23,7 +23,7 @@ public class DeathStrike extends AbstractDKCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String IMG = WarlordEmblem.assetPath("img/cards/DeathKnight/death_strike.png");
-    private static final int COST = 1;
+    private static final int COST = 2;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = CardColorEnum.DeathKnight_LIME;
@@ -35,7 +35,7 @@ public class DeathStrike extends AbstractDKCard {
 
     public DeathStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 7;
+        this.baseDamage = 16;
         this.magicNumber = 1;
         this.baseMagicNumber = magicNumber;
         this.tags.add(CardTags.STRIKE);
@@ -63,7 +63,7 @@ public class DeathStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(4);
             upgradeMagicNumber(1);
         }
     }
