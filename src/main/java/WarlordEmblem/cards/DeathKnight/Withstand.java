@@ -28,7 +28,7 @@ public class Withstand extends AbstractDKCard {
 
     public Withstand() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 11;
+        this.baseBlock = 12;
         this.exhaust = true;
     }
 

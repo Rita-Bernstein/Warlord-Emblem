@@ -39,7 +39,7 @@ public class DiseaseStrike extends AbstractDKCard {
     public DiseaseStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.isMultiDamage = true;
-        this.baseDamage = 5;
+        this.baseDamage = 6;
         this.baseMagicNumber = 1;
         this.magicNumber = baseMagicNumber;
         this.tags.add(CardTags.STRIKE);

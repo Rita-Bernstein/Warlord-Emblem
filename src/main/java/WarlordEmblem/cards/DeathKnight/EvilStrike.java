@@ -55,7 +55,7 @@ public class EvilStrike extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(4);
         }
     }
 }

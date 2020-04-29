@@ -28,7 +28,7 @@ public class RuneDefend extends AbstractDKCard {
     private static final CardTarget TARGET = CardTarget.SELF;
 
 
-    private final static int MAX = 6;
+    private final static int MAX = 8;
 
     public RuneDefend() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -63,7 +63,7 @@ public class RuneDefend extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
+            upgradeMagicNumber(4);
         }
     }
 
