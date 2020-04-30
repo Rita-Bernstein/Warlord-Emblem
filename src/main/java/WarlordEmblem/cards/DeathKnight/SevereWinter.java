@@ -38,7 +38,7 @@ public class SevereWinter extends AbstractDKCard {
 
     public SevereWinter() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.baseDamage = 10;
         this.damage = this.baseDamage;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;

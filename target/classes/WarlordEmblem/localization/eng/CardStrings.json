@@ -59,7 +59,7 @@
 
   "WarlordEmblem:Annihilation": {
     "NAME": "Annihilation",
-    "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Ice\u00a0Realm :Gain !WarlordEmblem:SecondRealmMagic! Block."
+    "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Ice\u00a0Realm :Draw !WarlordEmblem:SecondRealmMagic! card(s)."
   },
   "WarlordEmblem:AntiMagicShield": {
     "NAME": "Anti-Magic Zone",
@@ -127,7 +127,7 @@
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "Death Wither",
-    "DESCRIPTION":  "Deal warlord_emblem:True\u00a0Damage equals to !M! % of all enemy's heal to them(At least 15 damage). NL If target has Poison,double this damage."
+    "DESCRIPTION":  "Deal warlord_emblem:True\u00a0Damage equals to !M! % of all enemy's hp to them(At least 15 damage). NL If target has Poison or Weak,double this damage."
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "Disease Cloud",
@@ -182,7 +182,7 @@
   },
   "WarlordEmblem:FrozenHeart": {
     "NAME":  "Frozen Heart",
-    "DESCRIPTION":  "Gain 2 Intangible .Lost 1 Dexterity. NL warlord_emblem:Ice\u00a0Realm ：Draw a card. Exhaust."
+    "DESCRIPTION":  "Gain 2 Intangible .Lost 1 Strength. NL warlord_emblem:Ice\u00a0Realm ：Draw a card. Exhaust."
   },
   "WarlordEmblem:FrozenStrike": {
     "NAME":  "Frozen Strike",
@@ -198,7 +198,8 @@
   },
   "WarlordEmblem:GhostStrike": {
     "NAME":  "Ghost Strike",
-    "DESCRIPTION":  "Deal !D! damage and deal  warlord_emblem:True\u00a0Damage equals to heath you had lost.",
+    "DESCRIPTION":  "Deal !D! damage and deal  warlord_emblem:True\u00a0Damage half to hp you had lost.",
+    "UPGRADE_DESCRIPTION":  "Deal !D! damage and deal  warlord_emblem:True Damage equals to hp you had lost.",
     "EXTENDED_DESCRIPTION": ["(deal","damage.)"]
   },
   "WarlordEmblem:Hanging": {

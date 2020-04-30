@@ -31,7 +31,7 @@ public class RealmStorm extends AbstractDKCard {
     public RealmStorm() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.isMultiDamage = true;
-        this.baseDamage = 12;
+        this.baseDamage = 13;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -51,7 +51,7 @@ public class RealmStorm extends AbstractDKCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(5);
         }
     }
 }

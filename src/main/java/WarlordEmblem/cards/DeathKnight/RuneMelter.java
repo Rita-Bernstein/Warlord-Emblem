@@ -35,7 +35,7 @@ public class RuneMelter extends AbstractDKCard {
 
     public RuneMelter() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 2;
         this.magicNumber = baseMagicNumber;
         this.exhaust = true;
         this.tags.add(CustomTagsEnum.Rune_Tag);
@@ -64,7 +64,7 @@ public class RuneMelter extends AbstractDKCard {
             return false;
         }
         int amount = super.getRuneCount();
-        if (amount < 3) {
+        if (amount < 2) {
             this.cantUseMessage = ERROR;
             return false;
         } else {
