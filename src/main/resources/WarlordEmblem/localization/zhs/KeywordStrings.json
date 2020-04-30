@@ -74,7 +74,7 @@
   },
   {"PROPER_NAME": "完美打击",
     "NAMES": ["完美打击"],
-    "DESCRIPTION": "每有一张名字中有 *打击 的牌，提高伤害"
+    "DESCRIPTION": "每有一张名字中有 #y打击 的牌，提高伤害"
   },
   {"PROPER_NAME": "辛达苟萨之怒",
     "NAMES": ["辛达苟萨之怒"],
