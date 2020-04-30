@@ -3,15 +3,18 @@ package WarlordEmblem.relics.quest;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.cards.quest.QuestCardHunter;
 import WarlordEmblem.cards.quest.QuestCardHunterReward;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 
 
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.TextAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 
 public class QuestHunter extends QuestBase {
     public static final String ID = WarlordEmblem.makeID("QuestHunter");
@@ -31,12 +34,9 @@ public class QuestHunter extends QuestBase {
     }
 
     @Override
-    public void atTurnStart() {
-        if (this.firstTurn) {
-            flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new QuestCardHunter(), false));
-            this.firstTurn = false;
-        }
+    public void atBattleStartPreDraw() {
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(AbstractDungeon.player, new BorderLongFlashEffect(Color.GREEN), 0.0F, true));
+        this.startQuest();
     }
 
     @Override

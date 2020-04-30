@@ -3,9 +3,11 @@ package WarlordEmblem.relics.quest;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.cards.quest.QuestCardDK;
 import WarlordEmblem.cards.quest.QuestCardDKReward;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 
 
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -17,6 +19,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 
 public class QuestDK extends QuestBase {
     public static final String ID = WarlordEmblem.makeID("QuestDK");
@@ -37,12 +40,9 @@ public class QuestDK extends QuestBase {
     }
 
     @Override
-    public void atTurnStart() {
-        if (this.firstTurn) {
-            flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new QuestCardDK(), false));
-            this.firstTurn = false;
-        }
+    public void atBattleStartPreDraw() {
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(AbstractDungeon.player, new BorderLongFlashEffect(Color.GREEN), 0.0F, true));
+        this.startQuest();
     }
 
     public void onCardDraw(AbstractCard card) {

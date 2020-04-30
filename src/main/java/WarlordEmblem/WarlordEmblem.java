@@ -337,7 +337,7 @@ public class WarlordEmblem implements
         cards.add(new MantleCardMarkzar());
         cards.add(new MantleCardReynold());
         cards.add(new MantleCardWalana());
-
+/*
         cards.add(new QuestCardDK());
         cards.add(new QuestCardDruid());
         cards.add(new QuestCardHunter());
@@ -348,7 +348,7 @@ public class WarlordEmblem implements
         cards.add(new QuestCardShaman());
         cards.add(new QuestCardWarlock());
         cards.add(new QuestCardWarrior());
-
+*/
         cards.add(new QuestCardDKReward());
         cards.add(new QuestCardDruidReward());
         cards.add(new QuestCardHunterReward());

@@ -54,7 +54,7 @@ public class FrozenHeart extends AbstractDKCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, -1), -1));
 
         if (hasIceRealm()){
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDKCard.RealmMagicNumber));
         }
 
     }

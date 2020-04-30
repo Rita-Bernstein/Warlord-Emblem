@@ -59,7 +59,7 @@
 
   "WarlordEmblem:Annihilation": {
     "NAME": "Annihilation",
-    "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Ice\u00a0Realm :Draw !WarlordEmblem:SecondRealmMagic! card(s)."
+    "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Ice\u00a0Realm :Gain !WarlordEmblem:SecondRealmMagic! Block."
   },
   "WarlordEmblem:AntiMagicShield": {
     "NAME": "Anti-Magic Zone",
@@ -127,7 +127,7 @@
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "Death Wither",
-    "DESCRIPTION":  "Deal warlord_emblem:True\u00a0Damage equals to !M! % of all enemy's hp to them(At least 15 damage). NL If target has Poison or Weak,double this damage."
+    "DESCRIPTION":  "Deal warlord_emblem:True\u00a0Damage equals to !M! % of all enemy's hp to them(At least 15 damage). NL If target has Poison,double this damage."
   },
   "WarlordEmblem:DiseaseCloud": {
     "NAME": "Disease Cloud",
@@ -198,8 +198,8 @@
   },
   "WarlordEmblem:GhostStrike": {
     "NAME":  "Ghost Strike",
-    "DESCRIPTION":  "Deal !D! damage and deal  warlord_emblem:True\u00a0Damage half to hp you had lost.",
-    "UPGRADE_DESCRIPTION":  "Deal !D! damage and deal  warlord_emblem:True Damage equals to hp you had lost.",
+    "DESCRIPTION":  "Deal !D! damage and deal  warlord_emblem:True\u00a0Damage half to hp you have lost.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and deal  warlord_emblem:True\u00a0Damage equal to hp you have lost.",
     "EXTENDED_DESCRIPTION": ["(deal","damage.)"]
   },
   "WarlordEmblem:Hanging": {
@@ -233,7 +233,7 @@
   },
   "WarlordEmblem:RuneBurn": {
     "NAME":  "Rune Burn",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most 3). NL Gain X [E]."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most 3). NL Gain X [E] ."
   },
   "WarlordEmblem:RuneDefend": {
     "NAME":  "Rune Defend",
@@ -315,7 +315,7 @@
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "Wind Impact",
-    "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E],draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional draw !WarlordEmblem:RealmMagic! card(s)."
+    "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E] ,draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional draw !WarlordEmblem:RealmMagic! card(s)."
   },
   "WarlordEmblem:WinterHorn": {
     "NAME":  "Winter Horn",
@@ -332,8 +332,8 @@
   },
   "WarlordEmblem:CurseBlade": {
   "NAME":  "Curse Blade",
-  "DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 2 *Wounds to your draw pile.",
-  "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 1 *Wound to your hand and discard pile."
+  "DESCRIPTION":  "At the start of your turn, gain [E] .Shuffle 2 *Wounds to your draw pile.",
+  "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E] .Shuffle 1 *Wound to your hand and discard pile."
 },
   "WarlordEmblem:SevereWinter": {
     "NAME":  "Wind Strike",
@@ -380,8 +380,8 @@
   },
   "WarlordEmblem:RuneMelter": {
   "NAME":  "Rune Melt",
-  "DESCRIPTION":  " warlord_emblem:Rune Energy 3.Decrease max warlord_emblem:Rune Energy by !M! .Gain 1 warlord_emblem:Realm Increase . Exhaust.",
-  "UPGRADE_DESCRIPTION": " warlord_emblem:Rune Energy 3.Decrease max warlord_emblem:Rune Energy by !M! .Gain 2 warlord_emblem:Realm Increase . Exhaust.",
+  "DESCRIPTION":  " warlord_emblem:Rune Energy 2.Decrease max warlord_emblem:Rune Energy by !M! .Gain 1 warlord_emblem:Realm Increase . Exhaust.",
+  "UPGRADE_DESCRIPTION": " warlord_emblem:Rune Energy 2.Decrease max warlord_emblem:Rune Energy by !M! .Gain 2 warlord_emblem:Realm Increase . Exhaust.",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
 },
   "WarlordEmblem:Frostmourne": {

@@ -4,14 +4,17 @@ import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.cards.quest.QuestCardMask;
 import WarlordEmblem.cards.quest.QuestCardPriest;
 import WarlordEmblem.cards.quest.QuestCardPriestReward;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 
 
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.TextAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 
 public class QuestPriest extends QuestBase {
     public static final String ID = WarlordEmblem.makeID("QuestPriest");
@@ -32,13 +35,10 @@ public class QuestPriest extends QuestBase {
     }
 
     @Override
-    public void atTurnStart() {
-        if (this.firstTurn) {
-            flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new QuestCardPriest(), false));
-            this.firstTurn = false;
-            battleStartHP = AbstractDungeon.player.currentHealth;
-        }
+    public void atBattleStartPreDraw() {
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(AbstractDungeon.player, new BorderLongFlashEffect(Color.MAGENTA), 0.0F, true));
+        battleStartHP = AbstractDungeon.player.currentHealth;
+        this.startQuest();
     }
 
     @Override

@@ -4,9 +4,11 @@ import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.cards.quest.QuestCardMage;
 import WarlordEmblem.cards.quest.QuestCardMageReward;
 import WarlordEmblem.cards.quest.QuestCardMask;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 
 
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.TextAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -15,6 +17,7 @@ import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 
 public class QuestMage extends QuestBase {
     public static final String ID = WarlordEmblem.makeID("QuestMage");
@@ -33,13 +36,11 @@ public class QuestMage extends QuestBase {
         return new QuestMage();
     }
 
+
     @Override
-    public void atTurnStart() {
-        if (this.firstTurn) {
-            flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new QuestCardMage(), false));
-            this.firstTurn = false;
-        }
+    public void atBattleStartPreDraw() {
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(AbstractDungeon.player, new BorderLongFlashEffect(Color.BLUE), 0.0F, true));
+        this.startQuest();
     }
 
     @Override

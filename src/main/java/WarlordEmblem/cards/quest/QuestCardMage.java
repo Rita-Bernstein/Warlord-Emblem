@@ -34,6 +34,7 @@ public class QuestCardMage extends AbstractQuestCard {
         this.isEthereal = true;
         this.exhaust = true;
         this.cardsToPreview = new QuestCardMageReward();
+        this.isEthereal = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -48,7 +49,4 @@ public class QuestCardMage extends AbstractQuestCard {
         return new QuestCardMage();
     }
 
-    public void triggerOnEndOfPlayerTurn() {
-        AbstractDungeon.actionManager.addToTop(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
-    }
 }

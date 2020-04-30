@@ -233,7 +233,7 @@
   },
   "WarlordEmblem:RuneBurn": {
     "NAME":  "Rune Burn",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most 3). NL Gain X [E]."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL (at most 3). NL Gain X [E] ."
   },
   "WarlordEmblem:RuneDefend": {
     "NAME":  "Rune Defend",
@@ -315,7 +315,7 @@
   },
   "WarlordEmblem:WindStrike": {
     "NAME":  "Wind Impact",
-    "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E],draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional draw !WarlordEmblem:RealmMagic! card(s)."
+    "DESCRIPTION": "Deal !D! Damage.If target has negative Strength,gain [E] ,draw a card. NL warlord_emblem:Ice\u00a0Realm ：additional draw !WarlordEmblem:RealmMagic! card(s)."
   },
   "WarlordEmblem:WinterHorn": {
     "NAME":  "Winter Horn",
@@ -332,8 +332,8 @@
   },
   "WarlordEmblem:CurseBlade": {
   "NAME":  "Curse Blade",
-  "DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 2 *Wounds to your draw pile.",
-  "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E].Shuffle 1 *Wound to your hand and discard pile."
+  "DESCRIPTION":  "At the start of your turn, gain [E] .Shuffle 2 *Wounds to your draw pile.",
+  "UPGRADE_DESCRIPTION":  "At the start of your turn, gain [E] .Shuffle 1 *Wound to your hand and discard pile."
 },
   "WarlordEmblem:SevereWinter": {
     "NAME":  "Wind Strike",

@@ -21,7 +21,7 @@ public class QuestCardWarlockReward extends AbstractQuestCard {
     public static final String IMG = WarlordEmblem.assetPath("img/cards/Quest/quest_card_warlock_reward.png");
     private static final int COST = 0;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final CardType TYPE = CardType.SKILL;
+    public static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColor.COLORLESS;
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -30,7 +30,6 @@ public class QuestCardWarlockReward extends AbstractQuestCard {
 
     public QuestCardWarlockReward() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.exhaust = true;
     }
 
     public AbstractCard makeCopy() {

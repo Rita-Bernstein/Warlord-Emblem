@@ -20,9 +20,21 @@
     "NAMES": ["真实伤害"],
     "DESCRIPTION": "不受攻击影响因素影响。"
   },
+  {"PROPER_NAME": "鲜血领域",
+    "NAMES": ["鲜血"],
+    "DESCRIPTION": "在拥有对应领域时获得效果，多数为增加给予层数或次数。"
+  },
+  {"PROPER_NAME": "冰霜领域",
+    "NAMES": ["冰霜"],
+    "DESCRIPTION": "在拥有对应领域时获得效果，多数为增加给予层数或次数。"
+  },
+  {"PROPER_NAME": "邪恶领域",
+    "NAMES": ["邪恶"],
+    "DESCRIPTION": "在拥有对应领域时获得效果，多数为增加给予层数或次数。"
+  },
   {"PROPER_NAME": "天赋领域",
-    "NAMES": ["鲜血领域","邪恶领域","冰霜领域","天赋领域"],
-    "DESCRIPTION": "在拥有对应领域时获得对应效果。"
+    "NAMES": ["领域"],
+    "DESCRIPTION": "在拥有对应领域时获得效果，多数为增加给予层数或次数。"
   },
   {"PROPER_NAME": "吸血",
     "NAMES": ["吸血"],
@@ -32,9 +44,9 @@
     "NAMES": ["残虐"],
     "DESCRIPTION": "当你对一名敌人造成负面状态时造成伤害。"
   },
-  {"PROPER_NAME": "符文能量",
-    "NAMES": ["符文能量"],
-    "DESCRIPTION": "符文巨剑中存储的能量。初始符文上限为6。每回合获得2点符文能量。"
+  {"PROPER_NAME": "符文",
+    "NAMES": ["符文"],
+    "DESCRIPTION": "符文巨剑中存储的能量。初始符文上限为6。每回合获得2点符文。"
   },
   {"PROPER_NAME": "多层护甲",
     "NAMES": ["多层护甲"],
@@ -55,5 +67,17 @@
   {"PROPER_NAME": "生气",
   "NAMES": ["生气"],
   "DESCRIPTION": "每当你受到 #y攻击 伤害，就获得 #y力量 。"
-}
+},
+  {"PROPER_NAME": "镣铐",
+    "NAMES": ["镣铐"],
+    "DESCRIPTION": "本回合内失去 #y力量 。"
+  },
+  {"PROPER_NAME": "完美打击",
+    "NAMES": ["完美打击"],
+    "DESCRIPTION": "每有一张名字中有 *打击 的牌，提高伤害"
+  },
+  {"PROPER_NAME": "辛达苟萨之怒",
+    "NAMES": ["辛达苟萨之怒"],
+    "DESCRIPTION": "本回合，每打出一张： NL #r攻击牌 NL 给予所有敌人1层 虚弱 ； #g技能牌 NL 对所有敌人造成1点伤害； #b能力牌 NL 所有敌人失去1点 力量 。"
+  }
 ]

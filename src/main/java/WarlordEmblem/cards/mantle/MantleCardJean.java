@@ -34,24 +34,12 @@ public class MantleCardJean extends AbstractMantleCard {
         upgradeAllCardsInGroup(p.exhaustPile);
     }
 
-    // update cost 0,2,4 cards
-    // private void upgradeAllCardsInGroup(CardGroup cardGroup) {
-    // for (AbstractCard c : cardGroup.group) {
-    // if ((c.cost == 0 || c.cost == 2 || c.cost == 4) && c.canUpgrade()) {
-    // if (cardGroup.type == CardGroup.CardGroupType.HAND) {
-    // c.superFlash();
-    // }
-    // c.upgrade();
-    // c.applyPowers();
-    // }
-    // }
-    // }
 
     private void upgradeAllCardsInGroup(CardGroup cardGroup) {
         for (AbstractCard c : cardGroup.group) {
-            if (c.cost == 2) {
-                c.cost = 1;
-                c.costForTurn = 1;
+            if (c.cost % 2 == 0 && c.cost >0) {
+                c.cost -= 1;
+                c.costForTurn -= 1;
                 c.isCostModified = true;
                 if (cardGroup.type == CardGroup.CardGroupType.HAND) {
                     c.superFlash();

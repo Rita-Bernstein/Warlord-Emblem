@@ -5,6 +5,7 @@ import WarlordEmblem.patches.CardColorEnum;
 import WarlordEmblem.patches.CustomTagsEnum;
 import WarlordEmblem.powers.RealmIncreasePower;
 import WarlordEmblem.powers.RealmRiderPower;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -47,6 +48,31 @@ public class RealmRider extends AbstractDKCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(new RainbowCardEffect()));
         addToBot(new ApplyPowerAction(p, AbstractDungeon.player, new RealmRiderPower(p),0));
+
+        for(AbstractCard c : AbstractDungeon.player.hand.group){
+            updateCardGlowColor(c);
+        }
+        for(AbstractCard c : AbstractDungeon.player.drawPile.group){
+            updateCardGlowColor(c);
+        }
+        for(AbstractCard c : AbstractDungeon.player.discardPile.group){
+            updateCardGlowColor(c);
+        }
+    }
+
+    private void updateCardGlowColor(AbstractCard c){
+        if(c.tags.contains(CustomTagsEnum.Blood_Realm_Tag)){
+            c.glowColor = Color.RED.cpy();
+        }
+        else if(c.tags.contains(CustomTagsEnum.Evil_Realm_Tag)){
+            c.glowColor = Color.GREEN.cpy();
+        }
+        else if(c.tags.contains(CustomTagsEnum.Ice_Realm_Tag)){
+            c.glowColor = Color.BLUE.cpy();
+        }
+        else {
+            c.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+        }
     }
 
     public AbstractCard makeCopy() {

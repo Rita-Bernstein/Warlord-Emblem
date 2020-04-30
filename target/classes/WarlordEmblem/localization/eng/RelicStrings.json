@@ -1,44 +1,44 @@
 {
   "WarlordEmblem:BadgeBless": {
-    "NAME": "Badge Bless",
+    "NAME": "Blessing Badge",
     "FLAVOR": "Mysterious blessing from the East.",
     "DESCRIPTIONS": [
-      "Gain #b1 #yStrength , #yDexterity and #yFouce At the start of combat."
+      "Gain #b1 #yStrength, #yDexterity and #yFouce At the start of combat."
     ]
   },
   "WarlordEmblem:BadgeWrath": {
-    "NAME": "Badge Wrath",
-    "FLAVOR": "Badges rarely get angry.But when he get angry, the consequences are serious.",
+    "NAME": "Badge of Wrath",
+    "FLAVOR": "Badges rarely get angry. But when he get angry, the consequences are serious.",
     "DESCRIPTIONS": [
-      "All enemy lost #b1 #yStrength at the start of combat. NL #bSynergy-Badge\u00a0Bless: Apply #b1 #yWeak to all enemy."
+      "All enemies lose #b1 #yStrength at the beginning of combat. NL #bSynergy-Badge\u00a0Bless: Apply #b1 #yWeak to all enemy at the beginning of combat."
     ]
   },
   "WarlordEmblem:EvilBlood": {
     "NAME": "Evil Blood",
-    "FLAVOR": "Nothing is without a price.",
+    "FLAVOR": "Nothing comes without a price.",
     "DESCRIPTIONS": [
-      "Lost #b4 HP at the start of combat.Heal #b9 HP on victory. NL #bSynergy-Burning Blood/Black Blood: you wont lost health at the start of combat by this relic."
+      "Lost #b4 HP at the start of combat. Heal #b9 HP on victory. NL #bSynergy-Burning Blood/Black Blood: You don't lose health at the start of combat from this relic."
     ]
   },
   "WarlordEmblem:HatTrick": {
     "NAME": "Hat Trick",
-    "FLAVOR": "Your amazing operation makes the dealer can't help but admire you.",
+    "FLAVOR": "Your amazing skills ensure the dealer can't help but admire you.",
     "DESCRIPTIONS": [
       "Every time you play #b3 #ySkills in a single turn, draw #b1 card."
     ]
   },
   "WarlordEmblem:HeavyShield": {
     "NAME": "Heavy Shield",
-    "FLAVOR": "Powerful power will make you lose your mobility.",
+    "FLAVOR": "Powerful defense will make you lose your mobility.",
     "DESCRIPTIONS": [
-      "Gain #yBarricade and lost #r1 #yDexterity at the start of combat. NL NL Synergy- #yCalipers :will not lost that #yDexterity."
+      "Gain #yBarricade and lose #r1 #yDexterity at the start of combat. NL Synergy- #yCalipers: You don't lose that #yDexterity."
     ]
   },
   "WarlordEmblem:OldTorch": {
     "NAME": "Old Torch",
-    "FLAVOR": "The torch is a little old. It's a little slow.",
+    "FLAVOR": "The torch is a little old, and a little dim.",
     "DESCRIPTIONS": [
-      "Gain #b1 energy at the second turn of combat. NL #bSynergy-Lantern: Gain extra energy at the start of combat."
+      "Gain #b1 energy on the second turn of combat. NL #bSynergy-Lantern: Gain an extra energy at the beginning of combat."
     ]
   },
   "WarlordEmblem:Pill": {
@@ -52,14 +52,14 @@
     "NAME": "Save Load Disk",
     "FLAVOR": "Nothing is more suitable for save / load.",
     "DESCRIPTIONS": [
-      "Set you HP to 40% of your max health at the start of combat.  NL NL #bSynergy- #yTiny #yChest: 50%."
+      "Set you HP to 50% of your max health at the start of combat. "
     ]
   },
   "WarlordEmblem:SmileMask": {
     "NAME": "Smile Mask",
-    "FLAVOR": "He smiled and shoved a card in.",
+    "FLAVOR": "He smiled, and slipped a card in.",
     "DESCRIPTIONS": [
-      "Every 3 turns,draw #b1 card. NL #bSynergy-Happy Flower: Draw #b1 extra card."
+      "Every 3 turns, draw #b1 card. NL #bSynergy-Happy Flower: Draw #b1 extra card."
     ]
   },
   "WarlordEmblem:SoftArmor": {
@@ -71,30 +71,30 @@
   },
   "WarlordEmblem:VoidPower": {
     "NAME": "Void Power",
-    "FLAVOR": "Powerful power makes you dazed.",
+    "FLAVOR": "Powerful energy makes you dazed.",
     "DESCRIPTIONS": [
-      "Gain [E] at  the start of your turn. NL Shuffle #r3 #yVoid into your discard pile at the start of combat."
+      "Gain [E] at the start of your turn. NL Shuffle #r3 #yVoid into your discard pile at the start of combat."
     ]
   },
   "WarlordEmblem:BrokenMantle": {
     "NAME": "Broken Mantle",
-    "FLAVOR": "Put on this mantle, the whole person is much lighter.(“prttt”)",
+    "FLAVOR": "When you put on this mantle, you become much lighter.(“prttt”)",
     "DESCRIPTIONS": [
-      "If you have less than 50% of your health at the start of combat,gain #b3 #yDexterity .  NL NL #bSynergy- #yCloak #yClasp: #b4 #yDexterity."
+      "If you have less than 50% of your health at the start of combat, gain #b3 #yDexterity.  NL NL #bSynergy- #yCloak #yClasp: #b4 #yDexterity."
     ]
   },
   "WarlordEmblem:Scar": {
     "NAME": "Scar",
     "FLAVOR": "ToDo.(“prttt”)",
     "DESCRIPTIONS": [
-      "Gain [E]  and lost 1 HP at  the start of your turn."
+      "Gain [E] and lose 1 HP at the start of your turn."
     ]
   },
   "WarlordEmblem:BrokenWatch": {
     "NAME": "Broken Watch",
     "FLAVOR": "ToDo.(“Kane11”)",
     "DESCRIPTIONS": [
-      "Every time you play 12 cards,gain #b1 #yStrength.Shuffle 1 #rSlimed into your discard pile."
+      "Every time you play 12 cards, gain #b1 #yStrength.Shuffle 1 #rSlimed into your discard pile."
     ]
   },
   "WarlordEmblem:BurningIcecream": {
@@ -106,55 +106,55 @@
   },
   "WarlordEmblem:RuneSword": {
     "NAME": "Rune Sword",
-    "FLAVOR": "Weapons full of mysterious power.",
+    "FLAVOR": "A Weapon full of mysterious power.",
     "DESCRIPTIONS": [
-      "Energy charged in Rune Sword.It can only be charged to 6 at start.Gain 2 rune energy at the start of your turn."
+      "Energy charged in your Rune Sword, to a maximum of 6. Gain 2 rune energy at the start of your turn."
     ]
   },
   "WarlordEmblem:BloodRealm": {
-    "NAME": "Blood Realm",
+    "NAME": "Blood Specialization",
     "FLAVOR": "Blood Talent.",
     "DESCRIPTIONS": [
-      "Buff the Blood cards."
+      "Improves Blood cards."
     ]
   },
   "WarlordEmblem:IceRealm": {
-    "NAME": "Ice Realm",
+    "NAME": "Ice Specialization",
     "FLAVOR": "Ice Talent.",
     "DESCRIPTIONS": [
-      "Buff the Ice cards."
+      "Improves Ice cards."
     ]
   },
   "WarlordEmblem:EvilRealm": {
-    "NAME": "Evil Realm",
+    "NAME": "Evil Specialization",
     "FLAVOR": "Evil Talent.",
     "DESCRIPTIONS": [
-      "Buff the Evil cards."
+      "Improves Evil cards."
     ]
   },
   "WarlordEmblem:DKHelm": {
     "NAME": "Death Knight Helm",
-    "FLAVOR": "Unmatched Death Knight Helmet.",
+    "FLAVOR": "The helmet of an unmatched Death Knight.",
     "DESCRIPTIONS": [
-      "When you have not less than 6 or 0 Rune Energy,you are regarded have Blood Realm ,Ice Realm and Evil Realm. "
+      "When you have either 6 or 0 Rune Energy, you are considered to have Blood, Ice, and Evil specializations."
     ]
   },
   "WarlordEmblem:Clown": {
     "NAME": "Clown",
-    "FLAVOR": "Acrobatic clown,drag out an ignoble existence.",
+    "FLAVOR": "An acrobatic clown, living an ignoble existence.",
     "DESCRIPTIONS": [
-      "For each you play a different type card,deal 1 damage to all enemy."
+      "Each time you play a different card type in a turn, deal 1 damage to all enemies."
     ]
   },
   "WarlordEmblem:WuziBook": {
     "NAME": "Wuzi Book",
     "FLAVOR": "This ancient manuscript contains wisdom from a past age.",
     "DESCRIPTIONS": [
-      "If you do not play any #ySkills during your turn, NL heal 2 HP at the end of your turn.(at most 8). NL #bSynergy-Art of War: Gain #b1 Artifact at the start of combat."
+      "If you do not play any #ySkills during your turn, NL heal 2 HP at the end of your turn. (Maximum 8). NL #bSynergy-Art of War: Gain #b1 Artifact at the start of combat."
     ]
   },
   "WarlordEmblem:BadgeProtect": {
-    "NAME": "Badge Protect",
+    "NAME": "Badge of Protection",
     "FLAVOR": "Don't let your enemies ravage you mercilessly.",
     "DESCRIPTIONS": [
       "If you end your turn without #yBlock, apply #b1 #yWeak to all enemy."
@@ -162,188 +162,188 @@
   },
   "WarlordEmblem:KitchenKnife": {
     "NAME": "Kitchen Knife",
-    "FLAVOR": "A martial artist also fears a knife.",
+    "FLAVOR": "Even a martial artist fears a knife.",
     "DESCRIPTIONS": [
-      "Heal 2 HP when you kill a non-minion enemy.(at most 8)"
+      "Heal 2 HP when you kill a non-minion enemy. (Maximum 8)"
     ]
   },
   "WarlordEmblem:BadgeMouse": {
-    "NAME": "Badge Mouse",
-    "FLAVOR": "Gospel of quick strategy.",
+    "NAME": "Badge of the Mouse",
+    "FLAVOR": "The Gospel of quick strategy.",
     "DESCRIPTIONS": [
       "Gain [E] [E] next turn if you end of your turn in #b4 second. NL Gain [E] if in #b8 second."
     ]
   },
   "WarlordEmblem:BreastProtector": {
-    "NAME": "Breast Protector",
-    "FLAVOR": "To save you from a conspiracy.",
+    "NAME": "Breastplate",
+    "FLAVOR": "A guard against knives in the dark.",
     "DESCRIPTIONS": [
-      "Upon pickup.Gain #b28 max hp(without healing)."
+      "Upon pickup, increase your max HP by #b28."
     ]
   },
   "WarlordEmblem:GoldMime": {
     "NAME": "Gold Mime",
     "FLAVOR": "Good fortune brings good fortune.",
     "DESCRIPTIONS": [
-      "Gain golds equals to health you lost on you are attacked."
+      "Gain gold equal to damage taken when attacked."
     ]
   },
   "WarlordEmblem:BadgeIronclad": {
-    "NAME": "Badge Ironclad",
+    "NAME": "Badge of The Ironclad",
     "FLAVOR": "A badge of mystical power.",
     "DESCRIPTIONS": [
-      "You can gain #rRed #rCard."
+      "You can gain #rRed #rCards."
     ]
   },
   "WarlordEmblem:BadgeTheSilent": {
-    "NAME": "Badge The Silent",
+    "NAME": "Badge of The Silent",
     "FLAVOR": "A badge of mystical power.",
     "DESCRIPTIONS": [
-      "You can gain #gGreen #rCard."
+      "You can gain #gGreen #rCards."
     ]
   },
   "WarlordEmblem:BadgeDefect": {
-    "NAME": "Badge Defect",
+    "NAME": "Badge of The Defect",
     "FLAVOR": "A badge of mystical power.",
     "DESCRIPTIONS": [
-      "You can gain #bBlue #rCard."
+      "You can gain #bBlue #rCards."
     ]
   },
   "WarlordEmblem:QuestMage": {
-    "NAME": "Quest Mage",
-    "FLAVOR": "Ring containing the power of elite Mage.",
+    "NAME": "Mage's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Mage.",
     "DESCRIPTIONS": [
-      "Add a #yOpen #ythe #yWaygate to your hand at the start of combat. NL Quest: #yPlay #y6 #yColorless #ycards. ， NL Reward:  #yTime Warp."
+      "Add a #yOpen #ythe #yWaygate to your hand at the start of combat. NL Quest: #yPlay #y6 #yColorless #ycards. NL Reward: #yTime Warp."
     ]
   },
   "WarlordEmblem:QuestHunter": {
-    "NAME": "Quest Hunter",
-    "FLAVOR": "Ring containing the power of elite Hunter.",
+    "NAME": "Hunter's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Hunter.",
     "DESCRIPTIONS": [
       "Add a #yThe #yMarsh #yQueen to your hand at the start of combat. NL Quest: #yPlay 7 0-cost cards. NL Reward: #yQueen #yCamassa."
     ]
   },
   "WarlordEmblem:QuestWarrior": {
-    "NAME": "Quest Warrior",
-    "FLAVOR": "Ring containing the power of elite Warrior.",
+    "NAME": "Warrior's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Warrior.",
     "DESCRIPTIONS": [
       "Add a #yFire #yPlume's #yHeart to your hand at the start of combat. NL Quest: #yGain Block 7 times. NL Reward: #ySulfuras."
     ]
   },
   "WarlordEmblem:QuestDruid": {
-    "NAME": "Quest Druid",
-    "FLAVOR": "Ring containing the power of elite Druid.",
+    "NAME": "Druid's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Druid.",
     "DESCRIPTIONS": [
       "Add a #yJungle #yGiants to your hand at the start of combat. NL Quest: #yPlay 5 cards has 2 or more cost. NL Reward: #yBamabus."
     ]
   },
   "WarlordEmblem:QuestPaladin": {
-    "NAME": "Quest Paladin",
-    "FLAVOR": "Ring containing the power of elite Paladin.",
+    "NAME": "Paladin's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Paladin.",
     "DESCRIPTIONS": [
       "Add a #yThe #yLast #yKaeidosaur to your hand at the start of combat. NL Quest: #yGain 6 buff or debuff.  NL Reward: #yGalvadon."
     ]
   },
   "WarlordEmblem:QuestPriest": {
-    "NAME": "Quest Priest",
-    "FLAVOR": "Ring containing the power of elite Priest.",
+    "NAME": "Priest's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Priest.",
     "DESCRIPTIONS": [
-      "Add a #yAwaken #ythe #yMakers to your hand at the start of combat. NL Quest: #yExhaust 7 cards. ， NL Reward: #yAmara,Warden of Hope."
+      "Add a #yAwaken #ythe #yMakers to your hand at the start of combat. NL Quest: #yExhaust 7 cards. NL Reward: #yAmara,Warden of Hope."
     ]
   },
   "WarlordEmblem:QuestWarlock": {
-    "NAME": "Quest Warlock",
-    "FLAVOR": "Ring containing the power of elite Warlock.",
+    "NAME": "Warlock's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Warlock.",
     "DESCRIPTIONS": [
       "Add a #yLakkari #ySacrifice to your hand at the start of combat. NL Quest: #yDiscard 6 cards. NL Reward: #yNether Portal."
     ]
   },
   "WarlordEmblem:QuestRogue": {
-    "NAME": "Quest Rogue",
-    "FLAVOR": "Ring containing the power of elite Rogue.",
+    "NAME": "Rogue's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Rogue.",
     "DESCRIPTIONS": [
       "Add a #yThe #yCaverns #yBelow to your hand at the start of combat. NL Quest: #yPlay 5 same cards. NL Reward: #yCrystal Core."
     ]
   },
   "WarlordEmblem:QuestShaman": {
-    "NAME": "Quest Shaman",
-    "FLAVOR": "Ring containing the power of elite Shaman.",
+    "NAME": "Shaman's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Shaman.",
     "DESCRIPTIONS": [
       "Add a #yUnite #ythe #yMurlocs to your hand at the start of combat. NL Quest: #yPlay 10 Skills. NL Reward: #yMegafin."
     ]
   },
   "WarlordEmblem:QuestDK": {
-    "NAME": "Quest Death Knight",
-    "FLAVOR": "Ring containing the power of elite Death Knight.",
+    "NAME": "Death Knight's Quest Ring",
+    "FLAVOR": "A ring containing the power of an elite Death Knight.",
     "DESCRIPTIONS": [
       "Add a #yPower #yof #yDark to your hand at the start of combat. NL Quest:Draw 5 Curse or Status cards. NL Reward: NL #yFrostmourne."
     ]
   },
   "WarlordEmblem:MantleReynold": {
-    "NAME": "Mantle Reynold",
+    "NAME": "Reynold's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yReynold to your draw pile at the start of combat. NL If all your cards in your draw pile is different.Heal your health at the start of this combat.(at most 20)."
     ]
   },
   "WarlordEmblem:MantleLazz": {
-    "NAME": "Mantle Lazz",
+    "NAME": "Lazz's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yLazz to your draw pile at the start of combat. NL If all your cards in your draw pile is different.  NL Gain [E] [E] each turn in this combat."
     ]
   },
   "WarlordEmblem:MantleKazakus": {
-    "NAME": "Mantle Kazakus",
+    "NAME": "Kazakus's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yKazakus to your draw pile at the start of combat. NL If all your cards in your draw pile is different. NL Random craft a #yKazakus Potion ."
     ]
   },
   "WarlordEmblem:MantleBaku": {
-    "NAME": "Mantle Baku",
+    "NAME": "Baku's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yBaku #ythe #yMooneater to your draw pile at the start of combat. NL Upgrade odd-Cost cards in this combat."
     ]
   },
   "WarlordEmblem:MantleJean": {
-    "NAME": "Mantle Jean",
+    "NAME": "Jean's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yJean to your draw pile at the start of combat. NL Reduce the cost of all Even-Cost cards to 1 this combat."
     ]
   },
   "WarlordEmblem:MantleMarkzar": {
-    "NAME": "Mantle Markzar",
+    "NAME": "Markzar's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yMarkzar to your draw pile at the start of combat.NL Shuffle 5 random Rare cards into your draw pile. NL They cost 1 ."
     ]
   },
   "WarlordEmblem:MantleLiam": {
-    "NAME": "Mantle Liam",
+    "NAME": "Liam's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yPrince #yLiam to your draw pile at the start of combat. NL Transform 1-Cost card in your draw pile into random Rare card."
     ]
   },
   "WarlordEmblem:MantleWalana": {
-    "NAME": "Mantle Walana",
+    "NAME": "Walana's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yWalana to your draw pile at the start of combat. NL If there is no 0-Cost in your draw pile, NL Gain 30%  #ylife #yleech in this combat."
     ]
   },
   "WarlordEmblem:MantleCaireseth": {
-    "NAME": "Mantle Caireseth",
+    "NAME": "Caireseth's Mantle",
     "FLAVOR": "A cloak full of mysterious power.",
     "DESCRIPTIONS": [
       "Shuffle a #yPrince #yCaireseth to your draw pile at the start of combat. NL If there is no 2-Cost in your draw pile, NL permanent Upgrade a random card."
     ]
   },
   "WarlordEmblem:SoulOfKael": {
-    "NAME": "Soul Of Carl",
+    "NAME": "Carl's Mantle",
     "FLAVOR": "A soul full of elemental power.",
     "DESCRIPTIONS": [
       "At the start of your turn,add a #yElement #yInvoke to into your hand."
@@ -351,14 +351,14 @@
   },
   "WarlordEmblem:MagicRuneSword": {
   "NAME": "Magic Rune Sword",
-  "FLAVOR": "strengthen",
+  "FLAVOR": "A magically enhanced Rune Sword.",
   "DESCRIPTIONS": [
     "At the start of each battle,gain #b4 #yMaxRune."
   ]
 },
   "WarlordEmblem:ProtectBox": {
     "NAME": "Protect Box",
-    "FLAVOR": "Protect your soul",
+    "FLAVOR": "Protects your soul.",
     "DESCRIPTIONS": [
       "At the start of your turn,gain #b1 #yRune #yEnergy. NL NL Synergy- #yPandora's #yBox :Draw a card at the start of each combat."
     ]

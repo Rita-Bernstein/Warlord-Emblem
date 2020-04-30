@@ -43,16 +43,17 @@ public class MantleCardLiam extends AbstractMantleCard {
             if (card.cost == 1) {
                 count++;
                 cardList.remove(i);
+
             }
         }
+        p.drawPile.group = cardList;
 
-        group = MantleCardMarkzar.getEachRare(AbstractDungeon.player.chosenClass);
-        cardList = group.group;
         for (int i = 0; i < count; i++) {
-            Collections.shuffle(cardList);
-            AbstractCard card = cardList.get(0);
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(card,
-                    1, true, false,false, Settings.WIDTH * 0.2F, Settings.HEIGHT / 2.0F));
+
+            AbstractDungeon.actionManager.addToBottom(
+                    new MakeTempCardInDrawPileAction(AbstractDungeon.srcRareCardPool.group.get(
+                            AbstractDungeon.cardRng.random(AbstractDungeon.srcRareCardPool.group.size() - 1)).makeCopy()
+                            ,1 ,true,true));
         }
     }
 

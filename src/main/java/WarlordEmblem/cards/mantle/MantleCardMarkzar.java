@@ -37,19 +37,17 @@ public class MantleCardMarkzar extends AbstractMantleCard {
 
     // 添加5张随机稀有卡牌
     public void use(AbstractPlayer p, AbstractMonster m) {
-        CardGroup group = getEachRare(AbstractDungeon.player.chosenClass);
-        ArrayList<AbstractCard> cardList = group.group;
-
+        AbstractCard rareCard ;
         for (int i = 0; i < 5; i++) {
-            Collections.shuffle(cardList);
-            AbstractCard card = cardList.get(0);
-            if (card.cost > 1) {
-                card.cost = 1;
-                card.costForTurn = 1;
-                card.isCostModified = true;
+            rareCard = AbstractDungeon.srcRareCardPool.group.get(
+                    AbstractDungeon.cardRng.random(AbstractDungeon.srcRareCardPool.group.size() - 1)).makeCopy();
+            if (rareCard.cost > 1) {
+                rareCard.cost = 1;
+                rareCard.costForTurn = 1;
+                rareCard.isCostModified = true;
             }
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(card,
-                    1, true, false,false, Settings.WIDTH * 0.2F, Settings.HEIGHT / 2.0F));
+
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(rareCard,1 ,true,true));
         }
     }
 

@@ -3,10 +3,12 @@ package WarlordEmblem.relics.quest;
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.cards.quest.QuestCardWarlock;
 import WarlordEmblem.cards.quest.QuestCardWarlockReward;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -14,6 +16,7 @@ import com.megacrit.cardcrawl.actions.utility.TextAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 
 public class QuestWarlock extends QuestBase {
     public static final String ID = WarlordEmblem.makeID("QuestWarlock");
@@ -46,14 +49,15 @@ public class QuestWarlock extends QuestBase {
         }
     }
 
+
+    @Override
+    public void atBattleStartPreDraw() {
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(AbstractDungeon.player, new BorderLongFlashEffect(Color.PURPLE), 0.0F, true));
+        this.startQuest();
+    }
+
     @Override
     public void atTurnStart() {
-        if (this.firstTurn) {
-            flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new QuestCardWarlock(), false));
-            this.firstTurn = false;
-            return;
-        }
         if (state == STATE_USED) {
             flash();
             AbstractDungeon.actionManager

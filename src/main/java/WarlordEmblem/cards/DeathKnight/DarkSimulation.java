@@ -83,59 +83,7 @@ public class DarkSimulation extends AbstractDKCard {
                 list.add(c);
             }
         }
-/*
-           if(tags.contains(CustomTagsEnum.Blood_Realm_Tag)){
-               for (AbstractCard c : AbstractDungeon.srcCommonCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Blood_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-               for (AbstractCard c : AbstractDungeon.srcUncommonCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Blood_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-               for (AbstractCard c : AbstractDungeon.srcRareCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Blood_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-           }
-           if(tags.contains(CustomTagsEnum.Ice_Realm_Tag)){
-               for (AbstractCard c : AbstractDungeon.srcCommonCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Ice_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-               for (AbstractCard c : AbstractDungeon.srcUncommonCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Ice_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-               for (AbstractCard c : AbstractDungeon.srcRareCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Ice_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-           }
-           if(tags.contains(CustomTagsEnum.Evil_Realm_Tag)){
-               for (AbstractCard c : AbstractDungeon.srcCommonCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Evil_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-               for (AbstractCard c : AbstractDungeon.srcUncommonCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Evil_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-               for (AbstractCard c : AbstractDungeon.srcRareCardPool.group) {
-                   if (c.hasTag(CustomTagsEnum.Evil_Realm_Tag)  && !c.hasTag(AbstractCard.CardTags.HEALING)) {
-                       list.add(c);
-                   }
-               }
-           }
-*/
+
 
             int temp;
            for(int i = 0;i < 3;i++){
