@@ -3,19 +3,19 @@
     "NAME": "Cold Snap",
     "DESCRIPTIONS": [
       "Next ",
-      " attack damage will also apply  #yVulnerable and #yWeak ."
+      " attack damage will also apply #yVulnerable and #yWeak ."
     ]
   },
   "WarlordEmblem:DeafeningBlastPower": {
   "NAME": "Deafening Blast",
   "DESCRIPTIONS": [
-    "Deal Half damage"
+    "Deal Half damage."
   ]
 },
   "WarlordEmblem:CrystalCenterPower": {
   "NAME": "Crystal Center",
   "DESCRIPTIONS": [
-    "All damage of your card is 12 ."
+    "All damage you inflict from cards is 12."
   ]
 },
   "WarlordEmblem:RealmRiderPower": {
