@@ -110,7 +110,7 @@
   },
   "WarlordEmblem:DeathContract": {
     "NAME": "死亡契约",
-    "DESCRIPTION":  " warlord_emblem:符文 3， NL 造成 !D! 点伤害。 NL 获得 !M! 最大生命。 消耗 。",
+    "DESCRIPTION":  " warlord_emblem:符文 3， NL 造成 !D! 点伤害。 NL 获得 !M! 点最大生命。 消耗 。 NL warlord_emblem:鲜血 ：回复 !WarlordEmblem:RealmMagic! 点生命。",
     "EXTENDED_DESCRIPTION": ["没有足够的符文能量"]
   },
   "WarlordEmblem:DeathGateway": {

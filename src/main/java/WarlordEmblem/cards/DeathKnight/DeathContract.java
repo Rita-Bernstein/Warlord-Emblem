@@ -2,8 +2,11 @@ package WarlordEmblem.cards.DeathKnight;
 
 import WarlordEmblem.WarlordEmblem;
 import WarlordEmblem.patches.CardColorEnum;
+import WarlordEmblem.patches.CustomTagsEnum;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -36,6 +39,16 @@ public class DeathContract extends AbstractDKCard {
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         this.tags.add(CardTags.HEALING);
+        this.tags.add(CustomTagsEnum.Blood_Realm_Tag);
+        this.tags.add(CustomTagsEnum.Realm_Tag);
+
+        if(AbstractDungeon.player != null){
+            if(hasBloodRealm()){
+                this.glowColor = Color.RED;
+            }else {
+                this.glowColor = BLUE_BORDER_GLOW_COLOR.cpy();
+            }
+        }
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -45,7 +58,7 @@ public class DeathContract extends AbstractDKCard {
                 new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         super.useRune(3);
         p.increaseMaxHp(magicNumber, true);
-
+        addToBot(new HealAction(p,p,AbstractDKCard.BaseRealmMagicNumber));
     }
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {

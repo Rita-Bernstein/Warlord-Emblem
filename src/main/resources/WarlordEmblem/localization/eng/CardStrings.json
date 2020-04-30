@@ -110,7 +110,7 @@
   },
   "WarlordEmblem:DeathContract": {
     "NAME": "Death Contract",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy 3, NL Deal !D! damage. NL raise your Max HP by !M! . Exhaust.",
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy 3, NL Deal !D! damage. NL raise your Max HP by !M! . Exhaust.  NL warlord_emblem:Blood Realm :Heal !WarlordEmblem:RealmMagic! HP.",
     "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
   },
   "WarlordEmblem:DeathGateway": {
