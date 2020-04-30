@@ -1,48 +1,48 @@
 {
   "WarlordEmblem:ElementInvoke": {
     "NAME": "Element Invoke",
-    "DESCRIPTION": "Add a card depends on the 3 leftest orbs. NL Ethereal Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add a card depends on the 3 leftest orbs. NL Exhaust.",
+    "DESCRIPTION": "Add a card depending on the three oldest orbs. NL Ethereal Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a card depending on the three oldest orbs. NL Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need at least 3 orbs"," turn(s) ColdDown"," NL (Quas/Quas/Quas:Cold Snap"," NL (Quas/Quas/Wex:Ghost Walk"," NL (Wex/Wex/Exort:Alacrity"," NL (Exort/Exort/Exort:Sun Strike"," NL (Wex/Wex/Wex:EMP"," NL (Wex/Exort/Exort:Chaos Meteor"," NL (Quas/Quas/Exort:Ice Wall"," NL (Quas/Wex/Exort:Deafening Blast"," NL (Quas/Wex/Wex:Tornado"," NL (Quas/Exort/Exort:Forge Spirit",")"]
   },
   "WarlordEmblem:ChaosMeteor": {
     "NAME": "Chaos Meteor",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. Apply !M! Vulnerable. NL warlord_emblem:Cold\u00a0Down 4. NL Ethereal Exhaust.",
+    "DESCRIPTION": "Deal !D! damage to all enemies. Apply !M! Vulnerable. NL warlord_emblem:Cold\u00a0Down 4. NL Ethereal Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need "," turn(s) cold down"]
   },
   "WarlordEmblem:KaelColdSnap": {
     "NAME": "Cold Snap",
-    "DESCRIPTION": "Target decrease 2 Strength . Apply 1 Weak , 3 warlord_emblem:Cold\u00a0Snap . NL warlord_emblem:Cold\u00a0Down 2. NL Ethereal Exhaust.",
+    "DESCRIPTION": "Enemy loses 2 Strength. Apply 1 Weak, 3 warlord_emblem:Cold\u00a0Snap. NL warlord_emblem:Cold\u00a0Down 2. NL Ethereal Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need "," turn(s) cold down"]
   },
   "WarlordEmblem:EMP": {
     "NAME": "EMP",
-    "DESCRIPTION":"Absorb all Block all enemy(s) have. NL warlord_emblem:Cold\u00a0Down 2. NL Ethereal Exhaust.",
+    "DESCRIPTION":"Absorb Block from all enemies. NL warlord_emblem:Cold\u00a0Down 2. NL Ethereal Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need "," turn(s) cold down"]
   },
   "WarlordEmblem:IceWall": {
     "NAME": "Ice Wall",
-    "DESCRIPTION":"Gain 1 Intangible.All enemy decrease 1 Strength. NL warlord_emblem:Cold\u00a0Down 4. NL Ethereal Exhaust.",
+    "DESCRIPTION":"Gain 1 Intangible. All enemies lose 1 Strength. NL warlord_emblem:Cold\u00a0Down 4. NL Ethereal Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need "," turn(s) cold down"]
   },
   "WarlordEmblem:GhostWalk": {
     "NAME": "Ghost Walk",
-    "DESCRIPTION": "Gain 2  Dexterity.Apply 2 Weak to all enemy. NL warlord_emblem:Cold\u00a0Down 2. NL Ethereal Exhaust.",
+    "DESCRIPTION": "Gain 2 Dexterity. Apply 2 Weak to all enemies. NL warlord_emblem:Cold\u00a0Down 2. NL Ethereal Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need "," turn(s) cold down"]
   },
   "WarlordEmblem:DeafeningBlast": {
     "NAME": "Deafening Blast",
-    "DESCRIPTION": "Deal !D! damage to all enemy.Apply 1 warlord_emblem:disarm .  NL warlord_emblem:Cold\u00a0Down 4. NL Ethereal Exhaust.",
+    "DESCRIPTION": "Deal !D! damage to all enemies. Apply 1 warlord_emblem:disarm.  NL warlord_emblem:Cold\u00a0Down 4. NL Ethereal Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need "," turn(s) cold down"]
   },
   "WarlordEmblem:Tornado": {
     "NAME": "Tornado",
-    "DESCRIPTION": "Target lost all Poison, Weak, Vulnerable it has.Deal damage 5 times equal to all the stuck lost. NL Ethereal Exhaust.",
+    "DESCRIPTION": "Target loses all Poison, Weak, and Vulnerable. Deal damage equal to 5 times the number of debuffs removed. NL Ethereal Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need "," turn(s) cold down"]
   },
   "WarlordEmblem:ForgeSpirit": {
     "NAME": "Forge Spirit",
-    "DESCRIPTION": "Summon 1 warlord_emblem:Forge\u00a0Spirit . NL Ethereal Exhaust.",
+    "DESCRIPTION": "Summon 1 warlord_emblem:Forge\u00a0Spirit. NL Ethereal Exhaust.",
     "EXTENDED_DESCRIPTION": ["Need "," turn(s) cold down"]
   },
   "WarlordEmblem:SunStrike": {
@@ -59,71 +59,71 @@
 
   "WarlordEmblem:Annihilation": {
     "NAME": "Annihilation",
-    "DESCRIPTION":  "Deal warlord_emblem:True Damage equals to !M! time(s) of your lost Block.Lost all of your Block. NL warlord_emblem:Ice\u00a0Realm :Gain !WarlordEmblem:SecondRealmMagic! Block."
+    "DESCRIPTION":  "Lose all your block, and deal warlord_emblem:True Damage equal to !M! times the lost block. NL warlord_emblem:Ice\u00a0Realm : Gain !WarlordEmblem:SecondRealmMagic! Block."
   },
   "WarlordEmblem:AntiMagicShield": {
     "NAME": "Anti-Magic Zone",
     "DESCRIPTION":  "Gain !M! Artifact.",
-    "UPGRADE_DESCRIPTION":"Gain !M! Artifact.Remove all your debuffs."
+    "UPGRADE_DESCRIPTION":"Gain !M! Artifact. Remove all your debuffs."
   },
   "WarlordEmblem:BlackCommand": {
     "NAME": "Black Command",
-    "DESCRIPTION":  "For target each Poison it has,you gain 1 Strength. Exhaust."
+    "DESCRIPTION":  "Gain 1 Strength for each stack of Poison the enemy has. Exhaust."
   },
   "WarlordEmblem:BloodBoiling": {
     "NAME": "Blood Boiling",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL （At Most 6）. NL Lost !M! health,gain X Strength.",
-    "UPGRADE_DESCRIPTION":" warlord_emblem:Rune Energy X NL （At Most 6）. NL Lost !M! health,gain X+1 Strength."
+    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy X NL （At Most 6). NL Lose !M! health, gain X Strength.",
+    "UPGRADE_DESCRIPTION":" warlord_emblem:Rune Energy X NL （At Most 6). NL Lose !M! health, gain X+1 Strength."
   },
   "WarlordEmblem:BloodDiffer": {
     "NAME": "Blood Differ",
-    "DESCRIPTION":  "Lost !M! health.Gain !M! [E] .Draw !M! card(s). NL warlord_emblem:Blood\u00a0Realm :will not lost health. Exhaust."
+    "DESCRIPTION":  "Lose !M! health. Gain !M! [E]. Draw !M! card(s). NL warlord_emblem:Blood\u00a0Realm : Do not lose health. Exhaust."
   },
   "WarlordEmblem:BloodMask": {
     "NAME": "Blood Mark",
-    "DESCRIPTION":  "Apply !M! warlord_emblem:Blood Mark to an enemy. NL warlord_emblem:Blood Realm :apply !WarlordEmblem:RealmMagic! more warlord_emblem:Blood Mark ."
+    "DESCRIPTION":  "Apply !M! warlord_emblem:Blood Mark to an enemy. NL warlord_emblem:Blood Realm : Apply !WarlordEmblem:RealmMagic! more warlord_emblem:Blood Mark ."
   },
   "WarlordEmblem:BloodStrike": {
     "NAME": "Blood Strike",
-    "DESCRIPTION":  "Deal !D! damage. warlord_emblem:life\u00a0Leech . Exhaust. NL warlord_emblem:Blood\u00a0Realm ：heal !WarlordEmblem:SecondRealmMagic! HP."
+    "DESCRIPTION":  "Deal !D! damage. warlord_emblem:life\u00a0Leech. Exhaust. NL warlord_emblem:Blood\u00a0Realm ：heal !WarlordEmblem:SecondRealmMagic! HP."
   },
   "WarlordEmblem:BodyStrike": {
     "NAME": "Body Strike",
-    "DESCRIPTION":  "Deal !D! damage 3 times. NL warlord_emblem:Blood\u00a0Realm :Additional !WarlordEmblem:RealmMagic! time(s) ."
+    "DESCRIPTION":  "Deal !D! damage 3 times. NL warlord_emblem:Blood\u00a0Realm : Deals damage an additional !WarlordEmblem:RealmMagic! time(s) ."
   },
   "WarlordEmblem:BoneShield": {
     "NAME": "Bone Shield",
-    "DESCRIPTION":  "Gain !M! Thorns. NL warlord_emblem:Blood\u00a0Realm :additional gain !WarlordEmblem:RealmMagic! Thorns."
+    "DESCRIPTION":  "Gain !M! Thorns. NL warlord_emblem:Blood\u00a0Realm : Gain an additional !WarlordEmblem:RealmMagic! Thorns."
   },
   "WarlordEmblem:CondemnStrike": {
     "NAME": "Condemn Strike",
-    "DESCRIPTION":  "Deal !D! damage.Upon a Curse or Status in your hand,double this damage. NL warlord_emblem:Evil\u00a0Realm :add !WarlordEmblem:SecondRealmMagic! base damage."
+    "DESCRIPTION":  "Deal !D! damage. If you have a Curse or Status in your hand, double this damage. NL warlord_emblem:Evil\u00a0Realm : add !WarlordEmblem:SecondRealmMagic! base damage."
   },
   "WarlordEmblem:CurseStrike": {
     "NAME": "Curse Strike",
-    "DESCRIPTION":  "Deal !D! damage.If you have Curse or State,deal !D! damage again. NL warlord_emblem:Evil\u00a0Realm : NL Increase base damage by !WarlordEmblem:RealmMagic! .",
+    "DESCRIPTION":  "Deal !D! damage. If you have a Curse or Status in your hand, deal !D! damage again. NL warlord_emblem:Evil\u00a0Realm : NL Increase base damage by !WarlordEmblem:RealmMagic!.",
     "EXTENDED_DESCRIPTION": ["I have no Curse or Status in my hand."]
   },
   "WarlordEmblem:DeathCoil": {
     "NAME": "Death Coil",
-    "DESCRIPTION":  "Deal !D! damage, NL If this card kills an enemy ,gain [E] and draw a card."
+    "DESCRIPTION":  "Deal !D! damage, NL If this card kills an enemy, gain [E] and draw a card."
   },
   "WarlordEmblem:DeathContract": {
     "NAME": "Death Contract",
-    "DESCRIPTION":  " warlord_emblem:Rune\u00a0Energy 3, NL Deal !D! damage. NL raise your Max HP by !M! . Exhaust.  NL warlord_emblem:Blood Realm :Heal !WarlordEmblem:RealmMagic! HP.",
-    "EXTENDED_DESCRIPTION": ["Don't have enough Rune Energy."]
+    "DESCRIPTION":  "warlord_emblem:Rune\u00a0Energy 3, NL Deal !D! damage. NL Raise your Max HP by !M!. Exhaust.  NL warlord_emblem:Blood Realm : Heal !WarlordEmblem:RealmMagic! HP.",
+    "EXTENDED_DESCRIPTION": ["I don't have enough Rune Energy."]
   },
   "WarlordEmblem:DeathGateway": {
     "NAME": "Death Gateway",
-    "DESCRIPTION":  "Upon a Attack card in your hand,draw a card."
+    "DESCRIPTION":  "If there is an attack card in your hand, draw a card."
   },
   "WarlordEmblem:DeathShake": {
     "NAME": "Death Shake",
-    "DESCRIPTION":  "Deal !D! damage.If it is minion enemy,deal 1000 extra damage. NL warlord_emblem:Blood\u00a0Realm :draw !WarlordEmblem:RealmMagic! card(s)."
+    "DESCRIPTION":  "Deal !D! damage. If it is a Minion, deal 1000 extra damage. NL warlord_emblem:Blood\u00a0Realm : Draw !WarlordEmblem:RealmMagic! card(s)."
   },
   "WarlordEmblem:DeathStrike": {
     "NAME": "Death Strike",
-    "DESCRIPTION":  "Deal !D! damage.If target has Poison ,apply !M! Vulnerable. NL warlord_emblem:Evil\u00a0Realm :additional apply !WarlordEmblem:SecondRealmMagic! Vulnerable ."
+    "DESCRIPTION":  "Deal !D! damage. If target has Poison, apply !M! Vulnerable. NL warlord_emblem:Evil\u00a0Realm : Apply !WarlordEmblem:SecondRealmMagic! Vulnerable ."
   },
   "WarlordEmblem:DeathWither": {
     "NAME": "Death Wither",

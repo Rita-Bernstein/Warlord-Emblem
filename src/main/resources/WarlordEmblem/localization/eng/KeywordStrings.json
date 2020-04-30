@@ -2,34 +2,34 @@
     {
       "PROPER_NAME": "Cold Down",
       "NAMES": ["cold\u00a0down"],
-      "DESCRIPTION": "You can't play card with same name in several turn."
+      "DESCRIPTION": "You can't play cards with this name for X turns."
     },
   {
     "PROPER_NAME": "Cold Snap",
     "NAMES": ["cold\u00a0snap"],
-    "DESCRIPTION": "Next damage will also apply #yVulnerable and #yWeak ."
+    "DESCRIPTION": "The next damage dealt will also apply #yVulnerable and #yWeak ."
   },
   {
     "PROPER_NAME": "Forge Spirit",
     "NAMES": ["forge\u00a0spirit"],
-    "DESCRIPTION": "orb: deal damage and apply #yVulnerable ."
+    "DESCRIPTION": "Orb: deals damage and apply #yVulnerable ."
   },
   {
     "PROPER_NAME": "Disarm",
     "NAMES": ["disarm"],
-    "DESCRIPTION": "Half damage."
+    "DESCRIPTION": "This creature deals half damage."
   },
   {"PROPER_NAME": "true_damage",
     "NAMES": ["true\u00a0damage"],
     "DESCRIPTION": "Won't affected by damage modifiers."
   },
-  {"PROPER_NAME": "Talent Realm",
+  {"PROPER_NAME": "Talent Specialization",
     "NAMES": ["blood\u00a0realm","evil\u00a0realm","ice\u00a0realm","talent realm"],
-    "DESCRIPTION": "Gain additional effect when you have talent."
+    "DESCRIPTION": "Gain additional effects when you have a talent specialization."
   },
   {"PROPER_NAME": "Life Leech",
     "NAMES": ["life\u00a0leech"],
-    "DESCRIPTION": "Heal equals to damage amount."
+    "DESCRIPTION": "Heal life equal to damage dealt."
   },
   {"PROPER_NAME": "sadistic",
     "NAMES": ["sadistic"],
@@ -37,23 +37,23 @@
   },
   {"PROPER_NAME": "Rune Energy",
     "NAMES": ["rune\u00a0energy"],
-    "DESCRIPTION": "Energy charged in Rune Sword.It can only be charged to 6 at start.Gain 2 rune energy at the start of your turn."
+    "DESCRIPTION": "Energy charged in Rune Sword, to a maximum of 6. Gain 2 rune energy at the start of your turn."
   },
   {"PROPER_NAME": "Plated Armor",
     "NAMES": ["plated\u00a0armor"],
-    "DESCRIPTION": "At the end of your turn, gain #yBlock .Receiving unblocked attack damage reduces #yPlated #yArmor by #b1."
+    "DESCRIPTION": "At the end of your turn, gain #yBlock . Receiving unblocked attack damage reduces #yPlated #yArmor by #b1."
   },
   {"PROPER_NAME": "Quest",
     "NAMES": ["quest"],
-    "DESCRIPTION": "Clear the Quest,Gain the Reward."
+    "DESCRIPTION": "Clear the Quest, gain the reward."
   },
   {"PROPER_NAME": "Realm Increase",
     "NAMES": ["realm increase"],
-    "DESCRIPTION": "effect your Realm effect."
+    "DESCRIPTION": "Increases your Talent Specialization effect."
   },
   {"PROPER_NAME": "Blood Mark",
     "NAMES": ["blood mark"],
-    "DESCRIPTION": "On death, Healing you with amount of stack HP."
+    "DESCRIPTION": "On death, heals equal to debuff stacks."
   },
   {"PROPER_NAME": "Angry",
     "NAMES": ["angry"],
