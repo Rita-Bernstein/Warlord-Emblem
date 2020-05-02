@@ -17,7 +17,7 @@
     "NAME": "Evil Blood",
     "FLAVOR": "Nothing comes without a price.",
     "DESCRIPTIONS": [
-      "Lost #b4 HP at the start of combat. Heal #b9 HP on victory. NL #bSynergy-Burning Blood/Black Blood: You don't lose health at the start of combat from this relic."
+      "Lose #b4 HP at the start of combat. Heal #b9 HP on victory. NL #bSynergy-Burning Blood/Black Blood: You don't lose health at the start of combat from this relic."
     ]
   },
   "WarlordEmblem:HatTrick": {
@@ -36,7 +36,7 @@
   },
   "WarlordEmblem:OldTorch": {
     "NAME": "Old Torch",
-    "FLAVOR": "The torch is a little old, and a little dim.",
+    "FLAVOR": "The torch is old and sputters faintly, casting a dim light.",
     "DESCRIPTIONS": [
       "Gain #b1 energy on the second turn of combat. NL #bSynergy-Lantern: Gain an extra energy at the beginning of combat."
     ]
@@ -57,7 +57,7 @@
   },
   "WarlordEmblem:SmileMask": {
     "NAME": "Smile Mask",
-    "FLAVOR": "He smiled, and slipped a card in.",
+    "FLAVOR": "The shopkeeper slips you an extra card from time to time.",
     "DESCRIPTIONS": [
       "Every 3 turns, draw #b1 card. NL #bSynergy-Happy Flower: Draw #b1 extra card."
     ]

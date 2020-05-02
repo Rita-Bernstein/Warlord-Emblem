@@ -19,24 +19,24 @@
   ]
 },
   "WarlordEmblem:RealmRiderPower": {
-  "NAME": "Realm Rider",
+  "NAME": "Death Rider",
   "DESCRIPTIONS": [
-    "Regard you have all Talent Realm this combat."
+    "You have the abilities of all three talent Specializations."
   ]
 },
   "WarlordEmblem:RealmIncreasePower": {
-  "NAME": "Realm Increase",
+  "NAME": "Specialization increase",
   "DESCRIPTIONS": [
-    "Increases Realm effect by #b",
-    "Decreases Realm effect by #b",
+    "Increases specialization effect by #b",
+    "Decreases specialization effect by #b",
     "."
   ]
 },
   "WarlordEmblem:LichkingWraithPower": {
-  "NAME": "Lichking Wraith",
+  "NAME": "Lich King Wraith",
   "DESCRIPTIONS": [
     "At the start of your turn, gain #b",
-    " #yRealm Increase 。"
+    " #yRealm Increase."
   ]
 },
   "WarlordEmblem:RuneMultiplexPower": {
@@ -49,7 +49,7 @@
   "WarlordEmblem:BloodMaskPower": {
   "NAME": "Blood Mark",
   "DESCRIPTIONS": [
-    "On death, Healing you #b",
+    "On death, heals you for #b",
     " HP"
   ]
 },
