@@ -45,6 +45,7 @@ import com.megacrit.cardcrawl.monsters.MonsterInfo;
 import com.megacrit.cardcrawl.orbs.Dark;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.relics.*;
+import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbBlue;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -120,7 +121,6 @@ public class WarlordEmblem implements
              assetPath("img/cardui/1024/card_lime_orb.png"),
              assetPath("img/cardui/512/card_lime_small_orb.png")
      );
-
 
 
      loadConfig();

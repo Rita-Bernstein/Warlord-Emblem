@@ -88,8 +88,12 @@ public class Annihilation extends AbstractDKCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_BONUS);
+
         }
     }
+
+
+
 
     public AbstractCard makeCopy() {
         return new Annihilation();

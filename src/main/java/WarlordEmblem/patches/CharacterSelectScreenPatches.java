@@ -79,8 +79,8 @@ public class CharacterSelectScreenPatches
                     sb.draw(ImageMaster.CF_LEFT_ARROW, Settings.WIDTH / 2.0F - Talent_LEFT_W / 2.0F - 800.0F * Settings.scale + X_fixed, 800.0F * Settings.scale - 16.0F, 16.0F, 16.0F, 32.0F, 32.0F, Settings.scale*2.0f, Settings.scale*2.0f, 0.0F, 0, 0, 48, 48, false, false);
 
                     FontHelper.cardTitleFont.getData().setScale(1.0F);
-                    FontHelper.bannerFont.getData().setScale(0.8F);
-                    FontHelper.renderFontCentered(sb, FontHelper.bannerFont, TEXT[0], Settings.WIDTH / 2.0F - 780.0F * Settings.scale, 850.0F * Settings.scale - 8.0F, Settings.GOLD_COLOR);
+                    FontHelper.losePowerFont.getData().setScale(0.8F);
+                    FontHelper.renderFontCentered(sb, FontHelper.losePowerFont, TEXT[0], Settings.WIDTH / 2.0F - 780.0F * Settings.scale, 850.0F * Settings.scale - 8.0F, Settings.GOLD_COLOR);
 
                     FontHelper.renderFontCentered(sb, FontHelper.cardTitleFont, TEXT[TalentCount], Settings.WIDTH / 2.0F - 700.0F * Settings.scale, 800.0F * Settings.scale , Settings.GOLD_COLOR);
 

@@ -28,7 +28,7 @@ public class BadgeBless extends CustomRelic {
 
 
 
-   public void atBattleStart() {
+    public void atBattleStart() {
        flash();
        AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new StrengthPower(AbstractDungeon.player, 1)));
