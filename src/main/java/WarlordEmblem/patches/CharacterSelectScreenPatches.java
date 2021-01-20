@@ -32,8 +32,8 @@ public class CharacterSelectScreenPatches
 
     public static Hitbox TalentRight;
     public static Hitbox TalentLeft;
-    private static float Talent_RIGHT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
-    private static float Talent_LEFT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);;
+    private static float Talent_RIGHT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);
+    private static float Talent_LEFT_W = FontHelper.getSmartWidth(FontHelper.cardTitleFont, TEXT[1], 9999.0F, 0.0F);
 
     private static float X_fixed = 30.0f *Settings.scale;
 
@@ -149,7 +149,7 @@ public class CharacterSelectScreenPatches
 
  @SpirePatch(clz = CharacterOption.class, method = "renderRelics" )
  public  static  class CharacterSelectScreenCharacterOptionPatch_Relic{
-     @SpireInsertPatch(rloc = 67,localvars = {"r","i"})
+     @SpireInsertPatch(rloc = 145,localvars = {"r","i"})
      public  static SpireReturn Insert(CharacterOption obj, @ByRef (type = "relics.AbstractRelic")Object[] _r,int _i){
 
          if (obj.name.equals(DeathKnight.charStrings.NAMES[1])  && obj.selected && _i == 1) {
